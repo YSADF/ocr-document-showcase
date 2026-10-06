@@ -1,0 +1,82 @@
+{
+  "prepared_at": "2026-10-06T13:48:29+08:00",
+  "environment": {
+    "python": "3.12.14",
+    "os": "Windows",
+    "architecture": "AMD64",
+    "packages": {
+      "pdfplumber": "0.11.9",
+      "pypdfium2": "5.13.0",
+      "reportlab": "4.4.9",
+      "Pillow": "12.3.0"
+    }
+  },
+  "company_service_called": false,
+  "ocr_executed": false,
+  "engineering": {
+    "page_count": 1,
+    "native_word_count": 226,
+    "raster_dpi": 180,
+    "raster_size_pixels": [
+      4210,
+      2977
+    ],
+    "ocr_status": "pending",
+    "docx_status": "pending"
+  },
+  "merged_table": {
+    "rows": 6,
+    "cols": 5,
+    "physical_cell_count": 21,
+    "merged_cell_count": 5,
+    "raster_dpi": 180,
+    "raster_size_pixels": [
+      2105,
+      1489
+    ],
+    "ocr_status": "pending",
+    "docx_status": "pending"
+  },
+  "files": {
+    "assets/engineering-input.png": {
+      "bytes": 119573,
+      "sha256": "2ee47f3fc06c4bfd362325391413bbc0ada2565ae5eb6bcb0bd5c0bd1c118712"
+    },
+    "assets/engineering-native-boxes.png": {
+      "bytes": 144395,
+      "sha256": "c2fa887b5ebde0ce15ab6e25d803f304bee94e8a50dfc6037578d7734fea11e8"
+    },
+    "assets/merged-table-input.png": {
+      "bytes": 115908,
+      "sha256": "8def25b35f81d5b2d779c9c393e1cb8db85137fdbf7b69625df333dc8e789fa7"
+    },
+    "samples/c03-raster.png": {
+      "bytes": 353949,
+      "sha256": "fb9feef4294f6f67ca5f26886eed879a05b739f15a4129b687e1ac4a370a69f6"
+    },
+    "samples/c03-source.pdf": {
+      "bytes": 81808,
+      "sha256": "cff0cfbd20977cfab3670e7fe5546ad6b1860bdef884e2a995f3b661cc4c1583"
+    },
+    "samples/DEXPI-LICENSE.txt": {
+      "bytes": 18650,
+      "sha256": "7e7170e3cebf88a9f60c7b8421418323c09304da1af4d5e90f4da1dc1c8a2661"
+    },
+    "samples/merged-table-scan.pdf": {
+      "bytes": 126255,
+      "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "samples/merged-table-source.pdf": {
+      "bytes": 42999,
+      "sha256": "96c980c08ce0abb501d44b6ef6e3c64222d6dd86df2b04e0051a7fd059fb85aa"
+    },
+    "artifacts/c03-native-text.json": {
+      "bytes": 59436,
+      "sha256": "952d6fb708d2de5612a85ee37f7cf222c635b801d027771c73e0309079f0e920"
+    },
+    "artifacts/merged-table-ground-truth.json": {
+      "bytes": 6772,
+      "sha256": "c5488d2e03f8c37cec559a606965128aad1005bebcfd5854236b753a8b0986ac"
+    }
+  }
+}

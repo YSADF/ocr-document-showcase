@@ -1,0 +1,5 @@
+# Public sample preparation only; no company source or OCR model is required.
+pdfplumber
+pypdfium2
+reportlab
+Pillow

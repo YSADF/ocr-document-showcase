@@ -1,0 +1,417 @@
+{
+  "status": "manually_authored_ground_truth",
+  "ocr_executed": false,
+  "coordinate_origin": "top_left",
+  "indices": "zero_based",
+  "rows": 6,
+  "cols": 5,
+  "physical_cell_count": 21,
+  "merged_cell_count": 5,
+  "raster_dpi": 180,
+  "raster_size_pixels": [
+    2105,
+    1489
+  ],
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 5,
+      "text": "Engineering inspection record",
+      "bbox_pdf_points": [
+        48,
+        155,
+        793.8897637795277,
+        197
+      ],
+      "bbox_pixels": [
+        120,
+        388,
+        1985,
+        493
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Item",
+      "bbox_pdf_points": [
+        48,
+        197,
+        174,
+        233
+      ],
+      "bbox_pixels": [
+        120,
+        493,
+        435,
+        583
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Specification",
+      "bbox_pdf_points": [
+        174,
+        197,
+        353,
+        233
+      ],
+      "bbox_pixels": [
+        435,
+        493,
+        883,
+        583
+      ]
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Qty",
+      "bbox_pdf_points": [
+        353,
+        197,
+        413,
+        233
+      ],
+      "bbox_pixels": [
+        883,
+        493,
+        1033,
+        583
+      ]
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Result",
+      "bbox_pdf_points": [
+        413,
+        197,
+        509,
+        233
+      ],
+      "bbox_pixels": [
+        1033,
+        493,
+        1273,
+        583
+      ]
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Note",
+      "bbox_pdf_points": [
+        509,
+        197,
+        793.8897637795277,
+        233
+      ],
+      "bbox_pixels": [
+        1273,
+        493,
+        1985,
+        583
+      ]
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "rowspan": 2,
+      "colspan": 1,
+      "text": "Valve body",
+      "bbox_pdf_points": [
+        48,
+        233,
+        174,
+        343
+      ],
+      "bbox_pixels": [
+        120,
+        583,
+        435,
+        858
+      ]
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "DN 50",
+      "bbox_pdf_points": [
+        174,
+        233,
+        353,
+        288
+      ],
+      "bbox_pixels": [
+        435,
+        583,
+        883,
+        720
+      ]
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "2",
+      "bbox_pdf_points": [
+        353,
+        233,
+        413,
+        288
+      ],
+      "bbox_pixels": [
+        883,
+        583,
+        1033,
+        720
+      ]
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "PASS",
+      "bbox_pdf_points": [
+        413,
+        233,
+        509,
+        288
+      ],
+      "bbox_pixels": [
+        1033,
+        583,
+        1273,
+        720
+      ]
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Ø 50 ± 0.10 mm",
+      "bbox_pdf_points": [
+        509,
+        233,
+        793.8897637795277,
+        288
+      ],
+      "bbox_pixels": [
+        1273,
+        583,
+        1985,
+        720
+      ]
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "DN 80",
+      "bbox_pdf_points": [
+        174,
+        288,
+        353,
+        343
+      ],
+      "bbox_pixels": [
+        435,
+        720,
+        883,
+        858
+      ]
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "1",
+      "bbox_pdf_points": [
+        353,
+        288,
+        413,
+        343
+      ],
+      "bbox_pixels": [
+        883,
+        720,
+        1033,
+        858
+      ]
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "REVIEW",
+      "bbox_pdf_points": [
+        413,
+        288,
+        509,
+        343
+      ],
+      "bbox_pixels": [
+        1033,
+        720,
+        1273,
+        858
+      ]
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Angle 90° ± 0.5°",
+      "bbox_pdf_points": [
+        509,
+        288,
+        793.8897637795277,
+        343
+      ],
+      "bbox_pixels": [
+        1273,
+        720,
+        1985,
+        858
+      ]
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Pump",
+      "bbox_pdf_points": [
+        48,
+        343,
+        174,
+        398
+      ],
+      "bbox_pixels": [
+        120,
+        858,
+        435,
+        996
+      ]
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 2,
+      "text": "Model P001 / 1 unit",
+      "bbox_pdf_points": [
+        174,
+        343,
+        413,
+        398
+      ],
+      "bbox_pixels": [
+        435,
+        858,
+        1033,
+        996
+      ]
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "PASS",
+      "bbox_pdf_points": [
+        413,
+        343,
+        509,
+        398
+      ],
+      "bbox_pixels": [
+        1033,
+        858,
+        1273,
+        996
+      ]
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "text": "Bore Ø 12 mm",
+      "bbox_pdf_points": [
+        509,
+        343,
+        793.8897637795277,
+        398
+      ],
+      "bbox_pixels": [
+        1273,
+        858,
+        1985,
+        996
+      ]
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 3,
+      "text": "Summary: 4 inspected units",
+      "bbox_pdf_points": [
+        48,
+        398,
+        413,
+        440
+      ],
+      "bbox_pixels": [
+        120,
+        996,
+        1033,
+        1101
+      ]
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 2,
+      "text": "3 PASS / 1 REVIEW",
+      "bbox_pdf_points": [
+        413,
+        398,
+        793.8897637795277,
+        440
+      ],
+      "bbox_pixels": [
+        1033,
+        996,
+        1985,
+        1101
+      ]
+    }
+  ],
+  "license": "CC0-1.0"
+}
