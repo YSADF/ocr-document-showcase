@@ -27,7 +27,7 @@
 
 | 产物 | 状态与含义 |
 |---|---|
-| 自制 PDF、纯图像 PDF 与 PNG | 已提供，内容不含客户或公司业务数据 |
+| 自制 PDF、纯图像 PDF 与 PNG | 已提供，内容不含客户或实际业务数据 |
 | [merged-table-ground-truth.json](../artifacts/merged-table-ground-truth.json) | 已提供；生成样本时记录的预期结构，不是识别结果 |
 | 表格 OCR 与结构 JSON | 待实测 |
 | 可编辑 DOCX 与 Word 页面预览 | 待实测 |
@@ -44,7 +44,7 @@
 
 ## 复现参数
 
-在展示包根目录执行 `python tools/prepare_examples.py` 可重建自制样本和真值，扫描页面默认 180 DPI。生成环境、页面尺寸和文件校验值见[评测文档](../EVALUATION.md)与[来源清单](../CASE_SOURCES.md)。自制样本和真值可独立复现；完整 OCR、表格识别和 Word 重建需要已部署的项目服务及模型，本展示包不包含公司实现。
+在展示包根目录执行 `python tools/prepare_examples.py` 可重建自制样本和真值，扫描页面默认 180 DPI。生成环境、页面尺寸和文件校验值见[评测文档](../EVALUATION.md)与[来源清单](../CASE_SOURCES.md)。自制样本和真值可独立复现；完整 OCR、表格识别和 Word 重建需要已部署的项目服务及模型，本展示包不包含完整系统实现。
 
 以下为本地项目服务的 **Bash** 请求示例，在展示包根目录执行。示例尚未针对本样本运行；服务地址和认证应使用自己的本地环境。
 

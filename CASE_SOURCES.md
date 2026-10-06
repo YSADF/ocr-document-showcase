@@ -18,7 +18,7 @@
 ## 自制合并单元格表格
 
 - 作者：本展示项目。
-- 来源：`tools/prepare_examples.py` 中人工定义的表格内容与网格，不包含公司业务材料。
+- 来源：`tools/prepare_examples.py` 中人工定义的表格内容与网格，仅使用自行制作的公开测试材料。
 - 内容：英文工程检查表，6 行 × 5 列，包含跨行/跨列合并、`Ø、±、°`、设备编号与说明。
 - 文件：原生 PDF、纯图像扫描 PDF、PNG 输入预览、人工结构真值。
 - 许可：[CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/)。
@@ -26,6 +26,6 @@
 
 ## 公开文档与工具
 
-展示说明和独立样本准备脚本采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，署名使用本仓库及其维护者。各第三方依赖继续遵循自身许可；公司系统源码未包含在本包中。
+展示说明和独立样本准备脚本采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)，署名使用本仓库及其维护者。各第三方依赖继续遵循自身许可；本包不包含完整系统源码。
 
 对外展示或衍生使用时，保留第三方来源、许可链接及修改说明。
