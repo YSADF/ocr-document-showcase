@@ -1,0 +1,434 @@
+{
+  "date": "2026-10-07T12:35:24.601381+00:00",
+  "measurement": "serial HTTP request to full response, JSON parsing excluded",
+  "warmups": 2,
+  "runs": 20,
+  "percentile_method": "numpy linear",
+  "environment": {
+    "python": "3.11.17",
+    "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+    "backend": "paddle_gpu",
+    "accelerator": {
+      "kind": "nvidia",
+      "requested_kind": "nvidia",
+      "detected_kind": "nvidia",
+      "device": "gpu:0",
+      "package": "paddlepaddle-gpu",
+      "runtime_version": "3.3.1",
+      "runtime_detail": "12.9",
+      "driver_version": "595.71.05",
+      "dtk_version": "",
+      "visible_devices": 1,
+      "required": true,
+      "ready": true,
+      "fallback_active": false,
+      "reason": ""
+    }
+  },
+  "cases": {
+    "engineering": {
+      "input": "c03-raster.png",
+      "sha256": "fb9feef4294f6f67ca5f26886eed879a05b739f15a4129b687e1ac4a370a69f6",
+      "parameters": {
+        "use_layout": "true",
+        "output_format": "json",
+        "ocr_lang": "en",
+        "ocr_mode": "balanced",
+        "conversion_mode": "ocr"
+      },
+      "requests": [
+        {
+          "index": 0,
+          "warmup": true,
+          "seconds": 7.094598427880555,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 1,
+          "warmup": true,
+          "seconds": 4.430586645845324,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 2,
+          "warmup": false,
+          "seconds": 4.065482188016176,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 3,
+          "warmup": false,
+          "seconds": 4.118523127865046,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 4,
+          "warmup": false,
+          "seconds": 4.184141868725419,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 5,
+          "warmup": false,
+          "seconds": 4.583457094151527,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 6,
+          "warmup": false,
+          "seconds": 3.9606446158140898,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 7,
+          "warmup": false,
+          "seconds": 3.8988225352950394,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 8,
+          "warmup": false,
+          "seconds": 4.045544598251581,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 9,
+          "warmup": false,
+          "seconds": 4.064641134813428,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 10,
+          "warmup": false,
+          "seconds": 4.16450452664867,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 11,
+          "warmup": false,
+          "seconds": 4.387928130105138,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 12,
+          "warmup": false,
+          "seconds": 4.194559033028781,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 13,
+          "warmup": false,
+          "seconds": 4.121527963783592,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 14,
+          "warmup": false,
+          "seconds": 4.085266257636249,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 15,
+          "warmup": false,
+          "seconds": 4.042105863802135,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 16,
+          "warmup": false,
+          "seconds": 4.179336826317012,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 17,
+          "warmup": false,
+          "seconds": 4.184813760686666,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 18,
+          "warmup": false,
+          "seconds": 4.25684346864,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 19,
+          "warmup": false,
+          "seconds": 4.425222204066813,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 20,
+          "warmup": false,
+          "seconds": 4.277644720859826,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        },
+        {
+          "index": 21,
+          "warmup": false,
+          "seconds": 4.163597102742642,
+          "http_status": 200,
+          "success": true,
+          "characters": 954
+        }
+      ],
+      "summary": {
+        "success": 20,
+        "failed": 0,
+        "p50_seconds": 4.164050814695656,
+        "p95_seconds": 4.433133948571049,
+        "max_seconds": 4.583457094151527
+      },
+      "docx": {
+        "success": true,
+        "seconds": 4.5073490287177265,
+        "bytes": 378343,
+        "http_status": 200
+      }
+    },
+    "merged-table": {
+      "input": "merged-table-scan.pdf",
+      "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7",
+      "parameters": {
+        "use_layout": "true",
+        "output_format": "json",
+        "ocr_lang": "en",
+        "ocr_mode": "balanced",
+        "conversion_mode": "ocr"
+      },
+      "requests": [
+        {
+          "index": 0,
+          "warmup": true,
+          "seconds": 1.8578516929410398,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 1,
+          "warmup": true,
+          "seconds": 1.7515151891857386,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 2,
+          "warmup": false,
+          "seconds": 1.7835083128884435,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 3,
+          "warmup": false,
+          "seconds": 1.8667717529460788,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 4,
+          "warmup": false,
+          "seconds": 1.7263053660281003,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 5,
+          "warmup": false,
+          "seconds": 1.8813578146509826,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 6,
+          "warmup": false,
+          "seconds": 1.9365993379615247,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 7,
+          "warmup": false,
+          "seconds": 1.8607234857045114,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 8,
+          "warmup": false,
+          "seconds": 1.918151208665222,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 9,
+          "warmup": false,
+          "seconds": 1.9017048059031367,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 10,
+          "warmup": false,
+          "seconds": 1.792724299710244,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 11,
+          "warmup": false,
+          "seconds": 1.774978393688798,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 12,
+          "warmup": false,
+          "seconds": 1.7930220370180905,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 13,
+          "warmup": false,
+          "seconds": 1.796010595280677,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 14,
+          "warmup": false,
+          "seconds": 1.8000695290975273,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 15,
+          "warmup": false,
+          "seconds": 1.791527054272592,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 16,
+          "warmup": false,
+          "seconds": 1.6949122897349298,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 17,
+          "warmup": false,
+          "seconds": 1.7255364451557398,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 18,
+          "warmup": false,
+          "seconds": 1.7486895038746297,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 19,
+          "warmup": false,
+          "seconds": 1.8232029634527862,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 20,
+          "warmup": false,
+          "seconds": 1.601314727216959,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        },
+        {
+          "index": 21,
+          "warmup": false,
+          "seconds": 1.6554323309101164,
+          "http_status": 200,
+          "success": true,
+          "characters": 431
+        }
+      ],
+      "summary": {
+        "success": 20,
+        "failed": 0,
+        "p50_seconds": 1.7928731683641672,
+        "p95_seconds": 1.9190736151300372,
+        "max_seconds": 1.9365993379615247
+      },
+      "docx": {
+        "success": true,
+        "seconds": 1.6923168250359595,
+        "bytes": 41400,
+        "http_status": 200
+      }
+    }
+  }
+}

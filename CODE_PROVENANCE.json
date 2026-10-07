@@ -1,0 +1,44 @@
+[
+  {
+    "example": "examples/pdf_routing.py",
+    "source_module": "services/pdf_routing.py",
+    "source_sha256": "93f251d24bfe9f7d3624c52411067febf276fd04f613bea0084c265df6740a6c",
+    "selected_symbols": [
+      "PdfConversionDecision",
+      "PdfScanRisk",
+      "_settings_value",
+      "pdf_scan_risk",
+      "normalize_conversion_mode",
+      "should_auto_route_pdf_to_direct",
+      "PdfTextMetrics",
+      "pdf_text_metrics"
+    ],
+    "adaptation": "Private imports replaced with standard imports; comments compacted; algorithm retained.",
+    "example_sha256": "32508b1f04ec8f52da416cbb655a5c4dd2c2cefef1931dee6321caddfeeb30d3",
+    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+  },
+  {
+    "example": "examples/copy_fit.py",
+    "source_module": "render/faithful_parts/copyfit.py",
+    "source_sha256": "94455be95fad4aa3467141fffdd41ad0242015d2a29026a8d554c6be5a62698b",
+    "selected_symbols": [
+      "CopyFitResult",
+      "_solve_copy_fit",
+      "_measure_copy_width",
+      "_manual_line_breaks",
+      "_wrapped_line_count",
+      "_character_width_pt"
+    ],
+    "adaptation": "Private imports replaced with standard imports; comments compacted; algorithm retained.",
+    "example_sha256": "3a8e87c6da8870d5eef911563ecc57b379c7bcc8c293f175cdca5d6537974d71",
+    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+  },
+  {
+    "example": "examples/literal_guard.py",
+    "source_module": "image_translation/literal_integrity.py",
+    "source_sha256": "80fbc273d366b909ba9f1fb335c3d89ecb1352a3f1965968f3c2155b4f569e5d",
+    "adaptation": "Conceptual runnable adaptation of reviewed-span placeholders and integrity checks; full classifier and image policies omitted.",
+    "example_sha256": "b6f7cbba790b9ecaa294cf24b4866a7e4b6049f4dfab3f1a09c7ca01fb09a5f3",
+    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+  }
+]

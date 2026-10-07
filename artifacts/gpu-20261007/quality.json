@@ -1,0 +1,210 @@
+{
+  "scope": "one self-created table, 21 cells; OCR JSON only",
+  "normalization": "collapse whitespace only; preserve case and Unicode code points",
+  "cell_exact": 19,
+  "cell_total": 21,
+  "reference_characters": 203,
+  "character_edits": 2,
+  "cer": 0.009852216748768473,
+  "matching_cell_spans": 21,
+  "predicted_cells": 21,
+  "merges": {
+    "true_positive": 5,
+    "false_positive": 0,
+    "false_negative": 0
+  },
+  "cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "expected": "Engineering inspection record",
+      "predicted": "Engineering inspection record",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "expected": "Item",
+      "predicted": "Item",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "expected": "Specification",
+      "predicted": "Specification",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "expected": "Qty",
+      "predicted": "Qty",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "expected": "Result",
+      "predicted": "Result",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "expected": "Note",
+      "predicted": "Note",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "expected": "Valve body",
+      "predicted": "Valve body",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "expected": "DN 50",
+      "predicted": "DN 50",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "expected": "2",
+      "predicted": "2",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "expected": "PASS",
+      "predicted": "PASS",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "expected": "Ø 50 ± 0.10 mm",
+      "predicted": "∅ 50 ± 0.10 mm",
+      "edit_distance": 1,
+      "span_matches": true
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "expected": "DN 80",
+      "predicted": "DN 80",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "expected": "1",
+      "predicted": "1",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "expected": "REVIEW",
+      "predicted": "REVIEW",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "expected": "Angle 90° ± 0.5°",
+      "predicted": "Angle 90° ± 0.5°",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "expected": "Pump",
+      "predicted": "Pump",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "expected": "Model P001 / 1 unit",
+      "predicted": "Model P001 / 1 unit",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "expected": "PASS",
+      "predicted": "PASS",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "expected": "Bore Ø 12 mm",
+      "predicted": "Bore ∅ 12 mm",
+      "edit_distance": 1,
+      "span_matches": true
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "expected": "Summary: 4 inspected units",
+      "predicted": "Summary: 4 inspected units",
+      "edit_distance": 0,
+      "span_matches": true
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "expected": "3 PASS / 1 REVIEW",
+      "predicted": "3 PASS / 1 REVIEW",
+      "edit_distance": 0,
+      "span_matches": true
+    }
+  ],
+  "docx": {
+    "engineering": {
+      "native_table_count": 0,
+      "grid_span_xml_nodes": 0,
+      "vertical_merge_xml_nodes": 0,
+      "review_renderer": "LibreOffice -> PDF -> PNG",
+      "visual_acceptance": "failed",
+      "observations": [
+        "Text overlaps in engineering drawing"
+      ],
+      "scope_note": "XML nodes show structure exists, not that it renders correctly. Microsoft Word was not tested."
+    },
+    "merged-table": {
+      "native_table_count": 1,
+      "grid_span_xml_nodes": 4,
+      "vertical_merge_xml_nodes": 2,
+      "review_renderer": "LibreOffice -> PDF -> PNG",
+      "visual_acceptance": "failed",
+      "observations": [
+        "Table text missing and borders incomplete; title/footer overlap"
+      ],
+      "scope_note": "XML nodes show structure exists, not that it renders correctly. Microsoft Word was not tested."
+    }
+  }
+}
