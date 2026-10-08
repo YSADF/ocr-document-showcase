@@ -1,0 +1,266 @@
+{
+  "scope": "Development error attribution only; manually selected crops, no independent accuracy claim",
+  "source_cases": {
+    "diameter": 17,
+    "tolerance": 2
+  },
+  "inference_calls": 236,
+  "models": {
+    "PP-OCRv6_medium_rec": {
+      "model": "PP-OCRv6_medium_rec",
+      "recognizer_fingerprint": "53a256c6243ffa187b6bed755c59143ff2b18e154737235887a941d72558de2e",
+      "identity_verified": true,
+      "character_coverage": {
+        "status": "available",
+        "missing": [],
+        "dictionary_size": 18709
+      }
+    },
+    "PP-OCRv6_small_rec": {
+      "model": "PP-OCRv6_small_rec",
+      "recognizer_fingerprint": "2df42339cdadf671c57f10ff8582e52e0250c906428f6e6f72028814a19e0f66",
+      "identity_verified": true,
+      "character_coverage": {
+        "status": "available",
+        "missing": [],
+        "dictionary_size": 18709
+      }
+    }
+  },
+  "diameter_crop_results": {
+    "PP-OCRv6_medium_rec/detected": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_medium_rec/expanded_detection": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_medium_rec/complete_reference": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_medium_rec/symbol_only": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 4,
+      "error_types": {
+        "empty_recognition": 4
+      }
+    },
+    "PP-OCRv6_medium_rec/digits_only": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {},
+      "numeric_exact": 17
+    },
+    "PP-OCRv6_medium_rec/symbol_and_digits": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_small_rec/detected": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_small_rec/expanded_detection": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 1,
+      "error_types": {
+        "empty_recognition": 1
+      }
+    },
+    "PP-OCRv6_small_rec/complete_reference": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    },
+    "PP-OCRv6_small_rec/symbol_only": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 10,
+      "error_types": {
+        "empty_recognition": 10
+      }
+    },
+    "PP-OCRv6_small_rec/digits_only": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {},
+      "numeric_exact": 17
+    },
+    "PP-OCRv6_small_rec/symbol_and_digits": {
+      "n": 17,
+      "diameter_Unicode_retained": 0,
+      "empty": 0,
+      "error_types": {}
+    }
+  },
+  "tolerance_crop_results": {
+    "PP-OCRv6_medium_rec/complete_reference": {
+      "n": 2,
+      "exact": 0
+    },
+    "PP-OCRv6_medium_rec/nominal_only": {
+      "n": 2,
+      "exact": 1
+    },
+    "PP-OCRv6_medium_rec/upper_only": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_medium_rec/lower_only": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_medium_rec/minus_only": {
+      "n": 2,
+      "exact": 0
+    },
+    "PP-OCRv6_medium_rec/lower_digits": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_medium_rec/plus_only": {
+      "n": 2,
+      "exact": 0
+    },
+    "PP-OCRv6_medium_rec/upper_digits": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_small_rec/complete_reference": {
+      "n": 2,
+      "exact": 0
+    },
+    "PP-OCRv6_small_rec/nominal_only": {
+      "n": 2,
+      "exact": 1
+    },
+    "PP-OCRv6_small_rec/upper_only": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_small_rec/lower_only": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_small_rec/minus_only": {
+      "n": 2,
+      "exact": 0
+    },
+    "PP-OCRv6_small_rec/lower_digits": {
+      "n": 2,
+      "exact": 2
+    },
+    "PP-OCRv6_small_rec/plus_only": {
+      "n": 2,
+      "exact": 1
+    },
+    "PP-OCRv6_small_rec/upper_digits": {
+      "n": 2,
+      "exact": 2
+    }
+  },
+  "detection_glyph_coverage": [
+    {
+      "sample": "ligo-d060312",
+      "region": "r11",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d060318",
+      "region": "r04",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d060318",
+      "region": "r11",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d060321",
+      "region": "r03",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d080106",
+      "region": "r09",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d080106",
+      "region": "r10",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d080106",
+      "region": "r12",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1100424",
+      "region": "r05",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1100424",
+      "region": "r10",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1102006",
+      "region": "r03",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1102006",
+      "region": "r04",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1102006",
+      "region": "r05",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1102006",
+      "region": "r08",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1102006",
+      "region": "r09",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1200144",
+      "region": "r04",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1200144",
+      "region": "r09",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    },
+    {
+      "sample": "ligo-d1200144",
+      "region": "r10",
+      "selected_glyph_ink_fraction_inside_detected_box": 1.0
+    }
+  ],
+  "glyph_fully_inside_detected_boxes": 17
+}

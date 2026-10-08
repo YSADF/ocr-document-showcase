@@ -1,0 +1,63 @@
+{
+  "original_manifest_sha256": "0e5dd06accf54cefca9331b55b7d3844935384a9def0246c0b6f878c2dccf22f",
+  "development_manifest_sha256": "893585e1bc39c8bc6be47437b5542d256c0115f62fe0360377d0052238c84685",
+  "gpu_patch_sha256": "f64e1a8dafae46a18b3eb351a720282a1a5c2cef9667f2f6b72b76bc5d74274e",
+  "verified128_patch_sha256": "b6fd9b24940595c99d6ed2f9caa9f18e82cfacd98809170d3189a10144df1699",
+  "evidence_archives": {
+    "baseline-evidence.tar.gz": "964f905481a735a7f2f16291a99a7b133a90711af499f503934619db27ba17a9",
+    "round2-64-evidence.tar.gz": "7c4e98f3c6578e638584bb8c42688ef0be62f7980d218503c06e47d27cea6226",
+    "round2-final-evidence.tar.gz": "b2401a2e39753b9cfcb6410a850b6700db3aa74bc2945926d881b94bc9862058",
+    "round2-verified128-evidence.tar.gz": "29a756cd246250c62f158c709587223000da4cd0e733ab3dd79a04030593e5bf"
+  },
+  "local_tests": {
+    "passed": 150,
+    "skipped": 15,
+    "skip_reason": "optional wired_table_rec is not installed locally"
+  },
+  "final_geometry_replay": {
+    "method": "Exact geometry replay of every measured engineering response; final angle guard vs frozen GPU revision",
+    "unchanged": true,
+    "verified_responses": 50
+  },
+  "environment": {
+    "python": "3.11.17",
+    "gpu": "NVIDIA GeForce RTX 5090, 32607 MiB, 595.71.05, 2 MiB",
+    "packages": {
+      "paddlepaddle-gpu": "3.3.1",
+      "paddleocr": "3.7.0",
+      "paddlex": "3.7.2",
+      "fastapi": "0.133.0",
+      "uvicorn": "0.34.0"
+    },
+    "table_package_metadata": {
+      "lineless-table-rec": "0.1.0",
+      "prettytable": "3.18.0",
+      "table-cls": "1.2.0",
+      "wired-table-rec": "1.2.0"
+    }
+  },
+  "public_content": "Selected functions, numeric derived metrics, source identifiers and hashes; no raw third-party drawings or full OCR service.",
+  "delivered_default_region_budget": 128,
+  "delivered_runtime_files": [
+    {
+      "path": "pipeline/engineering_geometry.py",
+      "sha256": "41f76d773deaa0eaf25d1d070fb665f5cb3ca16174b1640a629b7fb08fad8b81"
+    },
+    {
+      "path": "pipeline/engineering_review.py",
+      "sha256": "f0d3966682ae423e0a8f55c29cb91bbda28019c465e38684ce03f6a6d0d3ac81"
+    },
+    {
+      "path": "pipeline/engineering_tables.py",
+      "sha256": "0dd9898d795801acbd339ef835daf975b78afef527f1b15ee077aceff66ec5d2"
+    },
+    {
+      "path": "ocr_engine/quality_line_recognizer.py",
+      "sha256": "ccc38735390ff8f3406ac49043e9960dd01657dbf550410ae3ac25d19fdd488d"
+    },
+    {
+      "path": "settings.py",
+      "sha256": "be563939ca33cf239ff5ea170e356ec372831ea2d0f0391669fe9bb60a4343db"
+    }
+  ]
+}

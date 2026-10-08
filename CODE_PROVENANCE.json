@@ -54,5 +54,17 @@
     "adaptation": "Exact selected functions and constant; geometry matching, service and full evaluator omitted. New module-level scope note.",
     "example_sha256": "26c3c44f6b414791673a4c1081b14c7f8cfadec5ffa53b666fe93a51694ab0bc",
     "snapshot_note": "Local working copy snapshot; hash is provenance, not a public release of full service source."
+  },
+  {
+    "example": "examples/engineering_tolerances.py",
+    "source_module": "pipeline/engineering_geometry.py",
+    "source_sha256": "41f76d773deaa0eaf25d1d070fb665f5cb3ca16174b1640a629b7fb08fad8b81",
+    "selected_symbols": [
+      "NUMBER",
+      "annotation_groups"
+    ],
+    "adaptation": "Exact selected constant/function; replaced imports with standard-library imports. OCR, pixel processing, scheduler and service omitted.",
+    "example_sha256": "4b4e7b3f3d2637f88b1232fdc04de00b3e9ecdf1414ac7e7259a548f3a3d99ba",
+    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
   }
 ]

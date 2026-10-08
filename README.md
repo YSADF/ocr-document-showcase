@@ -6,6 +6,21 @@
 
 [真实图纸实测](cases/real-engineering-drawings.md) · [历史基线](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
 
+## 机械 OCR 第二轮：结构恢复与漏符号拦截
+
+同一 RTX 5090 重测旧版，再比较新版复核预算。沿用的 **20 张图纸 / 238 区域已转为开发／回归集**；本轮 140 次有效正式整页请求，另保留 20 次配置错误、未纳入预算对照的请求。原始报告不覆盖。
+
+| 固定区域结果 | 旧工程模式 | 新工程模式 |
+|---|---:|---:|
+| 机械完整转写（含单元格类型要求） | 74/118，62.71% | 83/118，70.34% |
+| D060322 目标进入有效单元格 | 0/10 | 10/10，文字完全匹配 9/10 |
+| 17 处直径失败的对应区域明确标疑 | 4/17 | 17/17 |
+| P&ID 完整转写 | 113/120 | 113/120 |
+
+提升主要来自零件表结构恢复。**直径原文仍为 0/17 正确，20 页仍待复核。** medium/small 对完整直径裁剪都未正确输出符号，而单独数字均为 17/17；后续需要工程字形训练，不能靠全局替换掩盖错误。两组上下公差均有关联，完整组合候选为 1/2 正确，候选不计最终识别正确。
+
+[第二轮报告、预算与耗时](cases/mechanical-ocr-round2.md) · [派生数据](artifacts/engineering-round2-20261008/README.md) · [精选公差代码](examples/engineering_tolerances.py)
+
 ## 真实图纸摸底：2026-10-08
 
 在 RTX 5090 上比较普通模式（PP-OCRv6 small）与工程模式（medium + 原分辨率分块 + 工程字符复核）：**20 张真实项目图纸、238 个预先冻结区域、40 次完整页面推理**。包括 10 张 LIGO 机械图、8 张 Hanford P&ID、2 张 Johannesburg Water P&ID。[来源与页码](artifacts/real-drawings-20261008/SOURCES.md)
@@ -76,9 +91,10 @@ python -m unittest discover -s tests -v
 python examples/literal_guard.py
 python tools/score_results.py
 python tools/score_real_drawings.py
+python tools/score_round2.py
 ```
 
-6 项独立示例测试通过。重新生成公开输入：
+9 项独立示例测试通过。重新生成公开输入：
 
 ```bash
 python -m pip install -r requirements-demo.txt
@@ -96,8 +112,8 @@ python tools/benchmark_service.py --base-url http://127.0.0.1:8089 --runs 20
 
 ## 下一步
 
-- 优先补检直径及正负号，组合上下公差，修复零件表结构回退；去重后按风险分配复核预算。
-- 使用本批失败调优后，将其转为回归集，另补独立人工校对的新图纸进行最终验收。
+- 直径完整裁剪仍稳定失败，按第二轮错误分类准备工程字形专项训练；继续核验上下公差候选，避免规则补字。
+- 现有 20 张图纸已转为开发／回归集；另建按工程家族隔离、独立人工校对的新图纸验收集。
 - 修复 Word 文本与背景重复叠加、表格显示异常，再用相同输入复测。
 - 扩展小字、旋转标注、断线和倾斜表格的独立标注集。
 - 增加 Word 与 LibreOffice 双渲染器检查，将页面交付质量纳入门禁。

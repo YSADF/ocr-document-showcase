@@ -1,0 +1,1822 @@
+[
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060312",
+    "repeat": 0,
+    "seconds": 8.815478392876685,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 35,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060314",
+    "repeat": 0,
+    "seconds": 8.626676582731307,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 35,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060315",
+    "repeat": 0,
+    "seconds": 5.808650589548051,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 24,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060318",
+    "repeat": 0,
+    "seconds": 6.81896152254194,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 29,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060321",
+    "repeat": 0,
+    "seconds": 7.302775947377086,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 30,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 4.832652713172138,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 16,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d080106",
+    "repeat": 0,
+    "seconds": 5.977352833375335,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 22,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d1100424",
+    "repeat": 0,
+    "seconds": 5.360316240228713,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 7.472065110690892,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 27,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "ligo-d1200144",
+    "repeat": 0,
+    "seconds": 5.3125557685270905,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-18",
+    "repeat": 0,
+    "seconds": 17.677923345007002,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 63,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-19",
+    "repeat": 0,
+    "seconds": 34.041274280287325,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 121,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-20",
+    "repeat": 0,
+    "seconds": 28.660290580242872,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 104,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-21",
+    "repeat": 0,
+    "seconds": 21.66212914418429,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 79,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-22",
+    "repeat": 0,
+    "seconds": 15.554014073684812,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 56,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-23",
+    "repeat": 0,
+    "seconds": 24.99097512383014,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 90,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-24",
+    "repeat": 0,
+    "seconds": 13.42667043954134,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "hanford-26",
+    "repeat": 0,
+    "seconds": 25.02098859846592,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 90,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "johannesburg-10",
+    "repeat": 0,
+    "seconds": 6.358870576135814,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 23,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "general",
+    "sample_id": "johannesburg-11",
+    "repeat": 0,
+    "seconds": 5.405132266692817,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 20,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060312",
+    "repeat": 0,
+    "seconds": 17.23877654504031,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 62,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060314",
+    "repeat": 0,
+    "seconds": 17.58358676265925,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 64,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060315",
+    "repeat": 0,
+    "seconds": 12.486349164508283,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 45,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060318",
+    "repeat": 0,
+    "seconds": 13.026652606204152,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 47,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060321",
+    "repeat": 0,
+    "seconds": 13.466452926397324,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 12.203985514119267,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 44,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d080106",
+    "repeat": 0,
+    "seconds": 16.67422707285732,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 59,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d1100424",
+    "repeat": 0,
+    "seconds": 11.902222380973399,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 43,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 15.005524677224457,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 54,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "ligo-d1200144",
+    "repeat": 0,
+    "seconds": 14.49535614438355,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 52,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-18",
+    "repeat": 0,
+    "seconds": 34.59833675995469,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 126,
+      "max_device_used_mib": 5728.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-19",
+    "repeat": 0,
+    "seconds": 46.07284554373473,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 168,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-20",
+    "repeat": 0,
+    "seconds": 40.15579515136778,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 146,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-21",
+    "repeat": 0,
+    "seconds": 28.08989787660539,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 103,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-22",
+    "repeat": 0,
+    "seconds": 34.21403126604855,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 124,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-23",
+    "repeat": 0,
+    "seconds": 36.081376606598496,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 132,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-24",
+    "repeat": 0,
+    "seconds": 23.85587135795504,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 86,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "hanford-26",
+    "repeat": 0,
+    "seconds": 34.00196775980294,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 125,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "johannesburg-10",
+    "repeat": 0,
+    "seconds": 14.644027295522392,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 53,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-same-host-baseline",
+    "scene": "engineering",
+    "sample_id": "johannesburg-11",
+    "repeat": 0,
+    "seconds": 10.734760044142604,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 39,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 4.895858768373728,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 83,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 1,
+    "seconds": 4.612954704090953,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 83,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 2,
+    "seconds": 4.588995855301619,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 83,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 3,
+    "seconds": 4.6416918421164155,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 83,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 4,
+    "seconds": 4.658569099381566,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 83,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 6.948551915585995,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 127,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 1,
+    "seconds": 7.125694112852216,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 127,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 2,
+    "seconds": 6.980166201479733,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 127,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 3,
+    "seconds": 6.931924446485937,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 127,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 4,
+    "seconds": 6.897465729154646,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 127,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 11.899614348076284,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 218,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 1,
+    "seconds": 11.684557295404375,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 218,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 2,
+    "seconds": 12.058096593245864,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 218,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 3,
+    "seconds": 11.829170742072165,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 218,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 4,
+    "seconds": 11.745652320794761,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 218,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 13.925805461592972,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 255,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 1,
+    "seconds": 13.794438459910452,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 255,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 2,
+    "seconds": 13.898968186229467,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 255,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 3,
+    "seconds": 13.524997644126415,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 255,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-baseline-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 4,
+    "seconds": 14.02793601155281,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 255,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060312",
+    "repeat": 0,
+    "seconds": 7.495863138698041,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 27,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060314",
+    "repeat": 0,
+    "seconds": 7.9684409741312265,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 28,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060315",
+    "repeat": 0,
+    "seconds": 5.969249706715345,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 21,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060318",
+    "repeat": 0,
+    "seconds": 7.475406768731773,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 26,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060321",
+    "repeat": 0,
+    "seconds": 7.049788419157267,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 25,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 4.7638079561293125,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 17,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d080106",
+    "repeat": 0,
+    "seconds": 5.446170355193317,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d1100424",
+    "repeat": 0,
+    "seconds": 5.386153629980981,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 20,
+      "max_device_used_mib": 3698.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 7.85468624252826,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 29,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "ligo-d1200144",
+    "repeat": 0,
+    "seconds": 5.22804491315037,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 18,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-18",
+    "repeat": 0,
+    "seconds": 17.627664679661393,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 64,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-19",
+    "repeat": 0,
+    "seconds": 32.591684551909566,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 118,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-20",
+    "repeat": 0,
+    "seconds": 29.226372041739523,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 106,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-21",
+    "repeat": 0,
+    "seconds": 21.978685844689608,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 80,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-22",
+    "repeat": 0,
+    "seconds": 15.598540030419827,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 58,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-23",
+    "repeat": 0,
+    "seconds": 25.12336365133524,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 93,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-24",
+    "repeat": 0,
+    "seconds": 13.630026459693909,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 50,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "hanford-26",
+    "repeat": 0,
+    "seconds": 24.086207048036158,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 88,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "johannesburg-10",
+    "repeat": 0,
+    "seconds": 6.288080115802586,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 24,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "general",
+    "sample_id": "johannesburg-11",
+    "repeat": 0,
+    "seconds": 5.356192879378796,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3700.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060312",
+    "repeat": 0,
+    "seconds": 15.923899287357926,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 59,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060314",
+    "repeat": 0,
+    "seconds": 16.334351510740817,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 60,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060315",
+    "repeat": 0,
+    "seconds": 11.95714471489191,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 43,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060318",
+    "repeat": 0,
+    "seconds": 13.189801912754774,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060321",
+    "repeat": 0,
+    "seconds": 13.734752031043172,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 50,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 12.808600873686373,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 48,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d080106",
+    "repeat": 0,
+    "seconds": 15.859201808460057,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 58,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d1100424",
+    "repeat": 0,
+    "seconds": 13.813460037112236,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 17.94969030469656,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 65,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "ligo-d1200144",
+    "repeat": 0,
+    "seconds": 17.628575021401048,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 64,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-18",
+    "repeat": 0,
+    "seconds": 39.255892070010304,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 143,
+      "max_device_used_mib": 5728.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-19",
+    "repeat": 0,
+    "seconds": 43.77171695139259,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 160,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-20",
+    "repeat": 0,
+    "seconds": 41.390998903661966,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 151,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-21",
+    "repeat": 0,
+    "seconds": 28.293312053196132,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 103,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-22",
+    "repeat": 0,
+    "seconds": 32.51918894331902,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 119,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-23",
+    "repeat": 0,
+    "seconds": 34.033131376840174,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 124,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-24",
+    "repeat": 0,
+    "seconds": 22.74566401541233,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 82,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "hanford-26",
+    "repeat": 0,
+    "seconds": 38.62628090381622,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 142,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "johannesburg-10",
+    "repeat": 0,
+    "seconds": 15.3255848409608,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 55,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-64",
+    "scene": "engineering",
+    "sample_id": "johannesburg-11",
+    "repeat": 0,
+    "seconds": 10.784631100483239,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 39,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 4.767663727514446,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 85,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 1,
+    "seconds": 4.772107660770416,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 85,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 2,
+    "seconds": 4.737209093756974,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 85,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 3,
+    "seconds": 4.753076374530792,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 85,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "repeat": 4,
+    "seconds": 4.848017214797437,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 85,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 7.139445818960667,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 130,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 1,
+    "seconds": 7.306559246964753,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 130,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 2,
+    "seconds": 7.277532912790775,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 130,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 3,
+    "seconds": 7.210659254342318,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 130,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "repeat": 4,
+    "seconds": 7.1702875681221485,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 130,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 13.4149433625862,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 244,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 1,
+    "seconds": 13.788566360250115,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 244,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 2,
+    "seconds": 13.5196703793481,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 244,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 3,
+    "seconds": 13.165690897032619,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 244,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 4,
+    "seconds": 13.43876401335001,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 244,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 17.043752291239798,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 311,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 1,
+    "seconds": 16.57002094667405,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 311,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 2,
+    "seconds": 16.89801826607436,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 311,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 3,
+    "seconds": 16.8302759565413,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 311,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-repeated",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 4,
+    "seconds": 16.900453941896558,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 311,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060312",
+    "repeat": 0,
+    "seconds": 18.830093747004867,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 70,
+      "max_device_used_mib": 5016.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060314",
+    "repeat": 0,
+    "seconds": 18.963615252636373,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 70,
+      "max_device_used_mib": 5016.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060315",
+    "repeat": 0,
+    "seconds": 12.612586474977434,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 44,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060318",
+    "repeat": 0,
+    "seconds": 16.24014962092042,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 61,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060321",
+    "repeat": 0,
+    "seconds": 15.046262601390481,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 56,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "repeat": 0,
+    "seconds": 13.073689897544682,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 48,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d080106",
+    "repeat": 0,
+    "seconds": 18.748121227137744,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 69,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d1100424",
+    "repeat": 0,
+    "seconds": 13.749616879038513,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 51,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "repeat": 0,
+    "seconds": 19.217717530205846,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 70,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "ligo-d1200144",
+    "repeat": 0,
+    "seconds": 17.566695775836706,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 64,
+      "max_device_used_mib": 5018.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-18",
+    "repeat": 0,
+    "seconds": 41.036953878588974,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 152,
+      "max_device_used_mib": 5728.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-19",
+    "repeat": 0,
+    "seconds": 43.31301722023636,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 157,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-20",
+    "repeat": 0,
+    "seconds": 41.83099960163236,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 151,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-21",
+    "repeat": 0,
+    "seconds": 31.289965731091797,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 114,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-22",
+    "repeat": 0,
+    "seconds": 34.72090010717511,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 126,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-23",
+    "repeat": 0,
+    "seconds": 36.18000436667353,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 133,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-24",
+    "repeat": 0,
+    "seconds": 24.355308374390006,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 90,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "hanford-26",
+    "repeat": 0,
+    "seconds": 41.15614078566432,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 151,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "johannesburg-10",
+    "repeat": 0,
+    "seconds": 15.281415287405252,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 55,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  },
+  {
+    "stage": "round2-128",
+    "scene": "engineering",
+    "sample_id": "johannesburg-11",
+    "repeat": 0,
+    "seconds": 10.595011590979993,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 38,
+      "max_device_used_mib": 6450.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    }
+  }
+]

@@ -33,3 +33,9 @@ python tools/score_real_drawings.py
 ```
 
 该脚本复算 20 张真实图纸的公开派生评分，不能仅凭评分验证未公开的图像、标注和匹配是否正确。详见[测试报告](../cases/real-engineering-drawings.md)。
+
+## 公差关联片段
+
+[engineering_tolerances.py](engineering_tolerances.py) 选取实际工程模块的数字模式与组合函数。输入是带坐标和方向的已观测文字，输出保留片段和缺失符号的候选；不加载模型、不自动补直径或负号，也不代表通过验收。
+
+`python -m unittest discover -s tests -v` 包含缺负号、跨单元格和旋转邻居反例。`python tools/score_round2.py` 复算第二轮派生计数。
