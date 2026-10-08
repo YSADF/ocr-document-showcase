@@ -66,5 +66,31 @@
     "adaptation": "Exact selected constant/function; replaced imports with standard-library imports. OCR, pixel processing, scheduler and service omitted.",
     "example_sha256": "4b4e7b3f3d2637f88b1232fdc04de00b3e9ecdf1414ac7e7259a548f3a3d99ba",
     "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+  },
+  {
+    "example": "examples/vlm_evidence.py",
+    "source_module": "pipeline/engineering_candidates.py",
+    "source_sha256": "ed6fa3f91dfc1c6ba4cf3476efc99b629cee5863c6eb5662fbeeb95eb37dd7ca",
+    "selected_symbols": [
+      "compose_reviewed_annotations",
+      "attach_vlm_evidence"
+    ],
+    "adaptation": "Exact selected functions; imports restricted to standard library and the existing selected geometry constant.",
+    "example_sha256": "2fd9b346136382a943a7b1d513673503f50e89d3333c3048dd37490262ba16d1",
+    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+  },
+  {
+    "example": "examples/vlm_geometry.py",
+    "source_module": "evaluation/engineering_vlm.py",
+    "source_sha256": "6ea7ae199097003e76e5083a84bef6f57e63cd10564dc45390cdc1a5d09e06ee",
+    "selected_symbols": [
+      "box_valid",
+      "unwrap_json",
+      "table_geometry",
+      "qwen_page"
+    ],
+    "adaptation": "Exact selected functions; imports restricted to standard library and the existing selected geometry constant.",
+    "example_sha256": "0e810c8339c81a4e7b31f31a6c86a0d7d4c610f28db32b2a763a2b0905d5f285",
+    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
   }
 ]

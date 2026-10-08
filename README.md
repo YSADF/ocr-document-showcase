@@ -6,6 +6,20 @@
 
 [真实图纸实测](cases/real-engineering-drawings.md) · [历史基线](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
 
+## 第三轮：VLM 局部复核与整页对照
+
+在新主机重新冻结同机 OCR 基线，分别测试 PaddleOCR-VL-1.6 与 Qwen3-VL-8B-Instruct。每个模型 **397 个唯一任务**：117 个诊断裁剪、238 个固定区域、12 个构造反例、20 张整页、10 次指定页面重复。全部沿用开发／回归集，尚无独立人工验收。
+
+| 固定裁剪的独立转写；不计自动定位能力 | PaddleOCR-VL-1.6 | Qwen3-VL-8B-Instruct |
+|---|---:|---:|
+| 机械区域 | 79/118 | 84/118 |
+| P&ID 区域 | 117/120 | 119/120 |
+| 17 处直径完整诊断裁剪 | 0/17 | 4/17 |
+
+整页继续要求位置、文字和单元格类型同时匹配，结果与局部成绩分开报告。生产默认保留 PP-OCR 工程流程，原文仍是机械 **83/118**、P&ID **113/120**；VLM 只保留为试验候选证据，不自动纠字或放行。
+
+[第三轮结论与失败记录](cases/engineering-vlm-round3.md) · [派生评分与离线复算](artifacts/engineering-vlm-round3-20261008/README.md) · [候选保留代码](examples/vlm_evidence.py) · [几何校验代码](examples/vlm_geometry.py)
+
 ## 机械 OCR 第二轮：结构恢复与漏符号拦截
 
 同一 RTX 5090 重测旧版，再比较新版复核预算。沿用的 **20 张图纸 / 238 区域已转为开发／回归集**；本轮 140 次有效正式整页请求，另保留 20 次配置错误、未纳入预算对照的请求。原始报告不覆盖。
@@ -92,9 +106,11 @@ python examples/literal_guard.py
 python tools/score_results.py
 python tools/score_real_drawings.py
 python tools/score_round2.py
+python tools/score_round3.py
+python tools/score_round3.py
 ```
 
-9 项独立示例测试通过。重新生成公开输入：
+15 项独立示例测试通过。重新生成公开输入：
 
 ```bash
 python -m pip install -r requirements-demo.txt
@@ -112,7 +128,7 @@ python tools/benchmark_service.py --base-url http://127.0.0.1:8089 --runs 20
 
 ## 下一步
 
-- 直径完整裁剪仍稳定失败，按第二轮错误分类准备工程字形专项训练；继续核验上下公差候选，避免规则补字。
+- 结合第三轮 VLM 的增量与新错误分类准备工程字形材料；补足许可和人工标签后再做专项训练，继续核验上下公差及定位。
 - 现有 20 张图纸已转为开发／回归集；另建按工程家族隔离、独立人工校对的新图纸验收集。
 - 修复 Word 文本与背景重复叠加、表格显示异常，再用相同输入复测。
 - 扩展小字、旋转标注、断线和倾斜表格的独立标注集。

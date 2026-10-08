@@ -1,0 +1,323 @@
+{
+  "models": {
+    "paddle": {
+      "engine": "paddle",
+      "model_dir": "PaddleOCR-VL-1.6",
+      "recognizer_fingerprint": "067337cd2f10bb4e7d99d813fa43ae023ac8c2311fd4d46e1b93b68bcbe3d2f3",
+      "weight_files": [
+        {
+          "path": "model.safetensors",
+          "bytes": 1917255968,
+          "sha256": "85a479d506a11e724e7285d395c551be69f41dbc16b6342d3cacfb189aed71db"
+        }
+      ],
+      "configuration_files": [
+        {
+          "path": "added_tokens.json",
+          "sha256": "f59f889088e0fe21c523e7cf121bb6dca3b0bb148cb7159fbb4572c74dfc5644"
+        },
+        {
+          "path": "aux-download-provenance.json",
+          "sha256": "07c463140035822c0bd828b1dec301001a7b7dbfb6a951ad366b70bc9a3f8df9"
+        },
+        {
+          "path": "chat_template.jinja",
+          "sha256": "2f27812dab7f333e471884e0c803d807f11953d5453140dfb1aaba234f872bc8"
+        },
+        {
+          "path": "config.json",
+          "sha256": "ce7f4565f8b1db78532ad5d1b9ebe55c2139d49bd4cb04778b580a08a598f171"
+        },
+        {
+          "path": "generation_config.json",
+          "sha256": "a6701d78ab3b4d972307cdec3b69d4c13f46e0d5140514f50ab7d84259324b94"
+        },
+        {
+          "path": "inference.yml",
+          "sha256": "1587aece2d6442366efce34161d5f7d5f67f09ebfbf043168e5fade892c2780e"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "sha256": "111872ab1e8bb7fd040ac5087bfced7ab8f011f02139b088cba294964c3b1d0e"
+        },
+        {
+          "path": "processor_config.json",
+          "sha256": "1568858960a9760c54431dae693a6152e601ff55cdf6d2eab97a4a99958faea0"
+        },
+        {
+          "path": "special_tokens_map.json",
+          "sha256": "d3a125c03103deb2acaf7730791bdbbf196f620e5a2213b664511ff9b4b25bab"
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "c8a215a59183d0d0781adc33bacd3ce6162716f7fd568fb30234a74d69803a7d"
+        },
+        {
+          "path": "tokenizer.model",
+          "sha256": "34ef7db83df785924fb83d7b887b6e822a031c56e15cff40aaf9b982988180df"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "sha256": "1f979337347cc0cb72a6282d8a23ed183539aa81a87a906f022aee2bab83c7c5"
+        }
+      ],
+      "configuration_fingerprint": "e067a7ec28c5ce4c5099dc3cb95a0ba2ba1b9517603c813505d3b4b08ec5ec7e",
+      "versions": {
+        "paddlepaddle-gpu": "3.3.1",
+        "paddleocr": "3.7.0",
+        "paddlex": "3.7.2",
+        "safetensors": "0.8.0"
+      },
+      "precision": "native_configuration",
+      "native_precision": "bfloat16",
+      "backend": "native",
+      "architecture": "PaddleOCRVL",
+      "attention": null,
+      "cuda_launch_blocking": "1",
+      "last_worker_load_seconds": 11.069613793981262,
+      "diagnostic_stack_timer": {
+        "seconds": 60,
+        "evidence": "archived main-trial worker source",
+        "runner_sha256": "298d07d794d47fda15dc4cefc884aebeea43b90293d8e4f802d0e1c5d46cef72"
+      },
+      "worker_load_history": null,
+      "layout_model": {
+        "weight_files": [
+          {
+            "path": "inference.pdiparams",
+            "bytes": 130806572,
+            "sha256": "70bd316b0582769ec968829fd1feb1a6a58b7c941b938327e551b6b12b45c137"
+          }
+        ],
+        "recognizer_fingerprint": "f74829030fe01f47d928a0d018d6fe5e083af9a7f761ad629463a80b83a4ab58",
+        "configuration_fingerprint": "b8acb32ddc0a4c4242534ed4dee4dd61df09084c8f663c55659fb0deb9af5d4f"
+      },
+      "reindex": {
+        "inference_executed": false,
+        "reason": "Identical r09 complete crop has diameter and tolerance uses; score one inference with two category memberships.",
+        "source_queue_sha256": "04d09b2ca34126081fb42bff13f0c03f0edbb4d022b08276e49a76bd50bc134d",
+        "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+        "image_tasks_unchanged": true,
+        "old_task_entries": 398,
+        "unique_tasks": 397
+      }
+    },
+    "qwen": {
+      "engine": "qwen",
+      "model_dir": "Qwen3-VL-8B-Instruct",
+      "recognizer_fingerprint": "2f67a5cb52f6d0da30bff5502a2073ef522e5285434189922f5bf98e205abc60",
+      "weight_files": [
+        {
+          "path": "model-00001-of-00004.safetensors",
+          "bytes": 4902275944,
+          "sha256": "d5d0aef0eb170fc7453a296c43c0849a56f510555d3588e4fd662bb35490aefa"
+        },
+        {
+          "path": "model-00002-of-00004.safetensors",
+          "bytes": 4915962496,
+          "sha256": "8be88fb5501e4d5719a6d4cc212e6a13480330e74f3e8c77daa1a68f199106b5"
+        },
+        {
+          "path": "model-00003-of-00004.safetensors",
+          "bytes": 4999831048,
+          "sha256": "83de00eafe6e0d57ccd009dbcf71c9974d74df2f016c27afb7e95aafd16b2192"
+        },
+        {
+          "path": "model-00004-of-00004.safetensors",
+          "bytes": 2716270024,
+          "sha256": "0a88b98e9f96270973f567e6a2c103ede6ccdf915ca3075e21c755604d0377a5"
+        }
+      ],
+      "configuration_files": [
+        {
+          "path": "chat_template.json",
+          "sha256": "5c72a170d2a4a1a3bc5adad2e689ae28138a9700e5b8c96c0266331e86c0acce"
+        },
+        {
+          "path": "config.json",
+          "sha256": "5cd452860dc1e9c29dd71cc3cef7f39b338b7a40793f7a260655c2d3568f3661"
+        },
+        {
+          "path": "configuration.json",
+          "sha256": "f888421726665e8a84b738eed42a64875aed79de8be7daade851ac8bf4c0cef9"
+        },
+        {
+          "path": "generation_config.json",
+          "sha256": "8469742d1fce0de951c8909b26a2c0c0d8490837ce476efb114da9e0cefc4d44"
+        },
+        {
+          "path": "model.safetensors.index.json",
+          "sha256": "520b2e05079402e9468a8701d03d1154d14b2599593afb6effa7fb60c1bff070"
+        },
+        {
+          "path": "preprocessor_config.json",
+          "sha256": "27225450ac9c6529872ee1924fcb0962ff5634834f817040f444118116f4e516"
+        },
+        {
+          "path": "tokenizer.json",
+          "sha256": "a5d85b6dcc535e6b93115a9ef287e6132fdbf30270da6218194ba742261173c7"
+        },
+        {
+          "path": "tokenizer_config.json",
+          "sha256": "c2da771801886ad9ae98181793ffd3dfb7f1af30f6f7c6a4e15d7dbba52e2399"
+        },
+        {
+          "path": "video_preprocessor_config.json",
+          "sha256": "7768af27c1fafa9cc9011c1dc20067e03f8915e03b63504550e11d5066986d13"
+        },
+        {
+          "path": "vocab.json",
+          "sha256": "ca10d7e9fb3ed18575dd1e277a2579c16d108e32f27439684afa0e10b1440910"
+        }
+      ],
+      "configuration_fingerprint": "36af0955f07b3560a866a32da235b133a657b2aa59d4cd6cd83236644fac58c9",
+      "versions": {
+        "torch": "2.8.0",
+        "transformers": "4.57.6",
+        "safetensors": "0.8.0"
+      },
+      "precision": "torch.bfloat16",
+      "native_precision": null,
+      "backend": null,
+      "architecture": "Qwen3VLForConditionalGeneration",
+      "attention": "sdpa",
+      "cuda_launch_blocking": "0",
+      "last_worker_load_seconds": 27.118150745984167,
+      "diagnostic_stack_timer": {
+        "seconds": 0,
+        "evidence": "frozen run configuration"
+      },
+      "worker_load_history": [
+        {
+          "event": "ready",
+          "load_seconds": 27.118150745984167,
+          "gpu_memory": {
+            "status": "sampled",
+            "samples": 103,
+            "max_device_used_mib": 17024.0,
+            "scope": "benchmark-host whole device, including other processes; sampled peak"
+          }
+        }
+      ]
+    }
+  },
+  "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+  "visible_device": "NVIDIA GeForce RTX 4080 SUPER, 595.71.05, 32760 MiB, 8.9",
+  "local_tests": {
+    "passed": 205,
+    "skipped": 15,
+    "failures": 0,
+    "errors": 0,
+    "skip_reason": "Optional wired_table_rec is unavailable in the local environment"
+  },
+  "file_sha256": {
+    "dataset-v2/queue.json": "02cc160c3b846425c42b9faceafcc0776accf746bf8e33c229ff293b4e49b3c7",
+    "dataset-v2/references.json": "510eb2e7a2efa32ecc6a0399e12738176ea18c95297b9437ea84e1801356474c",
+    "gpu-run-code.tar.gz": "03dd715d7fbdbbf5c373952a7aa282bfce6d3f4a0f08727570a31e5eebe0b9d0",
+    "final-code.tar.gz": "0781648a46a80e3ee3020c388361212afdbebac5627eede9ef9f47581b881758"
+  },
+  "evidence_archives": {
+    "paddle-final-evidence.tar.gz": "3b8b24021f44625c003aaaa3370f72f130ace3f4a3bed2105b6bd0632051db08",
+    "paddle-pages-evidence.tar.gz": "940fe782d46db18d679cbf4462c15f9dea1dca3fcf11065b679a476ef16bd9db",
+    "ppocr-evidence.tar.gz": "c72834a24e3283f705ad518de837ed81bb730bc3a75aa88db757e80ef9a2ad12",
+    "qwen-final-evidence.tar.gz": "ce9e39819a86a1e7e4af37c80df0c901147862f7c183555e255263cfdc29fa0a",
+    "qwen-local-evidence.tar.gz": "0136da150eb21d9bf55665b6861ca9baa667ca998af019e93e3d223308af8303",
+    "qwen-main-evidence.tar.gz": "b29df1225378cf0cddd11554bf8e2d7965659c0827068a137bd7cf36b40929bb",
+    "qwen-pages-evidence.tar.gz": "afb5476807984d8a25e659acc658dc0f0e1b061dd14c13539dce75617894f86d"
+  },
+  "regression_validation": {
+    "baseline": {
+      "diameter_target_count": 17,
+      "region_review_present": 17,
+      "explicitly_flagged": 17
+    },
+    "tolerance": {
+      "diameter_target_count": 17,
+      "region_review_present": 17,
+      "explicitly_flagged": 17
+    },
+    "paired_original_transcription": {
+      "identical_region_scores": 476,
+      "scenes": 2
+    },
+    "warmup_regressions": {
+      "baseline_equals_tolerance": true,
+      "groups": {
+        "engineering/dexpi-c03": {
+          "exact": 9,
+          "n": 10
+        },
+        "engineering/engineering-table": {
+          "exact": 20,
+          "n": 21
+        },
+        "general/dexpi-c03": {
+          "exact": 10,
+          "n": 10
+        },
+        "general/engineering-table": {
+          "exact": 19,
+          "n": 21
+        }
+      }
+    }
+  },
+  "frozen_vlm_validation": {
+    "complete": true,
+    "unique_tasks_per_main_model": 397,
+    "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+    "raw_statuses": {
+      "paddle-scored": {
+        "ok": 382,
+        "output_truncated": 8,
+        "worker_exited": 5,
+        "timeout": 2
+      },
+      "qwen": {
+        "ok": 381,
+        "output_truncated": 16
+      },
+      "paddle-no-stack-probe": {
+        "output_truncated": 3
+      }
+    },
+    "all_image_hashes_verified": true,
+    "all_task_and_weight_identities_verified": true,
+    "paddle_reindex_raw_bytes_unchanged": true,
+    "archived_gpu_source_matches_sent_bundle": true
+  },
+  "attachment_validation": {
+    "pages": 20,
+    "source_payloads_unchanged": 20,
+    "attached_candidates": 448,
+    "unmatched_candidates": 262,
+    "engines": [
+      "paddle",
+      "qwen"
+    ]
+  },
+  "training_export": {
+    "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+    "counts": {
+      "train": 0,
+      "dev": 0
+    },
+    "blocked_reasons": {
+      "drawing_family_unverified": 367,
+      "training_permission_unverified": 367,
+      "two_human_reviews_required": 367,
+      "annotation_unresolved": 367,
+      "diagnostic_or_synthetic_sample": 129
+    },
+    "labels_from_vlm_allowed": false
+  },
+  "content": "Selected functions and numeric scores; excludes real drawing pixels, full transcriptions, model weights and business service.",
+  "measurement_limits": [
+    "GPU memory is sampled whole-device usage, not allocator peak.",
+    "Crop coordinates are preselected diagnostic/reference regions, not automatic localization.",
+    "Paddle timed stack diagnostic was enabled in the main trial; process exits have unresolved causality.",
+    "Model loading and successful-page latency are separate; failures and their durations remain listed.",
+    "The initial Paddle harness retained only the most recent worker-load record; a complete historical load sum is unavailable.",
+    "Timed-out or exited workers can lack processor-grid observations; null values are unavailable measurements, not inferred sizes."
+  ]
+}

@@ -1,0 +1,2082 @@
+{
+  "scope": "20 development/regression pages; 238 selected regions; no independent human acceptance",
+  "release_gate": "experimental",
+  "independent_acceptance_pages": 0,
+  "queue_tasks_per_model": 397,
+  "diagnostic_uses": 118,
+  "unique_diagnostic_inferences": 117,
+  "formal_vlm_attempts": 794,
+  "same_host_ppocr_requests": 100,
+  "ppocr_warmup_requests": 8,
+  "models": {
+    "paddle": {
+      "scope": "development set; reference crops are recognition diagnostics, not automatic end-to-end accuracy",
+      "human_verified": false,
+      "review_is_recognition_credit": false,
+      "expected_tasks": 397,
+      "statuses": {
+        "ok": 382,
+        "output_truncated": 8,
+        "worker_exited": 5,
+        "timeout": 2
+      },
+      "local": {
+        "diagnostics/diameter/complete_reference": {
+          "n": 17,
+          "exact": 0,
+          "cer": 0.4627450980392157,
+          "regions_with_inserted_critical": 6,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.5952380952380952,
+          "failures": 0
+        },
+        "diagnostics/diameter/detected": {
+          "n": 17,
+          "exact": 0,
+          "cer": 0.5529411764705883,
+          "regions_with_inserted_critical": 8,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.3571428571428571,
+          "failures": 0
+        },
+        "diagnostics/diameter/digits_only": {
+          "n": 17,
+          "exact": 17,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 12,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/diameter/expanded_detection": {
+          "n": 17,
+          "exact": 0,
+          "cer": 0.9215686274509803,
+          "regions_with_inserted_critical": 10,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.3571428571428571,
+          "failures": 0
+        },
+        "diagnostics/diameter/symbol_and_digits": {
+          "n": 17,
+          "exact": 0,
+          "cer": 1.5555555555555556,
+          "regions_with_inserted_critical": 1,
+          "critical_characters": 29,
+          "critical_character_accuracy": 0.4137931034482759,
+          "failures": 0
+        },
+        "diagnostics/diameter/symbol_only": {
+          "n": 17,
+          "exact": 0,
+          "cer": 7.588235294117647,
+          "regions_with_inserted_critical": 5,
+          "critical_characters": 17,
+          "critical_character_accuracy": 0.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/complete_reference": {
+          "n": 2,
+          "exact": 0,
+          "cer": 0.5,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 11,
+          "critical_character_accuracy": 0.9090909090909091,
+          "failures": 0
+        },
+        "diagnostics/tolerance/lower_digits": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/lower_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 4,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/minus_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/nominal_only": {
+          "n": 2,
+          "exact": 1,
+          "cer": 0.1,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 3,
+          "critical_character_accuracy": 0.6666666666666667,
+          "failures": 0
+        },
+        "diagnostics/tolerance/plus_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/upper_digits": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/upper_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 4,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "regions/pid": {
+          "n": 120,
+          "exact": 117,
+          "cer": 0.0017804154302670622,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 254,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "regions/mechanical": {
+          "n": 118,
+          "exact": 79,
+          "cer": 0.26334519572953735,
+          "regions_with_inserted_critical": 10,
+          "critical_characters": 136,
+          "critical_character_accuracy": 0.8161764705882353,
+          "failures": 0
+        },
+        "controls/synthetic": {
+          "n": 12,
+          "exact": 5,
+          "cer": 0.20588235294117646,
+          "regions_with_inserted_critical": 2,
+          "critical_characters": 15,
+          "critical_character_accuracy": 0.7333333333333334,
+          "failures": 0
+        }
+      },
+      "pages": {
+        "mechanical": {
+          "regions": 118,
+          "cer": 1.0240213523131672,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.0,
+          "raw_critical_character_accuracy": 0.0,
+          "miss_rate": 0.9915254237288136,
+          "review_rate": 0.00847457627118644,
+          "reference_characters": 1124,
+          "critical_characters": 136,
+          "exact": 0
+        },
+        "pid": {
+          "regions": 120,
+          "cer": 1.0183976261127596,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.0,
+          "raw_critical_character_accuracy": 0.023622047244094446,
+          "miss_rate": 0.975,
+          "review_rate": 0.025,
+          "reference_characters": 1685,
+          "critical_characters": 254,
+          "exact": 0
+        }
+      },
+      "latency": {
+        "diagnostics": {
+          "successful_runs": 117,
+          "p50_seconds": 0.2529584229923785,
+          "p95_seconds": 0.754034407902509,
+          "attempts": 117,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 117,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 8238.0
+        },
+        "regions": {
+          "successful_runs": 238,
+          "p50_seconds": 0.35981212597107515,
+          "p95_seconds": 0.6605272369924933,
+          "attempts": 238,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 238,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 8238.0
+        },
+        "controls": {
+          "successful_runs": 12,
+          "p50_seconds": 0.32655206049093977,
+          "p95_seconds": 0.5220471769571304,
+          "attempts": 12,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 12,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 8238.0
+        },
+        "pages/pid": {
+          "successful_runs": 4,
+          "p50_seconds": 40.58322388550732,
+          "p95_seconds": 259.4050247949781,
+          "attempts": 10,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 4,
+          "failed_attempt_seconds": [
+            240.65457674697973,
+            238.35341909399722,
+            236.69548336497974,
+            238.4998608919559,
+            234.96555936790537,
+            60.284480683971196
+          ],
+          "sampled_device_peak_mib": 14566.0
+        },
+        "pages/mechanical": {
+          "successful_runs": 6,
+          "p50_seconds": 27.881415939540602,
+          "p95_seconds": 34.648327703005634,
+          "attempts": 10,
+          "empty_outputs": 2,
+          "nonempty_validated_runs": 4,
+          "failed_attempt_seconds": [
+            60.37304874008987,
+            300.3963507160079,
+            228.25491285300814,
+            300.3651249828981
+          ],
+          "sampled_device_peak_mib": 13662.0
+        },
+        "repeated/ligo-d060322": {
+          "successful_runs": 0,
+          "p50_seconds": null,
+          "p95_seconds": null,
+          "attempts": 5,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 0,
+          "failed_attempt_seconds": [
+            233.49168983008713,
+            60.41649431199767,
+            60.4157559130108,
+            238.92404918698594,
+            60.32419429603033
+          ],
+          "sampled_device_peak_mib": 13662.0
+        },
+        "repeated/ligo-d1102006": {
+          "successful_runs": 5,
+          "p50_seconds": 33.94623823999427,
+          "p95_seconds": 37.38921633095015,
+          "attempts": 5,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 5,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 12598.0
+        }
+      },
+      "tolerance_combinations": [
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r01",
+          "candidate_text": ".048 +.002 -.003",
+          "status": "candidate_only",
+          "part_task_ids": [
+            "diagnostic-ligo-d1102006-r01-nominal_only",
+            "diagnostic-ligo-d1102006-r01-upper_only",
+            "diagnostic-ligo-d1102006-r01-lower_only"
+          ],
+          "exact": true,
+          "needs_review": true
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r09",
+          "candidate_text": "01.046 +.003 -.002",
+          "status": "candidate_only",
+          "part_task_ids": [
+            "diagnostic-ligo-d1102006-r09-nominal_only",
+            "diagnostic-ligo-d1102006-r09-upper_only",
+            "diagnostic-ligo-d1102006-r09-lower_only"
+          ],
+          "exact": false,
+          "needs_review": true
+        }
+      ],
+      "page_delivery": {
+        "attempts": 20,
+        "needs_review": 20,
+        "failed": 10,
+        "empty_normal_returns": 2,
+        "pages_with_positioned_text": 8
+      },
+      "cell_targets": {
+        "ligo-d060322": {
+          "n": 10,
+          "found_in_valid_cells": 0,
+          "exact": 0
+        }
+      },
+      "configuration": {
+        "engine": "paddle",
+        "page_pixels": 4194304,
+        "local_pixels": 1048576,
+        "page_tokens": 8192,
+        "local_tokens": 512,
+        "timeout": 300,
+        "load_timeout": 600,
+        "cuda_launch_blocking": true,
+        "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+        "local_prompt_sha256": "3db0bde2fe6c58d68a4f73bfa13bfbfd578e102207188d3c74aabccab807cf2c",
+        "page_prompt_sha256": "836f2c653969fecdf55835b875846585753f0953dcab984e0c8c141373b6d9c2"
+      },
+      "failures": [
+        {
+          "task_id": "page-hanford-19",
+          "status": "output_truncated",
+          "seconds": 240.65457674697973,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-hanford-21",
+          "status": "output_truncated",
+          "seconds": 238.35341909399722,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-hanford-22",
+          "status": "output_truncated",
+          "seconds": 236.69548336497974,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-hanford-23",
+          "status": "output_truncated",
+          "seconds": 238.4998608919559,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-hanford-26",
+          "status": "output_truncated",
+          "seconds": 234.96555936790537,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-johannesburg-11",
+          "status": "worker_exited",
+          "seconds": 60.284480683971196,
+          "inference_status": "worker_exited",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060314",
+          "status": "worker_exited",
+          "seconds": 60.37304874008987,
+          "inference_status": "worker_exited",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060318",
+          "status": "timeout",
+          "seconds": 300.3963507160079,
+          "inference_status": "timeout",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060322",
+          "status": "output_truncated",
+          "seconds": 228.25491285300814,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d080106",
+          "status": "timeout",
+          "seconds": 300.3651249828981,
+          "inference_status": "timeout",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-00",
+          "status": "output_truncated",
+          "seconds": 233.49168983008713,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-01",
+          "status": "worker_exited",
+          "seconds": 60.41649431199767,
+          "inference_status": "worker_exited",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-02",
+          "status": "worker_exited",
+          "seconds": 60.4157559130108,
+          "inference_status": "worker_exited",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-03",
+          "status": "output_truncated",
+          "seconds": 238.92404918698594,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-04",
+          "status": "worker_exited",
+          "seconds": 60.32419429603033,
+          "inference_status": "worker_exited",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        }
+      ],
+      "synthetic_controls": [
+        {
+          "id": "control-00",
+          "reference": "A ∩ B = ∅",
+          "prediction": "A ∩ B = ∅",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 9,
+            "critical_errors": 0,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-01",
+          "reference": "O",
+          "prediction": "0",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 1,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-02",
+          "reference": "0",
+          "prediction": "ه",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 1,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-03",
+          "reference": "O0O 010",
+          "prediction": "000 010",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 2,
+            "reference_characters": 7,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-04",
+          "reference": "-0.003",
+          "prediction": "-0.003",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 6,
+            "critical_errors": 0,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-05",
+          "reference": "+0.002",
+          "prediction": "+0.002",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 6,
+            "critical_errors": 0,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-06",
+          "reference": "10 ±0.1",
+          "prediction": "10  $ \\pm $0.1",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 7,
+            "reference_characters": 7,
+            "critical_errors": 1,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {
+              "±": 1
+            }
+          }
+        },
+        {
+          "id": "control-07",
+          "reference": "Ø5",
+          "prediction": "05",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 2,
+            "critical_errors": 1,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {
+              "Ø": 1
+            }
+          }
+        },
+        {
+          "id": "control-08",
+          "reference": "⌀5",
+          "prediction": "∅5",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 2,
+            "critical_errors": 1,
+            "critical_characters": 1,
+            "inserted_critical": {
+              "∅": 1
+            },
+            "missing_critical": {
+              "⌀": 1
+            }
+          }
+        },
+        {
+          "id": "control-09",
+          "reference": "Φ5",
+          "prediction": "∅5",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 2,
+            "critical_errors": 1,
+            "critical_characters": 1,
+            "inserted_critical": {
+              "∅": 1
+            },
+            "missing_critical": {
+              "Φ": 1
+            }
+          }
+        },
+        {
+          "id": "control-10",
+          "reference": "10   20   30",
+          "prediction": "10 20 30",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 8,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-11",
+          "reference": "1.046 +.003 -.002",
+          "prediction": "1.046 +.003 -.002",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 17,
+            "critical_errors": 0,
+            "critical_characters": 5,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        }
+      ]
+    },
+    "qwen": {
+      "scope": "development set; reference crops are recognition diagnostics, not automatic end-to-end accuracy",
+      "human_verified": false,
+      "review_is_recognition_credit": false,
+      "expected_tasks": 397,
+      "statuses": {
+        "ok": 377,
+        "output_truncated": 16,
+        "parse_failed": 4
+      },
+      "local": {
+        "diagnostics/diameter/complete_reference": {
+          "n": 17,
+          "exact": 4,
+          "cer": 0.06666666666666667,
+          "regions_with_inserted_critical": 11,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.7380952380952381,
+          "failures": 0
+        },
+        "diagnostics/diameter/detected": {
+          "n": 17,
+          "exact": 4,
+          "cer": 0.16862745098039217,
+          "regions_with_inserted_critical": 9,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.5714285714285714,
+          "failures": 0
+        },
+        "diagnostics/diameter/digits_only": {
+          "n": 17,
+          "exact": 16,
+          "cer": 0.021739130434782608,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 12,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/diameter/expanded_detection": {
+          "n": 17,
+          "exact": 1,
+          "cer": 0.5058823529411764,
+          "regions_with_inserted_critical": 10,
+          "critical_characters": 42,
+          "critical_character_accuracy": 0.4285714285714286,
+          "failures": 0
+        },
+        "diagnostics/diameter/symbol_and_digits": {
+          "n": 17,
+          "exact": 0,
+          "cer": 0.4603174603174603,
+          "regions_with_inserted_critical": 17,
+          "critical_characters": 29,
+          "critical_character_accuracy": 0.4137931034482759,
+          "failures": 0
+        },
+        "diagnostics/diameter/symbol_only": {
+          "n": 17,
+          "exact": 0,
+          "cer": 1.0,
+          "regions_with_inserted_critical": 16,
+          "critical_characters": 17,
+          "critical_character_accuracy": 0.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/complete_reference": {
+          "n": 2,
+          "exact": 0,
+          "cer": 0.20588235294117646,
+          "regions_with_inserted_critical": 2,
+          "critical_characters": 11,
+          "critical_character_accuracy": 0.8181818181818181,
+          "failures": 0
+        },
+        "diagnostics/tolerance/lower_digits": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/lower_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 4,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/minus_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/nominal_only": {
+          "n": 2,
+          "exact": 1,
+          "cer": 0.2,
+          "regions_with_inserted_critical": 1,
+          "critical_characters": 3,
+          "critical_character_accuracy": 0.6666666666666667,
+          "failures": 0
+        },
+        "diagnostics/tolerance/plus_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/upper_digits": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 2,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "diagnostics/tolerance/upper_only": {
+          "n": 2,
+          "exact": 2,
+          "cer": 0.0,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 4,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "regions/pid": {
+          "n": 120,
+          "exact": 119,
+          "cer": 0.0005934718100890207,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 254,
+          "critical_character_accuracy": 1.0,
+          "failures": 0
+        },
+        "regions/mechanical": {
+          "n": 118,
+          "exact": 84,
+          "cer": 0.06850533807829182,
+          "regions_with_inserted_critical": 21,
+          "critical_characters": 136,
+          "critical_character_accuracy": 0.8308823529411764,
+          "failures": 0
+        },
+        "controls/synthetic": {
+          "n": 12,
+          "exact": 8,
+          "cer": 0.07352941176470588,
+          "regions_with_inserted_critical": 0,
+          "critical_characters": 15,
+          "critical_character_accuracy": 0.8666666666666667,
+          "failures": 0
+        }
+      },
+      "pages": {
+        "mechanical": {
+          "regions": 118,
+          "cer": 1.0,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.0,
+          "raw_critical_character_accuracy": 0.0,
+          "miss_rate": 1.0,
+          "review_rate": 0.0,
+          "reference_characters": 1124,
+          "critical_characters": 136,
+          "exact": 0
+        },
+        "pid": {
+          "regions": 120,
+          "cer": 1.0,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.0,
+          "raw_critical_character_accuracy": 0.0,
+          "miss_rate": 1.0,
+          "review_rate": 0.0,
+          "reference_characters": 1685,
+          "critical_characters": 254,
+          "exact": 0
+        }
+      },
+      "latency": {
+        "diagnostics": {
+          "successful_runs": 117,
+          "p50_seconds": 0.20746351999696344,
+          "p95_seconds": 0.6791098279645666,
+          "attempts": 117,
+          "empty_outputs": 1,
+          "nonempty_validated_runs": 116,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 17158.0
+        },
+        "regions": {
+          "successful_runs": 238,
+          "p50_seconds": 0.3699904245440848,
+          "p95_seconds": 0.8212217059917748,
+          "attempts": 238,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 238,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 17284.0
+        },
+        "controls": {
+          "successful_runs": 12,
+          "p50_seconds": 0.28667264798423275,
+          "p95_seconds": 0.6711141059640795,
+          "attempts": 12,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 12,
+          "failed_attempt_seconds": [],
+          "sampled_device_peak_mib": 17284.0
+        },
+        "pages/pid": {
+          "successful_runs": 7,
+          "p50_seconds": 4.048628744087182,
+          "p95_seconds": 4.270277428906411,
+          "attempts": 10,
+          "empty_outputs": 7,
+          "nonempty_validated_runs": 0,
+          "failed_attempt_seconds": [
+            281.816285419045,
+            91.29994433000684,
+            275.8711539650103
+          ],
+          "sampled_device_peak_mib": 20254.0
+        },
+        "pages/mechanical": {
+          "successful_runs": 3,
+          "p50_seconds": 3.180119019933045,
+          "p95_seconds": 3.2515813499921933,
+          "attempts": 10,
+          "empty_outputs": 3,
+          "nonempty_validated_runs": 0,
+          "failed_attempt_seconds": [
+            157.20761806704104,
+            250.21979712997563,
+            274.7425585848978,
+            279.8500288770301,
+            195.54121284501161,
+            272.4956305179512,
+            279.68274284596555
+          ],
+          "sampled_device_peak_mib": 20254.0
+        },
+        "repeated/ligo-d060322": {
+          "successful_runs": 0,
+          "p50_seconds": null,
+          "p95_seconds": null,
+          "attempts": 5,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 0,
+          "failed_attempt_seconds": [
+            274.63206095201895,
+            268.34172867401503,
+            273.5896736109862,
+            270.4621578080114,
+            267.94608124601655
+          ],
+          "sampled_device_peak_mib": 20254.0
+        },
+        "repeated/ligo-d1102006": {
+          "successful_runs": 0,
+          "p50_seconds": null,
+          "p95_seconds": null,
+          "attempts": 5,
+          "empty_outputs": 0,
+          "nonempty_validated_runs": 0,
+          "failed_attempt_seconds": [
+            272.85339536401443,
+            274.82334706606343,
+            274.1304236589931,
+            271.08719009300694,
+            267.27435951901134
+          ],
+          "sampled_device_peak_mib": 20254.0
+        }
+      },
+      "tolerance_combinations": [
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r01",
+          "candidate_text": ".048 +.002 -.003",
+          "status": "candidate_only",
+          "part_task_ids": [
+            "diagnostic-ligo-d1102006-r01-nominal_only",
+            "diagnostic-ligo-d1102006-r01-upper_only",
+            "diagnostic-ligo-d1102006-r01-lower_only"
+          ],
+          "exact": true,
+          "needs_review": true
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r09",
+          "candidate_text": "∅ 1.046 +.003 -.002",
+          "status": "candidate_only",
+          "part_task_ids": [
+            "diagnostic-ligo-d1102006-r09-nominal_only",
+            "diagnostic-ligo-d1102006-r09-upper_only",
+            "diagnostic-ligo-d1102006-r09-lower_only"
+          ],
+          "exact": false,
+          "needs_review": true
+        }
+      ],
+      "page_delivery": {
+        "attempts": 20,
+        "needs_review": 20,
+        "failed": 10,
+        "empty_normal_returns": 10,
+        "pages_with_positioned_text": 0
+      },
+      "cell_targets": {
+        "ligo-d060322": {
+          "n": 10,
+          "found_in_valid_cells": 0,
+          "exact": 0
+        }
+      },
+      "configuration": {
+        "engine": "qwen",
+        "page_pixels": 4194304,
+        "local_pixels": 1048576,
+        "page_tokens": 8192,
+        "local_tokens": 512,
+        "timeout": 300,
+        "load_timeout": 600,
+        "cuda_launch_blocking": false,
+        "traceback_after": 0,
+        "queue_sha256": "14b2869cf89f9bfe6cd0856a56add9320abad5026d3da822ed63040500628c93",
+        "local_prompt_sha256": "3db0bde2fe6c58d68a4f73bfa13bfbfd578e102207188d3c74aabccab807cf2c",
+        "page_prompt_sha256": "836f2c653969fecdf55835b875846585753f0953dcab984e0c8c141373b6d9c2"
+      },
+      "failures": [
+        {
+          "task_id": "page-hanford-24",
+          "status": "output_truncated",
+          "seconds": 281.816285419045,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-johannesburg-10",
+          "status": "parse_failed",
+          "seconds": 91.29994433000684,
+          "inference_status": "ok",
+          "parse_error": "'bbox'",
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-johannesburg-11",
+          "status": "output_truncated",
+          "seconds": 275.8711539650103,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060315",
+          "status": "parse_failed",
+          "seconds": 157.20761806704104,
+          "inference_status": "ok",
+          "parse_error": "Invalid normalized geometry",
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060321",
+          "status": "parse_failed",
+          "seconds": 250.21979712997563,
+          "inference_status": "ok",
+          "parse_error": "Invalid normalized geometry",
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d060322",
+          "status": "output_truncated",
+          "seconds": 274.7425585848978,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d080106",
+          "status": "output_truncated",
+          "seconds": 279.8500288770301,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d1100424",
+          "status": "parse_failed",
+          "seconds": 195.54121284501161,
+          "inference_status": "ok",
+          "parse_error": "'bbox'",
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d1102006",
+          "status": "output_truncated",
+          "seconds": 272.4956305179512,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "page-ligo-d1200144",
+          "status": "output_truncated",
+          "seconds": 279.68274284596555,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-00",
+          "status": "output_truncated",
+          "seconds": 274.63206095201895,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-01",
+          "status": "output_truncated",
+          "seconds": 268.34172867401503,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-02",
+          "status": "output_truncated",
+          "seconds": 273.5896736109862,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-03",
+          "status": "output_truncated",
+          "seconds": 270.4621578080114,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d060322-04",
+          "status": "output_truncated",
+          "seconds": 267.94608124601655,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d1102006-00",
+          "status": "output_truncated",
+          "seconds": 272.85339536401443,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d1102006-01",
+          "status": "output_truncated",
+          "seconds": 274.82334706606343,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d1102006-02",
+          "status": "output_truncated",
+          "seconds": 274.1304236589931,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d1102006-03",
+          "status": "output_truncated",
+          "seconds": 271.08719009300694,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        },
+        {
+          "task_id": "repeat-ligo-d1102006-04",
+          "status": "output_truncated",
+          "seconds": 267.27435951901134,
+          "inference_status": "output_truncated",
+          "parse_error": null,
+          "error_type": null,
+          "exit_code": null
+        }
+      ],
+      "synthetic_controls": [
+        {
+          "id": "control-00",
+          "reference": "A ∩ B = ∅",
+          "prediction": "A ∩ B = ∅",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 9,
+            "critical_errors": 0,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-01",
+          "reference": "O",
+          "prediction": "0",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 1,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-02",
+          "reference": "0",
+          "prediction": "0",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 1,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-03",
+          "reference": "O0O 010",
+          "prediction": "000 010",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 2,
+            "reference_characters": 7,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-04",
+          "reference": "-0.003",
+          "prediction": "-0.003",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 6,
+            "critical_errors": 0,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-05",
+          "reference": "+0.002",
+          "prediction": "+0.002",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 6,
+            "critical_errors": 0,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-06",
+          "reference": "10 ±0.1",
+          "prediction": "10 ±0.1",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 7,
+            "critical_errors": 0,
+            "critical_characters": 2,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-07",
+          "reference": "Ø5",
+          "prediction": "ø5",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 2,
+            "critical_errors": 1,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {
+              "Ø": 1
+            }
+          }
+        },
+        {
+          "id": "control-08",
+          "reference": "⌀5",
+          "prediction": "ø5",
+          "status": "ok",
+          "score": {
+            "exact": false,
+            "edits": 1,
+            "reference_characters": 2,
+            "critical_errors": 1,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {
+              "⌀": 1
+            }
+          }
+        },
+        {
+          "id": "control-09",
+          "reference": "Φ5",
+          "prediction": "Φ5",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 2,
+            "critical_errors": 0,
+            "critical_characters": 1,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-10",
+          "reference": "10   20   30",
+          "prediction": "10 20 30",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 8,
+            "critical_errors": 0,
+            "critical_characters": 0,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        },
+        {
+          "id": "control-11",
+          "reference": "1.046 +.003 -.002",
+          "prediction": "1.046 +.003 -.002",
+          "status": "ok",
+          "score": {
+            "exact": true,
+            "edits": 0,
+            "reference_characters": 17,
+            "critical_errors": 0,
+            "critical_characters": 5,
+            "inserted_critical": {},
+            "missing_critical": {}
+          }
+        }
+      ]
+    }
+  },
+  "paired": {
+    "scope": "development/regression; no independent human acceptance",
+    "baseline_performance": {
+      "general": {
+        "successful_runs": 20,
+        "p50_seconds": 10.600105533085298,
+        "p95_seconds": 35.54520993400365,
+        "failures": 0,
+        "sampled_device_peak_mib": 3250.0,
+        "by_kind": {
+          "mechanical": {
+            "successful_runs": 10,
+            "p50_seconds": 9.131934389530215,
+            "p95_seconds": 11.10551557992585,
+            "unique_review_regions": 0,
+            "checked_review_regions": 0,
+            "budget_exhausted_regions": 0,
+            "pages_with_budget_exhaustion": 0
+          },
+          "pid": {
+            "successful_runs": 10,
+            "p50_seconds": 24.630935880471952,
+            "p95_seconds": 39.22777324600611,
+            "unique_review_regions": 0,
+            "checked_review_regions": 0,
+            "budget_exhausted_regions": 0,
+            "pages_with_budget_exhaustion": 0
+          }
+        }
+      },
+      "engineering": {
+        "successful_runs": 20,
+        "p50_seconds": 22.91817889851518,
+        "p95_seconds": 52.06148314208258,
+        "failures": 0,
+        "sampled_device_peak_mib": 5606.0,
+        "by_kind": {
+          "mechanical": {
+            "successful_runs": 10,
+            "p50_seconds": 20.087765269970987,
+            "p95_seconds": 24.189374470035546,
+            "unique_review_regions": 1192,
+            "checked_review_regions": 937,
+            "budget_exhausted_regions": 234,
+            "pages_with_budget_exhaustion": 4
+          },
+          "pid": {
+            "successful_runs": 10,
+            "p50_seconds": 44.636528920033015,
+            "p95_seconds": 55.130863488069735,
+            "unique_review_regions": 2625,
+            "checked_review_regions": 1157,
+            "budget_exhausted_regions": 1407,
+            "pages_with_budget_exhaustion": 8
+          }
+        }
+      }
+    },
+    "tolerance_performance": {
+      "general": {
+        "successful_runs": 20,
+        "p50_seconds": 10.849972802505363,
+        "p95_seconds": 37.34312603902072,
+        "failures": 0,
+        "sampled_device_peak_mib": 3250.0,
+        "by_kind": {
+          "mechanical": {
+            "successful_runs": 10,
+            "p50_seconds": 8.484263081511017,
+            "p95_seconds": 12.04243322100956,
+            "unique_review_regions": 0,
+            "checked_review_regions": 0,
+            "budget_exhausted_regions": 0,
+            "pages_with_budget_exhaustion": 0
+          },
+          "pid": {
+            "successful_runs": 10,
+            "p50_seconds": 24.023130234505516,
+            "p95_seconds": 43.95923561707605,
+            "unique_review_regions": 0,
+            "checked_review_regions": 0,
+            "budget_exhausted_regions": 0,
+            "pages_with_budget_exhaustion": 0
+          }
+        }
+      },
+      "engineering": {
+        "successful_runs": 20,
+        "p50_seconds": 23.634964637458324,
+        "p95_seconds": 54.94545894104522,
+        "failures": 0,
+        "sampled_device_peak_mib": 5606.0,
+        "by_kind": {
+          "mechanical": {
+            "successful_runs": 10,
+            "p50_seconds": 21.02127718104748,
+            "p95_seconds": 24.847076302976348,
+            "unique_review_regions": 1192,
+            "checked_review_regions": 937,
+            "budget_exhausted_regions": 234,
+            "pages_with_budget_exhaustion": 4
+          },
+          "pid": {
+            "successful_runs": 10,
+            "p50_seconds": 46.68275454296963,
+            "p95_seconds": 57.994415781926364,
+            "unique_review_regions": 2625,
+            "checked_review_regions": 1157,
+            "budget_exhausted_regions": 1407,
+            "pages_with_budget_exhaustion": 8
+          }
+        }
+      }
+    },
+    "tolerance_pairs": {
+      "improved": [],
+      "regressed": [],
+      "missing": []
+    },
+    "models": {
+      "paddle": {
+        "local_vs_page_baseline": {
+          "improved": [
+            "engineering/ligo-d060312/r06",
+            "engineering/ligo-d060314/r10",
+            "engineering/ligo-d060315/r04",
+            "engineering/ligo-d060315/r10",
+            "engineering/ligo-d060315/r11",
+            "engineering/ligo-d060318/r05",
+            "engineering/ligo-d060321/r05",
+            "engineering/ligo-d060321/r09",
+            "engineering/ligo-d1100424/r12",
+            "engineering/hanford-19/r03",
+            "engineering/hanford-19/r11",
+            "engineering/hanford-20/r04",
+            "engineering/hanford-22/r03",
+            "engineering/hanford-24/r12"
+          ],
+          "regressed": [
+            "engineering/ligo-d060312/r10",
+            "engineering/ligo-d060314/r05",
+            "engineering/ligo-d060322/r06",
+            "engineering/ligo-d060322/r09",
+            "engineering/ligo-d080106/r02",
+            "engineering/ligo-d080106/r03",
+            "engineering/ligo-d080106/r07",
+            "engineering/ligo-d080106/r08",
+            "engineering/ligo-d1100424/r08",
+            "engineering/ligo-d1102006/r02",
+            "engineering/ligo-d1102006/r11",
+            "engineering/ligo-d1200144/r02",
+            "engineering/ligo-d1200144/r03",
+            "engineering/hanford-22/r10"
+          ],
+          "missing": [],
+          "scope": "reference boxes; improvement includes localization advantage and is not end-to-end gain"
+        },
+        "full_page_vs_baseline": {
+          "improved": [],
+          "regressed": [
+            "engineering/ligo-d060312/r01",
+            "engineering/ligo-d060312/r02",
+            "engineering/ligo-d060312/r03",
+            "engineering/ligo-d060312/r04",
+            "engineering/ligo-d060312/r05",
+            "engineering/ligo-d060312/r07",
+            "engineering/ligo-d060312/r08",
+            "engineering/ligo-d060312/r09",
+            "engineering/ligo-d060312/r10",
+            "engineering/ligo-d060312/r12",
+            "engineering/ligo-d060314/r01",
+            "engineering/ligo-d060314/r02",
+            "engineering/ligo-d060314/r03",
+            "engineering/ligo-d060314/r04",
+            "engineering/ligo-d060314/r05",
+            "engineering/ligo-d060314/r06",
+            "engineering/ligo-d060314/r07",
+            "engineering/ligo-d060314/r08",
+            "engineering/ligo-d060314/r09",
+            "engineering/ligo-d060314/r11",
+            "engineering/ligo-d060314/r12",
+            "engineering/ligo-d060315/r01",
+            "engineering/ligo-d060315/r02",
+            "engineering/ligo-d060315/r03",
+            "engineering/ligo-d060315/r05",
+            "engineering/ligo-d060315/r06",
+            "engineering/ligo-d060315/r07",
+            "engineering/ligo-d060315/r08",
+            "engineering/ligo-d060315/r09",
+            "engineering/ligo-d060315/r12",
+            "engineering/ligo-d060318/r01",
+            "engineering/ligo-d060318/r02",
+            "engineering/ligo-d060318/r03",
+            "engineering/ligo-d060318/r08",
+            "engineering/ligo-d060318/r09",
+            "engineering/ligo-d060318/r10",
+            "engineering/ligo-d060318/r12",
+            "engineering/ligo-d060321/r01",
+            "engineering/ligo-d060321/r02",
+            "engineering/ligo-d060321/r04",
+            "engineering/ligo-d060321/r06",
+            "engineering/ligo-d060321/r07",
+            "engineering/ligo-d060321/r08",
+            "engineering/ligo-d060321/r10",
+            "engineering/ligo-d060321/r12",
+            "engineering/ligo-d060322/r01",
+            "engineering/ligo-d060322/r02",
+            "engineering/ligo-d060322/r03",
+            "engineering/ligo-d060322/r04",
+            "engineering/ligo-d060322/r06",
+            "engineering/ligo-d060322/r07",
+            "engineering/ligo-d060322/r08",
+            "engineering/ligo-d060322/r09",
+            "engineering/ligo-d060322/r10",
+            "engineering/ligo-d080106/r01",
+            "engineering/ligo-d080106/r02",
+            "engineering/ligo-d080106/r03",
+            "engineering/ligo-d080106/r04",
+            "engineering/ligo-d080106/r05",
+            "engineering/ligo-d080106/r06",
+            "engineering/ligo-d080106/r07",
+            "engineering/ligo-d080106/r08",
+            "engineering/ligo-d080106/r11",
+            "engineering/ligo-d1100424/r01",
+            "engineering/ligo-d1100424/r02",
+            "engineering/ligo-d1100424/r04",
+            "engineering/ligo-d1100424/r06",
+            "engineering/ligo-d1100424/r07",
+            "engineering/ligo-d1100424/r08",
+            "engineering/ligo-d1100424/r09",
+            "engineering/ligo-d1100424/r11",
+            "engineering/ligo-d1102006/r02",
+            "engineering/ligo-d1102006/r06",
+            "engineering/ligo-d1102006/r10",
+            "engineering/ligo-d1102006/r11",
+            "engineering/ligo-d1102006/r12",
+            "engineering/ligo-d1200144/r02",
+            "engineering/ligo-d1200144/r03",
+            "engineering/ligo-d1200144/r05",
+            "engineering/ligo-d1200144/r06",
+            "engineering/ligo-d1200144/r08",
+            "engineering/ligo-d1200144/r11",
+            "engineering/ligo-d1200144/r12",
+            "engineering/hanford-18/r01",
+            "engineering/hanford-18/r02",
+            "engineering/hanford-18/r03",
+            "engineering/hanford-18/r04",
+            "engineering/hanford-18/r05",
+            "engineering/hanford-18/r06",
+            "engineering/hanford-18/r07",
+            "engineering/hanford-18/r08",
+            "engineering/hanford-18/r09",
+            "engineering/hanford-18/r11",
+            "engineering/hanford-18/r12",
+            "engineering/hanford-19/r01",
+            "engineering/hanford-19/r02",
+            "engineering/hanford-19/r04",
+            "engineering/hanford-19/r05",
+            "engineering/hanford-19/r06",
+            "engineering/hanford-19/r07",
+            "engineering/hanford-19/r08",
+            "engineering/hanford-19/r09",
+            "engineering/hanford-19/r10",
+            "engineering/hanford-19/r12",
+            "engineering/hanford-20/r01",
+            "engineering/hanford-20/r02",
+            "engineering/hanford-20/r03",
+            "engineering/hanford-20/r05",
+            "engineering/hanford-20/r06",
+            "engineering/hanford-20/r07",
+            "engineering/hanford-20/r08",
+            "engineering/hanford-20/r09",
+            "engineering/hanford-20/r10",
+            "engineering/hanford-20/r11",
+            "engineering/hanford-20/r12",
+            "engineering/hanford-21/r01",
+            "engineering/hanford-21/r02",
+            "engineering/hanford-21/r03",
+            "engineering/hanford-21/r04",
+            "engineering/hanford-21/r05",
+            "engineering/hanford-21/r06",
+            "engineering/hanford-21/r07",
+            "engineering/hanford-21/r08",
+            "engineering/hanford-21/r09",
+            "engineering/hanford-21/r10",
+            "engineering/hanford-21/r11",
+            "engineering/hanford-21/r12",
+            "engineering/hanford-22/r01",
+            "engineering/hanford-22/r02",
+            "engineering/hanford-22/r04",
+            "engineering/hanford-22/r05",
+            "engineering/hanford-22/r06",
+            "engineering/hanford-22/r07",
+            "engineering/hanford-22/r08",
+            "engineering/hanford-22/r09",
+            "engineering/hanford-22/r10",
+            "engineering/hanford-22/r11",
+            "engineering/hanford-22/r12",
+            "engineering/hanford-23/r01",
+            "engineering/hanford-23/r02",
+            "engineering/hanford-23/r03",
+            "engineering/hanford-23/r04",
+            "engineering/hanford-23/r05",
+            "engineering/hanford-23/r06",
+            "engineering/hanford-23/r07",
+            "engineering/hanford-23/r08",
+            "engineering/hanford-23/r09",
+            "engineering/hanford-23/r10",
+            "engineering/hanford-23/r11",
+            "engineering/hanford-23/r12",
+            "engineering/hanford-24/r01",
+            "engineering/hanford-24/r02",
+            "engineering/hanford-24/r03",
+            "engineering/hanford-24/r04",
+            "engineering/hanford-24/r05",
+            "engineering/hanford-24/r06",
+            "engineering/hanford-24/r07",
+            "engineering/hanford-24/r08",
+            "engineering/hanford-24/r09",
+            "engineering/hanford-24/r10",
+            "engineering/hanford-24/r11",
+            "engineering/hanford-26/r01",
+            "engineering/hanford-26/r02",
+            "engineering/hanford-26/r04",
+            "engineering/hanford-26/r05",
+            "engineering/hanford-26/r06",
+            "engineering/hanford-26/r07",
+            "engineering/hanford-26/r08",
+            "engineering/hanford-26/r09",
+            "engineering/hanford-26/r10",
+            "engineering/hanford-26/r11",
+            "engineering/hanford-26/r12",
+            "engineering/johannesburg-10/r01",
+            "engineering/johannesburg-10/r02",
+            "engineering/johannesburg-10/r03",
+            "engineering/johannesburg-10/r04",
+            "engineering/johannesburg-10/r05",
+            "engineering/johannesburg-10/r06",
+            "engineering/johannesburg-10/r07",
+            "engineering/johannesburg-10/r08",
+            "engineering/johannesburg-10/r09",
+            "engineering/johannesburg-10/r10",
+            "engineering/johannesburg-10/r11",
+            "engineering/johannesburg-10/r12",
+            "engineering/johannesburg-11/r01",
+            "engineering/johannesburg-11/r02",
+            "engineering/johannesburg-11/r03",
+            "engineering/johannesburg-11/r04",
+            "engineering/johannesburg-11/r05",
+            "engineering/johannesburg-11/r06",
+            "engineering/johannesburg-11/r07",
+            "engineering/johannesburg-11/r08",
+            "engineering/johannesburg-11/r09",
+            "engineering/johannesburg-11/r10",
+            "engineering/johannesburg-11/r11",
+            "engineering/johannesburg-11/r12"
+          ],
+          "missing": []
+        },
+        "statuses": {
+          "ok": 382,
+          "output_truncated": 8,
+          "worker_exited": 5,
+          "timeout": 2
+        },
+        "automatic_promotion": false,
+        "reason": "Requires paired failure review; model agreement/candidate recall does not establish final accuracy"
+      },
+      "qwen": {
+        "local_vs_page_baseline": {
+          "improved": [
+            "engineering/ligo-d060312/r06",
+            "engineering/ligo-d060315/r10",
+            "engineering/ligo-d060315/r11",
+            "engineering/ligo-d060318/r07",
+            "engineering/ligo-d060322/r05",
+            "engineering/ligo-d1100424/r03",
+            "engineering/ligo-d1100424/r05",
+            "engineering/ligo-d1102006/r03",
+            "engineering/ligo-d1102006/r07",
+            "engineering/ligo-d1200144/r04",
+            "engineering/ligo-d1200144/r07",
+            "engineering/ligo-d1200144/r09",
+            "engineering/hanford-19/r03",
+            "engineering/hanford-19/r11",
+            "engineering/hanford-20/r04",
+            "engineering/hanford-22/r03",
+            "engineering/hanford-24/r12",
+            "engineering/hanford-26/r03"
+          ],
+          "regressed": [
+            "engineering/ligo-d060315/r05",
+            "engineering/ligo-d060315/r06",
+            "engineering/ligo-d060318/r02",
+            "engineering/ligo-d060321/r01",
+            "engineering/ligo-d080106/r02",
+            "engineering/ligo-d1100424/r01",
+            "engineering/ligo-d1100424/r02",
+            "engineering/ligo-d1100424/r06",
+            "engineering/ligo-d1100424/r08",
+            "engineering/ligo-d1200144/r02",
+            "engineering/ligo-d1200144/r06"
+          ],
+          "missing": [],
+          "scope": "reference boxes; improvement includes localization advantage and is not end-to-end gain"
+        },
+        "full_page_vs_baseline": {
+          "improved": [],
+          "regressed": [
+            "engineering/ligo-d060312/r01",
+            "engineering/ligo-d060312/r02",
+            "engineering/ligo-d060312/r03",
+            "engineering/ligo-d060312/r04",
+            "engineering/ligo-d060312/r05",
+            "engineering/ligo-d060312/r07",
+            "engineering/ligo-d060312/r08",
+            "engineering/ligo-d060312/r09",
+            "engineering/ligo-d060312/r10",
+            "engineering/ligo-d060312/r12",
+            "engineering/ligo-d060314/r01",
+            "engineering/ligo-d060314/r02",
+            "engineering/ligo-d060314/r03",
+            "engineering/ligo-d060314/r04",
+            "engineering/ligo-d060314/r05",
+            "engineering/ligo-d060314/r06",
+            "engineering/ligo-d060314/r07",
+            "engineering/ligo-d060314/r08",
+            "engineering/ligo-d060314/r09",
+            "engineering/ligo-d060314/r11",
+            "engineering/ligo-d060314/r12",
+            "engineering/ligo-d060315/r01",
+            "engineering/ligo-d060315/r02",
+            "engineering/ligo-d060315/r03",
+            "engineering/ligo-d060315/r05",
+            "engineering/ligo-d060315/r06",
+            "engineering/ligo-d060315/r07",
+            "engineering/ligo-d060315/r08",
+            "engineering/ligo-d060315/r09",
+            "engineering/ligo-d060315/r12",
+            "engineering/ligo-d060318/r01",
+            "engineering/ligo-d060318/r02",
+            "engineering/ligo-d060318/r03",
+            "engineering/ligo-d060318/r08",
+            "engineering/ligo-d060318/r09",
+            "engineering/ligo-d060318/r10",
+            "engineering/ligo-d060318/r12",
+            "engineering/ligo-d060321/r01",
+            "engineering/ligo-d060321/r02",
+            "engineering/ligo-d060321/r04",
+            "engineering/ligo-d060321/r06",
+            "engineering/ligo-d060321/r07",
+            "engineering/ligo-d060321/r08",
+            "engineering/ligo-d060321/r10",
+            "engineering/ligo-d060321/r12",
+            "engineering/ligo-d060322/r01",
+            "engineering/ligo-d060322/r02",
+            "engineering/ligo-d060322/r03",
+            "engineering/ligo-d060322/r04",
+            "engineering/ligo-d060322/r06",
+            "engineering/ligo-d060322/r07",
+            "engineering/ligo-d060322/r08",
+            "engineering/ligo-d060322/r09",
+            "engineering/ligo-d060322/r10",
+            "engineering/ligo-d080106/r01",
+            "engineering/ligo-d080106/r02",
+            "engineering/ligo-d080106/r03",
+            "engineering/ligo-d080106/r04",
+            "engineering/ligo-d080106/r05",
+            "engineering/ligo-d080106/r06",
+            "engineering/ligo-d080106/r07",
+            "engineering/ligo-d080106/r08",
+            "engineering/ligo-d080106/r11",
+            "engineering/ligo-d1100424/r01",
+            "engineering/ligo-d1100424/r02",
+            "engineering/ligo-d1100424/r04",
+            "engineering/ligo-d1100424/r06",
+            "engineering/ligo-d1100424/r07",
+            "engineering/ligo-d1100424/r08",
+            "engineering/ligo-d1100424/r09",
+            "engineering/ligo-d1100424/r11",
+            "engineering/ligo-d1102006/r02",
+            "engineering/ligo-d1102006/r06",
+            "engineering/ligo-d1102006/r10",
+            "engineering/ligo-d1102006/r11",
+            "engineering/ligo-d1102006/r12",
+            "engineering/ligo-d1200144/r02",
+            "engineering/ligo-d1200144/r03",
+            "engineering/ligo-d1200144/r05",
+            "engineering/ligo-d1200144/r06",
+            "engineering/ligo-d1200144/r08",
+            "engineering/ligo-d1200144/r11",
+            "engineering/ligo-d1200144/r12",
+            "engineering/hanford-18/r01",
+            "engineering/hanford-18/r02",
+            "engineering/hanford-18/r03",
+            "engineering/hanford-18/r04",
+            "engineering/hanford-18/r05",
+            "engineering/hanford-18/r06",
+            "engineering/hanford-18/r07",
+            "engineering/hanford-18/r08",
+            "engineering/hanford-18/r09",
+            "engineering/hanford-18/r11",
+            "engineering/hanford-18/r12",
+            "engineering/hanford-19/r01",
+            "engineering/hanford-19/r02",
+            "engineering/hanford-19/r04",
+            "engineering/hanford-19/r05",
+            "engineering/hanford-19/r06",
+            "engineering/hanford-19/r07",
+            "engineering/hanford-19/r08",
+            "engineering/hanford-19/r09",
+            "engineering/hanford-19/r10",
+            "engineering/hanford-19/r12",
+            "engineering/hanford-20/r01",
+            "engineering/hanford-20/r02",
+            "engineering/hanford-20/r03",
+            "engineering/hanford-20/r05",
+            "engineering/hanford-20/r06",
+            "engineering/hanford-20/r07",
+            "engineering/hanford-20/r08",
+            "engineering/hanford-20/r09",
+            "engineering/hanford-20/r10",
+            "engineering/hanford-20/r11",
+            "engineering/hanford-20/r12",
+            "engineering/hanford-21/r01",
+            "engineering/hanford-21/r02",
+            "engineering/hanford-21/r03",
+            "engineering/hanford-21/r04",
+            "engineering/hanford-21/r05",
+            "engineering/hanford-21/r06",
+            "engineering/hanford-21/r07",
+            "engineering/hanford-21/r08",
+            "engineering/hanford-21/r09",
+            "engineering/hanford-21/r10",
+            "engineering/hanford-21/r11",
+            "engineering/hanford-21/r12",
+            "engineering/hanford-22/r01",
+            "engineering/hanford-22/r02",
+            "engineering/hanford-22/r04",
+            "engineering/hanford-22/r05",
+            "engineering/hanford-22/r06",
+            "engineering/hanford-22/r07",
+            "engineering/hanford-22/r08",
+            "engineering/hanford-22/r09",
+            "engineering/hanford-22/r10",
+            "engineering/hanford-22/r11",
+            "engineering/hanford-22/r12",
+            "engineering/hanford-23/r01",
+            "engineering/hanford-23/r02",
+            "engineering/hanford-23/r03",
+            "engineering/hanford-23/r04",
+            "engineering/hanford-23/r05",
+            "engineering/hanford-23/r06",
+            "engineering/hanford-23/r07",
+            "engineering/hanford-23/r08",
+            "engineering/hanford-23/r09",
+            "engineering/hanford-23/r10",
+            "engineering/hanford-23/r11",
+            "engineering/hanford-23/r12",
+            "engineering/hanford-24/r01",
+            "engineering/hanford-24/r02",
+            "engineering/hanford-24/r03",
+            "engineering/hanford-24/r04",
+            "engineering/hanford-24/r05",
+            "engineering/hanford-24/r06",
+            "engineering/hanford-24/r07",
+            "engineering/hanford-24/r08",
+            "engineering/hanford-24/r09",
+            "engineering/hanford-24/r10",
+            "engineering/hanford-24/r11",
+            "engineering/hanford-26/r01",
+            "engineering/hanford-26/r02",
+            "engineering/hanford-26/r04",
+            "engineering/hanford-26/r05",
+            "engineering/hanford-26/r06",
+            "engineering/hanford-26/r07",
+            "engineering/hanford-26/r08",
+            "engineering/hanford-26/r09",
+            "engineering/hanford-26/r10",
+            "engineering/hanford-26/r11",
+            "engineering/hanford-26/r12",
+            "engineering/johannesburg-10/r01",
+            "engineering/johannesburg-10/r02",
+            "engineering/johannesburg-10/r03",
+            "engineering/johannesburg-10/r04",
+            "engineering/johannesburg-10/r05",
+            "engineering/johannesburg-10/r06",
+            "engineering/johannesburg-10/r07",
+            "engineering/johannesburg-10/r08",
+            "engineering/johannesburg-10/r09",
+            "engineering/johannesburg-10/r10",
+            "engineering/johannesburg-10/r11",
+            "engineering/johannesburg-10/r12",
+            "engineering/johannesburg-11/r01",
+            "engineering/johannesburg-11/r02",
+            "engineering/johannesburg-11/r03",
+            "engineering/johannesburg-11/r04",
+            "engineering/johannesburg-11/r05",
+            "engineering/johannesburg-11/r06",
+            "engineering/johannesburg-11/r07",
+            "engineering/johannesburg-11/r08",
+            "engineering/johannesburg-11/r09",
+            "engineering/johannesburg-11/r10",
+            "engineering/johannesburg-11/r11",
+            "engineering/johannesburg-11/r12"
+          ],
+          "missing": []
+        },
+        "statuses": {
+          "ok": 377,
+          "output_truncated": 16,
+          "parse_failed": 4
+        },
+        "automatic_promotion": false,
+        "reason": "Requires paired failure review; model agreement/candidate recall does not establish final accuracy"
+      }
+    },
+    "candidate_pool_upper_bound": {
+      "scope": "Oracle candidate presence only; no selection policy or final accuracy",
+      "groups": {
+        "mechanical": {
+          "n": 118,
+          "any_vlm_exact": 98,
+          "original_or_vlm_exact": 101,
+          "reference_crop_locations": true,
+          "recognition_credit": false
+        },
+        "pid": {
+          "n": 120,
+          "any_vlm_exact": 119,
+          "original_or_vlm_exact": 119,
+          "reference_crop_locations": true,
+          "recognition_credit": false
+        }
+      }
+    }
+  },
+  "paddle_no_stack_diagnostic": {
+    "traceback_after": 0,
+    "cuda_launch_blocking": true,
+    "included_in_main_scores": false,
+    "original_failures_retained": true,
+    "attempts": [
+      {
+        "task_id": "page-johannesburg-11",
+        "status": "output_truncated",
+        "seconds": 247.99326298793312,
+        "exit_code": null,
+        "gpu_memory": {
+          "status": "sampled",
+          "samples": 928,
+          "max_device_used_mib": 11158.0,
+          "scope": "benchmark-host whole device, including other processes; sampled peak"
+        },
+        "recognizer_fingerprint": "067337cd2f10bb4e7d99d813fa43ae023ac8c2311fd4d46e1b93b68bcbe3d2f3"
+      },
+      {
+        "task_id": "page-ligo-d060314",
+        "status": "output_truncated",
+        "seconds": 221.24557731999084,
+        "exit_code": null,
+        "gpu_memory": {
+          "status": "sampled",
+          "samples": 831,
+          "max_device_used_mib": 11158.0,
+          "scope": "benchmark-host whole device, including other processes; sampled peak"
+        },
+        "recognizer_fingerprint": "067337cd2f10bb4e7d99d813fa43ae023ac8c2311fd4d46e1b93b68bcbe3d2f3"
+      },
+      {
+        "task_id": "repeat-ligo-d060322-01",
+        "status": "output_truncated",
+        "seconds": 237.78341066895518,
+        "exit_code": null,
+        "gpu_memory": {
+          "status": "sampled",
+          "samples": 894,
+          "max_device_used_mib": 11158.0,
+          "scope": "benchmark-host whole device, including other processes; sampled peak"
+        },
+        "recognizer_fingerprint": "067337cd2f10bb4e7d99d813fa43ae023ac8c2311fd4d46e1b93b68bcbe3d2f3"
+      }
+    ]
+  }
+}

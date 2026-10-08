@@ -54,3 +54,7 @@ python -m unittest discover -s tests -v
 [逐格评分](artifacts/gpu-20261007/quality.json) · [工程图 DOCX](artifacts/gpu-20261007/engineering-output.docx) · [表格 DOCX](artifacts/gpu-20261007/merged-table-output.docx) · [实际预览](artifacts/gpu-20261007/)
 
 离线评分和关键代码可独立运行；端到端重跑仍需完整服务及模型。原生文字提取基线继续保留，与模型 OCR 分开标记。
+
+## 第三轮 VLM（2026-10-08）
+
+完成两个模型各 397 个唯一任务，以及新主机同机 PP-OCR 对照。严格区分固定裁剪与整页位置／类型合同，所有失败、重复耗时和派生分数保留。数据仍为开发／回归集，没有人工验收真值。[第三轮报告](cases/engineering-vlm-round3.md) · [派生证据](artifacts/engineering-vlm-round3-20261008/README.md)。

@@ -39,3 +39,7 @@ python tools/score_real_drawings.py
 [engineering_tolerances.py](engineering_tolerances.py) 选取实际工程模块的数字模式与组合函数。输入是带坐标和方向的已观测文字，输出保留片段和缺失符号的候选；不加载模型、不自动补直径或负号，也不代表通过验收。
 
 `python -m unittest discover -s tests -v` 包含缺负号、跨单元格和旋转邻居反例。`python tools/score_round2.py` 复算第二轮派生计数。
+
+## VLM 候选与几何
+
+[vlm_evidence.py](vlm_evidence.py) 保留候选及原文，不补字符、不凭一致性放行；[vlm_geometry.py](vlm_geometry.py) 检查模型 JSON 坐标和表格格网，拒绝伪造结构。只公开选取函数，不含模型加载、服务器或真实图纸。新增 6 项测试，全部公开示例共 15 项。第三轮计数可用 `python tools/score_round3.py` 复算。
