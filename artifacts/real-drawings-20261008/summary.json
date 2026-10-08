@@ -1,0 +1,214 @@
+{
+  "date": "2026-10-08",
+  "status": "experimental",
+  "scope": "Selected regions on real full-page drawings; not exhaustive whole-sheet accuracy",
+  "annotation": "Assistant visual transcription frozen before inference; independent human review pending",
+  "formal_runs": 40,
+  "warmup_runs": 4,
+  "repeat_per_page_scene": 1,
+  "coverage": {
+    "real_test_pages": {
+      "mechanical": 10,
+      "pid": 10
+    },
+    "real_test_regions": 238,
+    "sample_origins": {
+      "real": 20
+    },
+    "sufficient": true
+  },
+  "coverage_sufficient_means": "Minimum page/region counts only; not human approval or full scenario coverage",
+  "environment": {
+    "gpu": "NVIDIA RTX 5090",
+    "gpu_memory_mib": 32607,
+    "driver": "580.105.08",
+    "python": "3.11.17",
+    "paddle_gpu": "3.3.1",
+    "cuda": "12.9",
+    "paddleocr": "3.7.0",
+    "paddlex": "3.7.2",
+    "raster_long_edge_px": 6600
+  },
+  "scenes": {
+    "general": {
+      "models": [
+        "PP-OCRv6_small_det",
+        "PP-OCRv6_small_rec"
+      ],
+      "profile": "balanced",
+      "groups": {
+        "mechanical/real/test": {
+          "regions": 118,
+          "cer": 0.251779359430605,
+          "annotation_accuracy": 0.5847457627118644,
+          "critical_character_accuracy": 0.6764705882352942,
+          "raw_annotation_accuracy": 0.5847457627118644,
+          "raw_critical_character_accuracy": 0.6764705882352942,
+          "miss_rate": 0.1016949152542373,
+          "review_rate": 0.0,
+          "reference_characters": 1124,
+          "critical_characters": 136
+        },
+        "pid/real/test": {
+          "regions": 120,
+          "cer": 0.04925816023738872,
+          "annotation_accuracy": 0.9,
+          "critical_character_accuracy": 0.952755905511811,
+          "raw_annotation_accuracy": 0.9,
+          "raw_critical_character_accuracy": 0.952755905511811,
+          "miss_rate": 0.008333333333333333,
+          "review_rate": 0.0,
+          "reference_characters": 1685,
+          "critical_characters": 254
+        }
+      },
+      "timing_by_kind": {
+        "mechanical": {
+          "p50_seconds": 5.8843213971704245,
+          "p95_seconds": 7.465303976088762,
+          "device_memory_max_mib": 3687.0,
+          "exact": 69,
+          "missed": 12,
+          "review_regions": 0
+        },
+        "pid": {
+          "p50_seconds": 18.80290111899376,
+          "p95_seconds": 31.43930684030056,
+          "device_memory_max_mib": 3687.0,
+          "exact": 108,
+          "missed": 1,
+          "review_regions": 0
+        }
+      },
+      "page_needs_review_count": 20,
+      "release_gate": "experimental",
+      "diagnostic_only_ignore_kind": {
+        "not_used_for_release_gate": true,
+        "by_kind": {
+          "mechanical": {
+            "regions": 118,
+            "exact": 76,
+            "found": 116,
+            "cer": 0.1103202846975089,
+            "compact_exact": 81,
+            "compact_cer": 0.10030706243602866
+          },
+          "pid": {
+            "regions": 120,
+            "exact": 108,
+            "found": 119,
+            "cer": 0.04925816023738872,
+            "compact_exact": 109,
+            "compact_cer": 0.04764776839565742
+          }
+        }
+      },
+      "diameter": {
+        "selected": 17,
+        "correct_literal_diameter": 0,
+        "empty_set_substitutions": 5,
+        "omitted_diameter_glyphs": 12
+      }
+    },
+    "engineering": {
+      "models": [
+        "PP-OCRv6_medium_det",
+        "PP-OCRv6_medium_rec"
+      ],
+      "profile": "quality",
+      "groups": {
+        "mechanical/real/test": {
+          "regions": 118,
+          "cer": 0.23220640569395018,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.6271186440677966,
+          "raw_critical_character_accuracy": 0.6911764705882353,
+          "miss_rate": 0.09322033898305085,
+          "review_rate": 0.9067796610169492,
+          "reference_characters": 1124,
+          "critical_characters": 136
+        },
+        "pid/real/test": {
+          "regions": 120,
+          "cer": 0.020771513353115726,
+          "annotation_accuracy": 0.0,
+          "critical_character_accuracy": 0.0,
+          "raw_annotation_accuracy": 0.9416666666666667,
+          "raw_critical_character_accuracy": 0.9881889763779528,
+          "miss_rate": 0.0,
+          "review_rate": 1.0,
+          "reference_characters": 1685,
+          "critical_characters": 254
+        }
+      },
+      "timing_by_kind": {
+        "mechanical": {
+          "p50_seconds": 13.347543105483055,
+          "p95_seconds": 15.83245686814189,
+          "device_memory_max_mib": 5005.0,
+          "exact": 74,
+          "missed": 11,
+          "review_regions": 107
+        },
+        "pid": {
+          "p50_seconds": 33.770698219537735,
+          "p95_seconds": 45.708146937191486,
+          "device_memory_max_mib": 6437.0,
+          "exact": 113,
+          "missed": 0,
+          "review_regions": 120
+        }
+      },
+      "page_needs_review_count": 20,
+      "release_gate": "experimental",
+      "diagnostic_only_ignore_kind": {
+        "not_used_for_release_gate": true,
+        "by_kind": {
+          "mechanical": {
+            "regions": 118,
+            "exact": 83,
+            "found": 117,
+            "cer": 0.08896797153024912,
+            "compact_exact": 85,
+            "compact_cer": 0.07778915046059365
+          },
+          "pid": {
+            "regions": 120,
+            "exact": 113,
+            "found": 120,
+            "cer": 0.020771513353115726,
+            "compact_exact": 113,
+            "compact_cer": 0.019300361881785282
+          }
+        }
+      },
+      "diameter": {
+        "selected": 17,
+        "correct_literal_diameter": 0,
+        "empty_set_substitutions": 3,
+        "omitted_diameter_glyphs": 14
+      }
+    }
+  },
+  "audit": {
+    "engineering_tiles_completed": 400,
+    "engineering_tiles_total": 400,
+    "engineering_pages_hitting_64_region_review_cap": 17,
+    "engineering_review_resolutions": {
+      "recognition_disagreement": 399,
+      "consistent_recognition": 1724,
+      "review_budget_exhausted": 6499,
+      "crop_pixel_budget_exhausted": 48,
+      "ambiguous_symbol": 87,
+      "original_geometry_unavailable": 168
+    },
+    "resolution_count_scope": "Audit rows can be duplicated; not distinct real errors"
+  },
+  "private_evidence_hashes": {
+    "frozen_manifest_sha256": "0e5dd06accf54cefca9331b55b7d3844935384a9def0246c0b6f878c2dccf22f",
+    "input_archive_sha256": "38aa0ef594148bb02593e98ec79315e957e9cb823b1a11bb24661d0bc85f77ee",
+    "evidence_archive_sha256": "9dec0b76840fe413efcbc4d4a382fc3b560c9e010f812f97539e86b04ef5c1fd"
+  },
+  "publication_boundary": "Derived scores, source links and hashes only. Source PDFs, full-page images, full transcriptions, raw responses and service source are not bundled. Hashes alone do not allow independent validation of labels, matching or inference."
+}

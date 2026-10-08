@@ -4,9 +4,24 @@
 
 **Python · PaddleOCR · OpenCV · PyMuPDF · FastAPI · DOCX**
 
-[公开实测](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
+[真实图纸实测](cases/real-engineering-drawings.md) · [历史基线](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
 
-## 公开实测：2026-10-07
+## 真实图纸摸底：2026-10-08
+
+在 RTX 5090 上比较普通模式（PP-OCRv6 small）与工程模式（medium + 原分辨率分块 + 工程字符复核）：**20 张真实项目图纸、238 个预先冻结区域、40 次完整页面推理**。包括 10 张 LIGO 机械图、8 张 Hanford P&ID、2 张 Johannesburg Water P&ID。[来源与页码](artifacts/real-drawings-20261008/SOURCES.md)
+
+| 所选区域完整转写匹配率，包含表格类型要求 | 普通模式 | 工程模式 |
+|---|---:|---:|
+| 机械图，118 区域 | 58.47%（69/118） | 62.71%（74/118） |
+| 管道仪表图，120 区域 | 90.00%（108/120） | 94.17%（113/120） |
+
+**保持试验状态：**所选 17 个直径符号两组均误读或遗漏，工程模式 20/20 页待复核。`Ø1.046 → 1.046` 的错误置信度接近 100%，局部复识别也一致，暴露了单凭置信度和重复一致性检查的不足。待复核不计为验收正确。
+
+机械分数还包含 10 个零件表目标被输出成文本行的结构问题；它不是纯识别器准确率。标注由助手目视核对后冻结，尚待独立人工复核；只覆盖选定区域，不能视为整页准确率。工程模式每页中位耗时：机械 13.35 秒、P&ID 33.77 秒；每页仅测一次，这是跨页面统计。
+
+[完整报告与失败分析](cases/real-engineering-drawings.md) · [机器可读结果](artifacts/real-drawings-20261008/summary.json) · [离线复算](tools/score_real_drawings.py)
+
+## 公开基线：2026-10-07
 
 在单张 RTX 5090 32 GB 上调用实际项目服务，每例预热 2 次，再串行测量 20 次。语言 `en`、模式 `balanced`，启用版面分析。项目目录沿用 PP-V5 命名，**本轮实际 OCR 后端为 PP-OCRv6 small**，模型文件哈希随响应公开。
 
@@ -30,6 +45,7 @@
 
 | 工程问题 | 处理方法与取舍 | 可检查的证据 |
 |---|---|---|
+| 字典覆盖、置信度高仍可能漏掉工程符号 | 原图分块、方向候选、模型字符覆盖与审计；真实测试仍发现漏符号，保留待复核 | [真实失败分析](cases/real-engineering-drawings.md) · [评分片段](examples/engineering_metrics.py) |
 | 原生、扫描 PDF 走错链路会损失文字或重复识别 | 结合文字页比例与每页文字量选择 DOCX 路径；保留强制模式和探测失败回退 | [PDF 路由](examples/pdf_routing.py) |
 | 译文变长，覆盖图线与相邻标签 | 有界搜索换行、字号、字距及横向比例，返回明确的 `fits` 状态；估算通过仍需渲染验证 | [Copy-fit 搜索](examples/copy_fit.py) |
 | 编号、尺寸、符号被翻译或归一化改写 | 保存已确认片段的原始 Unicode，校验占位符数量、顺序与摘要，异常时返回原文 | [字符保护](examples/literal_guard.py) |
@@ -59,6 +75,7 @@ flowchart LR
 python -m unittest discover -s tests -v
 python examples/literal_guard.py
 python tools/score_results.py
+python tools/score_real_drawings.py
 ```
 
 6 项独立示例测试通过。重新生成公开输入：
@@ -79,6 +96,8 @@ python tools/benchmark_service.py --base-url http://127.0.0.1:8089 --runs 20
 
 ## 下一步
 
+- 优先补检直径及正负号，组合上下公差，修复零件表结构回退；去重后按风险分配复核预算。
+- 使用本批失败调优后，将其转为回归集，另补独立人工校对的新图纸进行最终验收。
 - 修复 Word 文本与背景重复叠加、表格显示异常，再用相同输入复测。
 - 扩展小字、旋转标注、断线和倾斜表格的独立标注集。
 - 增加 Word 与 LibreOffice 双渲染器检查，将页面交付质量纳入门禁。

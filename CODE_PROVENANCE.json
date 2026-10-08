@@ -40,5 +40,19 @@
     "adaptation": "Conceptual runnable adaptation of reviewed-span placeholders and integrity checks; full classifier and image policies omitted.",
     "example_sha256": "b6f7cbba790b9ecaa294cf24b4866a7e4b6049f4dfab3f1a09c7ca01fb09a5f3",
     "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+  },
+  {
+    "example": "examples/engineering_metrics.py",
+    "source_module": "evaluation/engineering_metrics.py",
+    "source_sha256": "80e91dc0cd799440cc9cab87196d1a48ee575002acdb1fc20d61355c08553641",
+    "selected_symbols": [
+      "CRITICAL",
+      "normalize",
+      "edit_counts",
+      "aggregate"
+    ],
+    "adaptation": "Exact selected functions and constant; geometry matching, service and full evaluator omitted. New module-level scope note.",
+    "example_sha256": "26c3c44f6b414791673a4c1081b14c7f8cfadec5ffa53b666fe93a51694ab0bc",
+    "snapshot_note": "Local working copy snapshot; hash is provenance, not a public release of full service source."
   }
 ]

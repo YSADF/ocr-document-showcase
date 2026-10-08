@@ -23,3 +23,13 @@ python examples/literal_guard.py
 ```
 
 Copy-fit 对每个候选行数依次尝试字号、字距及横向比例，最小字号受限，放不下时明确失败。本片段不包含完整文字框生成逻辑，其单元测试不能排除本轮 Word 渲染问题。
+
+## 工程图评分片段
+
+[engineering_metrics.py](engineering_metrics.py) 选取字符编辑距离与聚合逻辑，保留原始 Unicode，并分别给出原文转写和复核折减后的成绩。它不含模型、坐标匹配或整页放行逻辑；普通模式的行级复核标记不覆盖原有页级质量检查。
+
+```bash
+python tools/score_real_drawings.py
+```
+
+该脚本复算 20 张真实图纸的公开派生评分，不能仅凭评分验证未公开的图像、标注和匹配是否正确。详见[测试报告](../cases/real-engineering-drawings.md)。

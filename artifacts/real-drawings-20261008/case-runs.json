@@ -1,0 +1,602 @@
+[
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060312",
+    "kind": "mechanical",
+    "seconds": 7.465303976088762,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 28,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "74a084d22e2de095124492cf395085c71d2f272c26dd2f0cb8ba10e728de5b1c",
+    "private_response_sha256": "00faf750346a4a3c47fc2173863512c112bbcc194286a46ba19a1aa2a27e0810"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060314",
+    "kind": "mechanical",
+    "seconds": 7.280887104570866,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 29,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "22d2f38e7a2ee62db453389ce80d3df14574ad83a8071baade5a0d0e8748898a",
+    "private_response_sha256": "7f75b4c824df0c05c5d64255f22ea47ff5c2b5414488a917fa4d6898b79acc1c"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060315",
+    "kind": "mechanical",
+    "seconds": 5.203625578433275,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "a0ff767f97595adcbd2dd21e2dcb74f0b4ee0c9c9415d389de5c34bec6ce1ea9",
+    "private_response_sha256": "ebb54b910d6575d87649b2e777658b39b871d15d5f6eb7cd60f88569099d7562"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060318",
+    "kind": "mechanical",
+    "seconds": 6.293150544166565,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 24,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "d7c7a4a64faf6e29ce3bed635c42aeaa06fcd469c882c7f62ca326aa79d4690c",
+    "private_response_sha256": "39b0e6a14a3f38979c669f9c2515064fd8bdb31764e214162c54e57a649d956f"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060321",
+    "kind": "mechanical",
+    "seconds": 6.841833878308535,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 27,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "7b10ce4ab0b53f50f3825817611abd605cd8122799ca465e278cfe8e103633f4",
+    "private_response_sha256": "cd644847bcb407350699f1864bfb353f8ebf94b8d16fa9d028794e6d15c5335b"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d060322",
+    "kind": "mechanical",
+    "seconds": 4.90121890977025,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 18,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "023931b3da17fee0fd976dfa32123e8c52628e716aedaf99f37dd3ff14a52f6d",
+    "private_response_sha256": "a9acbb4dc7344a9ceabb6b42c214101ffa8d4eafd94a1fe25d0681cfb96c1359"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d080106",
+    "kind": "mechanical",
+    "seconds": 5.475492250174284,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 20,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "13c8dd256fd1875413724a57996041b36af69254b7916c8528c12b276acf117e",
+    "private_response_sha256": "b592478556f97893f4847a1990875a9d8757284d29ba3e65c46a87d67935e63c"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d1100424",
+    "kind": "mechanical",
+    "seconds": 4.743160471320152,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "42f761e56c3d97cffe03bd9c84d2ab4119e045b3a418a047dcfea2c890495a84",
+    "private_response_sha256": "3c47128d72a4e57bac5f5ff7a938546913adab09145925cde3b504d0f3dec588"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d1102006",
+    "kind": "mechanical",
+    "seconds": 7.251819647848606,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 27,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "88b48852f0a4e2c41076f1711956734bf8282c10863f57dd1499fc698a7a727a",
+    "private_response_sha256": "85bc111b03ec8250e3bb211554f26a5fe0ea3c45d85290d82c0eba2ed75601b4"
+  },
+  {
+    "scene": "general",
+    "sample_id": "ligo-d1200144",
+    "kind": "mechanical",
+    "seconds": 4.760753575712442,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 19,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "2c514836e128b4646afd05d8a9d2de31485917ac57e4a3109c1b6b4a5904e079",
+    "private_response_sha256": "c1686b737c6648d88ad9ea50cc6bddc017ea504ac9c8ed3b9ca8a4b0abce2683"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-18",
+    "kind": "pid",
+    "seconds": 16.85596839338541,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 66,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "0402fe51d2eac5354361454f4572904eb66ca868594ae3ef96f18179561872cf",
+    "private_response_sha256": "cbd331a607f04bbfd206e34b8bb842c08e523cb5624e4fcb93135cc087b4a0db"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-19",
+    "kind": "pid",
+    "seconds": 31.43930684030056,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 121,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "78332241e6086afdc7ac24a6976605c44f06ac7dad65ebf615a95e84139f8fd8",
+    "private_response_sha256": "fb8f7f10e25d748b9b7acce6f5704f7c05aa9e12a59812d8fb680ad76645dc0a"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-20",
+    "kind": "pid",
+    "seconds": 27.918249495327473,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 107,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "1e42658aac89cce9eaeff6caa9c3e9048c3c259de70781d98e9dd4b12cae89e7",
+    "private_response_sha256": "72d72887278f9ab33c4476318c446439fc713a034cd10578646d24cb9ceb3565"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-21",
+    "kind": "pid",
+    "seconds": 20.749833844602108,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 81,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "a2f5a6faad73b7855aac2384a0bc893ed935a8a6349391e5db9eb79ca5ea1780",
+    "private_response_sha256": "d2c0d125258d32289b8cfe740b174ed3f96d44c6bb04250eb1da5124d262e51f"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-22",
+    "kind": "pid",
+    "seconds": 14.860844425857067,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 58,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "fe5dd6cff92db6b463142854a4472336d5aef07ea4ca2fce380b596be2ff8cc6",
+    "private_response_sha256": "453c9e5c98899f6621c60bd5978ea3f2b64e6a5535a2c435fb660743f15cd23c"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-23",
+    "kind": "pid",
+    "seconds": 23.924102317541838,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 88,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "aed17a7445109e81d168a5206d7c6933ccfb1450412543d5db8a06a2c38d248d",
+    "private_response_sha256": "873154afa451ad76940154d3d8a54fda488804956897efff6b2020c2493e9119"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-24",
+    "kind": "pid",
+    "seconds": 13.679396834224463,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 50,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "14d9485854b6d307bda0d68cbe0402574b970096f047c8e66c26306487e9a867",
+    "private_response_sha256": "4f1dbf00cc2b64fd5cbfc83a5fd9f27f890baec3b398f28ebd9d87484bef7ef3"
+  },
+  {
+    "scene": "general",
+    "sample_id": "hanford-26",
+    "kind": "pid",
+    "seconds": 23.990665439516306,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 91,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "5e9204752f639930c58e6acaeb03df89d65750bba4b06dc41397be0a48ab856a",
+    "private_response_sha256": "fe41929e326aef8e981b61e1725d65e5321c3ff974e970f52b1f32877112d13c"
+  },
+  {
+    "scene": "general",
+    "sample_id": "johannesburg-10",
+    "kind": "pid",
+    "seconds": 6.1087278835475445,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 23,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "490e3344b0ae34592291f550fc1809dea0f9e286d794b012661591cd3de15e98",
+    "private_response_sha256": "15098fcec95992bc49e6783962e227e65fb749e64803651e9baba12ff164d50f"
+  },
+  {
+    "scene": "general",
+    "sample_id": "johannesburg-11",
+    "kind": "pid",
+    "seconds": 5.115646101534367,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 20,
+      "max_device_used_mib": 3687.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "f7a849e12e634fdd30604324cfb5e1be0ec48f02ee83e1dae72ed01a21e96f95",
+    "private_response_sha256": "af6566e1be824c4ee9666b876b7ec30270d848fe4e58c185530daab706807284"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060312",
+    "kind": "mechanical",
+    "seconds": 15.763599794358015,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 60,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "74a084d22e2de095124492cf395085c71d2f272c26dd2f0cb8ba10e728de5b1c",
+    "private_response_sha256": "a42bb5415047af088043f564bb789d4d337f9868c834426f82b56f58d85eab65"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060314",
+    "kind": "mechanical",
+    "seconds": 15.770551931113005,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 60,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "22d2f38e7a2ee62db453389ce80d3df14574ad83a8071baade5a0d0e8748898a",
+    "private_response_sha256": "9311da4ff81b5135afffd718b86e59e882c5fcf5431f14fd080b5285be3f6235"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060315",
+    "kind": "mechanical",
+    "seconds": 11.08818931505084,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 43,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "a0ff767f97595adcbd2dd21e2dcb74f0b4ee0c9c9415d389de5c34bec6ce1ea9",
+    "private_response_sha256": "536c2c6fc092e577cc36c0bbdb7c3cfe05e09411c89a6a7f68fe2e80cde9db4c"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060318",
+    "kind": "mechanical",
+    "seconds": 11.525665298104286,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 43,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "d7c7a4a64faf6e29ce3bed635c42aeaa06fcd469c882c7f62ca326aa79d4690c",
+    "private_response_sha256": "6420fd9c4b9d666fe9765be80a73eccaedae0d47cf1a98953bc116ad0a347614"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060321",
+    "kind": "mechanical",
+    "seconds": 12.981170356273651,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "7b10ce4ab0b53f50f3825817611abd605cd8122799ca465e278cfe8e103633f4",
+    "private_response_sha256": "2e646ebe53b9e6d91a604ed7f9d1b0e697113c56e9c2eb44d4600b36c92e6a76"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d060322",
+    "kind": "mechanical",
+    "seconds": 12.288054529577494,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 45,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "023931b3da17fee0fd976dfa32123e8c52628e716aedaf99f37dd3ff14a52f6d",
+    "private_response_sha256": "e06635aaf9260fbc7ca3f648ac64e61b5e03e2351634b1d3f190978baac48ea7"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d080106",
+    "kind": "mechanical",
+    "seconds": 15.83245686814189,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 60,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "13c8dd256fd1875413724a57996041b36af69254b7916c8528c12b276acf117e",
+    "private_response_sha256": "9ed8efe0bb9da564e2a142c19e885d760d49559de9cd5697ecf83a9f4b24dfa9"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d1100424",
+    "kind": "mechanical",
+    "seconds": 11.634675700217485,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 42,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "42f761e56c3d97cffe03bd9c84d2ab4119e045b3a418a047dcfea2c890495a84",
+    "private_response_sha256": "1a23a703a321cf70efef55057caae8395f086102568bfb3914616bcc462c364b"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d1102006",
+    "kind": "mechanical",
+    "seconds": 14.167265992611647,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 50,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "88b48852f0a4e2c41076f1711956734bf8282c10863f57dd1499fc698a7a727a",
+    "private_response_sha256": "bb675303f8b70e3ef7e3d89b3c93ff46a841040caa920f2fc3302411012cb43c"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "ligo-d1200144",
+    "kind": "mechanical",
+    "seconds": 13.713915854692459,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 49,
+      "max_device_used_mib": 5005.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "2c514836e128b4646afd05d8a9d2de31485917ac57e4a3109c1b6b4a5904e079",
+    "private_response_sha256": "3fbf3833d780ec3abcb725a233b3fc906a30500b9523c6173693cd6c24d29e1a"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-18",
+    "kind": "pid",
+    "seconds": 34.30306525528431,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 125,
+      "max_device_used_mib": 5715.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "0402fe51d2eac5354361454f4572904eb66ca868594ae3ef96f18179561872cf",
+    "private_response_sha256": "548d5b921381e9016e5fe817c52d721bc31fbe9264af51ef1367eddfff77422a"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-19",
+    "kind": "pid",
+    "seconds": 45.708146937191486,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 170,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "78332241e6086afdc7ac24a6976605c44f06ac7dad65ebf615a95e84139f8fd8",
+    "private_response_sha256": "6e68c9284525ce105b368d316f2d762d468aa611d4fdf59b472d016b41088398"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-20",
+    "kind": "pid",
+    "seconds": 39.62005764245987,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 148,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "1e42658aac89cce9eaeff6caa9c3e9048c3c259de70781d98e9dd4b12cae89e7",
+    "private_response_sha256": "56c96e24ff3f109ca26de2667f1a5334c85fc0aee4e0579270ccde98f5e7427d"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-21",
+    "kind": "pid",
+    "seconds": 27.51120714843273,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 103,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "a2f5a6faad73b7855aac2384a0bc893ed935a8a6349391e5db9eb79ca5ea1780",
+    "private_response_sha256": "9d5ed567ff139a13ca0657e3f9775b3bf65b90f8d32b71f2fee9b46bd3a6d7d7"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-22",
+    "kind": "pid",
+    "seconds": 33.23833118379116,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 124,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "fe5dd6cff92db6b463142854a4472336d5aef07ea4ca2fce380b596be2ff8cc6",
+    "private_response_sha256": "035498f4d15a400f03bd6cf9b8e50870c3be04df280559ecbe9f32f2a3d34117"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-23",
+    "kind": "pid",
+    "seconds": 38.853870783001184,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 145,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "aed17a7445109e81d168a5206d7c6933ccfb1450412543d5db8a06a2c38d248d",
+    "private_response_sha256": "174e26bafd4148e1e64111b3acbeac38bc83759dc322d6a841a17dcf8634b83c"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-24",
+    "kind": "pid",
+    "seconds": 26.22550030052662,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 101,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "14d9485854b6d307bda0d68cbe0402574b970096f047c8e66c26306487e9a867",
+    "private_response_sha256": "b349770712146b7f8fa2bd887680a0f38afda2e145b754a863f45d465fbe45a5"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "hanford-26",
+    "kind": "pid",
+    "seconds": 36.53237263485789,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 141,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "5e9204752f639930c58e6acaeb03df89d65750bba4b06dc41397be0a48ab856a",
+    "private_response_sha256": "2f195fb478c5728b811e84e3bb3757a53b84568e721716c82cfd4625c2a262b3"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "johannesburg-10",
+    "kind": "pid",
+    "seconds": 16.819687698036432,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 65,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "490e3344b0ae34592291f550fc1809dea0f9e286d794b012661591cd3de15e98",
+    "private_response_sha256": "df61f16fdaceedc9e643c571cf1225f2274419efc4062c04b1d8fe99f46bdeac"
+  },
+  {
+    "scene": "engineering",
+    "sample_id": "johannesburg-11",
+    "kind": "pid",
+    "seconds": 11.435498911887407,
+    "page_needs_review": true,
+    "gpu_memory": {
+      "status": "sampled",
+      "samples": 42,
+      "max_device_used_mib": 6437.0,
+      "scope": "benchmark-host whole device, including other processes; sampled peak"
+    },
+    "input_sha256": "f7a849e12e634fdd30604324cfb5e1be0ec48f02ee83e1dae72ed01a21e96f95",
+    "private_response_sha256": "51fd4f87461541df6fd2a11db643db7bf47829fb3be09878daa95c97b46a3878"
+  }
+]
