@@ -1,0 +1,2658 @@
+{
+  "selected_before_model_inference": true,
+  "selection_method": "Pre-model visual page/crop inspection; native PDF line geometry assists vector ROI boundaries, extracted text discarded; labels blank",
+  "samples": [
+    {
+      "id": "newport-561-obm-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/hd0/hd1/8933899501598/561-OBM-S.pdf",
+      "source_pdf_sha256": "a313d537d26c52a542087f3cd5ff6d82504c4f8df312e566eb68f3ca20575c67",
+      "source_page": 1,
+      "source_file": "newport-561-obm.pdf",
+      "image": "newport-561-obm-p1.png",
+      "image_sha256": "c6e8a7b8b364cdbb44e64fb23809fb75fd4d8d6386153212c52602de432ccf7a",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            711.18,
+            501.19,
+            784.48,
+            538.83
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            703.25,
+            540.81,
+            790.42,
+            576.47
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            820.13,
+            641.84,
+            895.41,
+            673.54
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1030.12,
+            501.19,
+            1105.4,
+            534.87
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1182.66,
+            643.83,
+            1297.56,
+            681.46
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            748.82,
+            820.13,
+            851.83,
+            851.83
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            1022.2,
+            883.53,
+            1097.47,
+            919.18
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-625-rc6-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/resources/hdd/h6a/9954230632478/625-RC6-DWG-S/625-RC6-DWG-S.pdf",
+      "source_pdf_sha256": "8109bcd3f1af9f1b7e55e969f7899eea38a5bca3df969ad1b61b667dfc21b518",
+      "source_page": 1,
+      "source_file": "newport-625-rc6.pdf",
+      "image": "newport-625-rc6-p1.png",
+      "image_sha256": "e56f4161a4c409fd9298f4b59524201b57028cde24f5b8df6a30f9c6da83481b",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            933.05,
+            348.66,
+            1016.25,
+            372.43
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            954.84,
+            467.52,
+            1018.23,
+            495.25
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            954.84,
+            560.62,
+            1079.64,
+            590.34
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            532.89,
+            641.84,
+            616.09,
+            669.58
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            826.08,
+            639.86,
+            950.88,
+            669.58
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1097.47,
+            645.81,
+            1228.22,
+            677.5
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            940.98,
+            796.36,
+            1014.27,
+            824.1
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-902805-02-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/hbd/h1d/8933914771486/9805kb-Drawing.pdf",
+      "source_pdf_sha256": "ed8142a0c53bb1164949cf13252b08aad80b1d8779b966844d72740a8c5856fc",
+      "source_page": 1,
+      "source_file": "newport-902805-02.pdf",
+      "image": "newport-902805-02-p1.png",
+      "image_sha256": "1f0cc6a411b54c4cb102f9c02fb1f5fab86443b69966b9b3953b806199913622",
+      "width": 1980,
+      "height": 1530,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            138.6,
+            134.64,
+            479.16,
+            168.3
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            110.88,
+            397.98,
+            390.06,
+            431.64
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            154.44,
+            516.78,
+            396.0,
+            550.44
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            954.36,
+            401.94,
+            1039.5,
+            435.6
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            887.04,
+            572.22,
+            972.18,
+            605.88
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            714.78,
+            736.56,
+            801.9,
+            770.22
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            566.28,
+            835.56,
+            809.82,
+            871.2
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            1415.7,
+            120.78,
+            1819.62,
+            160.38
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1417.68,
+            461.34,
+            1599.84,
+            498.96
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1417.68,
+            590.04,
+            1589.94,
+            625.68
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r11",
+          "bbox": [
+            982.08,
+            1043.46,
+            1186.02,
+            1081.08
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r12",
+          "bbox": [
+            982.08,
+            1081.08,
+            1186.02,
+            1118.7
+          ],
+          "kind": "cell",
+          "category": "table"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-902810-06-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/h29/hce/9684120076318/2008-9810-RC.pdf",
+      "source_pdf_sha256": "6ac49f2b933881e90a8ac92e8f38f92eb4f8359a5f0ed126986e5abdd59c0be8",
+      "source_page": 1,
+      "source_file": "newport-902810-06.pdf",
+      "image": "newport-902810-06-p1.png",
+      "image_sha256": "554fd6112b777573647321d626b4dc3ff35872ccd30ab3712b91d81fce01d787",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            778.53,
+            239.7,
+            911.26,
+            275.36
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            384.31,
+            311.02,
+            604.21,
+            340.73
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            752.78,
+            334.79,
+            824.1,
+            368.47
+          ],
+          "kind": "line",
+          "category": "line_interference"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1093.51,
+            297.15,
+            1218.32,
+            330.83
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1168.79,
+            459.59,
+            1230.2,
+            493.27
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1394.62,
+            295.17,
+            1537.26,
+            332.81
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            1394.62,
+            346.68,
+            1537.26,
+            384.31
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            1061.82,
+            713.16,
+            1206.43,
+            746.84
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1091.53,
+            820.13,
+            1281.71,
+            851.83
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1065.78,
+            1129.17,
+            1212.37,
+            1164.83
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-902816-04-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/h21/h41/8933915361310/9817a-Drawing.pdf",
+      "source_pdf_sha256": "8cc0b0dfd276feb0f0cf5a2f58223ee01b70a240e1ad038a6671cacec55b17af",
+      "source_page": 1,
+      "source_file": "newport-902816-04.pdf",
+      "image": "newport-902816-04-p1.png",
+      "image_sha256": "ae869bb80cfa7da37d806aa1e681d6625a692acda1bab87a8a6e748cd0d9d275",
+      "width": 1980,
+      "height": 1530,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            922.68,
+            186.12,
+            986.04,
+            213.84
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            990.0,
+            316.8,
+            1053.36,
+            344.52
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            991.98,
+            526.68,
+            1089.0,
+            554.4
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1007.82,
+            667.26,
+            1158.3,
+            694.98
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1025.64,
+            762.3,
+            1188.0,
+            790.02
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            766.26,
+            906.84,
+            936.54,
+            940.5
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            568.26,
+            655.38,
+            738.54,
+            685.08
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            475.2,
+            839.52,
+            708.84,
+            869.22
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1144.44,
+            255.42,
+            1304.82,
+            281.16
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1312.74,
+            223.74,
+            1508.76,
+            249.48
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r11",
+          "bbox": [
+            1710.72,
+            566.28,
+            1776.06,
+            595.98
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r12",
+          "bbox": [
+            1524.6,
+            847.44,
+            1584.0,
+            875.16
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-b18-15.5-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/had/h8a/8933921259550/B-SERIES-S.pdf",
+      "source_pdf_sha256": "d481b31ade9e0fdc4849b0bb6c73bf3075bffb0a100c88470ade2359d86c4264",
+      "source_page": 1,
+      "source_file": "newport-b18-15.5.pdf",
+      "image": "newport-b18-15.5-p1.png",
+      "image_sha256": "688ffe04c0da791e886dfdd382ca5b905893058452406e2223cd6b653c1d183b",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            571.75,
+            254.02,
+            730.1,
+            284.86
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            1208.55,
+            169.15,
+            1338.22,
+            200.0
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            495.54,
+            547.6,
+            531.13,
+            578.45
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            725.42,
+            547.63,
+            759.78,
+            578.47
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1335.87,
+            547.62,
+            1367.7,
+            578.47
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1036.45,
+            323.96,
+            1145.55,
+            354.81
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            346.4,
+            804.9,
+            417.47,
+            829.61
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            733.91,
+            804.9,
+            911.45,
+            829.61
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1244.5,
+            894.94,
+            1316.04,
+            919.65
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1521.43,
+            1142.54,
+            1579.84,
+            1167.25
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-fam24-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/resources/h04/hd8/9954236235806/FAM24_M-FAM24/FAM24-M-FAM24.pdf",
+      "source_pdf_sha256": "d501468fe8731ade4f3aa3afa28e8e962428cb3ccf46b5f88ada071a8548bf3c",
+      "source_page": 1,
+      "source_file": "newport-fam24.pdf",
+      "image": "newport-fam24-p1.png",
+      "image_sha256": "80c10b3f3597e5161002458eccdd0144e5742187181c81f002e14c0fbd285564",
+      "width": 3060,
+      "height": 1980,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            627.3,
+            618.12,
+            746.64,
+            667.08
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            1266.84,
+            553.86,
+            1395.36,
+            605.88
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            954.72,
+            798.66,
+            1086.3,
+            847.62
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1346.4,
+            1022.04,
+            1477.98,
+            1071.0
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            428.4,
+            1074.06,
+            712.98,
+            1126.08
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            997.56,
+            1282.14,
+            1254.6,
+            1331.1
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            768.06,
+            1328.04,
+            872.1,
+            1380.06
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            859.86,
+            1646.28,
+            1000.62,
+            1695.24
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1282.14,
+            1591.2,
+            1389.24,
+            1643.22
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            2374.56,
+            1199.52,
+            2653.02,
+            1254.6
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r11",
+          "bbox": [
+            2089.98,
+            1224.0,
+            2197.08,
+            1276.02
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r12",
+          "bbox": [
+            2273.58,
+            1698.3,
+            2466.36,
+            1747.26
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-lh-1-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/h33/hec/8933936234526/LH-1-299.pdf",
+      "source_pdf_sha256": "9bc85882a46f3fffe4dd862bdd1f0b1962263e27f6ef1bfa9153477f5f504bd3",
+      "source_page": 1,
+      "source_file": "newport-lh-1.pdf",
+      "image": "newport-lh-1-p1.png",
+      "image_sha256": "57d91b5f0809480a675e7aec6463c3398d6a33466c6d4a7cf3305a11904d0425",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            703.25,
+            255.55,
+            812.21,
+            293.19
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            485.35,
+            316.96,
+            639.86,
+            354.6
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            849.85,
+            417.99,
+            1026.16,
+            457.61
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1250.01,
+            493.27,
+            1434.24,
+            534.87
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            855.79,
+            602.22,
+            1032.1,
+            645.81
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            826.08,
+            738.91,
+            1004.37,
+            780.51
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            208.01,
+            772.59,
+            358.56,
+            814.19
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            352.62,
+            1010.31,
+            481.38,
+            1051.91
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            760.7,
+            970.69,
+            907.3,
+            1012.29
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1537.26,
+            802.31,
+            1675.93,
+            841.93
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-lh-3a-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/hb7/h3c/9118114938910/LH-A.pdf",
+      "source_pdf_sha256": "feac821efc9c703cc00a216fb6a60b58e79e41a8fbb3744dbbedf55215062ba0",
+      "source_page": 1,
+      "source_file": "newport-lh-3a.pdf",
+      "image": "newport-lh-3a-p1.png",
+      "image_sha256": "0384825d0b0f3cba7f047e7fe67920ecaa38dcc21df4ffae1e98af1f17bb5f4f",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            614.11,
+            223.85,
+            675.52,
+            255.55
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            1099.46,
+            239.7,
+            1147.0,
+            271.4
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            1184.64,
+            437.8,
+            1307.46,
+            469.5
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1022.2,
+            574.49,
+            1125.21,
+            606.19
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1384.72,
+            134.71,
+            1450.09,
+            166.4
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1022.2,
+            709.2,
+            1081.63,
+            742.88
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            245.64,
+            962.77,
+            322.9,
+            988.52
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            374.41,
+            1034.08,
+            459.59,
+            1061.82
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            877.58,
+            1107.38,
+            986.54,
+            1135.11
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1566.97,
+            1212.37,
+            1648.19,
+            1238.12
+          ],
+          "kind": "cell",
+          "category": "table"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "newport-lt20-20-p1",
+      "kind": "mechanical",
+      "drawing_family": "newport-optomechanics",
+      "drawing_family_verified": true,
+      "source_url": "https://api.p1.mks.com/medias/sys_master/images/images/h58/hd3/8933942394910/LTXX-XX-DWG.pdf",
+      "source_pdf_sha256": "dc50e2af7ab907214e23015bf08e2e82418a8acb59834e123bc1c4f2375fb8aa",
+      "source_page": 1,
+      "source_file": "newport-lt20-20.pdf",
+      "image": "newport-lt20-20-p1.png",
+      "image_sha256": "9184d33f6e2dfa276d0cb050b25cafc0f554b315c9649be2f9b725600c13f77d",
+      "width": 1981,
+      "height": 1531,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            736.93,
+            257.53,
+            826.08,
+            297.15
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            978.61,
+            239.7,
+            1150.96,
+            277.34
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            1295.57,
+            261.49,
+            1382.74,
+            299.13
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1460.0,
+            417.99,
+            1590.74,
+            459.59
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1047.95,
+            592.32,
+            1154.92,
+            629.96
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1042.01,
+            679.48,
+            1184.64,
+            719.1
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            392.24,
+            895.41,
+            497.23,
+            929.09
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            534.87,
+            962.77,
+            671.56,
+            996.44
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1281.71,
+            1093.51,
+            1386.7,
+            1127.19
+          ],
+          "kind": "cell",
+          "category": "table"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1446.13,
+            1202.47,
+            1555.09,
+            1232.18
+          ],
+          "kind": "cell",
+          "category": "table"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p29",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 29,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p29.png",
+      "image_sha256": "7ef8a2c37836950cddf3d045835fbaa5ca2a070e356ea1f85131ae2b76e0c084",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            362.7,
+            555.91,
+            592.28,
+            582.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            3480.0,
+            784.81,
+            3636.24,
+            811.38
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            2909.1,
+            1215.01,
+            3050.97,
+            1241.58
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            2786.7,
+            1382.1,
+            3007.11,
+            1408.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            3775.2,
+            1155.01,
+            3910.47,
+            1181.58
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1582.2,
+            1624.2,
+            1746.29,
+            1650.78
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            3307.5,
+            2325.3,
+            3357.67,
+            2351.88
+          ],
+          "kind": "line",
+          "category": "line_interference",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            3510.91,
+            1602.75,
+            3537.48,
+            2081.7
+          ],
+          "kind": "line",
+          "category": "rotated_small_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1086.0,
+            3283.51,
+            1391.58,
+            3310.08
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            5197.8,
+            3432.01,
+            5871.39,
+            3482.15
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p30",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 30,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p30.png",
+      "image_sha256": "29f1f17cd2d946b3a5e69136ba993e4c6a4d5348d176bed205392022fffc4cd4",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            1452.9,
+            1550.4,
+            1585.57,
+            1576.98
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            1527.3,
+            814.2,
+            1593.17,
+            840.78
+          ],
+          "kind": "line",
+          "category": "line_interference",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            3881.1,
+            672.61,
+            3931.27,
+            699.18
+          ],
+          "kind": "line",
+          "category": "line_interference",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            3482.1,
+            1287.61,
+            3673.68,
+            1314.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            5005.5,
+            1574.1,
+            5346.39,
+            1600.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            5248.5,
+            1367.4,
+            5334.52,
+            1393.98
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            3500.7,
+            2303.1,
+            3660.83,
+            2329.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            5197.8,
+            3460.51,
+            5871.39,
+            3510.65
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1002.3,
+            3836.7,
+            1018.41,
+            3863.28
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            3790.8,
+            2068.2,
+            3860.6,
+            2094.78
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p31",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 31,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p31.png",
+      "image_sha256": "25ffe8a61e1824b4b251658fd1445421795ccc403d7abe49994bfe1b59ced90f",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            834.3,
+            1511.7,
+            1014.12,
+            1538.28
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            827.7,
+            3264.31,
+            1007.52,
+            3290.88
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            2215.5,
+            2205.9,
+            2348.17,
+            2232.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            3114.9,
+            2604.91,
+            3324.84,
+            2631.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            3081.6,
+            3368.11,
+            3298.1,
+            3394.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            4560.9,
+            1965.6,
+            4810.11,
+            1992.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            4614.0,
+            1214.11,
+            4801.67,
+            1240.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            2029.5,
+            2471.4,
+            2115.52,
+            2497.98
+          ],
+          "kind": "line",
+          "category": "rotated_small_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            4001.7,
+            1370.71,
+            4058.4,
+            1397.28
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            5197.8,
+            3432.01,
+            5871.39,
+            3482.15
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p32",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 32,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p32.png",
+      "image_sha256": "31019c28bd5691a6f5fe0ad96cc87f9146a73253623ae0d42d32b5f4f420ea4f",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            4828.68,
+            1615.68,
+            5214.24,
+            1683.0
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            5116.32,
+            165.24,
+            5391.72,
+            244.8
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            1181.16,
+            1689.12,
+            1389.24,
+            1750.32
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1181.16,
+            2356.2,
+            1389.24,
+            2423.52
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1187.28,
+            3206.88,
+            1395.36,
+            3274.2
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            1995.12,
+            3482.28,
+            2295.0,
+            3543.48
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            3060.0,
+            3690.36,
+            3323.16,
+            3757.68
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            2478.6,
+            2197.08,
+            2601.0,
+            2313.36
+          ],
+          "kind": "line",
+          "category": "line_interference"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1842.12,
+            3053.88,
+            1964.52,
+            3157.92
+          ],
+          "kind": "line",
+          "category": "line_interference"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            2307.24,
+            3182.4,
+            2356.2,
+            3396.6
+          ],
+          "kind": "line",
+          "category": "rotated_small_text"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p33",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 33,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p33.png",
+      "image_sha256": "cb1c2f35179a9793827ab29f1c0bfa364b00c60537ba5492d77c66719877a01f",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            3032.1,
+            317.7,
+            3242.07,
+            344.28
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            4052.1,
+            1327.8,
+            4141.56,
+            1354.38
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            4052.1,
+            2190.3,
+            4141.56,
+            2216.88
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            3360.6,
+            1794.3,
+            3616.39,
+            1820.88
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            4148.4,
+            1927.5,
+            4277.21,
+            1954.08
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            4035.9,
+            2266.8,
+            4158.15,
+            2293.38
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            3682.8,
+            2013.36,
+            3744.78,
+            2036.77
+          ],
+          "kind": "line",
+          "category": "line_interference",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            3704.7,
+            2430.06,
+            3723.42,
+            2453.47
+          ],
+          "kind": "line",
+          "category": "line_interference",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            5197.8,
+            3460.51,
+            5871.39,
+            3510.65
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            4090.2,
+            915.91,
+            4128.56,
+            942.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "muscatine-p79",
+      "kind": "pid",
+      "drawing_family": "muscatine-high-strength-waste",
+      "drawing_family_verified": true,
+      "source_url": "https://www.muscatineiowa.gov/DocumentCenter/View/18680/High-Strength-Waste-Facilities---Muscatine---Drawings",
+      "source_pdf_sha256": "1b106c97a69c9194b4b7586f77fd54e8b03b4e0b8d9bd3a000a05c99ae326fba",
+      "source_page": 79,
+      "source_file": "muscatine.pdf",
+      "image": "muscatine-p79.png",
+      "image_sha256": "f54cf31403aaeccdef33cb8b28c3c188c90bf352453765493a0aa3605e1ef255",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            386.7,
+            641.4,
+            634.62,
+            667.98
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            386.7,
+            801.91,
+            650.34,
+            828.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            845.7,
+            1425.6,
+            1076.6,
+            1452.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            1304.1,
+            1505.1,
+            1593.93,
+            1531.68
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1964.1,
+            1428.6,
+            2112.5,
+            1455.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            2598.9,
+            1554.6,
+            2705.41,
+            1581.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            3705.0,
+            1212.61,
+            3882.18,
+            1239.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            1638.6,
+            1945.8,
+            1878.64,
+            1972.38
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            2261.1,
+            1827.6,
+            2511.63,
+            1854.18
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            2650.8,
+            2142.9,
+            2778.22,
+            2169.48
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "crosman-p6",
+      "kind": "pid",
+      "drawing_family": "crosman-ssds-2015",
+      "drawing_family_verified": true,
+      "source_url": "https://extapps.dec.ny.gov/data/DecDocs/835012/Report.HW.835012.2015-12-15.Crosman%20SSDS%20100%25%20Design%20Drawings.pdf",
+      "source_pdf_sha256": "12bf50d382cd0f42530b6e779b35d5d634a15efd1b9986961068b366dbedd24b",
+      "source_page": 6,
+      "source_file": "crosman.pdf",
+      "image": "crosman-p6.png",
+      "image_sha256": "8de4ff3bb6aeced50cc92603686cac9f1ebe60d62c869b3df6a1a12953638634",
+      "width": 6120,
+      "height": 3960,
+      "preview_height": 647,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            2128.1,
+            868.12,
+            2301.11,
+            901.12
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            2781.5,
+            890.67,
+            2850.93,
+            918.57
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            3525.2,
+            623.37,
+            3571.65,
+            651.27
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            3749.3,
+            791.37,
+            3818.73,
+            819.27
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            4955.9,
+            1320.82,
+            5038.94,
+            1353.82
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            4457.9,
+            1400.07,
+            4527.33,
+            1427.97
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            5273.3,
+            1524.27,
+            5342.73,
+            1552.17
+          ],
+          "kind": "line",
+          "category": "engineering_symbol",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            1085.6,
+            455.32,
+            1266.95,
+            488.32
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            630.8,
+            2386.77,
+            904.99,
+            2414.67
+          ],
+          "kind": "line",
+          "category": "normal_text",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            5600.9,
+            2992.77,
+            5747.8,
+            3020.67
+          ],
+          "kind": "cell",
+          "category": "table",
+          "geometry_source": "visual selection snapped to native PDF line geometry; text discarded"
+        }
+      ],
+      "source_class": "published_engineering_drawing",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "lanl-cooling-p1",
+      "kind": "pid",
+      "drawing_family": "lanl-standard-examples",
+      "drawing_family_verified": true,
+      "source_url": "https://engstandards.lanl.gov/drawings_details/IC_pdf/D-6025IC1r0.pdf",
+      "source_pdf_sha256": "24bef1fb2e37e888ee156364a046c70af8c7df4daf50d2e99d7f0602b640ea84",
+      "source_page": 1,
+      "source_file": "lanl-cooling.pdf",
+      "image": "lanl-cooling-p1.png",
+      "image_sha256": "782036a4ad53664541ad25db05d11123a8259418dd05db882bbd82e68d285512",
+      "width": 1980,
+      "height": 1530,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            1556.28,
+            205.92,
+            1694.88,
+            225.72
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            584.1,
+            376.2,
+            665.28,
+            397.98
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            376.2,
+            530.64,
+            399.96,
+            625.68
+          ],
+          "kind": "line",
+          "category": "rotated_small_text"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            968.22,
+            718.74,
+            1073.16,
+            742.5
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1277.1,
+            261.36,
+            1405.8,
+            283.14
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            417.78,
+            865.26,
+            554.4,
+            887.04
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            1348.38,
+            229.68,
+            1399.86,
+            251.46
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            439.56,
+            1245.42,
+            552.42,
+            1269.18
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            457.38,
+            1306.8,
+            693.0,
+            1336.5
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1744.38,
+            1358.28,
+            1835.46,
+            1384.02
+          ],
+          "kind": "cell",
+          "category": "table"
+        }
+      ],
+      "source_class": "engineering_standard_example",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "lanl-cooling2-p1",
+      "kind": "pid",
+      "drawing_family": "lanl-standard-examples",
+      "drawing_family_verified": true,
+      "source_url": "https://engstandards.lanl.gov/drawings_details/IC_pdf/D-6025IC2r0.pdf",
+      "source_pdf_sha256": "1ee10191c3a42d6fb718447ef6f17269d2ff8144f585486e6f6ccaaf9b8b19de",
+      "source_page": 1,
+      "source_file": "lanl-cooling2.pdf",
+      "image": "lanl-cooling2-p1.png",
+      "image_sha256": "9d522eab8889202e9188b969e24afdf0ac2e545baaa2ee6f36a0548a4cadcca9",
+      "width": 1980,
+      "height": 1530,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            1546.38,
+            172.26,
+            1684.98,
+            196.02
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            964.26,
+            378.18,
+            1079.1,
+            399.96
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            677.16,
+            693.0,
+            772.2,
+            718.74
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            562.32,
+            1298.88,
+            797.94,
+            1322.64
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            782.1,
+            1186.02,
+            881.1,
+            1207.8
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            938.52,
+            338.58,
+            999.9,
+            362.34
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            1019.7,
+            871.2,
+            1041.48,
+            997.92
+          ],
+          "kind": "line",
+          "category": "rotated_small_text"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            1546.38,
+            380.16,
+            1712.7,
+            405.9
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            972.18,
+            1249.38,
+            1031.58,
+            1269.18
+          ],
+          "kind": "line",
+          "category": "rotated_small_text"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            1744.38,
+            1358.28,
+            1837.44,
+            1384.02
+          ],
+          "kind": "cell",
+          "category": "table"
+        }
+      ],
+      "source_class": "engineering_standard_example",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    },
+    {
+      "id": "lanl-instrument-p1",
+      "kind": "pid",
+      "drawing_family": "lanl-standard-examples",
+      "drawing_family_verified": true,
+      "source_url": "https://engstandards.lanl.gov/drawings_details/IC_pdf/D-6015IC1r0.pdf",
+      "source_pdf_sha256": "6322c8047e70c2211979c43161c18a8381907d6cc1a1172af511bb39da611e83",
+      "source_page": 1,
+      "source_file": "lanl-instrument.pdf",
+      "image": "lanl-instrument-p1.png",
+      "image_sha256": "3861b8209ba048703d59886570c81d6b4bac880ee33f5909f8c0a612fa7d8b64",
+      "width": 1980,
+      "height": 1530,
+      "preview_height": 773,
+      "regions": [
+        {
+          "id": "r01",
+          "bbox": [
+            887.04,
+            754.38,
+            950.4,
+            780.12
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r02",
+          "bbox": [
+            1009.8,
+            780.12,
+            1079.1,
+            801.9
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r03",
+          "bbox": [
+            1170.18,
+            409.86,
+            1247.4,
+            433.62
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r04",
+          "bbox": [
+            382.14,
+            1118.7,
+            455.4,
+            1140.48
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r05",
+          "bbox": [
+            1393.92,
+            827.64,
+            1461.24,
+            853.38
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r06",
+          "bbox": [
+            944.46,
+            1138.5,
+            990.0,
+            1168.2
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r07",
+          "bbox": [
+            166.32,
+            667.26,
+            227.7,
+            698.94
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r08",
+          "bbox": [
+            302.94,
+            1136.52,
+            346.5,
+            1160.28
+          ],
+          "kind": "line",
+          "category": "engineering_symbol"
+        },
+        {
+          "id": "r09",
+          "bbox": [
+            1338.48,
+            253.44,
+            1405.8,
+            275.22
+          ],
+          "kind": "line",
+          "category": "normal_text"
+        },
+        {
+          "id": "r10",
+          "bbox": [
+            399.96,
+            952.38,
+            425.7,
+            1017.72
+          ],
+          "kind": "line",
+          "category": "rotated_small_text"
+        }
+      ],
+      "source_class": "engineering_standard_example",
+      "drawing_family_basis": "Conservative source/project grouping; Newport models treated as one family"
+    }
+  ],
+  "redistribution": "Source PDFs and crops remain local; permission not assumed",
+  "geometry_qa": "Every selected crop visually inspected before model inference; human may mark uncertain before label freeze"
+}

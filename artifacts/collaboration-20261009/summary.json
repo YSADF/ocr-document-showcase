@@ -1,0 +1,97 @@
+{
+  "scope": "Static routing upper bounds, not model inference or recognition improvement",
+  "inference_executed": false,
+  "same_candidate_pool": true,
+  "rows": [
+    {
+      "routing_order": "position",
+      "max_regions": 8,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 7,
+      "within_budget": 1,
+      "diameter_in_budget": 0,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "position",
+      "max_regions": 16,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 7,
+      "within_budget": 7,
+      "diameter_in_budget": 2,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "position",
+      "max_regions": 32,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 7,
+      "within_budget": 11,
+      "diameter_in_budget": 4,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "evidence",
+      "max_regions": 8,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 5,
+      "within_budget": 3,
+      "diameter_in_budget": 0,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "evidence",
+      "max_regions": 16,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 5,
+      "within_budget": 5,
+      "diameter_in_budget": 2,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "evidence",
+      "max_regions": 32,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 5,
+      "within_budget": 14,
+      "diameter_in_budget": 7,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "stratified",
+      "max_regions": 8,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 6,
+      "within_budget": 3,
+      "diameter_in_budget": 0,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "stratified",
+      "max_regions": 16,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 6,
+      "within_budget": 6,
+      "diameter_in_budget": 1,
+      "diameter_total": 17
+    },
+    {
+      "routing_order": "stratified",
+      "max_regions": 32,
+      "n": 42,
+      "eligible": 33,
+      "within_first_16": 6,
+      "within_budget": 9,
+      "diameter_in_budget": 3,
+      "diameter_total": 17
+    }
+  ]
+}

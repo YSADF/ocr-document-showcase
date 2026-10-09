@@ -1,0 +1,26 @@
+{
+  "ppocr": {
+    "device": "gpu:0",
+    "text_detection_model_name": "PP-OCRv6_medium_det",
+    "text_recognition_model_name": "PP-OCRv6_medium_rec",
+    "text_detection_model_dir": "/models/pp-det",
+    "text_recognition_model_dir": "/models/pp-rec"
+  },
+  "selection": {
+    "max_regions": 16,
+    "seconds": 90,
+    "request_seconds": 15,
+    "routing_order": "position",
+    "shared_candidate_pool": true
+  },
+  "runners": {
+    "glm-ocr": {
+      "model_dir": "/models/glm-ocr",
+      "python": "/envs/glm-ocr/bin/python"
+    },
+    "mineru": {
+      "model_dir": "/models/mineru",
+      "python": "/envs/mineru/bin/python"
+    }
+  }
+}

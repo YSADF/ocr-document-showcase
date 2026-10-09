@@ -1,0 +1,74 @@
+[
+  {
+    "path": "models.py",
+    "sha256": "e727a56eef1f0218b70856a27b79f2a8a29dcaa29032ef5edad25f78759ae653"
+  },
+  {
+    "path": "core/document_payload.py",
+    "sha256": "b87cf9388f9115740be1062e452361d111024f561606419354c279d99036058b"
+  },
+  {
+    "path": "core/document_reading.py",
+    "sha256": "282713fdd80321d7fb87ffec356387e69c0caf9ee7f1f11feeede58048c7ef25"
+  },
+  {
+    "path": "pipeline/engineering_ocr.py",
+    "sha256": "beb0036c5907a441d8b65ff05bc58aeab43f5d1aab48a57d59022ad97ce9b138"
+  },
+  {
+    "path": "pipeline/engineering_geometry.py",
+    "sha256": "41f76d773deaa0eaf25d1d070fb665f5cb3ca16174b1640a629b7fb08fad8b81"
+  },
+  {
+    "path": "pipeline/engineering_candidates.py",
+    "sha256": "ed6fa3f91dfc1c6ba4cf3476efc99b629cee5863c6eb5662fbeeb95eb37dd7ca"
+  },
+  {
+    "path": "pipeline/engineering_review.py",
+    "sha256": "519da0babf04771da3c88cac76e1d5530725e8d457e003ca9b56f0ccd36cbf1a"
+  },
+  {
+    "path": "pipeline/engineering_vlm_fallback.py",
+    "sha256": "86f0be0cfa654ac0b13b914b4891654e570b457581b5eeca9c769ff9f0791e15"
+  },
+  {
+    "path": "ocr_engine/numeric_character_support.py",
+    "sha256": "6ce7d1e7e16104fcac879e7cfc0a4e07a98f20d2e69d30937b0a3ded2c1fde79"
+  },
+  {
+    "path": "ocr_engine/vlm_region_runner.py",
+    "sha256": "1a5edb311a3d9050de23b7d4efb878e0a62b47b08817947d30c40f2273ba2ddb"
+  },
+  {
+    "path": "services/document_results.py",
+    "sha256": "e0a8a151d0f8df4d40228878fce12af0f3a51d6b7d6e96675b17a0dab975cb31"
+  },
+  {
+    "path": "evaluation/engineering_metrics.py",
+    "sha256": "80e91dc0cd799440cc9cab87196d1a48ee575002acdb1fc20d61355c08553641"
+  },
+  {
+    "path": "evaluation/engineering_vlm.py",
+    "sha256": "6ea7ae199097003e76e5083a84bef6f57e63cd10564dc45390cdc1a5d09e06ee"
+  },
+  {
+    "path": "evaluation/engineering_fallback.py",
+    "sha256": "f00c2d36bb2324e0b1e941499d102685631eecf272b794708975ddb01ff7c000"
+  },
+  {
+    "path": "evaluation/engineering_collaboration.py",
+    "sha256": "ecf28be7edc16ba7ab688014109ce7498ef6fbceefa140d11465622fa9b75286"
+  },
+  {
+    "path": "scripts/engineering_region_vlm_worker.py",
+    "sha256": "c1ba19fc8a7b9e04278c004ae921bcc07ea8700f909cb780d27145bc602c88cd"
+  },
+  {
+    "path": "scripts/engineering_demo.py",
+    "sha256": "e6b743eb3a7356697909a2eb0ac4b1363bce15d3b3ae2b9f5ee23a59a270e000"
+  },
+  {
+    "path": "tests/test_engineering_public_contract.py",
+    "sha256": "6bf720e45b0530eb357480e0be947b72bd03bd0cb53bc101cb4ee71ff257486f"
+  }
+]

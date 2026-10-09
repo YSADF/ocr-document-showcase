@@ -1,0 +1,97 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title>OCR 协同实验</title><style>body{font:16px system-ui;max-width:1100px;margin:40px auto;padding:20px;color:#172d42}table{border-collapse:collapse}td,th{border:1px solid #ccd7df;padding:9px}svg{max-width:900px}pre{white-space:pre-wrap}</style><h1>OCR＋VLM 实验证据</h1><p>Static routing upper bounds, not model inference or recognition improvement</p><svg viewBox="0 0 800 340" role="img" aria-label="路由预算与已知错误覆盖"><rect x="50" y="254.76190476190476" width="44" height="5.238095238095238" fill="#3176ba"/><text x="50" y="285">8</text><text x="50" y="246.76190476190476">1/42</text><rect x="130" y="223.33333333333334" width="44" height="36.666666666666664" fill="#3176ba"/><text x="130" y="285">16</text><text x="130" y="215.33333333333334">7/42</text><rect x="210" y="202.38095238095238" width="44" height="57.61904761904762" fill="#3176ba"/><text x="210" y="285">32</text><text x="210" y="194.38095238095238">11/42</text><rect x="290" y="244.28571428571428" width="44" height="15.714285714285714" fill="#bd6725"/><text x="290" y="285">8</text><text x="290" y="236.28571428571428">3/42</text><rect x="370" y="233.8095238095238" width="44" height="26.19047619047619" fill="#bd6725"/><text x="370" y="285">16</text><text x="370" y="225.8095238095238">5/42</text><rect x="450" y="186.66666666666669" width="44" height="73.33333333333333" fill="#bd6725"/><text x="450" y="285">32</text><text x="450" y="178.66666666666669">14/42</text><rect x="530" y="244.28571428571428" width="44" height="15.714285714285714" fill="#23846c"/><text x="530" y="285">8</text><text x="530" y="236.28571428571428">3/42</text><rect x="610" y="228.57142857142858" width="44" height="31.428571428571427" fill="#23846c"/><text x="610" y="285">16</text><text x="610" y="220.57142857142858">6/42</text><rect x="690" y="212.85714285714286" width="44" height="47.142857142857146" fill="#23846c"/><text x="690" y="285">32</text><text x="690" y="204.85714285714286">9/42</text><text x="50" y="325">蓝：position　橙：evidence　绿：stratified；数字为区域预算</text></svg><table><thead><tr><th>routing_order</th><th>max_regions</th><th>n</th><th>eligible</th><th>within_first_16</th><th>within_budget</th><th>diameter_in_budget</th><th>diameter_total</th></tr></thead><tbody><tr><td>position</td><td>8</td><td>42</td><td>33</td><td>7</td><td>1</td><td>0</td><td>17</td></tr><tr><td>position</td><td>16</td><td>42</td><td>33</td><td>7</td><td>7</td><td>2</td><td>17</td></tr><tr><td>position</td><td>32</td><td>42</td><td>33</td><td>7</td><td>11</td><td>4</td><td>17</td></tr><tr><td>evidence</td><td>8</td><td>42</td><td>33</td><td>5</td><td>3</td><td>0</td><td>17</td></tr><tr><td>evidence</td><td>16</td><td>42</td><td>33</td><td>5</td><td>5</td><td>2</td><td>17</td></tr><tr><td>evidence</td><td>32</td><td>42</td><td>33</td><td>5</td><td>14</td><td>7</td><td>17</td></tr><tr><td>stratified</td><td>8</td><td>42</td><td>33</td><td>6</td><td>3</td><td>0</td><td>17</td></tr><tr><td>stratified</td><td>16</td><td>42</td><td>33</td><td>6</td><td>6</td><td>1</td><td>17</td></tr><tr><td>stratified</td><td>32</td><td>42</td><td>33</td><td>6</td><td>9</td><td>3</td><td>17</td></tr></tbody></table><details><summary>完整记录</summary><pre>{
+  &quot;scope&quot;: &quot;Static routing upper bounds, not model inference or recognition improvement&quot;,
+  &quot;inference_executed&quot;: false,
+  &quot;same_candidate_pool&quot;: true,
+  &quot;rows&quot;: [
+    {
+      &quot;routing_order&quot;: &quot;position&quot;,
+      &quot;max_regions&quot;: 8,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 7,
+      &quot;within_budget&quot;: 1,
+      &quot;diameter_in_budget&quot;: 0,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;position&quot;,
+      &quot;max_regions&quot;: 16,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 7,
+      &quot;within_budget&quot;: 7,
+      &quot;diameter_in_budget&quot;: 2,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;position&quot;,
+      &quot;max_regions&quot;: 32,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 7,
+      &quot;within_budget&quot;: 11,
+      &quot;diameter_in_budget&quot;: 4,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;evidence&quot;,
+      &quot;max_regions&quot;: 8,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 5,
+      &quot;within_budget&quot;: 3,
+      &quot;diameter_in_budget&quot;: 0,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;evidence&quot;,
+      &quot;max_regions&quot;: 16,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 5,
+      &quot;within_budget&quot;: 5,
+      &quot;diameter_in_budget&quot;: 2,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;evidence&quot;,
+      &quot;max_regions&quot;: 32,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 5,
+      &quot;within_budget&quot;: 14,
+      &quot;diameter_in_budget&quot;: 7,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;stratified&quot;,
+      &quot;max_regions&quot;: 8,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 6,
+      &quot;within_budget&quot;: 3,
+      &quot;diameter_in_budget&quot;: 0,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;stratified&quot;,
+      &quot;max_regions&quot;: 16,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 6,
+      &quot;within_budget&quot;: 6,
+      &quot;diameter_in_budget&quot;: 1,
+      &quot;diameter_total&quot;: 17
+    },
+    {
+      &quot;routing_order&quot;: &quot;stratified&quot;,
+      &quot;max_regions&quot;: 32,
+      &quot;n&quot;: 42,
+      &quot;eligible&quot;: 33,
+      &quot;within_first_16&quot;: 6,
+      &quot;within_budget&quot;: 9,
+      &quot;diameter_in_budget&quot;: 3,
+      &quot;diameter_total&quot;: 17
+    }
+  ]
+}</pre></details></html>
