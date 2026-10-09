@@ -92,5 +92,21 @@
     "adaptation": "Exact selected functions; imports restricted to standard library and the existing selected geometry constant.",
     "example_sha256": "0e810c8339c81a4e7b31f31a6c86a0d7d4c610f28db32b2a763a2b0905d5f285",
     "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+  },
+  {
+    "example": "examples/vlm_fallback_policy.py",
+    "source_module": "pipeline/engineering_vlm_fallback.py",
+    "source_sha256": "0efc36faa5964d72888c87b9332a04c5f3bf36ece8c953b44b8d55306dba6704",
+    "selected_symbols": [
+      "_CRITICAL",
+      "_HIGH_RISKS",
+      "_risk_priority",
+      "_valid_output",
+      "_weight",
+      "_critical_change"
+    ],
+    "example_sha256": "34dec01e761e1be1804f32e77b893e5d818a3ab7dd8cd6b9b145d6c091c0223d",
+    "adaptation": "Selected exact AST constants/functions with only standard re import. Model workers, routing and mutation are omitted.",
+    "snapshot_note": "Local working source contains uncommitted changes. Hash is provenance, not a public full-source release."
   }
 ]

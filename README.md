@@ -6,6 +6,12 @@
 
 [真实图纸实测](cases/real-engineering-drawings.md) · [历史基线](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
 
+## 第四轮：按疑点调用局部 VLM
+
+已接入默认关闭的局部兜底：PPv6主识别，VLM仅处理疑似错误。290项本地测试通过，100个公式对照样本已冻结。新模型GPU测试因主机连接中断尚未执行；每页16区域的路由检查只覆盖17处直径失败中的2处，保留这一限制。
+
+[实现、覆盖限制与待测项](cases/engineering-fallback-round4.md) · [精选策略代码](examples/vlm_fallback_policy.py)
+
 ## 第三轮：VLM 局部复核与整页对照
 
 在新主机重新冻结同机 OCR 基线，分别测试 PaddleOCR-VL-1.6 与 Qwen3-VL-8B-Instruct。每个模型 **397 个唯一任务**：117 个诊断裁剪、238 个固定区域、12 个构造反例、20 张整页、10 次指定页面重复。全部沿用开发／回归集，尚无独立人工验收。

@@ -43,3 +43,7 @@ python tools/score_real_drawings.py
 ## VLM 候选与几何
 
 [vlm_evidence.py](vlm_evidence.py) 保留候选及原文，不补字符、不凭一致性放行；[vlm_geometry.py](vlm_geometry.py) 检查模型 JSON 坐标和表格格网，拒绝伪造结构。只公开选取函数，不含模型加载、服务器或真实图纸。新增 6 项测试，全部公开示例共 15 项。第三轮计数可用 `python tools/score_round3.py` 复算。
+
+## 局部兜底策略片段
+
+[vlm_fallback_policy.py](vlm_fallback_policy.py)选取实际实现的风险分级、输出失败检查、权重身份读取和关键字符修改检测。它不含模型加载、完整调度、图像处理和自动写回；不能单独作为自动纠错器。新增5项公开示例测试。

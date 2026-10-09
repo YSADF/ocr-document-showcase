@@ -1,0 +1,395 @@
+{
+  "scope": "Local implementation checks and frozen PP risk routing; no new VLM inference",
+  "local_tests": {
+    "tests": 305,
+    "failed": 0,
+    "errors": 0,
+    "skipped": 15,
+    "passed": 290
+  },
+  "new_tests": 85,
+  "default_vlm_fallback": "off",
+  "default_routing_order": "position",
+  "routing_comparison": {
+    "position": {
+      "routing_policy_version": "engineering-position-priority-v1",
+      "pages": 20,
+      "eligible_regions": 3580,
+      "scheduled_region_cap": 320,
+      "incorrect_development_references": {
+        "n": 42,
+        "eligible": 33,
+        "within_first_16": 7
+      },
+      "diameter_total": 17,
+      "diameter_eligible": 17,
+      "diameter_within_first_16": 2,
+      "diameter_rows": [
+        {
+          "sample_id": "ligo-d060312",
+          "region_id": "r11",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 111,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d060318",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 16,
+          "within_first_16": true
+        },
+        {
+          "sample_id": "ligo-d060318",
+          "region_id": "r11",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 40,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d060321",
+          "region_id": "r03",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 12,
+          "within_first_16": true
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 206,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 112,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r12",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 158,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1100424",
+          "region_id": "r05",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 25,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1100424",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 35,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r03",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 31,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 33,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r05",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 35,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r08",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 37,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 43,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 48,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 70,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 72,
+          "within_first_16": false
+        }
+      ],
+      "time_budget_effect": "unknown until measured; first-16 coverage is an upper bound",
+      "routing_sha256": "08a4c7a29213b3f74fe8f1bd52c77827cccc7288bbec95e16871b2dedca2c5a9",
+      "coverage_sha256": "e34957fa05d0d4ad5efc1eb7dbae631e6f7833734d51058a8488a7756b0c2bd4"
+    },
+    "evidence": {
+      "routing_policy_version": "engineering-evidence-priority-v2",
+      "pages": 20,
+      "eligible_regions": 3687,
+      "scheduled_region_cap": 320,
+      "incorrect_development_references": {
+        "n": 42,
+        "eligible": 33,
+        "within_first_16": 5
+      },
+      "diameter_total": 17,
+      "diameter_eligible": 17,
+      "diameter_within_first_16": 2,
+      "diameter_rows": [
+        {
+          "sample_id": "ligo-d060312",
+          "region_id": "r11",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 108,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d060318",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 41,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d060318",
+          "region_id": "r11",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 54,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d060321",
+          "region_id": "r03",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 42,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 165,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 90,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d080106",
+          "region_id": "r12",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 128,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1100424",
+          "region_id": "r05",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 12,
+          "within_first_16": true
+        },
+        {
+          "sample_id": "ligo-d1100424",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 14,
+          "within_first_16": true
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r03",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 18,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 20,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r05",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 90,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r08",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 22,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1102006",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 28,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r04",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 30,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r09",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 50,
+          "within_first_16": false
+        },
+        {
+          "sample_id": "ligo-d1200144",
+          "region_id": "r10",
+          "original_exact": false,
+          "eligible": true,
+          "first_rank": 88,
+          "within_first_16": false
+        }
+      ],
+      "time_budget_effect": "unknown until measured; first-16 coverage is an upper bound",
+      "routing_sha256": "1beff0691eb6f5cd352f128f128aa7a9cf2a52c7f0ca89e8f134569b0fae5ac5",
+      "coverage_sha256": "639680ddd832eacc00c339d314ca3ab63c830775b6545e1826f1d7dcfc701e1d"
+    }
+  },
+  "frozen_response_roundtrip": {
+    "scope": "Frozen actual PP API response restore/serialize check; no new model inference",
+    "pages": 20,
+    "regions": 238,
+    "unchanged": true,
+    "groups": {
+      "mechanical": {
+        "original_exact": 83,
+        "roundtrip_exact": 83
+      },
+      "pid": {
+        "original_exact": 113,
+        "roundtrip_exact": 113
+      }
+    }
+  },
+  "formula_controls": {
+    "repository": "wanderkid/UniMER_Dataset",
+    "revision": "2343ddd963290469da36ca83e3a56c66e068add9",
+    "archive_sha256": "9bf370b8cac868fee84835f40dec26c477430611253e3feb681356a8149a3a90",
+    "queue_sha256": "19cf9646b175c2d094c7ffcfdc0160d520b5efbefbb60b49f290ec1714c5f037",
+    "references_sha256": "c8b23583217add0dbec8606b5dacca37296294da25748c522ae69a6a8b2787e9",
+    "seed": "engineering-fallback-formula-controls-v1",
+    "selection": "lowest SHA-256(seed + NUL + archive member), independent of reference text",
+    "mapping_source": "https://github.com/opendatalab/UniMERNet/blob/main/test.py#L40-L64",
+    "task_counts": {
+      "spe": 25,
+      "cpe": 25,
+      "sce": 25,
+      "hwe": 25
+    },
+    "available_counts": {
+      "spe": 6762,
+      "cpe": 5921,
+      "sce": 4742,
+      "hwe": 6332
+    },
+    "new_human_validation": false,
+    "engineering_acceptance_evidence": false
+  },
+  "model_trials": {
+    "GLM-OCR": {
+      "status": "not_run",
+      "reason": "GPU host SSH closed before authentication",
+      "inference_calls": 0,
+      "accuracy": null,
+      "latency": null,
+      "gpu_memory": null
+    },
+    "MinerU2.5-Pro": {
+      "status": "not_run",
+      "reason": "GPU host SSH closed before authentication",
+      "inference_calls": 0,
+      "accuracy": null,
+      "latency": null,
+      "gpu_memory": null
+    },
+    "PP-FormulaNet_plus-L": {
+      "status": "not_run",
+      "reason": "GPU host SSH closed before authentication",
+      "inference_calls": 0,
+      "accuracy": null,
+      "latency": null,
+      "gpu_memory": null
+    }
+  },
+  "formal_acceptance": false,
+  "human_verified_engineering_labels": false,
+  "fine_tuning_started": false,
+  "conditional_service_enabled": false
+}

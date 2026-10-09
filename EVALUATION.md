@@ -58,3 +58,7 @@ python -m unittest discover -s tests -v
 ## 第三轮 VLM（2026-10-08）
 
 完成两个模型各 397 个唯一任务，以及新主机同机 PP-OCR 对照。严格区分固定裁剪与整页位置／类型合同，所有失败、重复耗时和派生分数保留。数据仍为开发／回归集，没有人工验收真值。[第三轮报告](cases/engineering-vlm-round3.md) · [派生证据](artifacts/engineering-vlm-round3-20261008/README.md)。
+
+## 第四轮局部兜底（2026-10-09）
+
+本轮发布实现及本地验证，没有新的GPU模型成绩。20页冻结PP结果往返一致；调度覆盖与识别正确分开计量，未通过独立人工验收。[实施与限制](cases/engineering-fallback-round4.md)。
