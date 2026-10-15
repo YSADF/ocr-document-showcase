@@ -1,5 +1,6 @@
-# Public sample preparation only; no company source or OCR model is required.
-pdfplumber
-pypdfium2
-reportlab
-Pillow
+# Optional input regeneration; not OCR. Versions checked on 2026-10-15.
+# Rebuilt files can differ from frozen 2026-10-07 inputs (fonts/renderer/metadata).
+pdfplumber==0.11.9
+pypdfium2==5.14.0
+reportlab==4.4.9
+Pillow==12.3.0

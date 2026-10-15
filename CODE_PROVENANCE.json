@@ -15,7 +15,8 @@
     ],
     "adaptation": "Private imports replaced with standard imports; comments compacted; algorithm retained.",
     "example_sha256": "32508b1f04ec8f52da416cbb655a5c4dd2c2cefef1931dee6321caddfeeb30d3",
-    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/copy_fit.py",
@@ -31,15 +32,18 @@
     ],
     "adaptation": "Private imports replaced with standard imports; comments compacted; algorithm retained.",
     "example_sha256": "3a8e87c6da8870d5eef911563ecc57b379c7bcc8c293f175cdca5d6537974d71",
-    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/literal_guard.py",
     "source_module": "image_translation/literal_integrity.py",
     "source_sha256": "80fbc273d366b909ba9f1fb335c3d89ecb1352a3f1965968f3c2155b4f569e5d",
     "adaptation": "Conceptual runnable adaptation of reviewed-span placeholders and integrity checks; full classifier and image policies omitted.",
-    "example_sha256": "b6f7cbba790b9ecaa294cf24b4866a7e4b6049f4dfab3f1a09c7ca01fb09a5f3",
-    "snapshot_note": "Local working copy may contain uncommitted changes; source hash is authoritative for provenance, not a public source release."
+    "example_sha256": "1e4201d954d4bd60391c9da9b8ca134593f77735c1cf6671f782c0df8501f85e",
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "previous_recorded_example_sha256": "b6f7cbba790b9ecaa294cf24b4866a7e4b6049f4dfab3f1a09c7ca01fb09a5f3",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/engineering_metrics.py",
@@ -52,8 +56,10 @@
       "aggregate"
     ],
     "adaptation": "Exact selected functions and constant; geometry matching, service and full evaluator omitted. New module-level scope note.",
-    "example_sha256": "26c3c44f6b414791673a4c1081b14c7f8cfadec5ffa53b666fe93a51694ab0bc",
-    "snapshot_note": "Local working copy snapshot; hash is provenance, not a public release of full service source."
+    "example_sha256": "fb83bff7e9c7bdcb622d4a3554665de5803eb6ea4e83ed3ca3b362325c9c0ca1",
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "previous_recorded_example_sha256": "26c3c44f6b414791673a4c1081b14c7f8cfadec5ffa53b666fe93a51694ab0bc",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/engineering_tolerances.py",
@@ -65,7 +71,8 @@
     ],
     "adaptation": "Exact selected constant/function; replaced imports with standard-library imports. OCR, pixel processing, scheduler and service omitted.",
     "example_sha256": "4b4e7b3f3d2637f88b1232fdc04de00b3e9ecdf1414ac7e7259a548f3a3d99ba",
-    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/vlm_evidence.py",
@@ -77,7 +84,8 @@
     ],
     "adaptation": "Exact selected functions; imports restricted to standard library and the existing selected geometry constant.",
     "example_sha256": "2fd9b346136382a943a7b1d513673503f50e89d3333c3048dd37490262ba16d1",
-    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/vlm_geometry.py",
@@ -91,7 +99,8 @@
     ],
     "adaptation": "Exact selected functions; imports restricted to standard library and the existing selected geometry constant.",
     "example_sha256": "0e810c8339c81a4e7b31f31a6c86a0d7d4c610f28db32b2a763a2b0905d5f285",
-    "snapshot_note": "Local working copy snapshot; hash identifies source, not a full source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   },
   {
     "example": "examples/vlm_fallback_policy.py",
@@ -107,6 +116,7 @@
     ],
     "example_sha256": "34dec01e761e1be1804f32e77b893e5d818a3ab7dd8cd6b9b145d6c091c0223d",
     "adaptation": "Selected exact AST constants/functions with only standard re import. Model workers, routing and mutation are omitted.",
-    "snapshot_note": "Local working source contains uncommitted changes. Hash is provenance, not a public full-source release."
+    "snapshot_note": "Historical selected snapshot, not the latest or complete service implementation. source_sha256 preserves the source-module identity recorded at extraction; example_sha256 identifies the exact bytes of this packaged standalone example. The private source may have evolved since extraction.",
+    "provenance_scope": "historical_selected_snapshot"
   }
 ]

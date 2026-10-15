@@ -8,10 +8,16 @@ import importlib.metadata
 import io
 import json
 import platform
+import shutil
 import sys
 import urllib.request
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+
+try:
+    from .output_paths import new_output_directory
+except ImportError:
+    from output_paths import new_output_directory
 
 import pdfplumber
 import pypdfium2 as pdfium
@@ -208,15 +214,25 @@ def make_table(root, dpi, font):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--root", type=Path, default=DEFAULT_ROOT)
+    parser.add_argument("--out-dir", "--root", dest="out_dir", type=Path,
+                        default=DEFAULT_ROOT / "generated/demo",
+                        help="New output directory; frozen public inputs are never overwritten")
     parser.add_argument("--dpi", type=int, default=180)
     parser.add_argument("--font", default="", help="Unicode TTF for the self-created table")
     args = parser.parse_args()
     if not 72 <= args.dpi <= 300:
         parser.error("--dpi must be between 72 and 300")
-    root = args.root.resolve()
+    try:
+        root = new_output_directory(args.out_dir)
+    except ValueError as exc:
+        parser.error(str(exc))
     for folder in ["assets", "samples", "artifacts"]:
         (root / folder).mkdir(parents=True, exist_ok=True)
+    # Prefer the licensed frozen originals; rebuilding previews does not require a download.
+    for filename in ("c03-source.pdf", "DEXPI-LICENSE.txt"):
+        source = DEFAULT_ROOT / "samples" / filename
+        if source.is_file():
+            shutil.copyfile(source, root / "samples" / filename)
     engineering = native_baseline(root, args.dpi)
     table = make_table(root, args.dpi, find_font(args.font))
     files = {}

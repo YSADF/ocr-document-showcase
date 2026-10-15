@@ -1,0 +1,5 @@
+# Keep published hashes identical on Windows and Linux, including frozen JSON.
+* -text
+*.png binary
+*.pdf binary
+*.docx binary

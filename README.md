@@ -1,143 +1,169 @@
-# OCR 与文档结构化系统
+# OCR 与文档结构化：精选代码与实测案例
 
-把 PDF、扫描页和工程图转换为带坐标、表格跨度及质量信息的结构化结果。我负责文档处理流程、模型集成、版式适配、服务部署与评测，关注识别结果如何继续用于编辑、检索和业务处理。
+展示 PDF、扫描页和工程图处理中可独立阅读、运行的关键算法，以及实际服务保存的输入、OCR JSON、DOCX 和渲染预览。
 
-**Python · PaddleOCR · OpenCV · PyMuPDF · FastAPI · DOCX**
+**公开范围：8 个算法片段、独立测试、离线核验工具、公开案例与历史测量记录。** 完整 OCR 服务、模型权重、训练数据和生产部署配置不在本仓库内。
 
-[真实图纸实测](cases/real-engineering-drawings.md) · [历史基线](EVALUATION.md) · [工程图案例](cases/engineering-pdf.md) · [合并表格案例](cases/merged-table.md) · [关键代码](examples/README.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
+**Python · 文档结构化 · 工程字符复核 · 表格跨度 · DOCX 交付核查**
 
-## 第四轮：按疑点调用局部 VLM
+[快速开始](docs/GETTING_STARTED.md) · [8 个算法](examples/README.md) · [架构与公开范围](docs/ARCHITECTURE.md) · [限制](docs/LIMITATIONS.md) · [Agent / RAG 项目](https://github.com/YSADF/agent-rag-showcase)
 
-已接入默认关闭的局部兜底：PPv6主识别，VLM仅处理疑似错误。290项本地测试通过，100个公式对照样本已冻结。新模型GPU测试因主机连接中断尚未执行；每页16区域的路由检查只覆盖17处直径失败中的2处，保留这一限制。
+## 先看一个可检查的结果
 
-[实现、覆盖限制与待测项](cases/engineering-fallback-round4.md) · [精选策略代码](examples/vlm_fallback_policy.py)
+2026-10-07，完整项目服务处理一张自制合并表格：**文字完全匹配 19/21 格，行列及跨度匹配 21/21 格，5 个合并关系全部匹配。** 两处 `Ø` 被识别为 `∅`；生成的 DOCX 经 LibreOffice 渲染后仍有文字缺失和边框问题，视觉验收未通过。
 
-## 第三轮：VLM 局部复核与整页对照
-
-在新主机重新冻结同机 OCR 基线，分别测试 PaddleOCR-VL-1.6 与 Qwen3-VL-8B-Instruct。每个模型 **397 个唯一任务**：117 个诊断裁剪、238 个固定区域、12 个构造反例、20 张整页、10 次指定页面重复。全部沿用开发／回归集，尚无独立人工验收。
-
-| 固定裁剪的独立转写；不计自动定位能力 | PaddleOCR-VL-1.6 | Qwen3-VL-8B-Instruct |
-|---|---:|---:|
-| 机械区域 | 79/118 | 84/118 |
-| P&ID 区域 | 117/120 | 119/120 |
-| 17 处直径完整诊断裁剪 | 0/17 | 4/17 |
-
-整页继续要求位置、文字和单元格类型同时匹配，结果与局部成绩分开报告。生产默认保留 PP-OCR 工程流程，原文仍是机械 **83/118**、P&ID **113/120**；VLM 只保留为试验候选证据，不自动纠字或放行。
-
-[第三轮结论与失败记录](cases/engineering-vlm-round3.md) · [派生评分与离线复算](artifacts/engineering-vlm-round3-20261008/README.md) · [候选保留代码](examples/vlm_evidence.py) · [几何校验代码](examples/vlm_geometry.py)
-
-## 机械 OCR 第二轮：结构恢复与漏符号拦截
-
-同一 RTX 5090 重测旧版，再比较新版复核预算。沿用的 **20 张图纸 / 238 区域已转为开发／回归集**；本轮 140 次有效正式整页请求，另保留 20 次配置错误、未纳入预算对照的请求。原始报告不覆盖。
-
-| 固定区域结果 | 旧工程模式 | 新工程模式 |
-|---|---:|---:|
-| 机械完整转写（含单元格类型要求） | 74/118，62.71% | 83/118，70.34% |
-| D060322 目标进入有效单元格 | 0/10 | 10/10，文字完全匹配 9/10 |
-| 17 处直径失败的对应区域明确标疑 | 4/17 | 17/17 |
-| P&ID 完整转写 | 113/120 | 113/120 |
-
-提升主要来自零件表结构恢复。**直径原文仍为 0/17 正确，20 页仍待复核。** medium/small 对完整直径裁剪都未正确输出符号，而单独数字均为 17/17；后续需要工程字形训练，不能靠全局替换掩盖错误。两组上下公差均有关联，完整组合候选为 1/2 正确，候选不计最终识别正确。
-
-[第二轮报告、预算与耗时](cases/mechanical-ocr-round2.md) · [派生数据](artifacts/engineering-round2-20261008/README.md) · [精选公差代码](examples/engineering_tolerances.py)
-
-## 真实图纸摸底：2026-10-08
-
-在 RTX 5090 上比较普通模式（PP-OCRv6 small）与工程模式（medium + 原分辨率分块 + 工程字符复核）：**20 张真实项目图纸、238 个预先冻结区域、40 次完整页面推理**。包括 10 张 LIGO 机械图、8 张 Hanford P&ID、2 张 Johannesburg Water P&ID。[来源与页码](artifacts/real-drawings-20261008/SOURCES.md)
-
-| 所选区域完整转写匹配率，包含表格类型要求 | 普通模式 | 工程模式 |
-|---|---:|---:|
-| 机械图，118 区域 | 58.47%（69/118） | 62.71%（74/118） |
-| 管道仪表图，120 区域 | 90.00%（108/120） | 94.17%（113/120） |
-
-**保持试验状态：**所选 17 个直径符号两组均误读或遗漏，工程模式 20/20 页待复核。`Ø1.046 → 1.046` 的错误置信度接近 100%，局部复识别也一致，暴露了单凭置信度和重复一致性检查的不足。待复核不计为验收正确。
-
-机械分数还包含 10 个零件表目标被输出成文本行的结构问题；它不是纯识别器准确率。标注由助手目视核对后冻结，尚待独立人工复核；只覆盖选定区域，不能视为整页准确率。工程模式每页中位耗时：机械 13.35 秒、P&ID 33.77 秒；每页仅测一次，这是跨页面统计。
-
-[完整报告与失败分析](cases/real-engineering-drawings.md) · [机器可读结果](artifacts/real-drawings-20261008/summary.json) · [离线复算](tools/score_real_drawings.py)
-
-## 公开基线：2026-10-07
-
-在单张 RTX 5090 32 GB 上调用实际项目服务，每例预热 2 次，再串行测量 20 次。语言 `en`、模式 `balanced`，启用版面分析。项目目录沿用 PP-V5 命名，**本轮实际 OCR 后端为 PP-OCRv6 small**，模型文件哈希随响应公开。
-
-| 样本 | JSON 请求成功 | P50 / P95 | 质量核查 |
-|---|---:|---:|---|
-| DEXPI C03 工程图 PNG | 20/20 | 4.164 / 4.433 秒 | 可识别主要设备编号；小字和长说明有漏字、截断 |
-| 自制合并表格扫描 PDF | 20/20 | 1.793 / 1.919 秒 | 单元格文字完全匹配 19/21；5 个合并关系全部匹配 |
-
-表格的 203 个参考字符中有 2 个替换错误，CER **0.985%**：两处 `Ø` 被识别成 `∅`。21 个单元格的行列位置与跨度全部匹配。这只覆盖一张自制表，不能推断复杂表格的总体准确率。
-
-**Word 导出仍有问题：** 两个 DOCX 均已生成，但 LibreOffice 渲染核查未通过，分别出现文字重叠、表格文字缺失及边框不完整。保留[原始输出、预览与逐项评分](artifacts/gpu-20261007/)，接口成功率与页面还原质量分别报告。
-
-## 案例与证据
-
-| 工程图：小字、旋转标签、线条干扰 | 表格：跨行跨列、工程字符 |
-|---|---|
-| ![工程图输入](assets/engineering-input.png) | ![表格输入](assets/merged-table-input.png) |
-| [实际 OCR 响应](artifacts/gpu-20261007/engineering-response.json) · [案例分析](cases/engineering-pdf.md) | [实际 OCR 响应](artifacts/gpu-20261007/merged-table-response.json) · [逐格评分](artifacts/gpu-20261007/quality.json) |
-
-## 重难点与我的实现
-
-| 工程问题 | 处理方法与取舍 | 可检查的证据 |
+| 输入 | 保存的模型结果 | 实际文档输出 |
 |---|---|---|
-| 字典覆盖、置信度高仍可能漏掉工程符号 | 原图分块、方向候选、模型字符覆盖与审计；真实测试仍发现漏符号，保留待复核 | [真实失败分析](cases/real-engineering-drawings.md) · [评分片段](examples/engineering_metrics.py) |
-| 原生、扫描 PDF 走错链路会损失文字或重复识别 | 结合文字页比例与每页文字量选择 DOCX 路径；保留强制模式和探测失败回退 | [PDF 路由](examples/pdf_routing.py) |
-| 译文变长，覆盖图线与相邻标签 | 有界搜索换行、字号、字距及横向比例，返回明确的 `fits` 状态；估算通过仍需渲染验证 | [Copy-fit 搜索](examples/copy_fit.py) |
-| 编号、尺寸、符号被翻译或归一化改写 | 保存已确认片段的原始 Unicode，校验占位符数量、顺序与摘要，异常时返回原文 | [字符保护](examples/literal_guard.py) |
-| 合并单元格同时包含文字与结构 | 统一 `row / col / rowspan / colspan`，分别检查文字、网格与输出效果 | [21 单元格结果](artifacts/gpu-20261007/quality.json) |
-| PDF 点坐标与图像像素混用 | 按实际页面和栅格尺寸换算，保存坐标系和尺度 | [样本准备脚本](tools/prepare_examples.py) |
+| [DEXPI 工程图 PNG](samples/c03-raster.png) | [OCR JSON](artifacts/gpu-20261007/engineering-response.json) | [DOCX](artifacts/gpu-20261007/engineering-output.docx) · [失败预览](artifacts/gpu-20261007/engineering-render/page-1.png) |
+| [自制表格扫描 PDF](samples/merged-table-scan.pdf) | [OCR JSON](artifacts/gpu-20261007/merged-table-response.json) · [逐格评分](artifacts/gpu-20261007/quality.json) | [DOCX](artifacts/gpu-20261007/merged-table-output.docx) · [失败预览](artifacts/gpu-20261007/merged-table-render/page-1.png) |
 
-字符保护只能保留上游已经给出的字符，不能自动把 OCR 的 `∅` 判断为 `Ø`。结构化表格正确也不足以证明 Word 显示正确，需要独立的渲染质量检查。
+这些是**历史完整服务的实测产物**。本仓库的离线核验可以重新检查公开证据，不能证明当前精选代码已重跑完整 OCR 或修复了 Word 问题。
+
+## 无需 GPU 的第一步
+
+进入本仓库根目录，用 Python 运行：
+
+```bash
+python -X utf8 tools/verify_demo.py
+python -X utf8 -m unittest discover -s tests -v
+python -X utf8 examples/literal_guard.py
+```
+
+这三条命令使用标准库，不安装模型、不连接 OCR 服务。它们核验保存的案例、运行独立算法测试，并演示已确认字符片段的保护。
+
+代码以 Python 3.11+ 为设计目标；本次整理使用 Python 3.12.14 检查。Windows 也使用上面的 `-X utf8`，避免默认控制台编码无法输出 `Ø、∅、±` 等字符。更多步骤见[运行指南](docs/GETTING_STARTED.md)。
+
+## 输入和失败预览
+
+| DEXPI 工程图 | 自制合并表格 |
+|---|---|
+| ![DEXPI 工程图输入预览](assets/engineering-input.png) | ![自制合并表格输入预览](assets/merged-table-input.png) |
+| [输入与 OCR 分析](cases/engineering-pdf.md) | [21 个单元格分析](cases/merged-table.md) |
+
+下面两张图来自实际 DOCX 经 LibreOffice 转 PDF 后的页面渲染，保留失败状态：
+
+| 工程图：文字重叠 | 表格：文字缺失、边框不完整 |
+|---|---|
+| ![工程图 DOCX 的实际渲染失败](artifacts/gpu-20261007/engineering-render/page-1.png) | ![表格 DOCX 的实际渲染失败](artifacts/gpu-20261007/merged-table-render/page-1.png) |
+
+Microsoft Word 尚未参与该次验证；不能把 LibreOffice 的结果推断为所有客户端表现，也不能把 DOCX 成功生成等同于交付达标。
+
+## 公开的 8 个算法
+
+每个文件针对一个问题，保留输入、输出和失败边界。它们不组合成完整服务。
+
+| 文件 | 解决的问题 | 主要边界 |
+|---|---|---|
+| [PDF 路由](examples/pdf_routing.py) | 根据文字层密度选择直接转换或 OCR，并提示扫描页风险 | 读取真实 PDF 需另装 PyMuPDF |
+| [Copy-fit](examples/copy_fit.py) | 在有限字号、行数和缩放候选中寻找放得下的文本布局 | 默认测量是估算；`fits` 仍需渲染核查 |
+| [字符保护](examples/literal_guard.py) | 保护已确认的编号、尺寸等原始字符片段 | 不判断 OCR 符号是否识别正确 |
+| [工程字符评分](examples/engineering_metrics.py) | 保留 Unicode 差异，分别统计转写和待复核状态 | 不包含检测器或整页定位评分 |
+| [公差关联](examples/engineering_tolerances.py) | 按坐标、方向与表格边界关联已观测片段 | 不补写缺失的直径或正负号 |
+| [VLM 候选证据](examples/vlm_evidence.py) | 并列保存首次识别和候选，并保留疑点 | 不自动改字或解除复核 |
+| [VLM 几何检查](examples/vlm_geometry.py) | 校验区域坐标、单元格位置与跨度 | 坐标合法不代表识别正确 |
+| [VLM 兜底策略](examples/vlm_fallback_policy.py) | 风险排序、失败输出检查、权重身份与关键修改检查 | 不含模型加载、完整调度或自动写回 |
+
+[示例说明](examples/README.md)给出调用方式；[代码来源清单](CODE_PROVENANCE.json)记录裁剪来源与摘要。模型本身来自第三方开源项目，公开工作集中在流程、适配、校验与评测。
+
+## 背景系统与本仓库的关系
+
+下面是完整系统的背景流程，用于解释算法的位置；流程中的服务和模型不会随展示仓一起安装。
 
 ```mermaid
 flowchart LR
     A[PDF / 图片] --> B[页面分类与路由]
-    B --> C[原生提取或 OCR]
-    C --> D[版面与表格结构]
-    D --> E[坐标统一与质量检查]
-    E --> F[JSON]
-    E --> G[DOCX]
-    G --> H[渲染核查与人工复核]
+    B --> C[原生提取或 OCR 模型]
+    C --> D[版面与表格处理]
+    D --> E[文字与几何复核]
+    E --> F[JSON / DOCX]
+    F --> G[渲染核查]
 ```
 
-检测、识别及版面模型来自开源项目；我的工作集中在流程设计、组件集成、字符与版式适配、异常处理和部署交付。符号语义分类、P&ID 管线连通性和模型微调不作为本轮已验证能力。
+当前仓库可直接运行的路径是：
 
-## 运行公开代码
+```mermaid
+flowchart LR
+    A[公开输入与历史响应] --> B[离线核验工具]
+    C[8 个独立算法] --> D[标准库测试]
+    B --> E[可检查的分数与失败证据]
+    D --> E
+```
 
-独立示例与离线评分只需 Python 3.11+，无需完整业务源码或 GPU：
+HTTP 测试客户端可连接用户已有的兼容服务，但仓库本身不提供服务端。详细组件边界见[架构说明](docs/ARCHITECTURE.md)。
+
+主要目录按代码、输入和证据组织：
+
+```text
+examples/               8 个独立算法
+tests/                  算法与工具测试
+tools/                  离线核验、样本准备和可选 HTTP 客户端
+samples/                有来源与许可说明的输入
+assets/                 输入预览
+artifacts/              冻结的 JSON、DOCX、渲染与历史测量
+cases/                  分案例和实验轮次的分析
+docs/                   运行、架构、限制、验证与发布说明
+PUBLISH_MANIFEST.json   逐文件发布清单与摘要
+```
+
+## 历史测量的范围
+
+2026-10-07 基线使用单张 RTX 5090 32 GB，实际识别后端为 **PP-OCRv6 small**。每例预热 2 次、串行测量 20 次，固定 `balanced / en / use_layout=true`。
+
+| 固定案例 | JSON 请求成功 | P50 / P95 | 质量结论 |
+|---|---:|---:|---|
+| DEXPI C03 工程图 | 20/20 | 4.164 / 4.433 秒 | 主要编号可读，小字和长说明有遗漏、截断 |
+| 自制合并表格 | 20/20 | 1.793 / 1.919 秒 | 文字 19/21；结构 21/21；DOCX 视觉检查失败 |
+
+表格 CER 为 `2/203 = 0.985%`。这些数据只描述两个固定输入；重复请求不增加准确率样本数，也不能推导生产并发或总体质量。[环境、口径与原始测量](EVALUATION.md)
+
+其他历史实验按各自数据集、参数与日期保存，不合并成一个总准确率：
+
+| 记录 | 关注点 |
+|---|---|
+| [真实图纸摸底，2026-10-08](cases/real-engineering-drawings.md) | 20 页、238 个选定区域；机械与 P&ID 分开统计 |
+| [机械优化第二轮](cases/mechanical-ocr-round2.md) | 零件表恢复、漏直径拦截与上下公差 |
+| [VLM 第三轮](cases/engineering-vlm-round3.md) | 局部裁剪与整页方案分别评测，保留失败 |
+| [局部兜底第四轮](cases/engineering-fallback-round4.md) | 按疑点路由；本地验证和未执行的 GPU 项分别记录 |
+
+工程 VLM 是可选研究方向，精选策略文件不等于已部署的自动纠错器。第四轮保存记录中 GLM-OCR、MinerU 和 FormulaNet 的新模型推理尚未执行；不提供它们的本项目准确率。
+
+## 可选：生成样本或连接已有服务
+
+样本再生成需要额外依赖，输出写到独立目录：
 
 ```bash
-python -m unittest discover -s tests -v
-python examples/literal_guard.py
-python tools/score_results.py
-python tools/score_real_drawings.py
-python tools/score_round2.py
-python tools/score_round3.py
-python tools/score_round3.py
+python -X utf8 -m pip install -r requirements-demo.txt
+python -X utf8 tools/prepare_examples.py --out-dir generated/demo --dpi 180
 ```
 
-15 项独立示例测试通过。重新生成公开输入：
+读取真实 PDF 路由需安装 `requirements-pdf.txt`。这些依赖不属于前面的标准库 Quickstart。
+
+已有兼容 OCR 服务时，可单次复测公开输入：
 
 ```bash
-python -m pip install -r requirements-demo.txt
-python tools/prepare_examples.py --dpi 180
+python -X utf8 -m pip install -r requirements-client.txt
+python -X utf8 tools/benchmark_service.py --base-url http://127.0.0.1:8089 --output-dir generated/benchmark --runs 1 --warmup 0
 ```
 
-对已部署的项目服务复测：
+认证读取环境变量 `PPOCR_API_KEY`，不要写进代码或公开报告。该客户端会发送案例文件并请求 JSON 和 DOCX。输出目录必须尚不存在，防止覆盖历史或先前结果；再次运行时改用新目录。单次运行不能形成稳定的 P95 结论。
 
-```bash
-python -m pip install httpx numpy
-python tools/benchmark_service.py --base-url http://127.0.0.1:8089 --runs 20
-```
+## 已知限制与下一步
 
-认证通过环境变量 `PPOCR_API_KEY` 设置。此仓库公开选取的算法、测试客户端、输入和实测产物；完整业务服务未开源，不能仅凭展示包重建全部系统。
+- 工程字符存在高置信度误读；不能全局替换 `∅ → Ø`，也不能用模型一致代替正确性验证。
+- JSON 结构与 Word 显示需要分别验收；本仓库保留已发现的输出问题。
+- 后续真实图纸属于开发／回归集，尚无独立人工校对的正式验收集。
+- 部分历史图纸只公开来源、哈希与派生评分，不能从评分数据重建完整推理。
+- 完整服务、模型权重和训练流程不在公开范围；本仓库不提供生产部署承诺。
 
-## 下一步
+后续优先补独立人工标注、工程符号与公差失败样本，以及 Word/LibreOffice 的交付核查。[完整限制](docs/LIMITATIONS.md)
 
-- 结合第三轮 VLM 的增量与新错误分类准备工程字形材料；补足许可和人工标签后再做专项训练，继续核验上下公差及定位。
-- 现有 20 张图纸已转为开发／回归集；另建按工程家族隔离、独立人工校对的新图纸验收集。
-- 修复 Word 文本与背景重复叠加、表格显示异常，再用相同输入复测。
-- 扩展小字、旋转标注、断线和倾斜表格的独立标注集。
-- 增加 Word 与 LibreOffice 双渲染器检查，将页面交付质量纳入门禁。
+## 来源与许可
 
-[样本来源与许可](CASE_SOURCES.md) · [代码来源](CODE_PROVENANCE.json) · [展示许可](LICENSE.md)
+- `examples/`、`tests/` 与实测/评分客户端采用 [MIT](CODE_LICENSE.txt)。
+- 原创说明和独立样本准备工具采用 [CC BY 4.0](LICENSE.md)。
+- 自制合并表格输入及结构真值采用 CC0；DEXPI 输入与衍生数据保留上游许可和归属。
+- 其他真实工程图纸不随仓库再分发，不适用自制样本的许可。
+
+[样本来源与许可详情](CASE_SOURCES.md) · [代码来源](CODE_PROVENANCE.json) · [Agent / RAG 展示项目](https://github.com/YSADF/agent-rag-showcase)
+
+[本次验证记录](docs/VALIDATION.md) · [贡献方式](CONTRIBUTING.md) · [独立发布流程](docs/PUBLISHING.md)

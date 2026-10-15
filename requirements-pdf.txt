@@ -1,0 +1,2 @@
+# Optional: inspect the real native PDF in examples/pdf_routing.py.
+PyMuPDF==1.25.3

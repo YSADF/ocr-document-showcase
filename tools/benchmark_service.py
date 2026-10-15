@@ -3,17 +3,31 @@ from __future__ import annotations
 import argparse, hashlib, json, mimetypes, os, platform, time
 from datetime import datetime, timezone
 from pathlib import Path
-import httpx
-import numpy as np
+try:
+    from .output_paths import new_output_directory
+except ImportError:
+    from output_paths import new_output_directory
 
 def main():
     p = argparse.ArgumentParser()
     p.add_argument('--base-url', default='http://127.0.0.1:8089')
     p.add_argument('--root', type=Path, default=Path(__file__).resolve().parents[1])
     p.add_argument('--runs', type=int, default=20)
-    a=p.parse_args(); out=a.root/'artifacts'/'gpu-20261007'; out.mkdir(parents=True,exist_ok=True)
+    p.add_argument('--warmup', type=int, default=2)
+    p.add_argument('--output-dir', type=Path, default=None,
+                   help='New directory; defaults to generated/benchmark-<UTC timestamp>')
+    a=p.parse_args()
+    if a.runs < 1 or a.warmup < 0:
+        p.error('--runs must be positive and --warmup must be nonnegative')
+    import httpx
+    import numpy as np
+    output = a.output_dir or a.root/'generated'/datetime.now(timezone.utc).strftime('benchmark-%Y%m%dT%H%M%S%fZ')
+    try:
+        out = new_output_directory(output, roots=(a.root,))
+    except ValueError as exc:
+        p.error(str(exc))
     headers={'X-API-Key':os.environ['PPOCR_API_KEY']} if os.environ.get('PPOCR_API_KEY') else {}
-    report={'date':datetime.now(timezone.utc).isoformat(),'measurement':'serial HTTP request to full response, JSON parsing excluded','warmups':2,'runs':a.runs,'percentile_method':'numpy linear','environment':{'python':platform.python_version(),'platform':platform.platform()},'cases':{}}
+    report={'date':datetime.now(timezone.utc).isoformat(),'measurement':'serial HTTP request to full response, JSON parsing excluded','warmups':a.warmup,'runs':a.runs,'percentile_method':'numpy linear','environment':{'python':platform.python_version(),'platform':platform.platform()},'cases':{}}
     with httpx.Client(base_url=a.base_url,headers=headers,timeout=600) as c:
         h=c.get('/api/v1/health'); h.raise_for_status(); health=h.json()
         report['environment'].update({k:health.get(k) for k in ('backend','accelerator')})
@@ -23,13 +37,13 @@ def main():
             params={'use_layout':'true','output_format':'json','ocr_lang':'en','ocr_mode':'balanced','conversion_mode':'ocr'}
             case={'input':fn,'sha256':hashlib.sha256(payload).hexdigest(),'parameters':params.copy(),'requests':[]}
             report['cases'][name]=case
-            for i in range(2+a.runs):
-                start=time.perf_counter(); row={'index':i,'warmup':i<2}
+            for i in range(a.warmup+a.runs):
+                start=time.perf_counter(); row={'index':i,'warmup':i<a.warmup}
                 try:
                     r=c.post('/api/v1/ocr/file/sync',data=params,files={'file':(fn,payload,mimetypes.guess_type(fn)[0] or 'application/octet-stream')})
                     row.update(seconds=time.perf_counter()-start,http_status=r.status_code)
                     r.raise_for_status(); d=r.json(); row['success']=bool(d.get('success',True)); row['characters']=len(d.get('full_text',''))
-                    if i==2: (out/f'{name}-response.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
+                    if i==a.warmup: (out/f'{name}-response.json').write_text(json.dumps(d,ensure_ascii=False,indent=2),encoding='utf-8')
                 except Exception as e:
                     row.update(success=False,error=type(e).__name__,seconds=time.perf_counter()-start)
                 case['requests'].append(row)
@@ -46,5 +60,7 @@ def main():
                 (out/f'{name}-output.docx' if valid else out/f'{name}-docx-error.txt').write_bytes(r.content)
             except Exception as e: case['docx']={'success':False,'seconds':time.perf_counter()-start,'error':type(e).__name__}
             (out/'benchmark.json').write_text(json.dumps(report,ensure_ascii=False,indent=2),encoding='utf-8')
-    print('BENCHMARK_COMPLETE',flush=True)
+    print('BENCHMARK_COMPLETE',out,flush=True)
+    if any(case['summary']['failed'] or not case['docx']['success'] for case in report['cases'].values()):
+        raise SystemExit(1)
 if __name__=='__main__': main()
