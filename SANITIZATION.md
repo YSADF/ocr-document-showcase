@@ -60,6 +60,10 @@ The scan covered 145 public text files and both new DOCX XML packages, PDF metad
 
 Only the private working-tree inventory is omitted from public execution-record copies; the original raw record is retained locally and identified by SHA-256. Container-local runtime paths remain. The font provenance and SIL OFL texts accompany embedded Noto subsets. Full fonts, model weights, backend adapters, execution scripts, source snapshots, runtime logs and business fixes remain outside the public package. The original eight selected business algorithms and 122 previously frozen sample/evidence/example files retain their hashes.
 
+## 2026-10-27 comparison heading removal
+
+The new `artifacts/table-display-20261027/` copies remove only the requested top headings and descriptions from the English PDF text stream and the Chinese DOCX paragraph objects. Both previews are direct new renders; table/footer pixels match each respective baseline outside the removed heading area. The Word table XML is byte-identical. Original inputs, old artifacts and all public/private application code remain unchanged. New records use public relative paths and artifact hashes; no private helpers or source snapshots are included.
+
 ## 2026-10-27 native Word table artifacts
 
 The separate `artifacts/native-table-20261027/` directory contains one native Word table reconstructed through an existing application helper from the saved predicted cells and spans. It removes the old background image and table-area frames; two quantities are transcribed from the visible public source into native cells and explicitly marked as document edits, not OCR output. The final DOCX contains no image parts or external relationships. The source truth is used only for acceptance. Original application/public Python code and all 192 earlier sample/evidence/example/Python files retain their hashes; no private implementation or temporary utility is included.

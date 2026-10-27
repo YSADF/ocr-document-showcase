@@ -1,0 +1,239 @@
+{
+  "operation": "artifact-only removal of top title and description",
+  "model_or_ocr_executed": false,
+  "business_code_changed": false,
+  "old_public_artifact_changed": false,
+  "source": "artifacts/native-table-20261027/output.docx",
+  "source_sha256": "79801a412c457efe8066a20c1ea8a1acad4631dec0ae7752e56b594b2236065c",
+  "output_sha256": "c9360a23ff365e9e1e98909e5a4abef1c58cadf1c2091ed208c56263963827fd",
+  "removed_texts": [
+    "含合并单元格的输入表格",
+    "自制输入与真值标注 | 并非 OCR 结果"
+  ],
+  "removed_frames": 2,
+  "remaining_frames": 1,
+  "table_xml_bytes_identical": true,
+  "table_xml_sha256": "9065771b35f23a93c5b61e9a121276d74600d16eea7186aad5714b2928f8591b",
+  "table_canonical_sha256": "f9d3514523a7c965e4c69b1e4d2bc61edf34cc90505615e6389c221e098db106",
+  "footer_canonical_bytes_identical": true,
+  "footer_text": "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0目标：保留文字、合并单元格及可编辑文档结构。",
+  "changed_zip_parts": [
+    "word/document.xml"
+  ],
+  "original_unchanged_after_edit": true,
+  "marker": {
+    "operation": "edit",
+    "outputs": 1,
+    "format": "docx",
+    "successful_calls": 1
+  },
+  "render_status": "passed",
+  "render_pages": 1,
+  "page_size_pt": [
+    841.8897705078125,
+    595.303955078125
+  ],
+  "native_table_count": 1,
+  "physical_origin_cells": 21,
+  "ooxml_tc_elements": 22,
+  "merge_groups": 5,
+  "grid_span_nodes": 4,
+  "v_merge_nodes": 2,
+  "table_grid_geometry_identical_to_original": true,
+  "remaining_rendered_text_and_footer_positions_unchanged": true,
+  "changed_pixel_bbox": [
+    91,
+    94,
+    485,
+    177
+  ],
+  "changed_pixels_below_y250": 0,
+  "table_and_footer_pixels_unchanged": true,
+  "visual_review": {
+    "performed": true,
+    "method": "Full-resolution canonical page-1.png inspected; table and bottom two lines intact, no clipping/overlap, top two outside-table frames absent.",
+    "page_count": 1,
+    "observed_issues": []
+  },
+  "renderer": {
+    "command": "python /renderer/render_docx.py /work/output.docx --output_dir /work/render --emit_pdf --dpi 144",
+    "image": "pp-v5-showcase-render:local",
+    "network": "none",
+    "cpus": 2,
+    "memory": "4g",
+    "exit_code": 0
+  },
+  "files": {
+    "output.docx": {
+      "sha256": "c9360a23ff365e9e1e98909e5a4abef1c58cadf1c2091ed208c56263963827fd",
+      "bytes": 124253
+    },
+    "render/output.pdf": {
+      "sha256": "c0ec91e405b86292098bbbca5300499e8c10dac60d8056380724e38bfc6a5e40",
+      "bytes": 16590
+    },
+    "render/page-1.png": {
+      "sha256": "105b0fa31ef967a59bc441f1f90a958f3117ae690f1b9a695ac85cead300b150",
+      "bytes": 67746
+    }
+  },
+  "remaining_pdf_text_matches_original_minus_removed": true,
+  "remaining_pdf_characters_without_whitespace": 133,
+  "pdf_table_cell_checks": [
+    {
+      "row": 0,
+      "col": 0,
+      "target": "工程检查记录",
+      "actual_pdf_text": "工程检查记录",
+      "match": true
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "target": "项目",
+      "actual_pdf_text": "项目",
+      "match": true
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "target": "规格",
+      "actual_pdf_text": "规格",
+      "match": true
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "target": "数量",
+      "actual_pdf_text": "数量",
+      "match": true
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "target": "结果",
+      "actual_pdf_text": "结果",
+      "match": true
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "target": "备注",
+      "actual_pdf_text": "备注",
+      "match": true
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "target": "阀体",
+      "actual_pdf_text": "阀体",
+      "match": true
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "target": "DN 50",
+      "actual_pdf_text": "DN 50",
+      "match": true
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "target": "2",
+      "actual_pdf_text": "2",
+      "match": true
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "target": "合格",
+      "actual_pdf_text": "合格",
+      "match": true
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "target": "Ø 50 ± 0.10 mm",
+      "actual_pdf_text": "Ø 50 ± 0.10 mm",
+      "match": true
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "target": "DN 80",
+      "actual_pdf_text": "DN 80",
+      "match": true
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "target": "1",
+      "actual_pdf_text": "1",
+      "match": true
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "target": "待复核",
+      "actual_pdf_text": "待复核",
+      "match": true
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "target": "角度 90° ± 0.5°",
+      "actual_pdf_text": "角度 90° ± 0.5°",
+      "match": true
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "target": "泵",
+      "actual_pdf_text": "泵",
+      "match": true
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "target": "型号 P001 / 1 件",
+      "actual_pdf_text": "型号 P001 / 1 件",
+      "match": true
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "target": "合格",
+      "actual_pdf_text": "合格",
+      "match": true
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "target": "孔径 Ø 12 mm",
+      "actual_pdf_text": "孔径 Ø 12 mm",
+      "match": true
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "target": "汇总：已检验 4 件",
+      "actual_pdf_text": "汇总：已检验 4 件",
+      "match": true
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "target": "3 合格 / 1 待复核",
+      "actual_pdf_text": "3 合格 / 1 待复核",
+      "match": true
+    }
+  ],
+  "pdf_table_cells_checked": 21,
+  "pdf_footer_check": {
+    "expected": "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0目标：保留文字、合并单元格及可编辑文档结构。",
+    "actual": "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0\n目标：保留文字、合并单元格及可编辑文档结构。",
+    "match": true
+  },
+  "pdf_content_check_method": "Positive-length get_text(text) extraction; 21 measured cell-local clips and the unchanged footer frame clip. No empty span-list equality is used.",
+  "verification_correction": "Removed two vacuous span-list fields after review found get_text(dict) returned no spans in this environment; replaced with positive-length per-cell and footer text checks."
+}
