@@ -1,0 +1,3430 @@
+{
+  "model": "Argos translate-en_zh",
+  "revision": "1.9",
+  "target_prefix": ">>cmn_Hans<< (added by model/config.json)",
+  "generation": {
+    "beam_size": 4,
+    "num_hypotheses": 1,
+    "length_penalty": 0.2,
+    "replace_unknowns": true,
+    "max_input_length": 512,
+    "max_decoding_length": 512
+  },
+  "requests": [
+    {
+      "request": {
+        "q": [
+          "Box 1. Summary of Best Practices",
+          "1. Write programs for people, not computers.",
+          "(a) A program should not require its readers to hold more",
+          "than a handful of facts in memory at once.",
+          "(b) Make names consistent, distinctive, and meaningful. (c) Make code style and formatting consistent.",
+          "2. Let the computer do the work. (a) Make the computer repeat tasks.",
+          "(b) Save recent commands in a file for re-use. (c) Use a build tool to automate workflows.",
+          "3. Make incremental changes. (a) Work in small steps with frequent feedback and course"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "方框1. 最佳做法摘要",
+          "1. 为人写程序,而不是计算机.",
+          "(a) 一个程序不应要求其读者持有更多",
+          "而不是记忆中的少数事实",
+          "(b) 使名称一致、独特和有意义。 (c) 使代码样式和格式一致。",
+          "2. 由计算机进行工作。 (a) 使计算机重复工作。",
+          "(b) 将最近的命令保存在文件中供重新使用。 (c) 使用构建工具实现工作流程自动化。",
+          "3. 进行渐进式改革。 (a) 采取小步骤,并经常得到反馈和课程。"
+        ]
+      },
+      "input_token_lengths": [
+        6,
+        9,
+        13,
+        10,
+        23,
+        17,
+        27,
+        17
+      ],
+      "output_token_lengths": [
+        6,
+        9,
+        11,
+        6,
+        23,
+        16,
+        26,
+        22
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "方框",
+          "1.",
+          "▁",
+          "最佳做法",
+          "摘要"
+        ],
+        [
+          "▁1.",
+          "▁为",
+          "人",
+          "写",
+          "程序",
+          ",",
+          "而不是",
+          "计算机",
+          "."
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁一个",
+          "程序",
+          "不应",
+          "要求",
+          "其",
+          "读者",
+          "持有",
+          "更多"
+        ],
+        [
+          "▁",
+          "而不是",
+          "记忆",
+          "中的",
+          "少数",
+          "事实"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "使",
+          "名称",
+          "一致",
+          "、",
+          "独特",
+          "和",
+          "有意义",
+          "。",
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "使",
+          "代码",
+          "样式",
+          "和",
+          "格式",
+          "一致",
+          "。"
+        ],
+        [
+          "▁2.",
+          "▁",
+          "由",
+          "计算机",
+          "进行",
+          "工作",
+          "。",
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "使",
+          "计算机",
+          "重复",
+          "工作",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "将",
+          "最近",
+          "的命令",
+          "保存",
+          "在",
+          "文件中",
+          "供",
+          "重新",
+          "使用",
+          "。",
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "使用",
+          "构建",
+          "工具",
+          "实现",
+          "工作",
+          "流程",
+          "自动化",
+          "。"
+        ],
+        [
+          "▁3.",
+          "▁",
+          "进行",
+          "渐进",
+          "式",
+          "改革",
+          "。",
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "采取",
+          "小",
+          "步骤",
+          ",",
+          "并",
+          "经常",
+          "得到",
+          "反馈",
+          "和",
+          "课程",
+          "。"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.12660596099999566
+    },
+    {
+      "request": {
+        "q": [
+          "correction.",
+          "(b) Use a version control system. (c) Put everything that has been created manually in version",
+          "control.",
+          "4. Don't repeat yourself (or others). (a) Every piece of data must have a single authoritative",
+          "representation in the system.",
+          "(b) Modularize code rather than copying and pasting.",
+          "(c) Re-use code instead of rewriting it.",
+          "5. Plan for mistakes. (a) Add assertions to programs to check their operation."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "更正。",
+          "(b) 使用版本控制系统。 (c) 将所有手工创建的软件都放入版本中。",
+          "控制系统",
+          "4. 不要重复自己(或其他人)。 (a) 每一件数据必须具有单一的权威。",
+          "系统中的代表性。",
+          "(b) 修改代码,而不是复制和粘贴。",
+          "(c) 重新使用代码,而不是重写代码。",
+          "5. 错误计划。 (a) 在程序上添加断言,以检查其运行情况。"
+        ]
+      },
+      "input_token_lengths": [
+        2,
+        21,
+        2,
+        22,
+        5,
+        16,
+        13,
+        17
+      ],
+      "output_token_lengths": [
+        3,
+        25,
+        3,
+        20,
+        4,
+        13,
+        13,
+        20
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "更正",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "使用",
+          "版本",
+          "控制",
+          "系统",
+          "。",
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "将",
+          "所有",
+          "手工",
+          "创建",
+          "的",
+          "软件",
+          "都",
+          "放",
+          "入",
+          "版本",
+          "中",
+          "。"
+        ],
+        [
+          "▁",
+          "控制",
+          "系统"
+        ],
+        [
+          "▁4.",
+          "▁不要",
+          "重复",
+          "自己",
+          "(",
+          "或其他",
+          "人",
+          ")。",
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "每一",
+          "件",
+          "数据",
+          "必须",
+          "具有",
+          "单一",
+          "的权威",
+          "。"
+        ],
+        [
+          "▁",
+          "系统中",
+          "的代表性",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "修改",
+          "代码",
+          ",",
+          "而不是",
+          "复制",
+          "和",
+          "粘",
+          "贴",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "重新",
+          "使用",
+          "代码",
+          ",",
+          "而不是",
+          "重",
+          "写",
+          "代码",
+          "。"
+        ],
+        [
+          "▁5.",
+          "▁",
+          "错误",
+          "计划",
+          "。",
+          "▁(",
+          "a",
+          ")",
+          "▁在",
+          "程序",
+          "上",
+          "添加",
+          "断言",
+          ",",
+          "以",
+          "检查",
+          "其",
+          "运行",
+          "情况",
+          "。"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.08701659200005452
+    },
+    {
+      "request": {
+        "q": [
+          "(b) Use an off-the-shelf unit testing library.",
+          "(c) Turn bugs into test cases.",
+          "(d) Use a symbolic debugger.",
+          "6. Optimize software only after it works correctly.",
+          "(a) Use a profiler to identify bottlenecks.",
+          "(b) Write code in the highest-level language possible.",
+          "7. Document design and purpose, not mechanics. (a) Document interfaces and reasons, not implementations.",
+          "(b) Refactor code in preference to explaining how it works."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "(b) 使用现成单元测试库。",
+          "(c) 将虫子变成试验病例。",
+          "(d) 使用象征性调试器。",
+          "6. 只有在软件正常工作后才能优化。",
+          "(a) 使用剖面仪查明瓶颈。",
+          "(b) 用尽可能高的语言写代码。",
+          "7. 文件设计和目的,而不是机械。 (a) 文件接口和理由,而不是执行。",
+          "(b) 重构代码,而不是解释其运作方式。"
+        ]
+      },
+      "input_token_lengths": [
+        15,
+        10,
+        10,
+        10,
+        11,
+        13,
+        22,
+        14
+      ],
+      "output_token_lengths": [
+        11,
+        11,
+        10,
+        10,
+        11,
+        10,
+        19,
+        14
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "使用",
+          "现",
+          "成",
+          "单元",
+          "测试",
+          "库",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "将",
+          "虫",
+          "子",
+          "变成",
+          "试验",
+          "病例",
+          "。"
+        ],
+        [
+          "▁(",
+          "d",
+          ")",
+          "▁",
+          "使用",
+          "象征性",
+          "调",
+          "试",
+          "器",
+          "。"
+        ],
+        [
+          "▁6.",
+          "▁",
+          "只有在",
+          "软件",
+          "正常",
+          "工作",
+          "后",
+          "才能",
+          "优化",
+          "。"
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "使用",
+          "剖",
+          "面",
+          "仪",
+          "查明",
+          "瓶颈",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁用",
+          "尽可能",
+          "高",
+          "的语言",
+          "写",
+          "代码",
+          "。"
+        ],
+        [
+          "▁7.",
+          "▁文件",
+          "设计和",
+          "目的",
+          ",",
+          "而不是",
+          "机械",
+          "。",
+          "▁(",
+          "a",
+          ")",
+          "▁文件",
+          "接口",
+          "和",
+          "理由",
+          ",",
+          "而不是",
+          "执行",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "重",
+          "构",
+          "代码",
+          ",",
+          "而不是",
+          "解释",
+          "其",
+          "运作",
+          "方式",
+          "。"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.08075516500002777
+    },
+    {
+      "request": {
+        "q": [
+          "(c) Embed the documentation for a piece of software in that",
+          "software.",
+          "8. Collaborate.",
+          "(a) Use pre-merge code reviews.",
+          "(b) Use pair programming when bringing someone new up to speed and when tackling particularly tricky problems.",
+          "(c) Use an issue tracking tool.",
+          "Write Programs for People, Not Computers Scientists writing software need to write code that both executes",
+          "correctly and can be easily read and understood by other"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "(c) 将一件软件的文件嵌入其中;",
+          "软件。",
+          "8. 合作。",
+          "(a) 使用合并前的代码审查。",
+          "(b) 在使新人跟上速度和处理特别棘手问题时,使用对等编程。",
+          "(c) 使用问题跟踪工具。",
+          "为人写程序,不是计算机 科学家写软件需要写出两者都执行的代码",
+          "正确和容易被他人阅读和理解"
+        ]
+      },
+      "input_token_lengths": [
+        14,
+        2,
+        4,
+        10,
+        20,
+        9,
+        20,
+        10
+      ],
+      "output_token_lengths": [
+        12,
+        3,
+        4,
+        11,
+        21,
+        9,
+        19,
+        9
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "将",
+          "一件",
+          "软件",
+          "的文件",
+          "嵌",
+          "入",
+          "其中",
+          ";"
+        ],
+        [
+          "▁",
+          "软件",
+          "。"
+        ],
+        [
+          "▁8.",
+          "▁",
+          "合作",
+          "。"
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "使用",
+          "合并",
+          "前",
+          "的",
+          "代码",
+          "审查",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁在",
+          "使",
+          "新",
+          "人",
+          "跟上",
+          "速度",
+          "和",
+          "处理",
+          "特别",
+          "棘手",
+          "问题时",
+          ",",
+          "使用",
+          "对",
+          "等",
+          "编",
+          "程",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "使用",
+          "问题",
+          "跟踪",
+          "工具",
+          "。"
+        ],
+        [
+          "▁为",
+          "人",
+          "写",
+          "程序",
+          ",",
+          "不是",
+          "计算机",
+          "▁",
+          "科学家",
+          "写",
+          "软件",
+          "需要",
+          "写",
+          "出",
+          "两者",
+          "都",
+          "执行",
+          "的",
+          "代码"
+        ],
+        [
+          "▁",
+          "正确",
+          "和",
+          "容易",
+          "被",
+          "他人",
+          "阅读",
+          "和",
+          "理解"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.07434146899993266
+    },
+    {
+      "request": {
+        "q": [
+          "programmers (especially the author's future self). If software",
+          "cannot be easily read and understood, it is much more difficult to",
+          "PLOS Biology www.plosbiology.org",
+          "know that it is actually doing what it is intended to do. To be",
+          "productive, software developers must therefore take several aspects",
+          "of human cognition into account: in particular, that human",
+          "working memory is limited, human pattern matching abilities are",
+          "finely tuned, and human attention span is short [33 37]."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "程序员(特别是作者的未来自我). 如果软件",
+          "阅读和理解不易,",
+          "PLOS 生物学 www.plosbiology.org",
+          "知道它实际上正在做它要做的事。",
+          "因此,软件开发者必须从几个方面着手",
+          "人类认识、特别是",
+          "工作内存有限,人类模式匹配能力是",
+          "精细的调谐,人类的注意力跨度很短[33,37]."
+        ]
+      },
+      "input_token_lengths": [
+        13,
+        13,
+        12,
+        15,
+        9,
+        13,
+        10,
+        16
+      ],
+      "output_token_lengths": [
+        12,
+        7,
+        16,
+        9,
+        10,
+        5,
+        11,
+        20
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "程序",
+          "员",
+          "(",
+          "特别是",
+          "作者",
+          "的未来",
+          "自我",
+          ")",
+          ".",
+          "▁如果",
+          "软件"
+        ],
+        [
+          "▁",
+          "阅读",
+          "和",
+          "理解",
+          "不",
+          "易",
+          ","
+        ],
+        [
+          "▁P",
+          "L",
+          "OS",
+          "▁",
+          "生物学",
+          "▁",
+          "www",
+          ".",
+          "p",
+          "los",
+          "bi",
+          "olo",
+          "g",
+          "y",
+          ".",
+          "org"
+        ],
+        [
+          "▁知道",
+          "它",
+          "实际上",
+          "正在",
+          "做",
+          "它",
+          "要",
+          "做的事",
+          "。"
+        ],
+        [
+          "▁因此",
+          ",",
+          "软件",
+          "开发",
+          "者",
+          "必须",
+          "从",
+          "几个",
+          "方面",
+          "着手"
+        ],
+        [
+          "▁",
+          "人类",
+          "认识",
+          "、",
+          "特别是"
+        ],
+        [
+          "▁",
+          "工作",
+          "内",
+          "存",
+          "有限",
+          ",",
+          "人类",
+          "模式",
+          "匹配",
+          "能力",
+          "是"
+        ],
+        [
+          "▁",
+          "精",
+          "细",
+          "的",
+          "调",
+          "谐",
+          ",",
+          "人类",
+          "的",
+          "注意力",
+          "跨",
+          "度",
+          "很",
+          "短",
+          "[",
+          "33",
+          ",",
+          "37",
+          "]",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.07977706700000908
+    },
+    {
+      "request": {
+        "q": [
+          "First, a program should not require its readers to hold",
+          "more than a handful of facts in memory at once (1a).",
+          "Human working memory can hold only a handful of items at a",
+          "time, where each item is either a single fact or a \"chunk\"",
+          "aggregating several facts [33,34], so programs should limit the total",
+          "number of items to be remembered to accomplish a task. The",
+          "primary way to accomplish this is to break programs up into easily",
+          "understood functions, each of which conducts a single, easily"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "首先,一个程序不应该要求其读者持有",
+          "一时记忆中不止几个事实(1a)。",
+          "人类的工作记忆只能保存在",
+          "时间,每个项目要么是一个单一的事实,要么是一个\"圆\"",
+          "合计数项事实[33,34],所以程序应限制总数",
+          "为完成某项任务而需要记住的项目数量。",
+          "实现这个目标的主要方式是 将程序简单化",
+          "理解函数,每个函数都进行单个,容易"
+        ]
+      },
+      "input_token_lengths": [
+        11,
+        13,
+        12,
+        16,
+        16,
+        12,
+        12,
+        11
+      ],
+      "output_token_lengths": [
+        9,
+        10,
+        7,
+        15,
+        16,
+        10,
+        12,
+        11
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁首先",
+          ",",
+          "一个",
+          "程序",
+          "不应该",
+          "要求",
+          "其",
+          "读者",
+          "持有"
+        ],
+        [
+          "▁一",
+          "时",
+          "记忆",
+          "中",
+          "不止",
+          "几个",
+          "事实",
+          "(1",
+          "a",
+          ")。"
+        ],
+        [
+          "▁",
+          "人类",
+          "的工作",
+          "记忆",
+          "只能",
+          "保存",
+          "在"
+        ],
+        [
+          "▁",
+          "时间",
+          ",",
+          "每个",
+          "项目",
+          "要么",
+          "是一个",
+          "单一",
+          "的事实",
+          ",",
+          "要么",
+          "是一个",
+          "\"",
+          "圆",
+          "\""
+        ],
+        [
+          "▁",
+          "合计",
+          "数",
+          "项",
+          "事实",
+          "[",
+          "33",
+          ",",
+          "34",
+          "]",
+          ",",
+          "所以",
+          "程序",
+          "应",
+          "限制",
+          "总数"
+        ],
+        [
+          "▁为",
+          "完成",
+          "某项",
+          "任务",
+          "而",
+          "需要",
+          "记住",
+          "的项目",
+          "数量",
+          "。"
+        ],
+        [
+          "▁",
+          "实现",
+          "这个",
+          "目标",
+          "的主要",
+          "方式",
+          "是",
+          "▁",
+          "将",
+          "程序",
+          "简单",
+          "化"
+        ],
+        [
+          "▁",
+          "理解",
+          "函数",
+          ",",
+          "每个",
+          "函数",
+          "都",
+          "进行",
+          "单个",
+          ",",
+          "容易"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.0725230369999963
+    },
+    {
+      "request": {
+        "q": [
+          "understood, task. This serves to make each piece of the program",
+          "easier to understand in the same way that breaking up a scientific",
+          "paper using sections and paragraphs makes it easier to read.",
+          "Second, scientists should make names consistent, distinctive, and meaningful (1b). For example, using non-descriptive",
+          "names, like a and foo, or names that are very similar, like results and",
+          "results2, is likely to cause confusion.",
+          "Third, scientists should make code style and formatting",
+          "consistent (1c). If different parts of a scientific paper used"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "理解,任务。这可以使每个程序",
+          "更容易以同样的方式理解 打破科学",
+          "使用部分和段落的纸张使阅读更加容易。",
+          "第二,科学家应使名称一致、独特和有意义(1b)。",
+          "名字,像a和foo, 或者名字非常相似, 像结果和",
+          "结果2可能会造成混乱。",
+          "第三,科学家应制作代码样式和格式",
+          "如果使用的科学论文的不同部分"
+        ]
+      },
+      "input_token_lengths": [
+        13,
+        12,
+        11,
+        24,
+        18,
+        8,
+        10,
+        12
+      ],
+      "output_token_lengths": [
+        10,
+        9,
+        12,
+        14,
+        17,
+        6,
+        9,
+        6
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "理解",
+          ",",
+          "任务",
+          "。",
+          "这",
+          "可以",
+          "使",
+          "每个",
+          "程序"
+        ],
+        [
+          "▁",
+          "更容易",
+          "以",
+          "同样",
+          "的方式",
+          "理解",
+          "▁",
+          "打破",
+          "科学"
+        ],
+        [
+          "▁",
+          "使用",
+          "部分",
+          "和",
+          "段落",
+          "的",
+          "纸张",
+          "使",
+          "阅读",
+          "更加",
+          "容易",
+          "。"
+        ],
+        [
+          "▁第二",
+          ",",
+          "科学家",
+          "应",
+          "使",
+          "名称",
+          "一致",
+          "、",
+          "独特",
+          "和",
+          "有意义",
+          "(1",
+          "b",
+          ")。"
+        ],
+        [
+          "▁",
+          "名字",
+          ",",
+          "像",
+          "a",
+          "和",
+          "f",
+          "oo",
+          ",",
+          "▁或者",
+          "名字",
+          "非常",
+          "相似",
+          ",",
+          "▁像",
+          "结果",
+          "和"
+        ],
+        [
+          "▁结果",
+          "2",
+          "可能会",
+          "造成",
+          "混乱",
+          "。"
+        ],
+        [
+          "▁第三",
+          ",",
+          "科学家",
+          "应",
+          "制作",
+          "代码",
+          "样式",
+          "和",
+          "格式"
+        ],
+        [
+          "▁如果",
+          "使用的",
+          "科学",
+          "论文",
+          "的不同",
+          "部分"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.07121556800007056
+    },
+    {
+      "request": {
+        "q": [
+          "different formatting and capitalization, it would make that paper",
+          "more difficult to read. Likewise, if different parts of a program are",
+          "indented differently, or if programmers mix CamelCaseNaming",
+          "and pothole_ case_ naming, code takes longer to read and readers",
+          "make more mistakes [35,36]. Let the Computer Do the Work Science often involves repetition of computational tasks such as",
+          "processing large numbers of data files in the same way or",
+          "regenerating figures each time new data are added to an existing",
+          "analysis. Computers were invented to do these kinds of repetitive"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "报告的格式和资本化方式不同,因此,文件",
+          "同样,如果程序的不同部分是",
+          "缩进不同, 或者程序员混合骆驼CaseNaming",
+          "和 pothole  case  命名,代码需要更长的阅读和阅读时间",
+          "制造更多的错误[35,36]。让“计算机工作科学”经常涉及重复计算任务,例如",
+          "以相同方式处理大量数据文件或",
+          "每次将新数据添加到现有数据中时,都会重新生成数字。",
+          "计算机被发明来做这种重复"
+        ]
+      },
+      "input_token_lengths": [
+        11,
+        14,
+        17,
+        15,
+        25,
+        11,
+        12,
+        12
+      ],
+      "output_token_lengths": [
+        12,
+        7,
+        16,
+        21,
+        23,
+        9,
+        16,
+        8
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "报告",
+          "的格式",
+          "和",
+          "资本",
+          "化",
+          "方式",
+          "不同",
+          ",",
+          "因此",
+          ",",
+          "文件"
+        ],
+        [
+          "▁同样",
+          ",",
+          "如果",
+          "程序",
+          "的不同",
+          "部分",
+          "是"
+        ],
+        [
+          "▁",
+          "缩",
+          "进",
+          "不同",
+          ",",
+          "▁或者",
+          "程序",
+          "员",
+          "混合",
+          "骆",
+          "驼",
+          "C",
+          "ase",
+          "N",
+          "am",
+          "ing"
+        ],
+        [
+          "▁",
+          "和",
+          "▁p",
+          "ot",
+          "ho",
+          "le",
+          "_",
+          "▁c",
+          "ase",
+          "_",
+          "▁",
+          "命名",
+          ",",
+          "代码",
+          "需要",
+          "更长",
+          "的",
+          "阅读",
+          "和",
+          "阅读",
+          "时间"
+        ],
+        [
+          "▁",
+          "制造",
+          "更多的",
+          "错误",
+          "[",
+          "35",
+          ",",
+          "36",
+          "]",
+          "。",
+          "让",
+          "“",
+          "计算机",
+          "工作",
+          "科学",
+          "”",
+          "经常",
+          "涉及",
+          "重复",
+          "计算",
+          "任务",
+          ",",
+          "例如"
+        ],
+        [
+          "▁",
+          "以",
+          "相同",
+          "方式",
+          "处理",
+          "大量",
+          "数据",
+          "文件",
+          "或"
+        ],
+        [
+          "▁每次",
+          "将",
+          "新",
+          "数据",
+          "添加",
+          "到",
+          "现有",
+          "数据",
+          "中",
+          "时",
+          ",",
+          "都会",
+          "重新",
+          "生成",
+          "数字",
+          "。"
+        ],
+        [
+          "▁",
+          "计算机",
+          "被",
+          "发明",
+          "来",
+          "做",
+          "这种",
+          "重复"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.09471628799997234
+    },
+    {
+      "request": {
+        "q": [
+          "tasks but, even today, many scientists type the same commands in",
+          "over and over again or click the same buttons repeatedly [17]. In",
+          "addition to wasting time, sooner or later even the most careful",
+          "researcher will lose focus while doing this and make mistakes.",
+          "Scientists should therefore make the computer repeat tasks",
+          "(2a) and save recent commands in a file for re-use (2b).",
+          "For example, most command-line tools have a \"history\" option",
+          "that lets users display and re-execute recent commands, with"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "任务,但即使是今天,许多科学家也会在",
+          "反复或反复单击相同的按钮[17]。在",
+          "除了浪费时间 迟早甚至是最小心的",
+          "研究人员在这样做时会失去注意力,犯错误。",
+          "因此,科学家应该让计算机重复任务",
+          "(2a),并将最近的命令保存在一个文件中以供重新使用(2b).",
+          "例如,大多数命令行工具都有“历史”选项",
+          "允许用户显示并重新执行最近的命令,使用"
+        ]
+      },
+      "input_token_lengths": [
+        13,
+        15,
+        12,
+        12,
+        8,
+        17,
+        16,
+        14
+      ],
+      "output_token_lengths": [
+        11,
+        12,
+        8,
+        12,
+        8,
+        18,
+        11,
+        11
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "任务",
+          ",",
+          "但",
+          "即使是",
+          "今天",
+          ",",
+          "许多",
+          "科学家",
+          "也会",
+          "在"
+        ],
+        [
+          "▁",
+          "反复",
+          "或",
+          "反复",
+          "单击",
+          "相同的",
+          "按钮",
+          "[",
+          "17",
+          "]",
+          "。",
+          "在"
+        ],
+        [
+          "▁除了",
+          "浪费时间",
+          "▁",
+          "迟早",
+          "甚至是",
+          "最",
+          "小心",
+          "的"
+        ],
+        [
+          "▁",
+          "研究人员",
+          "在",
+          "这样做",
+          "时",
+          "会",
+          "失去",
+          "注意力",
+          ",",
+          "犯",
+          "错误",
+          "。"
+        ],
+        [
+          "▁因此",
+          ",",
+          "科学家",
+          "应该",
+          "让",
+          "计算机",
+          "重复",
+          "任务"
+        ],
+        [
+          "▁(",
+          "2",
+          "a",
+          ")",
+          ",",
+          "并将",
+          "最近",
+          "的命令",
+          "保存",
+          "在一个",
+          "文件中",
+          "以供",
+          "重新",
+          "使用",
+          "(2",
+          "b",
+          ")",
+          "."
+        ],
+        [
+          "▁例如",
+          ",",
+          "大多数",
+          "命令",
+          "行",
+          "工具",
+          "都有",
+          "“",
+          "历史",
+          "”",
+          "选项"
+        ],
+        [
+          "▁",
+          "允许",
+          "用户",
+          "显示",
+          "并",
+          "重新",
+          "执行",
+          "最近",
+          "的命令",
+          ",",
+          "使用"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.0744096209999725
+    },
+    {
+      "request": {
+        "q": [
+          "minor edits to filenames or parameters. This is often cited as one",
+          "remain popular",
+          "command--line interfaces",
+          "[38,39]: \"do this",
+          "reason",
+          "again\" saves time and reduces errors.",
+          "A file containing commands for an interactive system is often",
+          "called a script, though there is real no difference between this and"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "次要编辑为文件名或参数。这经常被引用为一个",
+          "仍为流行",
+          "命令线接口",
+          "[38,39]:\"这样做",
+          "原因",
+          "用于节省时间和减少错误。",
+          "包含交互式系统命令的文件往往",
+          "虽然这和"
+        ]
+      },
+      "input_token_lengths": [
+        15,
+        2,
+        6,
+        8,
+        1,
+        10,
+        10,
+        13
+      ],
+      "output_token_lengths": [
+        14,
+        4,
+        4,
+        8,
+        2,
+        8,
+        7,
+        3
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "次要",
+          "编辑",
+          "为",
+          "文件",
+          "名",
+          "或",
+          "参数",
+          "。",
+          "这",
+          "经常",
+          "被",
+          "引用",
+          "为一个"
+        ],
+        [
+          "▁",
+          "仍",
+          "为",
+          "流行"
+        ],
+        [
+          "▁",
+          "命令",
+          "线",
+          "接口"
+        ],
+        [
+          "▁[",
+          "38",
+          ",",
+          "39",
+          "]",
+          ":",
+          "\"",
+          "这样做"
+        ],
+        [
+          "▁",
+          "原因"
+        ],
+        [
+          "▁",
+          "用于",
+          "节省",
+          "时间",
+          "和",
+          "减少",
+          "错误",
+          "。"
+        ],
+        [
+          "▁",
+          "包含",
+          "交互式",
+          "系统",
+          "命令",
+          "的文件",
+          "往往"
+        ],
+        [
+          "▁虽然",
+          "这",
+          "和"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05018938800003525
+    },
+    {
+      "request": {
+        "q": [
+          "a program. When these scripts are repeatedly used in the same",
+          "way, or in combination, a workflow management tool can be",
+          "used. The paradigmatic example is compiling and linking",
+          "programs in languages such as Fortran, C++, Java, and C#",
+          "[40]. The most widely used tool for this task is probably Make",
+          "(http://www..gnu.org/software/make), although many alterna-",
+          "tives are now available [41]. All of these allow people to express",
+          "dependencies between files, i.e., to say that if A or B has changed,"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "程序。当这些脚本在同一程序中反复使用时",
+          "工作流程管理工具可以是",
+          "正在汇编和链接",
+          "Fortran、C++、Java和C#等语言的程序",
+          "[40]. 使用最广泛的工具可能是Make",
+          "(http://www.gnu.org/software/make),尽管有许多交替",
+          "现在有电动车[41]。",
+          "文件之间的依赖关系,即如果A或B有变化,"
+        ]
+      },
+      "input_token_lengths": [
+        13,
+        12,
+        11,
+        17,
+        14,
+        21,
+        16,
+        21
+      ],
+      "output_token_lengths": [
+        13,
+        6,
+        5,
+        16,
+        12,
+        23,
+        9,
+        13
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "程序",
+          "。",
+          "当",
+          "这些",
+          "脚",
+          "本",
+          "在同一",
+          "程序",
+          "中",
+          "反复",
+          "使用",
+          "时"
+        ],
+        [
+          "▁",
+          "工作",
+          "流程",
+          "管理",
+          "工具",
+          "可以是"
+        ],
+        [
+          "▁",
+          "正在",
+          "汇编",
+          "和",
+          "链接"
+        ],
+        [
+          "▁F",
+          "ort",
+          "ran",
+          "、",
+          "C",
+          "+",
+          "+",
+          "、",
+          "J",
+          "ava",
+          "和",
+          "C",
+          "#",
+          "等",
+          "语言",
+          "的程序"
+        ],
+        [
+          "▁[",
+          "40",
+          "]",
+          ".",
+          "▁",
+          "使用",
+          "最",
+          "广泛的",
+          "工具",
+          "可能是",
+          "M",
+          "ake"
+        ],
+        [
+          "▁(",
+          "http",
+          "://",
+          "www",
+          ".",
+          "g",
+          "nu",
+          ".",
+          "org",
+          "/",
+          "so",
+          "ft",
+          "war",
+          "e",
+          "/",
+          "m",
+          "ake",
+          ")",
+          ",",
+          "尽管",
+          "有许多",
+          "交",
+          "替"
+        ],
+        [
+          "▁现在",
+          "有",
+          "电",
+          "动",
+          "车",
+          "[",
+          "41",
+          "]",
+          "。"
+        ],
+        [
+          "▁文件",
+          "之间的",
+          "依赖",
+          "关系",
+          ",",
+          "即",
+          "如果",
+          "A",
+          "或",
+          "B",
+          "有",
+          "变化",
+          ","
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.09439696699996603
+    },
+    {
+      "request": {
+        "q": [
+          "then C needs to be updated using a specific set of commands.",
+          "These tools have been successfully adopted for scientific work-",
+          "flows as well [42].",
+          "To avoid errors and inefficiencies from repeating commands",
+          "manually, we recommend that scientists use a build tool to",
+          "automate workflows (2c), e.g., specify the ways in which",
+          "intermediate data files and final results depend on each other, and",
+          "on the programs that create them, so that a single command will"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "然后需要使用一组特定的指令更新 C 。",
+          "这些工具已成功用于科学工作。",
+          "[42] (中文(简体) ).",
+          "避免重复命令出错和效率低下",
+          "我们建议科学家使用一个构建工具",
+          "自动工作流程(2c),例如,指定如何",
+          "中间数据文件和最终结果相互依赖,",
+          "用于创建它们的程序,以便一个单一的命令"
+        ]
+      },
+      "input_token_lengths": [
+        13,
+        10,
+        6,
+        8,
+        11,
+        17,
+        12,
+        13
+      ],
+      "output_token_lengths": [
+        10,
+        8,
+        11,
+        8,
+        7,
+        13,
+        8,
+        10
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁然后",
+          "需要",
+          "使用",
+          "一组",
+          "特定的",
+          "指令",
+          "更新",
+          "▁C",
+          "▁",
+          "。"
+        ],
+        [
+          "▁这些",
+          "工具",
+          "已",
+          "成功",
+          "用于",
+          "科学",
+          "工作",
+          "。"
+        ],
+        [
+          "▁[",
+          "42",
+          "]",
+          "▁(",
+          "中文",
+          "(",
+          "简体",
+          ")",
+          "▁",
+          ")",
+          "."
+        ],
+        [
+          "▁",
+          "避免",
+          "重复",
+          "命令",
+          "出",
+          "错",
+          "和效率",
+          "低下"
+        ],
+        [
+          "▁我们",
+          "建议",
+          "科学家",
+          "使用",
+          "一个",
+          "构建",
+          "工具"
+        ],
+        [
+          "▁",
+          "自动",
+          "工作",
+          "流程",
+          "(",
+          "2",
+          "c",
+          ")",
+          ",",
+          "例如",
+          ",",
+          "指定",
+          "如何"
+        ],
+        [
+          "▁",
+          "中间",
+          "数据",
+          "文件和",
+          "最终",
+          "结果",
+          "相互依赖",
+          ","
+        ],
+        [
+          "▁",
+          "用于",
+          "创建",
+          "它们",
+          "的程序",
+          ",",
+          "以便",
+          "一个",
+          "单一",
+          "的命令"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.06600515299999188
+    },
+    {
+      "request": {
+        "q": [
+          "regenerate anything that needs to be regenerated.",
+          "January 2014 Volume 12 Issue 1| e1001745"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "重新生成任何需要重新生成的东西。",
+          "2014年1月 第12卷 第1版 e1001745"
+        ]
+      },
+      "input_token_lengths": [
+        12,
+        11
+      ],
+      "output_token_lengths": [
+        9,
+        15
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "重新",
+          "生成",
+          "任何",
+          "需要",
+          "重新",
+          "生成",
+          "的东西",
+          "。"
+        ],
+        [
+          "▁2014",
+          "年",
+          "1",
+          "月",
+          "▁第",
+          "12",
+          "卷",
+          "▁第",
+          "1",
+          "版",
+          "▁",
+          "e",
+          "100",
+          "17",
+          "45"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.03510695799991481
+    },
+    {
+      "request": {
+        "q": [
+          "names, like a and foo, or names that are very similar, like results and"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "名字,像a和foo, 或者名字非常相似, 像结果和"
+        ]
+      },
+      "input_token_lengths": [
+        18
+      ],
+      "output_token_lengths": [
+        17
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "名字",
+          ",",
+          "像",
+          "a",
+          "和",
+          "f",
+          "oo",
+          ",",
+          "▁或者",
+          "名字",
+          "非常",
+          "相似",
+          ",",
+          "▁像",
+          "结果",
+          "和"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.03572886599999947
+    },
+    {
+      "request": {
+        "q": [
+          "foo"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "o"
+        ]
+      },
+      "input_token_lengths": [
+        2
+      ],
+      "output_token_lengths": [
+        2
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "o"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.008463682000069639
+    },
+    {
+      "request": {
+        "q": [
+          "and pothole_ case_ naming, code takes longer to read and readers"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "和 pothole  case  命名,代码需要更长的阅读和阅读时间"
+        ]
+      },
+      "input_token_lengths": [
+        15
+      ],
+      "output_token_lengths": [
+        21
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "和",
+          "▁p",
+          "ot",
+          "ho",
+          "le",
+          "_",
+          "▁c",
+          "ase",
+          "_",
+          "▁",
+          "命名",
+          ",",
+          "代码",
+          "需要",
+          "更长",
+          "的",
+          "阅读",
+          "和",
+          "阅读",
+          "时间"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.04468739699996149
+    },
+    {
+      "request": {
+        "q": [
+          "pothole  case"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "坑洞案件"
+        ]
+      },
+      "input_token_lengths": [
+        3
+      ],
+      "output_token_lengths": [
+        4
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "坑",
+          "洞",
+          "案件"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.021807265000006737
+    },
+    {
+      "request": {
+        "q": [
+          "programs in languages such as Fortran, C++, Java, and C#"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "Fortran、C++、Java和C#等语言的程序"
+        ]
+      },
+      "input_token_lengths": [
+        17
+      ],
+      "output_token_lengths": [
+        16
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁F",
+          "ort",
+          "ran",
+          "、",
+          "C",
+          "+",
+          "+",
+          "、",
+          "J",
+          "ava",
+          "和",
+          "C",
+          "#",
+          "等",
+          "语言",
+          "的程序"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.039153074000068955
+    },
+    {
+      "request": {
+        "q": [
+          "Fortran",
+          "Java"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "堡垒",
+          "爪哇语"
+        ]
+      },
+      "input_token_lengths": [
+        3,
+        1
+      ],
+      "output_token_lengths": [
+        3,
+        4
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "堡",
+          "垒"
+        ],
+        [
+          "▁",
+          "爪",
+          "哇",
+          "语"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.01431362400001035
+    },
+    {
+      "request": {
+        "q": [
+          "[40].",
+          "The most widely used tool for this task is probably Make"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "[40] (中文(简体) ).",
+          "这个任务最广泛使用的工具可能是 Make"
+        ]
+      },
+      "input_token_lengths": [
+        3,
+        11
+      ],
+      "output_token_lengths": [
+        11,
+        9
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁[",
+          "40",
+          "]",
+          "▁(",
+          "中文",
+          "(",
+          "简体",
+          ")",
+          "▁",
+          ")",
+          "."
+        ],
+        [
+          "▁这个",
+          "任务",
+          "最",
+          "广泛",
+          "使用",
+          "的工具",
+          "可能是",
+          "▁Ma",
+          "ke"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.026308226999958606
+    },
+    {
+      "request": {
+        "q": [
+          "Make"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "制作"
+        ]
+      },
+      "input_token_lengths": [
+        1
+      ],
+      "output_token_lengths": [
+        2
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "制作"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.011831185999994887
+    },
+    {
+      "request": {
+        "q": [
+          "(http://www.",
+          ".",
+          "gnu.org/software/make), although many alterna-"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "(http://www.",
+          "。 。 。",
+          "gnu.org/software/make),虽然许多交替-"
+        ]
+      },
+      "input_token_lengths": [
+        5,
+        2,
+        15
+      ],
+      "output_token_lengths": [
+        5,
+        6,
+        19
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁(",
+          "http",
+          "://",
+          "www",
+          "."
+        ],
+        [
+          "▁",
+          "。",
+          "▁",
+          "。",
+          "▁",
+          "。"
+        ],
+        [
+          "▁g",
+          "nu",
+          ".",
+          "org",
+          "/",
+          "so",
+          "ft",
+          "war",
+          "e",
+          "/",
+          "m",
+          "ake",
+          ")",
+          ",",
+          "虽然",
+          "许多",
+          "交",
+          "替",
+          "-"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.04937269999993532
+    },
+    {
+      "request": {
+        "q": [
+          "Box 1.",
+          "Summary of Best Practices",
+          "1.",
+          "Write programs for people, not computers.",
+          "(b) Make names consistent, distinctive, and meaningful.",
+          "(c) Make code style and formatting consistent.",
+          "2.",
+          "Let the computer do the work."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "插文1(续)",
+          "最佳做法摘要",
+          "一、导 言",
+          "为人写程序,不是电脑.",
+          "(b) 使名称一致、独特和有意义。",
+          "(c) 使代码样式和格式一致。",
+          "2. 国家",
+          "让电脑来做"
+        ]
+      },
+      "input_token_lengths": [
+        2,
+        4,
+        1,
+        8,
+        12,
+        11,
+        1,
+        7
+      ],
+      "output_token_lengths": [
+        7,
+        3,
+        4,
+        8,
+        12,
+        11,
+        3,
+        4
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "插",
+          "文",
+          "1",
+          "(",
+          "续",
+          ")"
+        ],
+        [
+          "▁",
+          "最佳做法",
+          "摘要"
+        ],
+        [
+          "▁一",
+          "、",
+          "导",
+          "▁言"
+        ],
+        [
+          "▁为",
+          "人",
+          "写",
+          "程序",
+          ",",
+          "不是",
+          "电脑",
+          "."
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "使",
+          "名称",
+          "一致",
+          "、",
+          "独特",
+          "和",
+          "有意义",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "使",
+          "代码",
+          "样式",
+          "和",
+          "格式",
+          "一致",
+          "。"
+        ],
+        [
+          "▁2.",
+          "▁",
+          "国家"
+        ],
+        [
+          "▁让",
+          "电脑",
+          "来",
+          "做"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05156964299999345
+    },
+    {
+      "request": {
+        "q": [
+          "(a) Make the computer repeat tasks.",
+          "(b) Save recent commands in a file for re-use.",
+          "(c) Use a build tool to automate workflows.",
+          "3.",
+          "Make incremental changes.",
+          "(a) Work in small steps with frequent feedback and course",
+          "(b) Use a version control system.",
+          "(c) Put everything that has been created manually in version"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "(a) 使计算机重复任务。",
+          "(b) 在文件中保存最近的命令供重新使用。",
+          "(c) 使用建设工具实现工作流程自动化。",
+          "3个",
+          "进行增量变化.",
+          "(a) 采取小步骤,经常得到反馈和课程",
+          "(b) 使用版本控制系统。",
+          "(c) 将所有手动创建的内容都放入版本"
+        ]
+      },
+      "input_token_lengths": [
+        9,
+        14,
+        13,
+        1,
+        4,
+        12,
+        9,
+        12
+      ],
+      "output_token_lengths": [
+        9,
+        12,
+        12,
+        3,
+        6,
+        13,
+        9,
+        14
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "使",
+          "计算机",
+          "重复",
+          "任务",
+          "。"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁在",
+          "文件中",
+          "保存",
+          "最近",
+          "的命令",
+          "供",
+          "重新",
+          "使用",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "使用",
+          "建设",
+          "工具",
+          "实现",
+          "工作",
+          "流程",
+          "自动化",
+          "。"
+        ],
+        [
+          "▁",
+          "3",
+          "个"
+        ],
+        [
+          "▁",
+          "进行",
+          "增",
+          "量",
+          "变化",
+          "."
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "采取",
+          "小",
+          "步骤",
+          ",",
+          "经常",
+          "得到",
+          "反馈",
+          "和",
+          "课程"
+        ],
+        [
+          "▁(",
+          "b",
+          ")",
+          "▁",
+          "使用",
+          "版本",
+          "控制",
+          "系统",
+          "。"
+        ],
+        [
+          "▁(",
+          "c",
+          ")",
+          "▁",
+          "将",
+          "所有",
+          "手",
+          "动",
+          "创建",
+          "的内容",
+          "都",
+          "放",
+          "入",
+          "版本"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.06586768500005746
+    },
+    {
+      "request": {
+        "q": [
+          "4.",
+          "Don't repeat yourself (or others).",
+          "(a) Every piece of data must have a single authoritative",
+          "5.",
+          "Plan for mistakes.",
+          "(a) Add assertions to programs to check their operation.",
+          "6.",
+          "Optimize software only after it works correctly."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "4个",
+          "别重复自己(或他人).",
+          "(a) 每一件数据必须具有单一的权威",
+          "5.五.",
+          "计划错误。",
+          "(a) 在程序上添加断言以检查其运作情况。",
+          "6个",
+          "只有在软件正常工作后才能优化."
+        ]
+      },
+      "input_token_lengths": [
+        1,
+        9,
+        12,
+        1,
+        4,
+        12,
+        1,
+        9
+      ],
+      "output_token_lengths": [
+        3,
+        8,
+        11,
+        4,
+        4,
+        14,
+        3,
+        9
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "4",
+          "个"
+        ],
+        [
+          "▁别",
+          "重复",
+          "自己",
+          "(",
+          "或",
+          "他人",
+          ")",
+          "."
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁",
+          "每一",
+          "件",
+          "数据",
+          "必须",
+          "具有",
+          "单一",
+          "的权威"
+        ],
+        [
+          "▁",
+          "▁5.",
+          "五",
+          "."
+        ],
+        [
+          "▁",
+          "计划",
+          "错误",
+          "。"
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁在",
+          "程序",
+          "上",
+          "添加",
+          "断言",
+          "以",
+          "检查",
+          "其",
+          "运作",
+          "情况",
+          "。"
+        ],
+        [
+          "▁",
+          "6",
+          "个"
+        ],
+        [
+          "▁",
+          "只有在",
+          "软件",
+          "正常",
+          "工作",
+          "后",
+          "才能",
+          "优化",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05335546100002375
+    },
+    {
+      "request": {
+        "q": [
+          "7.",
+          "Document design and purpose, not mechanics.",
+          "(a) Document interfaces and reasons, not implementations.",
+          "8.",
+          "Collaborate.",
+          "programmers (especially the author's future self).",
+          "If software",
+          "know that it is actually doing what it is intended to do."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "7个",
+          "文件设计和目的,不是机械。",
+          "(a) 文件接口和理由,而不是执行。",
+          "8. 国家",
+          "协作",
+          "程序员(特别是作者的未来自我).",
+          "如果软件",
+          "你知道它实际上正在做它打算做的事。"
+        ]
+      },
+      "input_token_lengths": [
+        1,
+        8,
+        13,
+        1,
+        3,
+        11,
+        2,
+        13
+      ],
+      "output_token_lengths": [
+        3,
+        7,
+        11,
+        3,
+        2,
+        10,
+        2,
+        9
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "7",
+          "个"
+        ],
+        [
+          "▁文件",
+          "设计和",
+          "目的",
+          ",",
+          "不是",
+          "机械",
+          "。"
+        ],
+        [
+          "▁(",
+          "a",
+          ")",
+          "▁文件",
+          "接口",
+          "和",
+          "理由",
+          ",",
+          "而不是",
+          "执行",
+          "。"
+        ],
+        [
+          "▁8.",
+          "▁",
+          "国家"
+        ],
+        [
+          "▁",
+          "协作"
+        ],
+        [
+          "▁",
+          "程序",
+          "员",
+          "(",
+          "特别是",
+          "作者",
+          "的未来",
+          "自我",
+          ")",
+          "."
+        ],
+        [
+          "▁如果",
+          "软件"
+        ],
+        [
+          "▁你知道",
+          "它",
+          "实际上",
+          "正在",
+          "做",
+          "它",
+          "打算",
+          "做的事",
+          "。"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.04512789499995051
+    },
+    {
+      "request": {
+        "q": [
+          "To be",
+          "number of items to be remembered to accomplish a task.",
+          "The",
+          "understood, task.",
+          "This serves to make each piece of the program",
+          "Second, scientists should make names consistent, distinctive, and meaningful (1b).",
+          "For example, using non-descriptive",
+          "consistent (1c)."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "成为",
+          "为完成某项任务而需要记住的项目数量。",
+          "那个",
+          "明白了,任务。",
+          "这可以使每个程序",
+          "第二,科学家应使名称一致、独特和有意义(1b)。",
+          "例如,使用非描述性",
+          "一致(1c)。"
+        ]
+      },
+      "input_token_lengths": [
+        2,
+        11,
+        1,
+        4,
+        9,
+        15,
+        9,
+        4
+      ],
+      "output_token_lengths": [
+        2,
+        10,
+        1,
+        5,
+        5,
+        14,
+        6,
+        5
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "成为"
+        ],
+        [
+          "▁为",
+          "完成",
+          "某项",
+          "任务",
+          "而",
+          "需要",
+          "记住",
+          "的项目",
+          "数量",
+          "。"
+        ],
+        [
+          "▁那个"
+        ],
+        [
+          "▁",
+          "明白了",
+          ",",
+          "任务",
+          "。"
+        ],
+        [
+          "▁这",
+          "可以",
+          "使",
+          "每个",
+          "程序"
+        ],
+        [
+          "▁第二",
+          ",",
+          "科学家",
+          "应",
+          "使",
+          "名称",
+          "一致",
+          "、",
+          "独特",
+          "和",
+          "有意义",
+          "(1",
+          "b",
+          ")。"
+        ],
+        [
+          "▁例如",
+          ",",
+          "使用",
+          "非",
+          "描述",
+          "性"
+        ],
+        [
+          "▁",
+          "一致",
+          "(1",
+          "c",
+          ")。"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05261287500002254
+    },
+    {
+      "request": {
+        "q": [
+          "If different parts of a scientific paper used",
+          "more difficult to read.",
+          "Likewise, if different parts of a program are",
+          "make more mistakes [35,36].",
+          "Let the Computer Do the Work Science often involves repetition of computational tasks such as",
+          "analysis.",
+          "Computers were invented to do these kinds of repetitive",
+          "over and over again or click the same buttons repeatedly [17]."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "如果使用科学论文的不同部分",
+          "更难阅读。",
+          "同样,如果一个程序的不同部分",
+          "犯更多的错误[35,36].",
+          "让计算机工作科学经常涉及重复计算任务,例如",
+          "分析。",
+          "电脑是用来重复的",
+          "反复或反复点击相同的按钮[17]."
+        ]
+      },
+      "input_token_lengths": [
+        8,
+        5,
+        9,
+        9,
+        16,
+        2,
+        10,
+        14
+      ],
+      "output_token_lengths": [
+        6,
+        5,
+        7,
+        10,
+        11,
+        3,
+        6,
+        11
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁如果",
+          "使用",
+          "科学",
+          "论文",
+          "的不同",
+          "部分"
+        ],
+        [
+          "▁",
+          "更",
+          "难",
+          "阅读",
+          "。"
+        ],
+        [
+          "▁同样",
+          ",",
+          "如果",
+          "一个",
+          "程序",
+          "的不同",
+          "部分"
+        ],
+        [
+          "▁",
+          "犯",
+          "更多的",
+          "错误",
+          "[",
+          "35",
+          ",",
+          "36",
+          "]",
+          "."
+        ],
+        [
+          "▁让",
+          "计算机",
+          "工作",
+          "科学",
+          "经常",
+          "涉及",
+          "重复",
+          "计算",
+          "任务",
+          ",",
+          "例如"
+        ],
+        [
+          "▁",
+          "分析",
+          "。"
+        ],
+        [
+          "▁",
+          "电脑",
+          "是",
+          "用来",
+          "重复",
+          "的"
+        ],
+        [
+          "▁",
+          "反复",
+          "或",
+          "反复",
+          "点击",
+          "相同的",
+          "按钮",
+          "[",
+          "17",
+          "]",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.048202180000089356
+    },
+    {
+      "request": {
+        "q": [
+          "In",
+          "minor edits to filenames or parameters.",
+          "This is often cited as one",
+          "a program.",
+          "When these scripts are repeatedly used in the same",
+          "used.",
+          "The paradigmatic example is compiling and linking",
+          "[40]."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "内",
+          "小编辑为文件名或参数。",
+          "这经常被引用为一种",
+          "一个程序。",
+          "当这些脚本被重复使用在同一处时",
+          "已使用。",
+          "典型的例子正在汇编和连接",
+          "[40] (中文(简体) )."
+        ]
+      },
+      "input_token_lengths": [
+        1,
+        9,
+        6,
+        3,
+        10,
+        2,
+        9,
+        3
+      ],
+      "output_token_lengths": [
+        2,
+        8,
+        6,
+        3,
+        10,
+        4,
+        7,
+        11
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "内"
+        ],
+        [
+          "▁小",
+          "编辑",
+          "为",
+          "文件",
+          "名",
+          "或",
+          "参数",
+          "。"
+        ],
+        [
+          "▁这",
+          "经常",
+          "被",
+          "引用",
+          "为",
+          "一种"
+        ],
+        [
+          "▁一个",
+          "程序",
+          "。"
+        ],
+        [
+          "▁当",
+          "这些",
+          "脚",
+          "本",
+          "被",
+          "重复",
+          "使用",
+          "在同一",
+          "处",
+          "时"
+        ],
+        [
+          "▁",
+          "已",
+          "使用",
+          "。"
+        ],
+        [
+          "▁",
+          "典型",
+          "的例子",
+          "正在",
+          "汇编",
+          "和",
+          "连接"
+        ],
+        [
+          "▁[",
+          "40",
+          "]",
+          "▁(",
+          "中文",
+          "(",
+          "简体",
+          ")",
+          "▁",
+          ")",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.04338038800005961
+    },
+    {
+      "request": {
+        "q": [
+          "The most widely used tool for this task is probably Make",
+          "(http://www.",
+          ".",
+          "gnu.org/software/make), although many alterna-",
+          "tives are now available [41].",
+          "All of these allow people to express"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "这个任务最广泛使用的工具可能是 Make",
+          "(http://www.",
+          "。 。 。",
+          "gnu.org/software/make),虽然许多交替-",
+          "现有机车[41].",
+          "所有这一切都允许人们表达"
+        ]
+      },
+      "input_token_lengths": [
+        11,
+        5,
+        2,
+        15,
+        9,
+        7
+      ],
+      "output_token_lengths": [
+        9,
+        5,
+        6,
+        19,
+        8,
+        5
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁这个",
+          "任务",
+          "最",
+          "广泛",
+          "使用",
+          "的工具",
+          "可能是",
+          "▁Ma",
+          "ke"
+        ],
+        [
+          "▁(",
+          "http",
+          "://",
+          "www",
+          "."
+        ],
+        [
+          "▁",
+          "。",
+          "▁",
+          "。",
+          "▁",
+          "。"
+        ],
+        [
+          "▁g",
+          "nu",
+          ".",
+          "org",
+          "/",
+          "so",
+          "ft",
+          "war",
+          "e",
+          "/",
+          "m",
+          "ake",
+          ")",
+          ",",
+          "虽然",
+          "许多",
+          "交",
+          "替",
+          "-"
+        ],
+        [
+          "▁",
+          "现有",
+          "机",
+          "车",
+          "[",
+          "41",
+          "]",
+          "."
+        ],
+        [
+          "▁所有",
+          "这一切都",
+          "允许",
+          "人们",
+          "表达"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.06417313299994021
+    },
+    {
+      "request": {
+        "q": [
+          "(http://www.",
+          ".",
+          "gnu.org/software/make), although many alterna-"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "(http://www.",
+          "。 。 。",
+          "gnu.org/software/make),虽然许多交替-"
+        ]
+      },
+      "input_token_lengths": [
+        5,
+        2,
+        15
+      ],
+      "output_token_lengths": [
+        5,
+        6,
+        19
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁(",
+          "http",
+          "://",
+          "www",
+          "."
+        ],
+        [
+          "▁",
+          "。",
+          "▁",
+          "。",
+          "▁",
+          "。"
+        ],
+        [
+          "▁g",
+          "nu",
+          ".",
+          "org",
+          "/",
+          "so",
+          "ft",
+          "war",
+          "e",
+          "/",
+          "m",
+          "ake",
+          ")",
+          ",",
+          "虽然",
+          "许多",
+          "交",
+          "替",
+          "-"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05194035599993185
+    }
+  ]
+}

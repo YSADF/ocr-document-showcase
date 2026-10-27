@@ -56,7 +56,8 @@ def verify_demo(root=ROOT, manifest=None):
     report = {
         "schema_version": "public-demo-verification-v1", "ok": False,
         "scope": "Frozen 2026-10-07 outputs; not new inference or current production acceptance",
-        "ocr_executed": False, "renderer_executed": False, "native_text_used_as_ocr": False,
+        "ocr_executed": False, "translation_executed": False,
+        "renderer_executed": False, "native_text_used_as_ocr": False,
         "checks": [], "table": None, "docx": {},
         "limitations": [
             "DEXPI native text and native boxes are source-layer extraction, not OCR output or proofread truth.",
@@ -189,6 +190,57 @@ def verify_demo(root=ROOT, manifest=None):
             if entries is not None:
                 for relative, recorded in entries.items():
                     check(f"release_hash:{relative}", lambda p=relative, r=recorded: verify_file(p, r))
+    for field, relative in (
+        ("local_run", "artifacts/local-20261026/run.json"),
+        ("local_docx_fix", "artifacts/local-docx-fix-20261026/run.json"),
+    ):
+        local_record = root / relative
+        report[field] = {"status": "not_present", "new_inference": False,
+                         "visual_review_repeated": False}
+        if local_record.exists() or local_record.is_symlink():
+            def verify_local_record(record_path=relative, report_field=field):
+                # Delay the import so copies of the historical fixture remain usable.
+                if __package__:
+                    from .verify_local import verify_local
+                else:
+                    from verify_local import verify_local
+                local_report = verify_local(root, record_path)
+                report[report_field] = local_report
+                if not local_report["ok"]:
+                    raise ValueError(f"Local-run evidence checks failed; see {report_field}.checks")
+            check(f"{field}_evidence", verify_local_record, False)
+    translation_record = "artifacts/local-translation-20261026/run.json"
+    report["local_translation"] = {
+        "status": "not_present", "translation_executed": False,
+        "new_inference": False, "visual_review_repeated": False,
+    }
+    translation_path = root / translation_record
+    if translation_path.exists() or translation_path.is_symlink():
+        def verify_translation_record():
+            # Keep the translation dependency optional for older public fixtures.
+            if __package__:
+                from .verify_translation import verify_translation
+            else:
+                from verify_translation import verify_translation
+            translated = verify_translation(root, translation_record)
+            report["local_translation"] = translated
+            if not translated["ok"]:
+                raise ValueError("Translation evidence checks failed; see local_translation.checks")
+        check("local_translation_evidence", verify_translation_record, False)
+    faithful_record = "artifacts/local-faithful-20261027/run.json"
+    report["local_faithful"] = {"status": "not_present", "new_inference": False,
+                                "visual_review_repeated": False}
+    if (root / faithful_record).exists() or (root / faithful_record).is_symlink():
+        def verify_faithful_record():
+            if __package__:
+                from .verify_translation import verify_translation
+            else:
+                from verify_translation import verify_translation
+            faithful = verify_translation(root, faithful_record)
+            report["local_faithful"] = faithful
+            if not faithful["ok"]:
+                raise ValueError("Faithful evidence checks failed; see local_faithful.checks")
+        check("local_faithful_evidence", verify_faithful_record, False)
     report["ok"] = all(entry["passed"] for entry in report["checks"])
     report["checks_passed"] = sum(entry["passed"] for entry in report["checks"])
     report["checks_failed"] = len(report["checks"]) - report["checks_passed"]

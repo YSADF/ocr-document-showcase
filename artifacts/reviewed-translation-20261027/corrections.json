@@ -1,0 +1,603 @@
+{
+  "schema_version": "assistant-reviewed-translation-edits-v1",
+  "review_date": "2026-10-27",
+  "method": "Assistant post-editing explicitly requested by user; not independent human certification or raw model output.",
+  "code_changes": false,
+  "model_inference_executed": false,
+  "ocr_executed": false,
+  "baseline": "artifacts/local-faithful-20261027/run.json",
+  "source_references": [
+    "samples/plos-best-practices-page-2.png",
+    "samples/plos-best-practices-page-2-reference.txt",
+    "assets/merged-table-input.png"
+  ],
+  "cases": {
+    "plos-page-2": {
+      "groups": [
+        {
+          "group_id": "p0:label:d4f388d2115a2bf3",
+          "source": "Box 1. Summary of Best Practices",
+          "before": "方框1. 最佳做法摘要",
+          "after": "框1. 最佳实践摘要",
+          "primary_unit_index": 0,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:6135b2dc491d7457",
+          "source": "1. Write programs for people, not computers.",
+          "before": "1. 为人写程序,而不是计算机.",
+          "after": "1. 为人编写程序，而不是为计算机编写程序。",
+          "primary_unit_index": 1,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:640535a64b123120",
+          "source": "(a) A program should not require its readers to hold more",
+          "before": "(a) 一个程序不应要求其读者持有更多",
+          "after": "(a) 程序不应要求读者同时记住",
+          "primary_unit_index": 2,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:d64b445a89e2d688",
+          "source": "than a handful of facts in memory at once.",
+          "before": "而不是记忆中的少数事实",
+          "after": "过多的事实。",
+          "primary_unit_index": 3,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:2649c81d6995f2a0",
+          "source": "(b) Make names consistent, distinctive, and meaningful.",
+          "before": "(b) 使名称一致、独特和有意义。",
+          "after": "(b) 命名应一致、有区分度且有意义。",
+          "primary_unit_index": 4,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:dcbd86b44fa493f5",
+          "source": "(c) Make code style and formatting consistent.",
+          "before": "(c) 使代码样式和格式一致。",
+          "after": "(c) 保持代码风格和格式一致。",
+          "primary_unit_index": 5,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:7e3df338d22cf66c",
+          "source": "2. Let the computer do the work.",
+          "before": "2. 让计算机来工作。",
+          "after": "2. 让计算机完成工作。",
+          "primary_unit_index": 6,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:ea658d53c7c51e70",
+          "source": "(a) Make the computer repeat tasks.",
+          "before": "(a) 使计算机重复任务。",
+          "after": "(a) 让计算机执行重复任务。",
+          "primary_unit_index": 7,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:cdd24162901af5f1",
+          "source": "(b) Save recent commands in a file for re-use.",
+          "before": "(b) 在文件中保存最近的命令供重新使用。",
+          "after": "(b) 将最近使用的命令保存到文件中，以便复用。",
+          "primary_unit_index": 8,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:22965dcd41132cd5",
+          "source": "(c) Use a build tool to automate workflows.",
+          "before": "(c) 使用建设工具实现工作流程自动化。",
+          "after": "(c) 使用构建工具自动化工作流。",
+          "primary_unit_index": 9,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:7eb598ac51f76e64",
+          "source": "3. Make incremental changes.",
+          "before": "3. 逐步改变。",
+          "after": "3. 逐步进行修改。",
+          "primary_unit_index": 10,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:23125cd8141c3604",
+          "source": "(a) Work in small steps with frequent feedback and course",
+          "before": "(a) 采取小步骤,经常得到反馈和课程",
+          "after": "(a) 小步推进，频繁获取反馈并及时",
+          "primary_unit_index": 11,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:491b1ca6aa8abe81",
+          "source": "correction.",
+          "before": "更正。",
+          "after": "调整方向。",
+          "primary_unit_index": 12,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:ef8023928721eb27",
+          "source": "(b) Use a version control system.",
+          "before": "(b) 使用版本控制系统。",
+          "after": "(b) 使用版本控制系统。",
+          "primary_unit_index": 13,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:e43f9381747faf1b",
+          "source": "(c) Put everything that has been created manually in version",
+          "before": "(c) 将所有手动创建的内容都放入版本",
+          "after": "(c) 将所有手工创建的内容都纳入",
+          "primary_unit_index": 14,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:3289589fe6aa9dca",
+          "source": "control.",
+          "before": "控制系统",
+          "after": "版本控制。",
+          "primary_unit_index": 15,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:65e14791b9995723",
+          "source": "4. Don't repeat yourself (or others).",
+          "before": "4. 不要重复自己(或其他人)。",
+          "after": "4. 不要重复自己或他人已做过的工作。",
+          "primary_unit_index": 16,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:71043045f7c68940",
+          "source": "(a) Every piece of data must have a single authoritative",
+          "before": "(a) 每一块数据必须具有单一的权威",
+          "after": "(a) 每项数据在系统中都必须有",
+          "primary_unit_index": 17,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:7d138c73cf9a9e38",
+          "source": "representation in the system.",
+          "before": "系统中的代表性。",
+          "after": "唯一的权威表示。",
+          "primary_unit_index": 18,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:40162512a428423d",
+          "source": "(b) Modularize code rather than copying and pasting.",
+          "before": "(b) 修改代码,而不是复制和粘贴。",
+          "after": "(b) 将代码模块化，而不是复制粘贴。",
+          "primary_unit_index": 19,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:d8cee0a9b6141d4f",
+          "source": "(c) Re-use code instead of rewriting it.",
+          "before": "(c) 重新使用代码,而不是重写代码。",
+          "after": "(c) 复用代码，而不是重新编写。",
+          "primary_unit_index": 20,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:a3c6939c72bfb1d9",
+          "source": "5. Plan for mistakes.",
+          "before": "5. 计划错误。",
+          "after": "5. 为可能出现的错误做好准备。",
+          "primary_unit_index": 21,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:24517d1414560681",
+          "source": "(a) Add assertions to programs to check their operation.",
+          "before": "(a) 在程序上添加断言以检查其运作情况。",
+          "after": "(a) 在程序中添加断言，检查其运行情况。",
+          "primary_unit_index": 22,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:ba4f3bcacd44d990",
+          "source": "(b) Use an off-the-shelf unit testing library.",
+          "before": "(b) 使用现成单元测试库。",
+          "after": "(b) 使用现成的单元测试库。",
+          "primary_unit_index": 23,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:9e2176fdecf6455a",
+          "source": "(c) Turn bugs into test cases.",
+          "before": "(c) 将虫子变成试验病例。",
+          "after": "(c) 将缺陷转化为测试用例。",
+          "primary_unit_index": 24,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:894b18e93097f3f2",
+          "source": "(d) Use a symbolic debugger.",
+          "before": "(d) 使用象征性调试器。",
+          "after": "(d) 使用符号调试器。",
+          "primary_unit_index": 25,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:a1139d139f8728f5",
+          "source": "6. Optimize software only after it works correctly.",
+          "before": "6. 只有在软件正常工作后才能优化。",
+          "after": "6. 软件正确运行后再进行优化。",
+          "primary_unit_index": 26,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:8b89c713a6e229d3",
+          "source": "(a) Use a profiler to identify bottlenecks.",
+          "before": "(a) 使用剖面仪查明瓶颈。",
+          "after": "(a) 使用性能分析工具识别瓶颈。",
+          "primary_unit_index": 27,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:75f321c808551007",
+          "source": "(b) Write code in the highest-level language possible.",
+          "before": "(b) 用尽可能高的语言写代码。",
+          "after": "(b) 使用尽可能高级的语言编写代码。",
+          "primary_unit_index": 28,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:3b740b1a22215688",
+          "source": "7. Document design and purpose, not mechanics.",
+          "before": "7. 文件设计和目的,而不是机械。",
+          "after": "7. 记录设计与目的，而不是实现细节。",
+          "primary_unit_index": 29,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:e84f6990d10ffe9f",
+          "source": "(a) Document interfaces and reasons, not implementations.",
+          "before": "(a) 文件接口和理由,而不是执行。",
+          "after": "(a) 记录接口和设计理由，而不是具体实现。",
+          "primary_unit_index": 30,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:6a336adb58d67560",
+          "source": "(b) Refactor code in preference to explaining how it works.",
+          "before": "(b) 重构代码,而不是解释其运作方式。",
+          "after": "(b) 优先重构代码，而不是解释代码如何工作。",
+          "primary_unit_index": 31,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:2abfe608733461e7",
+          "source": "(c) Embed the documentation for a piece of software in that",
+          "before": "(c) 将一件软件的文件嵌入其中;",
+          "after": "(c) 将软件文档嵌入",
+          "primary_unit_index": 32,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:6eaf5ad3caf4c9c4",
+          "source": "software.",
+          "before": "软件。",
+          "after": "该软件中。",
+          "primary_unit_index": 33,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:878bc2379fe081e1",
+          "source": "8. Collaborate.",
+          "before": "8. 合作。",
+          "after": "8. 开展协作。",
+          "primary_unit_index": 34,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:23f597b03725e50c",
+          "source": "(a) Use pre-merge code reviews.",
+          "before": "(a) 使用合并前的代码审查。",
+          "after": "(a) 在合并代码之前进行审查。",
+          "primary_unit_index": 35,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:7bebfb7f45f42e98",
+          "source": "(b) Use pair programming when bringing someone new up to speed and when tackling particularly tricky problems.",
+          "before": "(b) 在使新人跟上速度和处理特别棘手问题时,使用对等编程。",
+          "after": "(b) 在帮助新人熟悉工作和解决特别棘手的问题时，采用结对编程。",
+          "primary_unit_index": 36,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:label:42bb03fb11321636",
+          "source": "(c) Use an issue tracking tool.",
+          "before": "(c) 使用问题跟踪工具。",
+          "after": "(c) 使用问题跟踪工具。",
+          "primary_unit_index": 37,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:3d08997ea67a51a0",
+          "source": "Write Programs for People, Not Computers",
+          "before": "为人们撰写程序, 不是计算机",
+          "after": "为人编写程序，而不是为计算机",
+          "primary_unit_index": 38,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:36127ba9df06d8c1",
+          "source": "Scientists writing software need to write code that both executes correctly and can be easily read and understood by other programmers (especially the author's future self). If software cannot be easily read and understood, it is much more difficult to",
+          "before": "科学家写作软件需要写作代码,既能正确执行,又能容易地被其他程序员(特别是作者未来的自我)读懂和理解. 如果软件不能容易地读懂和理解,那就更难了.",
+          "after": "科学家编写的软件代码既要正确执行，也要便于其他程序员阅读和理解，尤其是未来的自己。如果软件难以阅读和理解，就更难",
+          "primary_unit_index": 39,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:e4ece27f87597701",
+          "source": "PLOS Biology www.plosbiology.org",
+          "before": "PLOS 生物学 www.plosbiology.org",
+          "after": "PLOS《生物学》 | www.plosbiology.org",
+          "primary_unit_index": 40,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:26e6cc13b39e9082",
+          "source": "know that it is actually doing what it is intended to do. To be productive, software developers must therefore take several aspects of human cognition into account: in particular, that human working memory is limited, human pattern matching abilities are finely tuned, and human attention span is short [33 37].",
+          "before": "因此,软件开发者必须考虑到人类认知的几个方面:特别是,人类的工作记忆有限,人类模式匹配能力得到细微调整,人类注意力跨度短[33,37]。",
+          "after": "判断它是否真正完成了预期的工作。为了提高工作效率，软件开发者必须考虑人类认知的几个特点：人的工作记忆容量有限，模式识别能力十分敏锐，而持续注意的时间很短[33–37]。",
+          "primary_unit_index": 41,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:5f20a9cdafde161c",
+          "source": "First, a program should not require its readers to hold more than a handful of facts in memory at once (1a). Human working memory can hold only a handful of items at a time, where each item is either a single fact or a \"chunk\" aggregating several facts [33,34], so programs should limit the total number of items to be remembered to accomplish a task. The primary way to accomplish this is to break programs up into easily understood functions, each of which conducts a single, easily understood, task. This serves to make each piece of the program easier to understand in the same way that breaking up a scientific paper using sections and paragraphs makes it easier to read.",
+          "before": "首先,一个程序不应该要求其读者同时持有多于少数的记忆事实(1a). 人类的工作记忆可以一次只持有少数项目,每个项目要么是一个单一的事实,要么是一个\"堆积\",集合了多个事实[33,34],所以程序应该限制要记住的项目总数来完成一个任务. 完成这个任务的主要方法是将程序分解成容易理解的功能,每个功能都进行一个单一的,容易理解的任务. 这样做可以使程序的每一部分更容易理解,就像用段落和段落破碎一份科学论文那样,它更容易阅读.",
+          "after": "首先，程序不应要求读者一次记住过多事实(1a)。人的工作记忆一次只能容纳少量项目，每个项目可以是单个事实，也可以是由多个事实组成的“组块”[33,34]。因此，程序应限制完成一项任务时需要记住的项目总数。主要方法是把程序拆分为易于理解的函数，让每个函数只完成一项容易理解的任务。这样就能让程序的各个部分更容易理解，正如用章节和段落组织科学论文可以提高其可读性一样。",
+          "primary_unit_index": 42,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:f45585806342f3a8",
+          "source": "Second, scientists should make names consistent, distinctive, and meaningful (1b). For example, using non-descriptive names, like a and foo, or names that are very similar, like results and results2, is likely to cause confusion.",
+          "before": "其次,科学家应该使名字一致、独特和有意义(1b ) 。 例如,使用非描述性名字,如a和o,或非常相似的名字,如结果和结果2,可能造成混乱。",
+          "after": "其次，科学家应采用一致、有区分度且有意义的命名(1b)。例如，使用a和foo这类缺少描述性的名字，或results和results2这类非常相似的名字，都容易造成混淆。",
+          "primary_unit_index": 43,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:09ed20b71bda3f53",
+          "source": "Third, scientists should make code style and formatting consistent (1c). If different parts of a scientific paper used different formatting and capitalization, it would make that paper more difficult to read. Likewise, if different parts of a program are indented differently, or if programmers mix CamelCaseNaming and pothole_ case_ naming, code takes longer to read and readers make more mistakes [35,36].",
+          "before": "第三,科学家应使代码样式和格式一致(1c)。如果科学论文的不同部分采用不同的格式和资本化,将使该文件更难阅读。同样,如果一个程序的不同部分有不同的缩进,或者如果程序员混合了CamelCaseNaming和坑洞案件 命名,代码需要更长的时间来读取,读者会犯更多的错误[35,36].",
+          "after": "第三，科学家应保持代码风格和格式一致(1c)。如果一篇科学论文的不同部分采用不同的格式和大小写规则，就会更难阅读。同样，如果程序各部分的缩进不一致，或混用CamelCaseNaming与pothole_case_naming，阅读代码就会花费更多时间，读者也更容易犯错[35,36]。",
+          "primary_unit_index": 44,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:349c2d2fc1578a2c",
+          "source": "Let the Computer Do the Work",
+          "before": "让计算机做工作",
+          "after": "让计算机完成工作",
+          "primary_unit_index": 45,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:aa588ff56468563c",
+          "source": "Science often involves repetition of computational tasks such as processing large numbers of data files in the same way or regenerating figures each time new data are added to an existing analysis. Computers were invented to do these kinds of repetitive tasks but, even today, many scientists type the same commands in over and over again or click the same buttons repeatedly [17]. In addition to wasting time, sooner or later even the most careful researcher will lose focus while doing this and make mistakes.",
+          "before": "科学往往涉及重复计算任务,比如在每次将新数据添加到现有分析中时都以同样的方式处理大量数据文件或重生成数字。 计算机被发明来完成这些重复性任务,但即使在今天,许多科学家一次又一次地输入相同的命令或反复点击相同的按钮[17]。 除了浪费时间之外,即使是最仔细的研究人员也迟早会在这样做和犯错误时失去重点。",
+          "after": "科学研究经常涉及重复的计算任务，例如以相同方式处理大量数据文件，或在每次向现有分析添加新数据时重新生成图表。计算机正是为执行这些重复任务而发明的，但即使在今天，许多科学家仍会一遍遍输入相同命令，或反复点击相同按钮[17]。这不仅浪费时间，而且即使最细心的研究者，也迟早会在重复操作中分心并出错。",
+          "primary_unit_index": 46,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:aef3f51893354972",
+          "source": "Scientists should therefore make the computer repeat tasks (2a) and save recent commands in a file for re-use (2b). For example, most command-line tools have a \"history\" option that lets users display and re-execute recent commands, with minor edits to filenames or parameters. This is often cited as one reason command--line interfaces remain popular [38,39]: \"do this again\" saves time and reduces errors.",
+          "before": "因此,科学家应该让计算机重复任务(2a),并将最近的命令保存在一个文件中,以便重新使用(2b). 例如,大多数命令行工具都有\"历史\"选项,让用户显示和重新执行最近的命令,小编辑到文件名或参数。这经常被引用为命令行接口仍然流行的一个原因 [38,39] :\"再做一次\"可以节省时间和减少错误.",
+          "after": "因此，科学家应让计算机执行重复任务(2a)，并将最近使用的命令保存到文件中以便复用(2b)。例如，大多数命令行工具都有“历史记录”选项，可以显示并重新执行最近使用的命令，只需对文件名或参数作少量修改。这也常被认为是命令行界面仍然流行的原因之一[38,39]：“再执行一次”既节省时间，也减少错误。",
+          "primary_unit_index": 47,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:a175d33c9faf9201",
+          "source": "A file containing commands for an interactive system is often called a script, though there is real no difference between this and a program. When these scripts are repeatedly used in the same way, or in combination, a workflow management tool can be used. The paradigmatic example is compiling and linking programs in languages such as Fortran, C++, Java, and C# [40]. The most widely used tool for this task is probably Make (http://www..gnu.org/software/make), although many alternatives are now available [41]. All of these allow people to express dependencies between files, i.e., to say that if A or B has changed, then C needs to be updated using a specific set of commands. These tools have been successfully adopted for scientific workflows as well [42].",
+          "before": "包含一个交互式系统的命令的文件通常被称为脚本,尽管这与一个程序之间没有真正的区别。 当这些脚本被反复以同样的方式使用,或者组合使用时,可以使用一个工作流程管理工具。 范式实例是用堡垒, C++, 爪哇语, 和 C# [40] 等语言编译和连接程序。 这项工作最广泛使用的工具可能是 制作(http://www..gnu.org/software/生产), 生产), 尽管现在有许多替代方案可用[41]。 所有这些工具都允许人们在文件之间表达依赖性, 也就是说, 如果 A 或 B 已经改变, 那么 C 就需要使用特定的一组命令来更新。 这些工具已经被成功用于科学工作流程以及 [42] 。",
+          "after": "包含交互式系统命令的文件通常称为脚本，其实脚本与程序并没有区别。当需要以相同方式或组合方式反复使用这些脚本时，可以使用工作流管理工具。典型例子是编译和链接用Fortran、C++、Java和C#等语言编写的程序[40]。这项工作中使用最广泛的工具可能是Make（http://www.gnu.org/software/make），不过如今也有许多替代工具[41]。这些工具都允许用户表达文件之间的依赖关系：如果A或B发生变化，就需要使用一组特定命令更新C。这些工具也已成功应用于科学工作流[42]。",
+          "primary_unit_index": 48,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:23fe4507c8e0987b",
+          "source": "To avoid errors and inefficiencies from repeating commands manually, we recommend that scientists use a build tool to automate workflows (2c), e.g., specify the ways in which intermediate data files and final results depend on each other, and on the programs that create them, so that a single command will regenerate anything that needs to be regenerated.",
+          "before": "为了避免手动重复命令的错误和低效,我们建议科学家使用构建工具实现工作流程自动化(2c),例如,指定中间数据文件和最终结果依赖于彼此的方式,以及创建它们的程序,这样一个单一的命令就可以重新生成任何需要再生成的东西.",
+          "after": "为了避免手工重复执行命令带来的错误和低效率，我们建议科学家使用构建工具自动化工作流(2c)。例如，明确中间数据文件、最终结果以及生成它们的程序之间的依赖关系，这样只需一条命令，就能重新生成所有需要更新的内容。",
+          "primary_unit_index": 49,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        },
+        {
+          "group_id": "p0:paragraph:0935629ea90ff9b7",
+          "source": "January 2014 Volume 12 Issue 1| e1001745",
+          "before": "2014年1月 第12卷 第1版 e1001745",
+          "after": "2014年1月 | 第12卷 | 第1期 | e1001745",
+          "primary_unit_index": 50,
+          "reason": "Assistant editorial correction against original page and source reference; not new model output."
+        }
+      ],
+      "cells": []
+    },
+    "merged-table": {
+      "groups": [
+        {
+          "group_id": "p0:paragraph:273708e4165a2589",
+          "source": "Merged-cell table input",
+          "before": "合并单元格表格输入",
+          "after": "含合并单元格的输入表格",
+          "reason": "Restore terminology and omitted negative disclaimer; CC0 spelling checked visually on the source image."
+        },
+        {
+          "group_id": "p0:paragraph:0126f2b5a7b1da71",
+          "source": "Self-created input and ground truth Not an OCR result",
+          "before": "自我创建的输入和地面真相",
+          "after": "自制输入与真值标注 | 并非 OCR 结果",
+          "reason": "Restore terminology and omitted negative disclaimer; CC0 spelling checked visually on the source image."
+        },
+        {
+          "group_id": "p0:paragraph:a3a1ebe317e5d484",
+          "source": "6 logical rows x 5 columns rowspan and colspan CCO 1.0 Target: preserve text, merged cells and editable document structure.",
+          "before": "6 个逻辑行 x 5 列行和 crospan CCO 1.0目标:保存文本,合并单元格和可编辑文档结构.",
+          "after": "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0\n目标：保留文字、合并单元格及可编辑文档结构。",
+          "reason": "Restore terminology and omitted negative disclaimer; CC0 spelling checked visually on the source image."
+        }
+      ],
+      "cells": [
+        {
+          "row": 0,
+          "col": 0,
+          "block": 2,
+          "source": "Engineering inspection record",
+          "before": "工程检查记录",
+          "after": "工程检查记录",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 1,
+          "col": 0,
+          "block": 2,
+          "source": "Item",
+          "before": "项目",
+          "after": "项目",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 1,
+          "col": 1,
+          "block": 2,
+          "source": "Specification",
+          "before": "规格",
+          "after": "规格",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 1,
+          "col": 2,
+          "block": 2,
+          "source": "Qty",
+          "before": "齐哥",
+          "after": "数量",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 1,
+          "col": 3,
+          "block": 2,
+          "source": "Result",
+          "before": "结果",
+          "after": "结果",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 1,
+          "col": 4,
+          "block": 2,
+          "source": "Note",
+          "before": "说明",
+          "after": "备注",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "block": 2,
+          "source": "Valve body",
+          "before": "阀门",
+          "after": "阀体",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 2,
+          "col": 4,
+          "block": 2,
+          "source": "0 50  0.10 mm",
+          "before": "0 50  0.10 mm",
+          "after": "Ø 50 ± 0.10 mm",
+          "reason": "Editorial transcription of visible source symbols/count, with original OCR retained; no ground-truth JSON used."
+        },
+        {
+          "row": 3,
+          "col": 4,
+          "block": 2,
+          "source": "Angle 90 0.5o",
+          "before": "角度 90 0.5o 坐标",
+          "after": "角度 90° ± 0.5°",
+          "reason": "Editorial transcription of visible source symbols/count, with original OCR retained; no ground-truth JSON used."
+        },
+        {
+          "row": 4,
+          "col": 0,
+          "block": 2,
+          "source": "Pump",
+          "before": "泵",
+          "after": "泵",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "block": 2,
+          "source": "Model P001 11 unit",
+          "before": "P001型11个单元",
+          "after": "型号 P001 / 1 件",
+          "reason": "Editorial transcription of visible source symbols/count, with original OCR retained; no ground-truth JSON used."
+        },
+        {
+          "row": 4,
+          "col": 4,
+          "block": 2,
+          "source": "Bore 0 12 mm",
+          "before": "0 12毫米口径",
+          "after": "孔径 Ø 12 mm",
+          "reason": "Editorial transcription of visible source symbols/count, with original OCR retained; no ground-truth JSON used."
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "block": 2,
+          "source": "Summary: 4 inspected units",
+          "before": "摘要:4个被检查单位",
+          "after": "汇总：已检验 4 件",
+          "reason": "Assistant terminology correction or verified unchanged wording."
+        }
+      ]
+    }
+  },
+  "retained_raster_cells": "PASS/REVIEW, DN labels, summary status and quantities 2/1 remain in source background under the unchanged renderer policy.",
+  "linked_plos_units": [
+    [
+      2,
+      3
+    ],
+    [
+      11,
+      12
+    ],
+    [
+      14,
+      15
+    ],
+    [
+      17,
+      18
+    ],
+    [
+      32,
+      33
+    ],
+    [
+      39,
+      41
+    ]
+  ],
+  "artifact_format_edits": [
+    "One explicit line break before the table footer objective, in the exported DOCX only."
+  ]
+}

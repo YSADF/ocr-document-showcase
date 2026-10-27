@@ -1,0 +1,23 @@
+Merged-cell table input
+Self-created input and ground truth Not an OCR result
+Engineering inspection record
+Note
+Result
+Item
+Specification
+Qty
+DN 50
+PASS
+0 50  0.10 mm
+Valve body
+DN 80
+REVIEW
+Angle 90 0.5o
+Bore 0 12 mm
+Model P001 11 unit
+PASS
+Pump
+3 PASS/1 REVIEW
+Summary: 4 inspected units
+6 logical rows x 5 columns rowspan and colspan CCO 1.0
+Target: preserve text, merged cells and editable document structure.

@@ -1,0 +1,149 @@
+{
+  "schema_version": "assistant-post-edited-documents-v1",
+  "review_date": "2026-10-27",
+  "translation_origin": "User-requested assistant post-editing of saved machine translations, with visible-source transcription corrections.",
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "application_source_modified": false,
+  "public_python_modified": false,
+  "public_algorithm_count": 8,
+  "baseline_run": "artifacts/local-faithful-20261027/run.json",
+  "baseline_run_identity": {
+    "bytes": 12592,
+    "sha256": "b86c64e1f91767b9fc018e10d209154a9bd888b5df581549eba30cfcfe63ca48"
+  },
+  "corrections": "artifacts/reviewed-translation-20261027/corrections.json",
+  "source": {
+    "head": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true,
+    "snapshot_sha256": "e6b52f2dd30595595c347e0b804951a7982b913b78a8472c2c1ad6ea7a21af25",
+    "inventory_note": "Unrelated private worktree paths omitted; full original retained locally."
+  },
+  "source_snapshot_files_verified_unchanged": 460,
+  "public_python_files_verified_unchanged": 27,
+  "environment": {
+    "export_image": "pp-v5-showcase:translation-zh-final",
+    "renderer_image": "pp-v5-showcase-render:local",
+    "network": "none",
+    "export_resources": "4 CPUs / 6 GiB",
+    "render_resources": "2 CPUs / 4 GiB",
+    "render_engine": "LibreOffice 7.4.7.2 / Poppler 22.12.0",
+    "preview_dpi": 144,
+    "font_provenance": "artifacts/local-faithful-20261027/font-provenance.json",
+    "mode": "existing faithful renderer, strict audit; table footer receives one document-only explicit line break"
+  },
+  "limitations": [
+    "Post-edited text is not raw model output and does not raise the historical OCR/translation score.",
+    "Assistant review is not independent human certification. Microsoft Word interactive editing remains untested.",
+    "The original raster grid and selected native text frames are not a native Word table.",
+    "PASS/REVIEW, DN labels, summary statuses and quantities 2/1 remain source raster text.",
+    "Only two fixed pages reviewed; original font sizes/styles are approximated."
+  ],
+  "cases": {
+    "plos": {
+      "input": "samples/plos-best-practices-page-2.png",
+      "original_machine_translation": "artifacts/local-faithful-20261027/plos/translated.json",
+      "original_model_responses": "artifacts/local-faithful-20261027/plos/model-responses.json",
+      "reviewed_json": "artifacts/reviewed-translation-20261027/plos/reviewed.json",
+      "docx": "artifacts/reviewed-translation-20261027/plos/output.docx",
+      "render_pdf": "artifacts/reviewed-translation-20261027/plos/render/output.pdf",
+      "render_png": "artifacts/reviewed-translation-20261027/plos/render/page-1.png",
+      "execution": "artifacts/reviewed-translation-20261027/plos/execution.json",
+      "render_audit": "artifacts/reviewed-translation-20261027/plos/render-audit.json",
+      "group_count": 51,
+      "reviewed_cell_count": 0,
+      "audit_passed": true,
+      "violations": 0,
+      "native_positioned_text_regions": 51,
+      "source_coverage": {
+        "source_count": 111,
+        "translated_count": 111,
+        "alternative_observation_count": 0,
+        "ocr_alternatives": []
+      },
+      "visual_acceptance": "passed_for_reviewed_document_layout"
+    },
+    "merged-table": {
+      "input": "samples/merged-table-scan.pdf",
+      "original_machine_translation": "artifacts/local-faithful-20261027/merged-table/translated.json",
+      "original_model_responses": "artifacts/local-faithful-20261027/merged-table/model-responses.json",
+      "reviewed_json": "artifacts/reviewed-translation-20261027/merged-table/reviewed.json",
+      "docx": "artifacts/reviewed-translation-20261027/merged-table/output.docx",
+      "render_pdf": "artifacts/reviewed-translation-20261027/merged-table/render/output.pdf",
+      "render_png": "artifacts/reviewed-translation-20261027/merged-table/render/page-1.png",
+      "execution": "artifacts/reviewed-translation-20261027/merged-table/execution.json",
+      "render_audit": "artifacts/reviewed-translation-20261027/merged-table/render-audit.json",
+      "group_count": 3,
+      "reviewed_cell_count": 13,
+      "audit_passed": true,
+      "violations": 0,
+      "native_positioned_text_regions": 16,
+      "source_coverage": {
+        "source_count": 23,
+        "translated_count": 17,
+        "preserved_count": 6,
+        "alternative_observation_count": 0,
+        "ocr_alternatives": []
+      },
+      "visual_acceptance": "passed_for_reviewed_document_layout"
+    }
+  },
+  "files": {
+    "artifacts/reviewed-translation-20261027/corrections.json": {
+      "bytes": 37693,
+      "sha256": "9e92de860544f4b8c48240257e923719851c89a30a6c57389b86c029b1251bef"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/execution.json": {
+      "bytes": 805,
+      "sha256": "b9fa9b1801119a3e6d3288ff534f19d56f145bc6b82065a09c7577c78acd7c2c"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/output.docx": {
+      "bytes": 334604,
+      "sha256": "acfdc033c526c155e76131f67d49a76e4d382e9ea280d3ca7e2634c7f2802074"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/render/output.pdf": {
+      "bytes": 159593,
+      "sha256": "d13b6276f9b19f4789a5a3d3d86a60b112e762d47c92939be348ea3f9610b756"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/render/page-1.png": {
+      "bytes": 132692,
+      "sha256": "50ad350cc3c375b65b201f50bc01b9a31c368e3e480d9d03c4ef3e288336ce83"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/render-audit.json": {
+      "bytes": 30192,
+      "sha256": "126932adfcbeb4c20f198ee2d99bcdb3e8b54a47ca5ff2a3a564619ba018857f"
+    },
+    "artifacts/reviewed-translation-20261027/merged-table/reviewed.json": {
+      "bytes": 168794,
+      "sha256": "2c129d609daf24191bf7fb5bdf9e7f766b3f823b7bd6466704b7de0bec785216"
+    },
+    "artifacts/reviewed-translation-20261027/plos/execution.json": {
+      "bytes": 681,
+      "sha256": "ff3a03f32e7caeca8d87476ebfc1874b7d5902bf1e7ddae4d777682e4e7e116b"
+    },
+    "artifacts/reviewed-translation-20261027/plos/output.docx": {
+      "bytes": 467486,
+      "sha256": "d6e47d904d457be68f6605a53643dc26cb4a1760072518225b0bceb64b6d8de7"
+    },
+    "artifacts/reviewed-translation-20261027/plos/render/output.pdf": {
+      "bytes": 131772,
+      "sha256": "f5527457c002d2ab67e104b05625c2413e03f91b13b11351ce4d85f8cfea9442"
+    },
+    "artifacts/reviewed-translation-20261027/plos/render/page-1.png": {
+      "bytes": 763250,
+      "sha256": "65dba7e203d3296859ba1d182ccd754ed8bb61e9de0d9184e5576599996b5e37"
+    },
+    "artifacts/reviewed-translation-20261027/plos/render-audit.json": {
+      "bytes": 110494,
+      "sha256": "8f626f7b5ea9403cdf4ab4c7b5d6885104f240954424ef3029d43de91ba51d15"
+    },
+    "artifacts/reviewed-translation-20261027/plos/reviewed.json": {
+      "bytes": 1016370,
+      "sha256": "62e1cc72df45a4fd3a4e2e212f5504c0ee5bd3fcc8de285ae720ecde68f6a283"
+    },
+    "artifacts/reviewed-translation-20261027/visual-review.json": {
+      "bytes": 1543,
+      "sha256": "9b860bf74d7941bdf8ca3ad3391c639605f448b6b101f74af2683f95fdea6acd"
+    }
+  }
+}

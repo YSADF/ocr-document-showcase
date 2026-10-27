@@ -1,0 +1,60 @@
+{
+  "source_commit": "985fa52c81c1d6692ccdd82bc3656e8fb932fd89",
+  "fonttools_version": "4.66.1",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/985fa52c81c1d6692ccdd82bc3656e8fb932fd89/Sans/Variable/TTF/NotoSansCJKsc-VF.ttf",
+      "sha256": "990c807e79c25662a5a9ecf7f971baeb2bf2eab9a559e5ecf15cdfdb8561d21f",
+      "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/985fa52c81c1d6692ccdd82bc3656e8fb932fd89/Sans/LICENSE",
+      "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/notofonts/noto-cjk/985fa52c81c1d6692ccdd82bc3656e8fb932fd89/Serif/Variable/TTF/NotoSerifCJKsc-VF.ttf",
+      "sha256": "dbf8ac0523dc19fa6294c52ce127a81c1b5b43ddc2e0915942bfd50aa58f4c53",
+      "license_url": "https://raw.githubusercontent.com/notofonts/noto-cjk/985fa52c81c1d6692ccdd82bc3656e8fb932fd89/Serif/LICENSE",
+      "license_sha256": "6a73f9541c2de74158c0e7cf6b0a58ef774f5a780bf191f2d7ec9cc53efe2bf2"
+    }
+  ],
+  "faces": [
+    {
+      "family": "Noto Sans CJK SC",
+      "style": "Regular",
+      "weight": 400,
+      "file": "NotoSansCJKsc-Regular.ttf",
+      "sha256": "a9c3ee63969ebbc32b634ec5d07989c1799f8cf8e6702648678b66f738d3859e",
+      "bytes": 21659568,
+      "fs_type": 0,
+      "copyright": "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+    },
+    {
+      "family": "Noto Sans CJK SC",
+      "style": "Bold",
+      "weight": 700,
+      "file": "NotoSansCJKsc-Bold.ttf",
+      "sha256": "208dc1942c4d4058be24a8e75bb1e1fb1cc3843efed3aee81056d06d738b9fdb",
+      "bytes": 21638692,
+      "fs_type": 0,
+      "copyright": "© 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'."
+    },
+    {
+      "family": "Noto Serif CJK SC",
+      "style": "Regular",
+      "weight": 400,
+      "file": "NotoSerifCJKsc-Regular.ttf",
+      "sha256": "3c71ed24cb9938245b2f6b24ae5ccc701867a0cd6bf8bb38062d4497f67f4743",
+      "bytes": 35539640,
+      "fs_type": 0,
+      "copyright": "© 2017-2024 Adobe (http://www.adobe.com/)."
+    },
+    {
+      "family": "Noto Serif CJK SC",
+      "style": "Bold",
+      "weight": 700,
+      "file": "NotoSerifCJKsc-Bold.ttf",
+      "sha256": "c54a416cfe7ba07ca430ebd030d279f200c5f6909b850781bdd572592d3da74d",
+      "bytes": 35543460,
+      "fs_type": 0,
+      "copyright": "© 2017-2024 Adobe (http://www.adobe.com/)."
+    }
+  ]
+}

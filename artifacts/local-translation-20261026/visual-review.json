@@ -1,0 +1,24 @@
+{
+  "reviewed_on": "2026-10-26",
+  "reviewers": "Two assistant reviews of every original-size rendered PNG; not independent human proofreading",
+  "plos": {
+    "pages_reviewed": [1, 2, 3],
+    "overlap_seen": false,
+    "clipping_seen": false,
+    "page_overflow_seen": false,
+    "acceptance": "passed_for_translation_export_targets",
+    "limitations": ["Single-column reflow replaces two columns and blue text panels", "Machine mistranslations and fragmented prose remain", "Reading order and semantic completeness not independently accepted"]
+  },
+  "merged-table": {
+    "pages_reviewed": [1],
+    "overlap_seen": false,
+    "clipping_seen": false,
+    "page_overflow_seen": false,
+    "native_table_visible": true,
+    "acceptance": "passed_for_translation_export_targets",
+    "limitations": ["Predicted 6x5 grid is not the correct merged topology", "Qty mistranslated as 齐哥", "OCR symbol errors and missing source content remain"]
+  },
+  "translation_quality": "needs_review_known_mistranslations_and_omissions",
+  "word_interactive_editing": "not_tested",
+  "post_export_manual_edits": false
+}

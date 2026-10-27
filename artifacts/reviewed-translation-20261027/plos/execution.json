@@ -1,0 +1,17 @@
+{
+  "kind": "assistant_reviewed_document_export",
+  "application_source_modified": false,
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "translation_origin": "assistant_post_edit",
+  "baseline_cache_sha256": "409c984b41f5642ea20c7e1398ab1ba3a66aae98c55ceb44761964c81bfec53a",
+  "corrections_sha256": "9e92de860544f4b8c48240257e923719851c89a30a6c57389b86c029b1251bef",
+  "docx_sha256": "d6e47d904d457be68f6605a53643dc26cb4a1760072518225b0bceb64b6d8de7",
+  "renderer": "existing FaithfulWordBuilder",
+  "font_directory": "/fonts",
+  "network": "docker --network none",
+  "group_count": 51,
+  "cell_count": 0,
+  "artifact_format_edits": [],
+  "runtime_errors": []
+}

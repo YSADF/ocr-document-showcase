@@ -1,0 +1,19 @@
+{
+  "kind": "assistant_reviewed_document_export",
+  "application_source_modified": false,
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "translation_origin": "assistant_post_edit",
+  "baseline_cache_sha256": "91250237aae27f9ce4c6877ebc99a26555d6f65872f365e1bb7036f8679a58a1",
+  "corrections_sha256": "9e92de860544f4b8c48240257e923719851c89a30a6c57389b86c029b1251bef",
+  "docx_sha256": "acfdc033c526c155e76131f67d49a76e4d382e9ea280d3ca7e2634c7f2802074",
+  "renderer": "existing FaithfulWordBuilder",
+  "font_directory": "/fonts",
+  "network": "docker --network none",
+  "group_count": 3,
+  "cell_count": 13,
+  "artifact_format_edits": [
+    "Inserted one explicit Word line break before the table footer objective; output artifact only, renderer unchanged."
+  ],
+  "runtime_errors": []
+}

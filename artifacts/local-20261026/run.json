@@ -1,0 +1,228 @@
+{
+  "schema_version": "local-showcase-evidence-v1",
+  "run_date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "scope": "Two actual local CPU runs of the current private project; independent of the historical 2026-10-07 GPU baseline. The public snippets do not contain the complete inference system.",
+  "environment": {
+    "host_cpu": "AMD Ryzen 9 9950X",
+    "host_os": "Windows / Docker Desktop WSL2 Linux AMD64",
+    "container_limits": {
+      "cpus": 4,
+      "memory_gib": 8
+    },
+    "python": "3.11.16",
+    "rapidocr": "3.0.0",
+    "onnxruntime": "1.19.2",
+    "ocr_image_id": "sha256:44092d2a59d3a9669b599e8f0644bbb188307c013c0868d8055409d166fcab5f",
+    "network": "Inference and rendering both used docker --network none; image/model preparation required Internet access.",
+    "layout": "geometry",
+    "table": "OpenCV grid fallback; RapidTable disabled",
+    "vlm": "off",
+    "docx_renderer": "semantic_layout",
+    "render_engine": "LibreOffice 7.4.7.2",
+    "render_poppler": "22.12.0",
+    "render_pdf2image": "1.17.0",
+    "render_dpi": 144,
+    "render_image_id": "sha256:7c5c0912763ff820808b623bd273156a19ece6d0556202ac0d46ae891800813f",
+    "render_helper": "Unmodified bundled render_docx.py executed in the isolated LibreOffice container",
+    "render_helper_sha256": "8b48b8f05f30cc6c7b5a7bd8e18e7ea93a61aec1ea601026a3358b2105f0903a",
+    "input_rasterization": "PLOS page 2: Poppler 26.07.0, 200 DPI RGB; reference text is separate from OCR"
+  },
+  "models": {
+    "actual_detection": "multi_PP-OCRv3_det_infer.onnx",
+    "actual_recognition": "en_PP-OCRv4_rec_infer.onnx",
+    "prepared_assets": {
+      "det_multi": {
+        "file": "multi_PP-OCRv3_det_infer.onnx",
+        "bytes": 2421639,
+        "sha256": "5475c6c7f4d84a6c4f32241b487435d59f126a40c023387af99732258844cdc3",
+        "matches_locked_manifest": true
+      },
+      "cls_ch": {
+        "file": "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+        "bytes": 585532,
+        "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+        "matches_locked_manifest": true
+      },
+      "rec_ch": {
+        "file": "ch_PP-OCRv4_rec_infer.onnx",
+        "bytes": 10857958,
+        "sha256": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "matches_locked_manifest": true
+      },
+      "rec_en": {
+        "file": "en_PP-OCRv4_rec_infer.onnx",
+        "bytes": 7653044,
+        "sha256": "e8770c967605983d1570cdf5352041dfb68fa0c21664f49f47b155abd3e0e318",
+        "matches_locked_manifest": true
+      }
+    },
+    "identity_note": "Actual ONNX assets and their SHA-256 values identify this run. The raw OCR response also carries default Paddle model_files audit entries marked missing; those are not the models used."
+  },
+  "source": {
+    "revision": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true,
+    "executed_file_hashes": {
+      "pipeline/orchestrator.py": "99c63b4c562671cc890664a0a9e9ecfe203730d555ba4ee27707bbf76f66eebb",
+      "pipeline/execution.py": "39482dc8080d4e48cd0b35ac077a096b4ce3b671fd9932f45554c8257ea7e0c0",
+      "pipeline/pdf_processor.py": "430edeff0fa1e8e75a2b514f12470b8012ffaddb823bc0ff781ac668b216fc79",
+      "pipeline/image_processor.py": "37a4906a15c1649ee0307a838ba6c1f20d8a7030d82b3b1b7785c02f651da948",
+      "pipeline/page_processor.py": "38e466c0840ccc0e0692074f3725a922080911b000f5a6d3827cd3a766cc2c67",
+      "pipeline/render_dispatch.py": "6579f7510918d199f44b9d3612d36797592bd63d60ebd59ffdece06ebe37f1be",
+      "ocr_engine/engine.py": "197030cf8bdc555f9300aba5874f52d881c177b35638df8a0aa10caf4dd3a6b3",
+      "ocr_engine/backends/rapidocr_backend.py": "b71777d6fde29ebd635fa436a9af94983314750b7ea6243099e675a00a332315",
+      "render/docx_dispatch.py": "aa4b8ac0029cd345dfc936e6606a3e7caed88d4e0a97f882f8b5858d8d65ef9c",
+      "render/semantic_layout_word.py": "296ac16c60a6e5db64efdbce81bb36a2b4edb9afbb0232a6219460ebfb07926b",
+      "settings.py": "e972a24f996a0943e91541d3d50432411884fc8e6eaebe59976419875d7b1250",
+      "requirements.txt": "3ef14e6678ef1751dd8605a6e017c64ca5a7bb1357d053f2b7654f6494bee112",
+      "configs/rapidocr_onnx_models.json": "264dbcff1582869a042611a9b39779c91ddbbc1a387b6c08f1d7ce312ed5fc03"
+    },
+    "note": "The working tree includes pre-existing uncommitted changes. A Git revision alone does not reproduce it. Full source and the private status listing are not part of this public package."
+  },
+  "measurement_note": "One run per input. Elapsed values in execution.json are run diagnostics only, not a latency benchmark or comparison with the historical GPU baseline.",
+  "cases": {
+    "plos": {
+      "input": "samples/plos-best-practices-page-2.png",
+      "json": "artifacts/local-20261026/plos/output.json",
+      "docx": "artifacts/local-20261026/plos/output.docx",
+      "recognized_text": "artifacts/local-20261026/plos/recognized.txt",
+      "execution": "artifacts/local-20261026/plos/execution.json",
+      "structure_report": "artifacts/local-20261026/plos/docx-structure.json",
+      "render_pdf": "artifacts/local-20261026/plos/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-20261026/plos/render/page-1.png"
+      ],
+      "ocr_executed": true,
+      "docx_generated": true,
+      "renderer_executed": true,
+      "text_line_count": 103,
+      "visual_acceptance": "failed",
+      "observations": [
+        "103 block text lines were produced by OCR; this count is not an accuracy or completeness score.",
+        "LibreOffice rendered one page with extensive overlapping text, unwanted line wrapping, and only partial blue callout backgrounds.",
+        "The DOCX includes native text plus retained source-image regions. Reading order, complete editability and layout fidelity have not passed acceptance."
+      ],
+      "runtime_errors": [],
+      "input_kind": [
+        "image"
+      ],
+      "render_pages": 1,
+      "review_scope": "Every exported page was visually inspected against its public input. This is an assistant review, not an independent human acceptance study."
+    },
+    "merged-table": {
+      "input": "samples/merged-table-scan.pdf",
+      "json": "artifacts/local-20261026/merged-table/output.json",
+      "docx": "artifacts/local-20261026/merged-table/output.docx",
+      "recognized_text": "artifacts/local-20261026/merged-table/recognized.txt",
+      "execution": "artifacts/local-20261026/merged-table/execution.json",
+      "structure_report": "artifacts/local-20261026/merged-table/docx-structure.json",
+      "render_pdf": "artifacts/local-20261026/merged-table/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-20261026/merged-table/render/page-1.png"
+      ],
+      "ocr_executed": true,
+      "docx_generated": true,
+      "renderer_executed": true,
+      "text_line_count": 23,
+      "visual_acceptance": "failed",
+      "observations": [
+        "OpenCV grid fallback predicted 30 one-by-one cells instead of the 21 reference cells; all five reference merges were missed.",
+        "13 of 21 reference cell texts and 16 of 21 anchor/spans match; character edits are 24 of 203. Unicode symbols are not folded.",
+        "The DOCX contains one native table in XML, but its table body is absent in the one-page LibreOffice rendering; footer text overlaps."
+      ],
+      "runtime_errors": [],
+      "input_kind": [
+        "scan_pdf"
+      ],
+      "render_pages": 1,
+      "review_scope": "Every exported page was visually inspected against its public input. This is an assistant review, not an independent human acceptance study.",
+      "table_score": "artifacts/local-20261026/merged-table/table-score.json"
+    }
+  },
+  "files": {
+    "artifacts/local-20261026/merged-table/docx-structure.json": {
+      "bytes": 133,
+      "sha256": "5e1123a48b51e86c31b2e625a360907c1ccc621d26b63479a31de9f1a2fc10ac"
+    },
+    "artifacts/local-20261026/merged-table/execution.json": {
+      "bytes": 18427,
+      "sha256": "eb3e1491da601bea33c3d35a6dd5e32462218f59f4be254feaa3f9619c8ce0a1"
+    },
+    "artifacts/local-20261026/merged-table/output.docx": {
+      "bytes": 38872,
+      "sha256": "92e60a5ccd1321eb7ef178a8709dc257ca2f284f1c5f8653f1671d8a3b22b9fe"
+    },
+    "artifacts/local-20261026/merged-table/output.json": {
+      "bytes": 135079,
+      "sha256": "c38264688749fd6115c26b551b34c8d046e141ed233acb7869bda4b84266117f"
+    },
+    "artifacts/local-20261026/merged-table/recognized.txt": {
+      "bytes": 438,
+      "sha256": "55882ebb3b0779d3aa110f85366e25f796299a866962ea87c4e255d5a8a1107e"
+    },
+    "artifacts/local-20261026/merged-table/render/output.pdf": {
+      "bytes": 18074,
+      "sha256": "5b8c66a7a4a34ad64237e2a20e61b8aaa22118d33465c8e3b94de540637f6708"
+    },
+    "artifacts/local-20261026/merged-table/render/page-1.png": {
+      "bytes": 34366,
+      "sha256": "e57a370c31db84096c338021be3e432ffdb0913ab47cab2c2483d794904c806e"
+    },
+    "artifacts/local-20261026/merged-table/table-score.json": {
+      "bytes": 4210,
+      "sha256": "41c66ca861ffe15926d8996691b387e695c17d120daea052d09b7881ad3ff5ae"
+    },
+    "artifacts/local-20261026/plos/docx-structure.json": {
+      "bytes": 133,
+      "sha256": "6cad6d46a652a082db29b3d24e45f6f60b1b6f4bef90b6863a5bf2dde378d2da"
+    },
+    "artifacts/local-20261026/plos/execution.json": {
+      "bytes": 19561,
+      "sha256": "75af645c64ad028e0b38095978d46340a080b52a6b92fe8dcc49abbac34fda0c"
+    },
+    "artifacts/local-20261026/plos/output.docx": {
+      "bytes": 114227,
+      "sha256": "ff84c481396869ad517fbbf52d143e98b5f0d70b15f1d98b74a3fae623f54f07"
+    },
+    "artifacts/local-20261026/plos/output.json": {
+      "bytes": 575275,
+      "sha256": "7831e905b657291e8d2ef1dd88f25276711736647e5d63025ebe043854cebac7"
+    },
+    "artifacts/local-20261026/plos/recognized.txt": {
+      "bytes": 5522,
+      "sha256": "d6aa81a28b64df13c20164997b81f990088cb78b234c3dfc1249ee9af61c69e7"
+    },
+    "artifacts/local-20261026/plos/render/output.pdf": {
+      "bytes": 64926,
+      "sha256": "6c193cbc159dfb0a27f2ce27070b6dfe74fed9c3988495f7aa08b8df02a921a9"
+    },
+    "artifacts/local-20261026/plos/render/page-1.png": {
+      "bytes": 548687,
+      "sha256": "d1a86475a7d4e18e4c1839e56c7b0672fa45c948fd7a2090c532ce67fc86a54d"
+    },
+    "artifacts/merged-table-ground-truth.json": {
+      "bytes": 6772,
+      "sha256": "c5488d2e03f8c37cec559a606965128aad1005bebcfd5854236b753a8b0986ac"
+    },
+    "samples/merged-table-scan.pdf": {
+      "bytes": 126255,
+      "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "samples/plos-best-practices-page-2-reference.txt": {
+      "bytes": 6114,
+      "sha256": "af6543ec95c9d2e5f376ce7a15876e06b428f7de2fdcf0c0a54f4e49ddc4ae9c"
+    },
+    "samples/plos-best-practices-page-2.png": {
+      "bytes": 883883,
+      "sha256": "6dc994d0e12f051baef0ac01b468b63ff760415dd544910f1c03155c63b08c66"
+    },
+    "samples/plos-best-practices-source.json": {
+      "bytes": 3105,
+      "sha256": "6e93563b5f4663f6b6a70a004b9853e4a644e834f20d0e56ba32d54aa6d2a005"
+    },
+    "samples/plos-best-practices-source.pdf": {
+      "bytes": 183769,
+      "sha256": "8e85cf1b7bc9738f152e16709105b8951cecbe8621b55933d17ecdf63f75ea47"
+    }
+  }
+}

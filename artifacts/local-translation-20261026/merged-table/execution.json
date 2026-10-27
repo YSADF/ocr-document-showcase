@@ -1,0 +1,1964 @@
+{
+  "schema_version": "local-showcase-run-v1",
+  "case": "merged-table",
+  "started_at_utc": "2026-10-26T04:10:09.195243+00:00",
+  "input": {
+    "name": "merged-table-scan.pdf",
+    "bytes": 126255,
+    "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+  },
+  "source": {
+    "revision": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true
+  },
+  "executed_source_hashes": {
+    "pipeline/orchestrator.py": "99c63b4c562671cc890664a0a9e9ecfe203730d555ba4ee27707bbf76f66eebb",
+    "pipeline/execution.py": "39482dc8080d4e48cd0b35ac077a096b4ce3b671fd9932f45554c8257ea7e0c0",
+    "pipeline/pdf_processor.py": "430edeff0fa1e8e75a2b514f12470b8012ffaddb823bc0ff781ac668b216fc79",
+    "pipeline/image_processor.py": "37a4906a15c1649ee0307a838ba6c1f20d8a7030d82b3b1b7785c02f651da948",
+    "pipeline/page_processor.py": "38e466c0840ccc0e0692074f3725a922080911b000f5a6d3827cd3a766cc2c67",
+    "pipeline/render_dispatch.py": "6579f7510918d199f44b9d3612d36797592bd63d60ebd59ffdece06ebe37f1be",
+    "ocr_engine/engine.py": "197030cf8bdc555f9300aba5874f52d881c177b35638df8a0aa10caf4dd3a6b3",
+    "ocr_engine/backends/rapidocr_backend.py": "b71777d6fde29ebd635fa436a9af94983314750b7ea6243099e675a00a332315",
+    "render/docx_dispatch.py": "aa4b8ac0029cd345dfc936e6606a3e7caed88d4e0a97f882f8b5858d8d65ef9c",
+    "render/semantic_layout_word.py": "14cbda9043b768206b570542d33ff7991c17777b3a578f95ccfa2a1f11ca1c66",
+    "render/semantic_layout_primitives.py": "40f8c923d8d3927f42f0558b4c5086d0eb7b98a433e451b5f647c362e9e8a284",
+    "render/docx_text_layout.py": "328e9780b7e7411e463ecfab343d3c52bfdbdd8e0d96c0c305cc1dd6a7f16d51",
+    "settings.py": "e972a24f996a0943e91541d3d50432411884fc8e6eaebe59976419875d7b1250",
+    "requirements.txt": "3ef14e6678ef1751dd8605a6e017c64ca5a7bb1357d053f2b7654f6494bee112",
+    "translate/pipeline_parts/orchestrator.py": "a7746ec6b184ab16cfda254929decd277b768b30b40129e06c6d3e74b2997151",
+    "translate/pipeline_parts/item_stages.py": "38850e6f18da37a40e261ec099e6e764ee9a5d43989029e2b6a39b9f14fe6eba",
+    "translate/backends/offline.py": "fcfb4ac6a3106133e01ecad8998984956a864d8e1add01efc7ba075be17deda2",
+    "configs/rapidocr_onnx_models.json": "264dbcff1582869a042611a9b39779c91ddbbc1a387b6c08f1d7ce312ed5fc03"
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 13 2026, 19:41:13) [GCC 12.2.0]",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "network": "docker --network none"
+  },
+  "dependencies": {
+    "packaging": "26.3",
+    "wheel": "0.46.3",
+    "pip": "24.0",
+    "setuptools": "79.0.1",
+    "ctranslate2": "4.5.0",
+    "safetensors": "0.8.0",
+    "transformers": "4.49.0",
+    "regex": "2026.9.29",
+    "sentencepiece": "0.2.0",
+    "sacremoses": "0.1.1",
+    "cloudpickle": "3.1.2",
+    "huggingface_hub": "0.36.2",
+    "tokenizers": "0.21.4",
+    "joblib": "1.6.0",
+    "torch": "2.6.0+cpu",
+    "sympy": "1.13.1",
+    "annotated-types": "0.8.0",
+    "markdown-it-py": "4.2.0",
+    "arq": "0.28.0",
+    "h11": "0.16.0",
+    "python-docx": "1.1.2",
+    "pypdfium2": "5.14.0",
+    "tinycss2": "1.5.1",
+    "tqdm": "4.67.1",
+    "fsspec": "2026.9.0",
+    "MarkupSafe": "3.0.4",
+    "idna": "3.20",
+    "anyio": "4.15.1",
+    "pillow": "12.3.0",
+    "orjson": "3.13.0",
+    "uvloop": "0.23.0",
+    "pydantic": "2.12.5",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.1",
+    "flatbuffers": "25.12.19",
+    "httptools": "0.9.0",
+    "et_xmlfile": "2.0.0",
+    "preocr": "1.11.0",
+    "shellingham": "1.5.4",
+    "starlette": "1.10.0",
+    "python-magic": "0.4.27",
+    "weasyprint": "69.0",
+    "hiredis": "3.5.0",
+    "termcolor": "3.3.0",
+    "opencv-python": "4.10.0.84",
+    "requests": "2.34.2",
+    "PyYAML": "6.0.2",
+    "typing_extensions": "4.16.0",
+    "cffi": "2.1.1",
+    "pillow-avif-plugin": "1.5.5",
+    "zopfli": "0.4.3",
+    "python-multipart": "0.0.32",
+    "ezdxf": "1.4.2",
+    "PyJWT": "2.15.1",
+    "fire": "0.7.1",
+    "typer": "0.27.3",
+    "tzdata": "2026.5",
+    "httpcore": "1.0.9",
+    "cryptography": "50.0.2",
+    "urllib3": "2.8.0",
+    "pydantic_core": "2.41.5",
+    "webencodings": "0.6.1",
+    "beautifulsoup4": "4.12.3",
+    "pyclipper": "1.3.0.post6",
+    "scikit-image": "0.26.0",
+    "pydantic-settings": "2.7.1",
+    "pycparser": "3.12",
+    "pdf2docx": "0.5.6",
+    "contourpy": "1.3.3",
+    "httpx": "0.28.1",
+    "groovy": "0.1.2",
+    "tifffile": "2026.3.3",
+    "xlsxwriter": "3.3.0",
+    "rapidocr": "3.0.0",
+    "redis": "5.3.1",
+    "table-cls": "1.2.0",
+    "click": "8.5.0",
+    "python-dotenv": "1.2.4",
+    "humanfriendly": "10.0",
+    "arabic-reshaper": "3.0.0",
+    "kiwisolver": "1.5.1",
+    "lineless-table-rec": "0.1.0",
+    "loguru": "0.7.3",
+    "pydub": "0.25.1",
+    "gradio": "6.16.0",
+    "coloredlogs": "15.0.1",
+    "gradio_client": "2.5.0",
+    "pydyf": "0.13.0",
+    "tinyhtml5": "2.1.0",
+    "scipy": "1.13.1",
+    "typing-inspection": "0.4.4",
+    "hf-gradio": "0.4.1",
+    "pyparsing": "3.3.3",
+    "omegaconf": "2.4.0",
+    "aiofiles": "24.1.0",
+    "semantic-version": "2.10.0",
+    "colorlog": "6.12.0",
+    "uvicorn": "0.34.0",
+    "PyMuPDF": "1.25.3",
+    "openpyxl": "3.1.5",
+    "lxml": "6.1.1",
+    "rich": "15.0.0",
+    "python-pptx": "1.0.2",
+    "certifi": "2026.10.23",
+    "ImageIO": "2.38.1",
+    "charset-normalizer": "3.5.2",
+    "matplotlib": "3.9.4",
+    "python-dateutil": "3.0.0",
+    "pyphen": "0.18.1",
+    "pytz": "2026.5",
+    "annotated-doc": "0.0.5",
+    "lazy-loader": "0.6",
+    "wired-table-rec": "1.2.0",
+    "mpmath": "1.3.0",
+    "numpy": "1.26.4",
+    "watchfiles": "1.3.0",
+    "pandas": "3.0.6",
+    "soupsieve": "3.0.4",
+    "pdfminer.six": "20260107",
+    "Pygments": "2.21.0",
+    "onnxruntime": "1.19.2",
+    "Jinja2": "3.1.6",
+    "shapely": "2.0.6",
+    "tomlkit": "0.14.0",
+    "hf-xet": "1.7.0",
+    "brotli": "1.2.1",
+    "filelock": "4.2.4",
+    "python-bidi": "0.6.11",
+    "mdurl": "0.1.2",
+    "fastapi": "0.133.0",
+    "safehttpx": "0.1.7",
+    "websockets": "17.3",
+    "pdfplumber": "0.11.10",
+    "networkx": "3.6.1",
+    "cssselect2": "0.10.1",
+    "six": "1.17.0",
+    "protobuf": "7.36.2"
+  },
+  "settings": {
+    "PPOCR_OCR_RUNTIME_PROVIDER": "rapidocr_onnx",
+    "PPOCR_INFER_BACKEND": "onnx",
+    "PPOCR_ACCELERATOR_KIND": "cpu",
+    "PPOCR_OCR_LANG": "en",
+    "PPOCR_LAYOUT_ENGINE": "geometry",
+    "PPOCR_RAPIDTABLE_ENABLED": "false",
+    "PPOCR_PRELOAD_RAPIDTABLE": "false",
+    "PPOCR_OCR_UYGHUR_TESSERACT_FALLBACK": "false",
+    "PPOCR_OCR_REQUIRE_PRELOADED_LANGUAGE_MODELS": "true",
+    "PPOCR_DOCX_RENDERER": "semantic_layout",
+    "PPOCR_DOCX_DEFAULT_FONT": "Noto Sans CJK SC",
+    "PPOCR_LAYOUT_RECOVER_ENABLED": "false",
+    "PPOCR_MODEL_DIR": "/app/model_zoo",
+    "PPOCR_OUTPUT_DIR": "/work/runs/merged-table",
+    "PPOCR_LOG_DIR": "/work/runs/merged-table/runtime/logs",
+    "PPOCR_UPLOAD_DIR": "/work/runs/merged-table/runtime/uploads",
+    "PPOCR_KNOWLEDGE_DIR": "/work/runs/merged-table/runtime/knowledge",
+    "PPOCR_CPU_THREADS": "4",
+    "PPOCR_DET_LIMIT_SIDE_LEN": "1600"
+  },
+  "parameters": {
+    "output_format": "json",
+    "use_layout": true,
+    "absolute_position": true,
+    "ocr_lang": "en",
+    "ocr_mode": "balanced",
+    "ocr_scene": "general",
+    "vlm_fallback": "off"
+  },
+  "models": {
+    "det_multi": {
+      "file": "multi_PP-OCRv3_det_infer.onnx",
+      "bytes": 2421639,
+      "sha256": "5475c6c7f4d84a6c4f32241b487435d59f126a40c023387af99732258844cdc3",
+      "matches_locked_manifest": true
+    },
+    "cls_ch": {
+      "file": "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+      "bytes": 585532,
+      "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "matches_locked_manifest": true
+    },
+    "rec_ch": {
+      "file": "ch_PP-OCRv4_rec_infer.onnx",
+      "bytes": 10857958,
+      "sha256": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+      "matches_locked_manifest": true
+    },
+    "rec_en": {
+      "file": "en_PP-OCRv4_rec_infer.onnx",
+      "bytes": 7653044,
+      "sha256": "e8770c967605983d1570cdf5352041dfb68fa0c21664f49f47b155abd3e0e318",
+      "matches_locked_manifest": true
+    }
+  },
+  "status": "completed",
+  "ocr_executed": true,
+  "docx_generated": true,
+  "renderer_executed": false,
+  "visual_acceptance": "not_reviewed",
+  "translation_executed": true,
+  "translation_direction": "en -> zh",
+  "artifacts": {
+    "json": {
+      "name": "merged-table-scan.json",
+      "bytes": 135073,
+      "sha256": "0c8887154fc526e72bdab825fca3c0f2af4eae628eddf5798467b3966ba2b959"
+    },
+    "source_json": {
+      "name": "source-ocr.json",
+      "sha256": "0c8887154fc526e72bdab825fca3c0f2af4eae628eddf5798467b3966ba2b959"
+    },
+    "translated_json": {
+      "name": "translated.json",
+      "sha256": "66080847830caafb605da569e6adf08e55fd5ca12b415ea8abf82aca688265d0"
+    },
+    "model_responses": {
+      "name": "model-responses.json",
+      "sha256": "e671fa6bff7d143645f03e17fd59d5b7fa15ae7121d5fdf4bb431e3b0038dfe2"
+    },
+    "docx": {
+      "name": "merged-table-scan.docx",
+      "bytes": 38595,
+      "sha256": "69f673570d5b49be1c341c1f9b758c3bfdd8e7363cb03fcff682dfe44e460a17"
+    }
+  },
+  "runtime_errors": [],
+  "analysis_elapsed_seconds": 1.5579599740000276,
+  "pipeline_metadata": {
+    "pdf_evidence": {
+      "schema_version": 2,
+      "source_sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7",
+      "page_count": 1,
+      "pages": [
+        {
+          "page_index": 0,
+          "kind": "image_scan",
+          "visible_text_chars": 0,
+          "hidden_text_chars": 0,
+          "total_text_chars": 0,
+          "image_coverage_ratio": 1.0,
+          "largest_image_coverage_ratio": 1.0,
+          "hidden_text_ratio": 0.0,
+          "requires_ocr": true,
+          "direct_safe": false,
+          "image_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ],
+          "scan_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ],
+          "coordinate_space": "unrotated_pdf_points",
+          "reasons": [
+            "page_covering_raster"
+          ],
+          "text_visibility_known": true,
+          "schema_version": 2
+        }
+      ]
+    },
+    "conversion": {
+      "route": "scan_ocr",
+      "runtime_policy": {
+        "geometry_only": true,
+        "allow_native_layout": false,
+        "allow_vl": false,
+        "table_backend": "opencv",
+        "reason": "explicit_geometry"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "route": "scan_ocr",
+          "pdf_kind": "image_scan",
+          "requires_ocr": true,
+          "layout_requested": true,
+          "layout_backend_used": "geometric",
+          "layout_fallback_reason": "explicit_geometry",
+          "render_dpi": 220,
+          "hidden_text_chars": 0,
+          "image_coverage_ratio": 1.0,
+          "coordinate_space": "unrotated_pdf_points",
+          "scan_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ]
+        }
+      ],
+      "evidence_schema_version": 2,
+      "source_sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "ocr_language": {
+      "requested": "en",
+      "resolved": "en",
+      "confidence": 1.0,
+      "source": "manual",
+      "script_profile": "en",
+      "exact_language": "",
+      "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+      "model_ready": true,
+      "route_status": "ready",
+      "fallback_reason": "",
+      "script_counts": {},
+      "sample_text": "",
+      "details": {
+        "model_capability": {
+          "ocr_profile": "en",
+          "rapidocr_profile": "en",
+          "paddle_lang": "en",
+          "backend": "rapidocr_onnx",
+          "ocr_version": "PP-OCRv4",
+          "detection_ocr_version": "PP-OCRv4",
+          "recognition_ocr_version": "PP-OCRv4",
+          "tier": "mobile",
+          "detection_model": "multi_PP-OCRv3_det_infer.onnx",
+          "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+          "required_models": [
+            "multi_PP-OCRv3_det_infer.onnx",
+            "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+            "en_PP-OCRv4_rec_infer.onnx"
+          ],
+          "missing_models": [],
+          "model_ready": true,
+          "rapidocr_rec_lang": "en",
+          "supplemental_runtime": null
+        }
+      },
+      "post_ocr": {
+        "language": "en",
+        "confidence": 1.0,
+        "script_counts": {
+          "han": 0,
+          "latin": 303,
+          "other_letters": 0
+        },
+        "method": "unicode_script_ratio",
+        "scope": "zh_en",
+        "script_profile": "en",
+        "exact_language": "",
+        "translation_language": "auto",
+        "translation_language_confidence": 0.0,
+        "translation_profile": "en",
+        "translation_profile_confidence": 0.99,
+        "profile_script_counts": {
+          "han": 0,
+          "kana": 0,
+          "hangul": 0,
+          "arabic": 0,
+          "devanagari": 0,
+          "cyrillic": 0,
+          "thai": 0,
+          "burmese": 0,
+          "khmer": 0,
+          "lao": 0,
+          "greek": 0,
+          "tamil": 0,
+          "telugu": 0,
+          "uyghur": 0,
+          "latin": 303,
+          "latin_ext": 0,
+          "other": 0
+        }
+      }
+    },
+    "ocr_mode": {
+      "requested": "balanced",
+      "resolved": "balanced",
+      "description": "Default mode: conservative speedups with normal layout analysis."
+    },
+    "ocr_mode_policy": {
+      "mode": "balanced",
+      "base_mode": "balanced",
+      "pdf_render_dpi": 220,
+      "empty_page_retry": true,
+      "empty_page_retry_dpi": 240,
+      "text_pdf_layout_probe": true,
+      "scan_layout": true,
+      "structure_detection": true,
+      "analysis_max_pixels": 4000000,
+      "det_limit_side_len": 2048,
+      "adaptive_retry": false,
+      "adaptive_retry_mode": "",
+      "adaptive_min_lines": 2,
+      "adaptive_min_chars": 8,
+      "adaptive_min_confidence": 0.5,
+      "adaptive_layout_retry": false,
+      "adaptive_layout_min_lines": 40,
+      "adaptive_layout_min_chars": 800,
+      "adaptive_layout_low_confidence_retry": false,
+      "adaptive_layout_low_confidence_max": 0.9,
+      "adaptive_layout_low_confidence_min_lines": 8,
+      "adaptive_layout_low_confidence_min_chars": 120,
+      "adaptive_direct_layout": false,
+      "adaptive_direct_layout_min_components": 850,
+      "adaptive_direct_layout_min_dark_ratio": 0.03,
+      "adaptive_direct_layout_max_dark_ratio": 0.35,
+      "adaptive_direct_layout_sparse_min_components": 150,
+      "adaptive_direct_layout_sparse_min_dark_ratio": 0.08,
+      "adaptive_direct_layout_sparse_max_dark_ratio": 0.22,
+      "adaptive_accept_min_line_gain": 1,
+      "adaptive_accept_min_char_gain": 8,
+      "adaptive_accept_min_confidence_gain": 0.05,
+      "adaptive_accept_min_overlay_gain": 1,
+      "adaptive_accept_min_table_gain": 1
+    },
+    "layout_engine": {
+      "layout_backend_requested": "geometry",
+      "layout_backend_used": "geometric",
+      "layout_fallback_reason": "explicit_geometry",
+      "page_count_with_meta": 1,
+      "fallback_reason_counts": {
+        "explicit_geometry": 1
+      },
+      "backend_used_counts": {
+        "geometric": 1
+      }
+    },
+    "ocr_model": {
+      "configured_parameters": {
+        "DET_LIMIT_SIDE_LEN": 2048,
+        "DET_LIMIT_TYPE": "max",
+        "DET_DB_THRESH": 0.2,
+        "DET_DB_BOX_THRESH": 0.3,
+        "DET_DB_UNCLIP_RATIO": 1.8,
+        "REC_BATCH_NUM": 6,
+        "TEXT_REC_SCORE_THRESH": 0.0,
+        "IMAGE_ANALYSIS_MAX_PIXELS": 4000000,
+        "OCR_ACTIVE_MODE": "balanced",
+        "OCR_ACTIVE_PROFILE": "en"
+      },
+      "accepted_constructor": null,
+      "structure_constructor": null,
+      "model_files": [
+        {
+          "model": "PP-OCRv5_server_det",
+          "status": "not_found",
+          "files": []
+        },
+        {
+          "model": "en_PP-OCRv5_mobile_rec",
+          "status": "not_found",
+          "files": []
+        }
+      ],
+      "profile": "en",
+      "model_backend": "rapidocr_onnx",
+      "model_tier": "mobile",
+      "ocr_version": "PP-OCRv4",
+      "detection_model": "multi_PP-OCRv3_det_infer.onnx",
+      "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+      "inference_backend": "onnx",
+      "cpu_threads": 4,
+      "layout_engine": "geometry",
+      "doc_orientation_classify": false,
+      "doc_unwarping": false
+    },
+    "text_language": {
+      "language": "en",
+      "confidence": 1.0,
+      "script_counts": {
+        "han": 0,
+        "latin": 303,
+        "other_letters": 0
+      },
+      "method": "unicode_script_ratio",
+      "scope": "zh_en",
+      "script_profile": "en",
+      "exact_language": "",
+      "translation_language": "auto",
+      "translation_language_confidence": 0.0,
+      "translation_profile": "en",
+      "translation_profile_confidence": 0.99,
+      "profile_script_counts": {
+        "han": 0,
+        "kana": 0,
+        "hangul": 0,
+        "arabic": 0,
+        "devanagari": 0,
+        "cyrillic": 0,
+        "thai": 0,
+        "burmese": 0,
+        "khmer": 0,
+        "lao": 0,
+        "greek": 0,
+        "tamil": 0,
+        "telugu": 0,
+        "uyghur": 0,
+        "latin": 303,
+        "latin_ext": 0,
+        "other": 0
+      }
+    },
+    "ocr_scene": "general",
+    "vlm_fallback": "off",
+    "timing": {
+      "total_seconds": 1.2764,
+      "stages": {
+        "language_detection": 0.0071,
+        "preocr": 0.3088,
+        "input_processing": 0.9513,
+        "post_ocr_language": 0.001,
+        "render": 0.0078
+      }
+    },
+    "quality": {
+      "page_count": 1,
+      "line_count": 23,
+      "text_line_count": 23,
+      "overlay_text_line_count": 0,
+      "char_count": 392,
+      "table_html_count": 1,
+      "avg_confidence": 0.9908,
+      "block_counts": {
+        "table": 1,
+        "text": 2,
+        "title": 1
+      },
+      "input_kind_counts": {
+        "scan_pdf": 1
+      },
+      "empty_pages": [],
+      "needs_review": false,
+      "engineering_review_pages": [],
+      "arabic_digit_review_pages": [],
+      "orientation_review_pages": [],
+      "empty_page_rate": 0.0
+    },
+    "requested_docx_mode": "semantic_layout",
+    "selected_docx_mode": "semantic_layout",
+    "docx_quality_policy": "warn",
+    "docx_source_inventory": {
+      "schema_version": 1,
+      "captured_before_translation": true,
+      "pages": [
+        {
+          "page": 1,
+          "entries": [
+            {
+              "source_id": "line:21c48e81c8c31503",
+              "text": "Merged-cell table input",
+              "bbox": [
+                137,
+                140,
+                785,
+                226
+              ],
+              "role": "title",
+              "owner_type": "text",
+              "audit": {
+                "font_size_unit": "pt",
+                "font_size_dpi": 200.0,
+                "ocr_strip_height_px": 86.15,
+                "reading_layout": {
+                  "role": "title",
+                  "column_id": 0,
+                  "column_bounds": [
+                    0,
+                    2573
+                  ],
+                  "paragraph_id": "paragraph:273708e4165a2589",
+                  "reading_order": 0,
+                  "source_text": "Merged-cell table input",
+                  "source_line_ids": [
+                    "line:21c48e81c8c31503"
+                  ],
+                  "member_bboxes": [
+                    [
+                      137,
+                      140,
+                      785,
+                      226
+                    ]
+                  ],
+                  "member_order": 0,
+                  "source_line_id": "line:21c48e81c8c31503",
+                  "source_bbox": [
+                    137,
+                    140,
+                    785,
+                    226
+                  ],
+                  "source_quad": [
+                    [
+                      137.13291259765626,
+                      140.71986267089844
+                    ],
+                    [
+                      785.0262670898437,
+                      140.71986267089844
+                    ],
+                    [
+                      785.0262670898437,
+                      226.8697216796875
+                    ],
+                    [
+                      137.13291259765626,
+                      226.8697216796875
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "source_id": "line:ff726429cb0e0d74",
+              "text": "Self-created input and ground truth Not an OCR result",
+              "bbox": [
+                135,
+                228,
+                905,
+                274
+              ],
+              "role": "body",
+              "owner_type": "text",
+              "audit": {
+                "font_size_unit": "pt",
+                "font_size_dpi": 200.0,
+                "ocr_strip_height_px": 46.385,
+                "reading_layout": {
+                  "role": "body",
+                  "column_id": 0,
+                  "column_bounds": [
+                    0,
+                    2573
+                  ],
+                  "paragraph_id": "paragraph:0126f2b5a7b1da71",
+                  "reading_order": 1,
+                  "source_text": "Self-created input and ground truth Not an OCR result",
+                  "source_line_ids": [
+                    "line:ff726429cb0e0d74"
+                  ],
+                  "member_bboxes": [
+                    [
+                      135,
+                      228,
+                      905,
+                      274
+                    ]
+                  ],
+                  "member_order": 0,
+                  "source_line_id": "line:ff726429cb0e0d74",
+                  "source_bbox": [
+                    135,
+                    228,
+                    905,
+                    274
+                  ],
+                  "source_quad": [
+                    [
+                      135.09550537109374,
+                      228.1834375
+                    ],
+                    [
+                      905.1603540039063,
+                      228.1834375
+                    ],
+                    [
+                      905.1603540039063,
+                      274.56795104980466
+                    ],
+                    [
+                      135.09550537109374,
+                      274.56795104980466
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "source_id": "page-1/block-2/cell-0",
+              "text": "Engineering inspection record",
+              "bbox": [
+                146,
+                473,
+                531,
+                601
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r0:c0"
+              },
+              "source_aliases": [
+                "line:af2c5d227cff42a2"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-1",
+              "text": "",
+              "bbox": [
+                531,
+                473,
+                1078,
+                601
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-2",
+              "text": "",
+              "bbox": [
+                1078,
+                473,
+                1261,
+                601
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-3",
+              "text": "",
+              "bbox": [
+                1261,
+                473,
+                1555,
+                601
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-4",
+              "text": "",
+              "bbox": [
+                1555,
+                473,
+                2426,
+                601
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-5",
+              "text": "Item",
+              "bbox": [
+                146,
+                601,
+                531,
+                711
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r1:c0"
+              },
+              "source_aliases": [
+                "line:f5a9f221735e4609"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-6",
+              "text": "Specification",
+              "bbox": [
+                531,
+                601,
+                1078,
+                711
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r1:c1"
+              },
+              "source_aliases": [
+                "line:a54634cf976181c5"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-7",
+              "text": "Qty",
+              "bbox": [
+                1078,
+                601,
+                1261,
+                711
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r1:c2"
+              },
+              "source_aliases": [
+                "line:76ec3d1478dd3246"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-8",
+              "text": "Result",
+              "bbox": [
+                1261,
+                601,
+                1555,
+                711
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r1:c3"
+              },
+              "source_aliases": [
+                "line:790a9340e6134ffc"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-9",
+              "text": "Note",
+              "bbox": [
+                1555,
+                601,
+                2426,
+                711
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r1:c4"
+              },
+              "source_aliases": [
+                "line:c5afea3b9ae519e7"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-10",
+              "text": "",
+              "bbox": [
+                146,
+                711,
+                531,
+                879
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-11",
+              "text": "DN 50",
+              "bbox": [
+                531,
+                711,
+                1078,
+                879
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r2:c1"
+              },
+              "source_aliases": [
+                "line:a384d1397d8047e6"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-12",
+              "text": "",
+              "bbox": [
+                1078,
+                711,
+                1261,
+                879
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-13",
+              "text": "PASS",
+              "bbox": [
+                1261,
+                711,
+                1555,
+                879
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r2:c3"
+              },
+              "source_aliases": [
+                "line:7380d82d18c175d2"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-14",
+              "text": "0 50  0.10 mm",
+              "bbox": [
+                1555,
+                711,
+                2426,
+                879
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r2:c4"
+              },
+              "source_aliases": [
+                "line:e80021035b1db0f2"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-15",
+              "text": "Valve body",
+              "bbox": [
+                146,
+                879,
+                531,
+                1048
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r3:c0"
+              },
+              "source_aliases": [
+                "line:2254779fa12a3391"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-16",
+              "text": "DN 80",
+              "bbox": [
+                531,
+                879,
+                1078,
+                1048
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r3:c1"
+              },
+              "source_aliases": [
+                "line:ba2fc3417b508812"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-17",
+              "text": "",
+              "bbox": [
+                1078,
+                879,
+                1261,
+                1048
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-18",
+              "text": "REVIEW",
+              "bbox": [
+                1261,
+                879,
+                1555,
+                1048
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r3:c3"
+              },
+              "source_aliases": [
+                "line:09c6347cf3c1143b"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-19",
+              "text": "Angle 90 0.5o",
+              "bbox": [
+                1555,
+                879,
+                2426,
+                1048
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r3:c4"
+              },
+              "source_aliases": [
+                "line:e6b91fe37f4555a9"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-20",
+              "text": "Pump",
+              "bbox": [
+                146,
+                1048,
+                531,
+                1215
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r4:c0"
+              },
+              "source_aliases": [
+                "line:0d3b9807ce526971"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-21",
+              "text": "Model P001 11 unit",
+              "bbox": [
+                531,
+                1048,
+                1078,
+                1215
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r4:c1"
+              },
+              "source_aliases": [
+                "line:952237ea41fd0b42"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-22",
+              "text": "",
+              "bbox": [
+                1078,
+                1048,
+                1261,
+                1215
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-23",
+              "text": "PASS",
+              "bbox": [
+                1261,
+                1048,
+                1555,
+                1215
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r4:c3"
+              },
+              "source_aliases": [
+                "line:206750a1547f9f11"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-24",
+              "text": "Bore 0 12 mm",
+              "bbox": [
+                1555,
+                1048,
+                2426,
+                1215
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r4:c4"
+              },
+              "source_aliases": [
+                "line:d266e1c5499922b1"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-25",
+              "text": "Summary: 4 inspected units",
+              "bbox": [
+                146,
+                1215,
+                531,
+                1344
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r5:c0"
+              },
+              "source_aliases": [
+                "line:1f2e95abbb741e1b"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-26",
+              "text": "",
+              "bbox": [
+                531,
+                1215,
+                1078,
+                1344
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-27",
+              "text": "",
+              "bbox": [
+                1078,
+                1215,
+                1261,
+                1344
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "page-1/block-2/cell-28",
+              "text": "3 PASS/1 REVIEW",
+              "bbox": [
+                1261,
+                1215,
+                1555,
+                1344
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local",
+                "cell_id": "visual:ecc7f74f93db29dd:r5:c3"
+              },
+              "source_aliases": [
+                "line:66c01f26555030bd"
+              ]
+            },
+            {
+              "source_id": "page-1/block-2/cell-29",
+              "text": "",
+              "bbox": [
+                1555,
+                1215,
+                2426,
+                1344
+              ],
+              "role": "table_cell",
+              "owner_type": "table_cell",
+              "audit": {
+                "coordinate_space": "page",
+                "text_line_coordinate_space": "crop_local"
+              },
+              "source_aliases": []
+            },
+            {
+              "source_id": "line:a20e6aa75dc3ab6e",
+              "text": "6 logical rows x 5 columns rowspan and colspan CCO 1.0",
+              "bbox": [
+                139,
+                1511,
+                885,
+                1554
+              ],
+              "role": "body",
+              "owner_type": "text",
+              "audit": {
+                "font_size_unit": "pt",
+                "font_size_dpi": 200.0,
+                "ocr_strip_height_px": 42.292,
+                "reading_layout": {
+                  "role": "body",
+                  "column_id": 0,
+                  "column_bounds": [
+                    0,
+                    2573
+                  ],
+                  "paragraph_id": "paragraph:a3a1ebe317e5d484",
+                  "reading_order": 2,
+                  "source_text": "6 logical rows x 5 columns rowspan and colspan CCO 1.0 Target: preserve text, merged cells and editable document structure.",
+                  "source_line_ids": [
+                    "line:a20e6aa75dc3ab6e",
+                    "line:2cfecb3ee282be7d"
+                  ],
+                  "member_bboxes": [
+                    [
+                      139,
+                      1511,
+                      885,
+                      1554
+                    ],
+                    [
+                      133,
+                      1560,
+                      985,
+                      1609
+                    ]
+                  ],
+                  "member_order": 0,
+                  "source_line_id": "line:a20e6aa75dc3ab6e",
+                  "source_bbox": [
+                    139,
+                    1511,
+                    885,
+                    1554
+                  ],
+                  "source_quad": [
+                    [
+                      139.47087890625,
+                      1511.7405224609374
+                    ],
+                    [
+                      885.70880859375,
+                      1511.7405224609374
+                    ],
+                    [
+                      885.70880859375,
+                      1554.0323046875
+                    ],
+                    [
+                      139.47087890625,
+                      1554.0323046875
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "source_id": "line:2cfecb3ee282be7d",
+              "text": "Target: preserve text, merged cells and editable document structure.",
+              "bbox": [
+                133,
+                1560,
+                985,
+                1609
+              ],
+              "role": "body",
+              "owner_type": "text",
+              "audit": {
+                "font_size_unit": "pt",
+                "font_size_dpi": 200.0,
+                "ocr_strip_height_px": 49.113,
+                "reading_layout": {
+                  "role": "body",
+                  "column_id": 0,
+                  "column_bounds": [
+                    0,
+                    2573
+                  ],
+                  "paragraph_id": "paragraph:a3a1ebe317e5d484",
+                  "reading_order": 2,
+                  "source_text": "6 logical rows x 5 columns rowspan and colspan CCO 1.0 Target: preserve text, merged cells and editable document structure.",
+                  "source_line_ids": [
+                    "line:a20e6aa75dc3ab6e",
+                    "line:2cfecb3ee282be7d"
+                  ],
+                  "member_bboxes": [
+                    [
+                      139,
+                      1511,
+                      885,
+                      1554
+                    ],
+                    [
+                      133,
+                      1560,
+                      985,
+                      1609
+                    ]
+                  ],
+                  "member_order": 1,
+                  "source_line_id": "line:2cfecb3ee282be7d",
+                  "source_bbox": [
+                    133,
+                    1560,
+                    985,
+                    1609
+                  ],
+                  "source_quad": [
+                    [
+                      133.43494140625,
+                      1560.7525341796875
+                    ],
+                    [
+                      985.9708203125,
+                      1560.7525341796875
+                    ],
+                    [
+                      985.9708203125,
+                      1609.8655078125
+                    ],
+                    [
+                      133.43494140625,
+                      1609.8655078125
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "ocr_alternatives": [],
+          "source_observations_present": true,
+          "source_observation_count": 23,
+          "visual_inventory": [
+            {
+              "visual_id": "visual:ecc7f74f93db29dd",
+              "kind": "table",
+              "bbox": [
+                143,
+                470,
+                2430,
+                1349
+              ],
+              "coordinate_space": "page"
+            }
+          ]
+        }
+      ]
+    },
+    "bilingual_translation_units": [
+      {
+        "source_text": "Merged-cell table input",
+        "translated_text": "合并单元格表格输入",
+        "page_index": 0,
+        "block_index": 0,
+        "block_type": "title",
+        "bbox": [
+          137.0,
+          140.0,
+          785.0,
+          226.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            0
+          ]
+        ]
+      },
+      {
+        "source_text": "Self-created input and ground truth Not an OCR result",
+        "translated_text": "自我创建的输入和地面真相",
+        "page_index": 0,
+        "block_index": 1,
+        "block_type": "text",
+        "bbox": [
+          135.0,
+          228.0,
+          905.0,
+          274.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "source_text": "Engineering inspection record",
+        "translated_text": "工程检查记录",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          146.0,
+          473.0,
+          531.0,
+          601.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Item",
+        "translated_text": "项目",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          146.0,
+          601.0,
+          531.0,
+          711.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Specification",
+        "translated_text": "规格",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          531.0,
+          601.0,
+          1078.0,
+          711.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Qty",
+        "translated_text": "齐哥",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          1078.0,
+          601.0,
+          1261.0,
+          711.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Result",
+        "translated_text": "结果",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          1261.0,
+          601.0,
+          1555.0,
+          711.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Note",
+        "translated_text": "说明",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          1555.0,
+          601.0,
+          2426.0,
+          711.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Valve body",
+        "translated_text": "阀门",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          146.0,
+          879.0,
+          531.0,
+          1048.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Angle 90 0.5o",
+        "translated_text": "角度 90 0.5o 坐标",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          1555.0,
+          879.0,
+          2426.0,
+          1048.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Pump",
+        "translated_text": "泵",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          146.0,
+          1048.0,
+          531.0,
+          1215.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Model P001 11 unit",
+        "translated_text": "P001型11个单元",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          531.0,
+          1048.0,
+          1078.0,
+          1215.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Bore 0 12 mm",
+        "translated_text": "0 12毫米口径",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          1555.0,
+          1048.0,
+          2426.0,
+          1215.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "Summary: 4 inspected units",
+        "translated_text": "摘要:4个被检查单位",
+        "page_index": 0,
+        "block_index": 2,
+        "block_type": "table",
+        "bbox": [
+          146.0,
+          1215.0,
+          531.0,
+          1344.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            2
+          ]
+        ]
+      },
+      {
+        "source_text": "6 logical rows x 5 columns rowspan and colspan CCO 1.0 Target: preserve text, merged cells and editable document structure.",
+        "translated_text": "6 个逻辑行 x 5 列行和 crospan CCO 1.0目标:保存文本,合并单元格和可编辑文档结构.",
+        "page_index": 0,
+        "block_index": 3,
+        "block_type": "text",
+        "bbox": [
+          133.0,
+          1511.0,
+          985.0,
+          1609.0
+        ],
+        "covered_blocks": [
+          [
+            0,
+            3
+          ]
+        ]
+      }
+    ],
+    "image_translation_groups": [],
+    "translation": {
+      "task_id": "5d3e88035427",
+      "mode": "document",
+      "source_lang": "en",
+      "target_lang": "zh",
+      "count": 15,
+      "changed_count": 15,
+      "unchanged_count": 0,
+      "status": "success",
+      "fallback": "none",
+      "failed_batches": 0,
+      "reason": "",
+      "engine": "Offline(libretranslate)",
+      "elapsed_seconds": 0.21,
+      "exact_source_cache_hits": 0,
+      "exact_source_cache_reuse_hits": 0,
+      "exact_source_dedup_hits": 0,
+      "engine_request_count": 15,
+      "contextual_item_count": 0,
+      "protected_literal_count": 0,
+      "protected_literal_region_count": 0,
+      "protected_literal_verified_count": 0,
+      "protected_literal_restored_count": 0,
+      "protected_literal_guard_retry_count": 0,
+      "protected_literal_violation_count": 0,
+      "protected_literal_codepoint_integrity": 1.0,
+      "protected_literal_semantic_conversion_count": 0,
+      "exact_source_dedupe_scope": "source_language_context",
+      "protected_literal_reordering_region_count": 0,
+      "exact_source_cache_size": 15,
+      "engine_segment_count": 15,
+      "semantic_sentence_unit_count": 0,
+      "semantic_sentence_source_count": 0,
+      "semantic_sentence_translated_count": 0,
+      "semantic_sentence_retry_count": 0,
+      "semantic_sentence_retry_call_count": 0,
+      "semantic_sentence_unresolved_count": 0,
+      "semantic_sentence_coverage": 1.0,
+      "split_retry": false,
+      "map_label_llm_fallback_enabled": false,
+      "map_label_llm_fallback_configured": false,
+      "map_label_llm_fallback_candidate_count": 0,
+      "map_label_llm_fallback_attempted_count": 0,
+      "map_label_llm_fallback_improved_count": 0,
+      "map_label_llm_fallback_call_count": 0,
+      "map_label_llm_fallback_failed_count": 0,
+      "map_label_llm_fallback_timeout_count": 0,
+      "map_label_llm_fallback_budget_exhausted": false,
+      "map_label_llm_fallback_elapsed_seconds": 0.0,
+      "map_label_llm_fallback_queued_call_count": 0,
+      "map_label_llm_fallback_queue_wait_seconds": 0.0,
+      "map_label_llm_fallback_queue_timeout_count": 0,
+      "map_label_llm_fallback_retry_call_count": 0,
+      "map_label_llm_fallback_retried_item_count": 0,
+      "map_label_latency_budget_preserved_count": 0,
+      "map_label_latency_budget_preserved_samples": [],
+      "quality_retry_normalized_unit_count": 1,
+      "quality_retry": true,
+      "quality_retry_reason": "source_script_residue",
+      "quality_retry_unit_count": 1,
+      "quality_retry_call_count": 1,
+      "quality_retry_improved_count": 1,
+      "quality_retry_unresolved_count": 0,
+      "quality_retry_unresolved_samples": [],
+      "quality_retry_language_unresolved_count": 0,
+      "quality_retry_truncation_count": 0,
+      "quality_retry_failed_batches": 0,
+      "semantic_truncation_count": 0,
+      "shared_han_named_entity_count": 0,
+      "quality_status": "improved",
+      "post_assignment_item_quality_retry": false,
+      "post_assignment_item_suspect_count": 0,
+      "post_assignment_item_improved_count": 0,
+      "post_assignment_item_unresolved_count": 0,
+      "post_assignment_structural_repair_count": 0,
+      "post_assignment_paragraph_skip_count": 0,
+      "post_assignment_item_details": [],
+      "table_prefix_canonicalized": 0,
+      "table_artifacts_stripped": 0,
+      "raw_item_count": 16,
+      "unit_count": 15,
+      "grouped_unit_count": 15,
+      "sentence_grouping": true,
+      "faithful_item_geometry": false,
+      "faithful_paragraph_group_count": 0,
+      "block_boundaries_preserved": false,
+      "overlay_table_cell_count": 0,
+      "detected_form_cell_count": 0,
+      "deterministic_particle_repairs": 0,
+      "engineering_terminology_repairs": 0,
+      "instructional_chart_term_repairs": 0,
+      "semantic_group_count": 0,
+      "semantic_renderable_group_count": 0,
+      "semantic_list_group_count": 0,
+      "semantic_title_group_count": 0,
+      "semantic_group_member_coverage": 0.0,
+      "unit_quality_retry_unresolved_count": 0,
+      "target_language_mismatch_count": 0,
+      "source_units": [
+        "Merged-cell table input",
+        "Self-created input and ground truth Not an OCR result",
+        "Engineering inspection record",
+        "Item",
+        "Specification",
+        "Qty",
+        "Result",
+        "Note",
+        "Valve body",
+        "Angle 90 0.5o",
+        "Pump",
+        "Model P001 11 unit"
+      ],
+      "source_units_full": [
+        "Merged-cell table input",
+        "Self-created input and ground truth Not an OCR result",
+        "Engineering inspection record",
+        "Item",
+        "Specification",
+        "Qty",
+        "Result",
+        "Note",
+        "Valve body",
+        "Angle 90 0.5o",
+        "Pump",
+        "Model P001 11 unit"
+      ]
+    },
+    "semantic_layout_source_fit": {
+      "passed": true,
+      "tested_source_rows": 0,
+      "failures": []
+    },
+    "semantic_layout_translation_reflow": {
+      "applied": true,
+      "pages": [
+        {
+          "source_page": 1,
+          "layout": "single_column_native_flow",
+          "source_geometry_preserved": false,
+          "natural_pagination": true,
+          "body_font_size_pt": 10.5,
+          "reasons": [
+            {
+              "kind": "translated_text_exceeds_source_slot",
+              "source_id": "line:ff726429cb0e0d74",
+              "bbox": [
+                135,
+                228,
+                905,
+                274
+              ],
+              "font_size_pt": 10.5,
+              "available_height_pt": 15.055,
+              "required_height_pt": 18.5,
+              "width_fits": true
+            },
+            {
+              "kind": "translated_text_exceeds_source_slot",
+              "source_id": "line:a20e6aa75dc3ab6e",
+              "bbox": [
+                139,
+                1511,
+                885,
+                1554
+              ],
+              "font_size_pt": 10.5,
+              "available_height_pt": 14.073,
+              "required_height_pt": 18.5,
+              "width_fits": true
+            },
+            {
+              "kind": "translated_text_exceeds_source_slot",
+              "source_id": "line:2cfecb3ee282be7d",
+              "bbox": [
+                133,
+                1560,
+                985,
+                1609
+              ],
+              "font_size_pt": 10.5,
+              "available_height_pt": 16.036,
+              "required_height_pt": 18.5,
+              "width_fits": true
+            }
+          ],
+          "native_text_rows": 4,
+          "native_table_count": 1,
+          "native_nonempty_cells": 19,
+          "visuals": [],
+          "translation_groups_emitted_once": []
+        }
+      ],
+      "visual_acceptance": "requires_render_review"
+    }
+  },
+  "page_count": 1,
+  "page_input_kinds": [
+    "scan_pdf"
+  ],
+  "text_line_count": 23,
+  "translation_parameters": {
+    "source_lang": "en",
+    "target_lang": "zh",
+    "runtime_options": {},
+    "model_generation": {
+      "beam_size": 4,
+      "num_hypotheses": 1,
+      "length_penalty": 0.2,
+      "replace_unknowns": true,
+      "max_input_length": 512,
+      "max_decoding_length": 512
+    },
+    "configuration_sha256": "aef8dfa3bbb2d67e05d6c29ded814c5e3574461de9b943adb4a606eccbd0c6e4",
+    "transport": "HTTP loopback within docker --network none"
+  },
+  "translation_elapsed_seconds": 0.7803677389999848,
+  "docx_elapsed_seconds": 0.1193990549999171,
+  "elapsed_seconds": 3.934836505000021,
+  "finished_at_utc": "2026-10-26T04:10:13.181320+00:00",
+  "public_copy_note": "Only pre-existing worktree path inventory omitted. Raw OCR, translation and DOCX files unchanged.",
+  "independent_render": {
+    "completed": true,
+    "dpi": 144,
+    "note": "Executed after this inference runner exited; original renderer_executed flag describes that runner only."
+  }
+}

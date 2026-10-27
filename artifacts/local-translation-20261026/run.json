@@ -1,0 +1,310 @@
+{
+  "schema_version": "translation-showcase-evidence-v1",
+  "run_date": "2026-10-26",
+  "environment": {
+    "inference": "docker --network none --cpus=4 --memory=10g",
+    "translation_transport": "HTTP loopback within same network-disabled container",
+    "renderer": "LibreOffice 7.4.7.2 + Poppler 22.12.0; render_docx.py --emit_pdf --dpi 144",
+    "render_container": "docker --network none --cpus=2 --memory=4g",
+    "font": "Noto Sans CJK SC",
+    "images": {
+      "pp-v5-showcase:translation-argos": "sha256:ae9cee98e8e7dfdf3e0a8c2ace575706e1bf9dd127a03803f683c267be505dfe",
+      "pp-v5-showcase:translation-zh-final": "sha256:629bc5804ff30b28e89a9c109c2ff3816914edad8b121c8f3fce9494947b3561",
+      "pp-v5-showcase-render:local": "sha256:7c5c0912763ff820808b623bd273156a19ece6d0556202ac0d46ae891800813f"
+    }
+  },
+  "models": {
+    "translation": {
+      "source_index": "https://raw.githubusercontent.com/argosopentech/argospm-index/main/index.json",
+      "model_url": "https://argos-net.com/v1/translate-en_zh-1_9.argosmodel",
+      "entry": {
+        "package_version": "1.9",
+        "argos_version": "1.9.0",
+        "from_code": "en",
+        "from_name": "English",
+        "to_code": "zh",
+        "to_name": "Chinese",
+        "links": [
+          "https://argos-net.com/v1/translate-en_zh-1_9.argosmodel"
+        ],
+        "code": "translate-en_zh"
+      },
+      "downloaded_at_utc": "2026-10-26T04:04:14.886422+00:00",
+      "package": {
+        "bytes": 70743021,
+        "sha256": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab"
+      },
+      "files": {
+        "translate-en_zh-1_9/metadata.json": {
+          "bytes": 135,
+          "sha256": "106086bc1b77d2d5c298aa38be69e8e87263eeb4167b4614b08a030c43d31b6a"
+        },
+        "translate-en_zh-1_9/model/config.json": {
+          "bytes": 216,
+          "sha256": "3a8660f12559a223969532ff191e5e6f50d4ff24164517edbd6a5090dc5144c6"
+        },
+        "translate-en_zh-1_9/model/model.bin": {
+          "bytes": 82713318,
+          "sha256": "1a039114d9456b6528fabb65b455b6f156319634a0f984b1f6018f7737d67598"
+        },
+        "translate-en_zh-1_9/model/shared_vocabulary.json": {
+          "bytes": 1367577,
+          "sha256": "c0b6e24705ec0489d5b810de365959c1013aecd644cfeca161b54ea1df6a7dc0"
+        },
+        "translate-en_zh-1_9/README.md": {
+          "bytes": 401,
+          "sha256": "050e546664f0e70d80b6f83aa1da5f04ee85335f4a1b62d1c89184f76100b5dc"
+        },
+        "translate-en_zh-1_9/sentencepiece.model": {
+          "bytes": 806370,
+          "sha256": "872224b85a11edc9d769a94949fd387b67ea85b50708db9f91f32f5b497a9af3"
+        },
+        "translate-en_zh-1_9/stanza/en/tokenize/ewt.pt": {
+          "bytes": 630886,
+          "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+        },
+        "translate-en_zh-1_9/stanza/resources.json": {
+          "bytes": 121862,
+          "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+        }
+      }
+    },
+    "runtime": "CTranslate2 4.5.0 CPU int8 / SentencePiece 0.2.0",
+    "ocr": "RapidOCR 3.0.0 / ONNX Runtime 1.19.2; PP-OCRv3 detection + English PP-OCRv4 recognition; exact hashes in execution.json"
+  },
+  "source": {
+    "revision": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true,
+    "inventory_note": "Full pre-existing worktree inventory retained locally; not published."
+  },
+  "cases": {
+    "plos": {
+      "input": "samples/plos-best-practices-page-2.png",
+      "source_json": "artifacts/local-translation-20261026/plos/source-ocr.json",
+      "translated_json": "artifacts/local-translation-20261026/plos/translated.json",
+      "docx": "artifacts/local-translation-20261026/plos/output.docx",
+      "model_responses": "artifacts/local-translation-20261026/plos/model-responses.json",
+      "execution": "artifacts/local-translation-20261026/plos/execution.json",
+      "render_audit": "artifacts/local-translation-20261026/plos/render-audit.json",
+      "render_pdf": "artifacts/local-translation-20261026/plos/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-translation-20261026/plos/render/page-1.png",
+        "artifacts/local-translation-20261026/plos/render/page-2.png",
+        "artifacts/local-translation-20261026/plos/render/page-3.png"
+      ],
+      "translation_executed": true,
+      "docx_generated": true,
+      "visual_acceptance": "passed_for_translation_export_targets",
+      "translation_quality": "needs_review_known_mistranslations",
+      "observations": [
+        "Three-page single-column Chinese reflow; no overlaps or overflow seen on all three pages.",
+        "111/111 displayed text entries found in DOCX and PDF; includes eight original image-overlay rows.",
+        "Original two columns, blue panels and one-page geometry not retained."
+      ]
+    },
+    "merged-table": {
+      "input": "samples/merged-table-scan.pdf",
+      "source_json": "artifacts/local-translation-20261026/merged-table/source-ocr.json",
+      "translated_json": "artifacts/local-translation-20261026/merged-table/translated.json",
+      "docx": "artifacts/local-translation-20261026/merged-table/output.docx",
+      "model_responses": "artifacts/local-translation-20261026/merged-table/model-responses.json",
+      "execution": "artifacts/local-translation-20261026/merged-table/execution.json",
+      "render_audit": "artifacts/local-translation-20261026/merged-table/render-audit.json",
+      "render_pdf": "artifacts/local-translation-20261026/merged-table/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-translation-20261026/merged-table/render/page-1.png"
+      ],
+      "translation_executed": true,
+      "docx_generated": true,
+      "visual_acceptance": "passed_for_translation_export_targets",
+      "translation_quality": "needs_review_known_mistranslations",
+      "observations": [
+        "One page with a visible native 6x5 predicted grid; 19/19 nonempty predicted cells found in DOCX and PDF.",
+        "Four non-table display rows found in DOCX and PDF; no overlaps or overflow seen.",
+        "Qty mistranslated as 齐哥; OCR symbol and missing-merge errors remain."
+      ]
+    }
+  },
+  "comparisons": {
+    "plos": {
+      "source_text_and_geometry_unchanged": true,
+      "translated_text_and_geometry_unchanged": true,
+      "model_requests_and_responses_unchanged": true,
+      "before_render_audit": "artifacts/local-translation-20261026/before-reflow/plos/render-audit.json",
+      "before_visual_acceptance": "failed_overlap_and_english_raster_text",
+      "after_render_audit": "artifacts/local-translation-20261026/plos/render-audit.json"
+    },
+    "merged-table": {
+      "source_text_and_geometry_unchanged": true,
+      "translated_text_and_geometry_unchanged": true,
+      "model_requests_and_responses_unchanged": true,
+      "before_render_audit": "artifacts/local-translation-20261026/before-reflow/merged-table/render-audit.json",
+      "before_visual_acceptance": "table_visible_before_reflow",
+      "after_render_audit": "artifacts/local-translation-20261026/merged-table/render-audit.json"
+    }
+  },
+  "limitations": [
+    "Visual acceptance covers overlaps, overflow and native table display, not translation accuracy.",
+    "Reflow changes columns, background and page count; not original-layout preservation.",
+    "Published package still contains only eight standalone algorithm examples; no complete server, renderer, adapter or model weights."
+  ],
+  "private_preparation_trials": "Helsinki no-prefix and corrected-prefix probes retained locally; missing target prefix was a configuration error. Those outputs are not used as the layout baseline.",
+  "audit_helper_sha256": "9b528bf066e8accd4ecdc759e33824c59b54eca16da4d35292f322ebcca46852",
+  "runner_sha256": "ee6539623d3e46cfd6e03521e643672317d89f4d34a3f7708868920b4faceb3b",
+  "local_model_adapter_sha256": "23d4f59bad32df4631cc77eb30673fe7a018ee2e9e66cb174c1a3222a1ffab1d",
+  "published_at_utc": "2026-10-26T04:18:32.404072+00:00",
+  "files": {
+    "artifacts/local-translation-20261026/before-reflow/merged-table/execution.json": {
+      "bytes": 58793,
+      "sha256": "057597db6dc4846d103d62ceb11f57a1e467c31b6a0cb267146410400c2086e6"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/model-responses.json": {
+      "bytes": 5914,
+      "sha256": "d382bf9acfe31fb21e0e6430bea8e84306bfa834b17d0ab388e7ffae07e673cc"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/output.docx": {
+      "bytes": 39101,
+      "sha256": "3a243afa3b505888306b7df1997a73de631a2dbeb8bf28805183b8241d066f45"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/render/output.pdf": {
+      "bytes": 32318,
+      "sha256": "624bb8f2f6082735a80486b4e111b2d7e9f1a7ce1b429192bca467737743012e"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/render/page-1.png": {
+      "bytes": 71578,
+      "sha256": "1d4e449e4e9b1fe2113d1b895e0d34efc53692891432ea17d820ff6f0d9b22e9"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/render-audit.json": {
+      "bytes": 1220,
+      "sha256": "da00b8417e1e7b754774ae87d7b633ffaef795604a25cee7a297a4e13b0ea9f5"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/source-ocr.json": {
+      "bytes": 135073,
+      "sha256": "88abb010cc3bc4b4fc869ada085b7dcbe90bb3407dbdc8ee80600deda7ffe97c"
+    },
+    "artifacts/local-translation-20261026/before-reflow/merged-table/translated.json": {
+      "bytes": 176270,
+      "sha256": "760e46d85eebe092ecc854fddecf35c1d7c31ac81d245b1f9b22c8d1ed15bb8c"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/execution.json": {
+      "bytes": 329413,
+      "sha256": "900c9c1dec0cd672b6e233e7da234c6d5fdc469d41a2ad3ad850794e1b8cee51"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/model-responses.json": {
+      "bytes": 71410,
+      "sha256": "6f598af2f1c69f68632c2ae87c5e572ec8bfb6da41a72b1456358ae0b7dc7062"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/output.docx": {
+      "bytes": 114394,
+      "sha256": "68ea8f0a96fc73ea48fd575573f29b81a8f0ee5a23abd219df72cda0dade9db2"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/render/output.pdf": {
+      "bytes": 177130,
+      "sha256": "f24e19679e58a4d6967722aee56078190284e77c632d0347095995634e75fd1a"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/render/page-1.png": {
+      "bytes": 609202,
+      "sha256": "c7b1073822a1ecfc16a6ea85d35c0f14dad62880b4fea175948023530dfbbb45"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/render-audit.json": {
+      "bytes": 1718,
+      "sha256": "001ae6c5edcb37c778ab3ed899d89a974a6b1805ca7007b2015ecca49daf2e8d"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/source-ocr.json": {
+      "bytes": 575268,
+      "sha256": "c06add66d6e3cf47c17c3ff25a4091122565c47df2dfb0f02cb550722031993f"
+    },
+    "artifacts/local-translation-20261026/before-reflow/plos/translated.json": {
+      "bytes": 962938,
+      "sha256": "882af728302c28e791a3aec12cf64ea12dca9894d2ef8308d25f03ff339d2c63"
+    },
+    "artifacts/local-translation-20261026/merged-table/execution.json": {
+      "bytes": 60709,
+      "sha256": "f17ed44d3da519bbcdfbe4db49bc88c057749912915c4f8629eef5f4a17e88c9"
+    },
+    "artifacts/local-translation-20261026/merged-table/model-responses.json": {
+      "bytes": 5914,
+      "sha256": "e671fa6bff7d143645f03e17fd59d5b7fa15ae7121d5fdf4bb431e3b0038dfe2"
+    },
+    "artifacts/local-translation-20261026/merged-table/output.docx": {
+      "bytes": 38595,
+      "sha256": "69f673570d5b49be1c341c1f9b758c3bfdd8e7363cb03fcff682dfe44e460a17"
+    },
+    "artifacts/local-translation-20261026/merged-table/render/output.pdf": {
+      "bytes": 32322,
+      "sha256": "784ab4b22d7f1d559f66d657ef12c067f98b7596492093ce94c7e88e91261f82"
+    },
+    "artifacts/local-translation-20261026/merged-table/render/page-1.png": {
+      "bytes": 73016,
+      "sha256": "2efeed459f79939497f3fb2023ec09421b03660c585c4bdba83d2801dbb89d68"
+    },
+    "artifacts/local-translation-20261026/merged-table/render-audit.json": {
+      "bytes": 1193,
+      "sha256": "d654a3d692c24dd35294317c0a1ca560d914658973fb1fb2c2ce85e9f5e1c6f0"
+    },
+    "artifacts/local-translation-20261026/merged-table/source-ocr.json": {
+      "bytes": 135073,
+      "sha256": "0c8887154fc526e72bdab825fca3c0f2af4eae628eddf5798467b3966ba2b959"
+    },
+    "artifacts/local-translation-20261026/merged-table/translated.json": {
+      "bytes": 176269,
+      "sha256": "66080847830caafb605da569e6adf08e55fd5ca12b415ea8abf82aca688265d0"
+    },
+    "artifacts/local-translation-20261026/model-provenance.json": {
+      "bytes": 2008,
+      "sha256": "a9d4eff0436cf762fcb6f2e14614d7aae1f4b2c4ae4058e329a2d7c956a227f9"
+    },
+    "artifacts/local-translation-20261026/plos/execution.json": {
+      "bytes": 379449,
+      "sha256": "6d3480df2c9344a3adb511cb8d3b6f8143130bc843b8fda4b4ae11c3a75fb681"
+    },
+    "artifacts/local-translation-20261026/plos/model-responses.json": {
+      "bytes": 71406,
+      "sha256": "800f4735dd2311e4d8980583ea0f767421c96d61a0f71d58582f81e31890289b"
+    },
+    "artifacts/local-translation-20261026/plos/output.docx": {
+      "bytes": 40967,
+      "sha256": "4d24d6edcad8ec1ff9fbead5edb9a4edfd8e1eb9d142d648ebed13c7167319df"
+    },
+    "artifacts/local-translation-20261026/plos/render/output.pdf": {
+      "bytes": 138650,
+      "sha256": "0478071fb908d0fdc173df38a2d9cbd1abfef54ac819070830695de06b757b2c"
+    },
+    "artifacts/local-translation-20261026/plos/render/page-1.png": {
+      "bytes": 272066,
+      "sha256": "48b94b30bf66f566d2ed3c804420162979c4cedb084cf6b92cfd9927372af2c7"
+    },
+    "artifacts/local-translation-20261026/plos/render/page-2.png": {
+      "bytes": 274000,
+      "sha256": "92b8598d051a754a0d697980aeda65028904ad865c4ddff178645f1db45d1500"
+    },
+    "artifacts/local-translation-20261026/plos/render/page-3.png": {
+      "bytes": 181344,
+      "sha256": "e3a440c614914c418a13ee3308ba7ac0d34784ff1f32e57fc05fac77e476cd4b"
+    },
+    "artifacts/local-translation-20261026/plos/render-audit.json": {
+      "bytes": 1705,
+      "sha256": "a006888223a268fe063c80c4ce5a8e9b8a1f24be2e4c8c6e7a6a98f997ccb33b"
+    },
+    "artifacts/local-translation-20261026/plos/source-ocr.json": {
+      "bytes": 575270,
+      "sha256": "afab663cda439c99a9a072e09aaf89f7a23c0187c0e4bf9909339a20f2aa1d8a"
+    },
+    "artifacts/local-translation-20261026/plos/translated.json": {
+      "bytes": 962940,
+      "sha256": "3534f3b4e2949fab3349ada4e458f7b3461198c6138dec1a84e84c954850f58e"
+    },
+    "artifacts/local-translation-20261026/visual-review.json": {
+      "bytes": 1108,
+      "sha256": "123c5abf3cf7ef04cb3ebe256fc577cf0a72185bb86969dc0c27324c168609a5"
+    },
+    "samples/merged-table-scan.pdf": {
+      "bytes": 126255,
+      "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "samples/plos-best-practices-page-2.png": {
+      "bytes": 883883,
+      "sha256": "6dc994d0e12f051baef0ac01b468b63ff760415dd544910f1c03155c63b08c66"
+    }
+  }
+}

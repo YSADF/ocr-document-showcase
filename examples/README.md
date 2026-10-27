@@ -2,14 +2,14 @@
 
 [返回首页](../README.md) · [快速开始](../docs/GETTING_STARTED.md) · [代码来源](../CODE_PROVENANCE.json)
 
-本目录从完整项目中选取小范围算法并做独立运行适配，不包含 OCR 服务端、模型加载、完整页面处理或部署系统。来源哈希用于追溯，不使未公开源码变成可复现源码。
+本目录从完整项目中选取小范围算法并做独立运行适配，不包含 OCR 服务端、模型加载、完整页面处理或部署系统。优先阅读 **PDF 路由、字符保护、工程字符评分**，再按需要查看其余片段。来源哈希用于追溯，不使未公开源码变成可复现源码。
 
 | 文件 | 输入 → 输出 | 使用边界 |
 |---|---|---|
 | [pdf_routing.py](pdf_routing.py) | PDF 文字统计 → 转换路由与扫描页风险 | 检查真实 PDF 需 PyMuPDF；文字层存在不代表内容正确 |
-| [copy_fit.py](copy_fit.py) | 文本、框尺寸和字号 → 有界布局候选及 `fits` | 默认估算不能替代真实字体和 Word 渲染 |
 | [literal_guard.py](literal_guard.py) | 文本、调用方确认的片段 → 受保护文本与恢复校验 | 不包含工程符号分类，不能纠正上游 OCR 错字 |
 | [engineering_metrics.py](engineering_metrics.py) | 参考文字、预测及复核状态 → 编辑距离与聚合分数 | 保留 Unicode；不含检测、坐标匹配和整页放行 |
+| [copy_fit.py](copy_fit.py) | 文本、框尺寸和字号 → 有界布局候选及 `fits` | 默认估算不能替代真实字体和 Word 渲染 |
 | [engineering_tolerances.py](engineering_tolerances.py) | 文字片段、位置、方向及表格边界 → 公差关联候选 | 仅组合已观测片段，不推断缺失符号 |
 | [vlm_evidence.py](vlm_evidence.py) | 首次识别与模型候选 → 可追溯证据 | 保留原文和疑点，不凭一致性放行 |
 | [vlm_geometry.py](vlm_geometry.py) | 模型 JSON、图像尺寸 → 坐标与表格几何检查 | 拒绝无效结构；合法框仍需验证内容 |
@@ -18,11 +18,29 @@
 ## 从根目录运行
 
 ```bash
-python -X utf8 -m unittest discover -s tests -v
-python -X utf8 examples/literal_guard.py
+python -S -X utf8 -B examples/literal_guard.py
+python -S -X utf8 -B -m unittest discover -s tests -v
 ```
 
 独立测试和字符保护演示仅使用标准库，不需要 GPU、模型或 API 密钥。Windows 使用 `-X utf8`，让 Python 以 UTF-8 处理文本流，避免输出工程字符时出现默认编码错误。
+
+字符保护示例内置输入 `孔径 Ø 12 ± 0.10 mm`，调用方先确认需要原样保留的范围，再演示如何恢复该片段。它不会调用翻译服务或判断 `Ø` 是否被 OCR 读对。
+
+Python 3.12.14 本地运行输出：
+
+```text
+('Bore Ø 12 ± 0.10 mm', True)
+```
+
+工程字符评分也可直接检查一组参考与预测：
+
+```bash
+python -S -X utf8 -B -c "from examples.engineering_metrics import edit_counts; print(edit_counts('Ø 12', '∅ 12'))"
+```
+
+返回值依次是编辑距离、参考文本中关键字符的错误数。此示例故意使用两个不同的 Unicode 字符，不做兼容归一化或全局纠字。
+
+同一环境的实际输出是 `(1, 1)`：一个字符替换，同时也是一个关键字符错误。
 
 ## PDF 路由和 Copy-fit
 

@@ -56,7 +56,14 @@ git push -u origin codex/showcase-refresh
 ## GitHub 展示信息
 
 - **Name：** `ocr-document-showcase`
-- **Description：** OCR 文档处理精选实现：工程字符复核、表格结构、真实案例与可复算评测。
-- **Topics：** `ocr`, `paddleocr`, `document-ai`, `table-extraction`, `engineering-drawings`, `vlm`, `python`
+- **About / Description：** OCR 文档处理精选实现：公开资料英译中、原页版式 Word 导出与可复算证据。
+- **Topics：** `ocr`, `paddleocr`, `machine-translation`, `document-processing`, `table-extraction`, `engineering-drawings`, `python`, `docx`, `evaluation`
+- **项目短介绍：** 面向处理扫描文档与工程图的开发者，以 8 个独立算法、公开资料英译中和保留原页布局的真实 Word 结果，展示识别、翻译、结构与排版的分项核查。保留误译和历史失败对照；默认核验只需 Python 标准库，完整服务与模型不公开。
+
+以上展示信息可手动复制到 GitHub。2026-10-27 的原文与中文校对版按用户授权，通过独立公开包、发布分支与 PR 更新首页；检查通过后合入 `main`。实际发布状态以 GitHub 提交及 PR 为准。此次不修改仓库设置、不发布 Release，完整业务项目及其 Git 历史不参与发布。
+
+### 可选 Social Preview
+
+使用简洁的浅色底封面：标题 **OCR Document Showcase**，副标题 **少量代码 · 真实输入输出 · 可复算结果**。中心放同一公开表格的输入与实际输出缩略图，标清实验日期及后端；页脚使用 **PDF routing / Character checks / Document verification**。不要放未经验证的准确率、仿制产品界面或第三方 Logo。封面是导航素材，完整失败信息仍保留在案例中。
 
 公开代码、文档和素材各自沿用 [分项许可](../LICENSE.md)。未公开的完整源码不在授权范围内。

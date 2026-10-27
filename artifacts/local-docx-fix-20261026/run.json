@@ -1,0 +1,269 @@
+{
+  "schema_version": "local-showcase-evidence-v1",
+  "run_date": "2026-10-26",
+  "timezone": "Asia/Shanghai",
+  "scope": "Fresh OCR and DOCX export after private renderer fixes, using the same two inputs, CPU models and OCR parameters. Visual acceptance is limited to the stated export targets, not source fidelity or Word editing.",
+  "environment": {
+    "host_cpu": "AMD Ryzen 9 9950X",
+    "host_os": "Windows / Docker Desktop WSL2 Linux AMD64",
+    "container_limits": {
+      "cpus": 4,
+      "memory_gib": 8
+    },
+    "python": "3.11.16",
+    "rapidocr": "3.0.0",
+    "onnxruntime": "1.19.2",
+    "ocr_image_id": "sha256:de652288d3f6d768d5e988d4ac4688dea62830505acadb35c86c6e4b127d80ea",
+    "network": "Inference and rendering both used docker --network none; image/model preparation required Internet access.",
+    "layout": "geometry",
+    "table": "OpenCV grid fallback; RapidTable disabled",
+    "vlm": "off",
+    "docx_renderer": "semantic_layout",
+    "render_engine": "LibreOffice 7.4.7.2",
+    "render_poppler": "22.12.0",
+    "render_pdf2image": "1.17.0",
+    "render_dpi": 144,
+    "render_image_id": "sha256:7c5c0912763ff820808b623bd273156a19ece6d0556202ac0d46ae891800813f",
+    "render_helper": "Unmodified bundled render_docx.py executed in the isolated LibreOffice container",
+    "render_helper_sha256": "8b48b8f05f30cc6c7b5a7bd8e18e7ea93a61aec1ea601026a3358b2105f0903a",
+    "input_rasterization": "PLOS page 2: Poppler 26.07.0, 200 DPI RGB; reference text is separate from OCR",
+    "base_ocr_image_id": "sha256:44092d2a59d3a9669b599e8f0644bbb188307c013c0868d8055409d166fcab5f",
+    "image_change": "Only render/semantic_layout_word.py is copied over the previous inference image; model/dependency/font assets are unchanged."
+  },
+  "models": {
+    "actual_detection": "multi_PP-OCRv3_det_infer.onnx",
+    "actual_recognition": "en_PP-OCRv4_rec_infer.onnx",
+    "prepared_assets": {
+      "det_multi": {
+        "file": "multi_PP-OCRv3_det_infer.onnx",
+        "bytes": 2421639,
+        "sha256": "5475c6c7f4d84a6c4f32241b487435d59f126a40c023387af99732258844cdc3",
+        "matches_locked_manifest": true
+      },
+      "cls_ch": {
+        "file": "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+        "bytes": 585532,
+        "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+        "matches_locked_manifest": true
+      },
+      "rec_ch": {
+        "file": "ch_PP-OCRv4_rec_infer.onnx",
+        "bytes": 10857958,
+        "sha256": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+        "matches_locked_manifest": true
+      },
+      "rec_en": {
+        "file": "en_PP-OCRv4_rec_infer.onnx",
+        "bytes": 7653044,
+        "sha256": "e8770c967605983d1570cdf5352041dfb68fa0c21664f49f47b155abd3e0e318",
+        "matches_locked_manifest": true
+      }
+    },
+    "identity_note": "Actual ONNX assets and their SHA-256 values identify this run. The raw OCR response also carries default Paddle model_files audit entries marked missing; those are not the models used."
+  },
+  "source": {
+    "revision": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true,
+    "executed_file_hashes": {
+      "pipeline/orchestrator.py": "99c63b4c562671cc890664a0a9e9ecfe203730d555ba4ee27707bbf76f66eebb",
+      "pipeline/execution.py": "39482dc8080d4e48cd0b35ac077a096b4ce3b671fd9932f45554c8257ea7e0c0",
+      "pipeline/pdf_processor.py": "430edeff0fa1e8e75a2b514f12470b8012ffaddb823bc0ff781ac668b216fc79",
+      "pipeline/image_processor.py": "37a4906a15c1649ee0307a838ba6c1f20d8a7030d82b3b1b7785c02f651da948",
+      "pipeline/page_processor.py": "38e466c0840ccc0e0692074f3725a922080911b000f5a6d3827cd3a766cc2c67",
+      "pipeline/render_dispatch.py": "6579f7510918d199f44b9d3612d36797592bd63d60ebd59ffdece06ebe37f1be",
+      "ocr_engine/engine.py": "197030cf8bdc555f9300aba5874f52d881c177b35638df8a0aa10caf4dd3a6b3",
+      "ocr_engine/backends/rapidocr_backend.py": "b71777d6fde29ebd635fa436a9af94983314750b7ea6243099e675a00a332315",
+      "render/docx_dispatch.py": "aa4b8ac0029cd345dfc936e6606a3e7caed88d4e0a97f882f8b5858d8d65ef9c",
+      "render/semantic_layout_word.py": "ad8634faf0ea6b594a33d7b796e308174662130e2bebfdc79f4f60ba549e2bc6",
+      "render/semantic_layout_primitives.py": "40f8c923d8d3927f42f0558b4c5086d0eb7b98a433e451b5f647c362e9e8a284",
+      "render/docx_text_layout.py": "328e9780b7e7411e463ecfab343d3c52bfdbdd8e0d96c0c305cc1dd6a7f16d51",
+      "settings.py": "e972a24f996a0943e91541d3d50432411884fc8e6eaebe59976419875d7b1250",
+      "requirements.txt": "3ef14e6678ef1751dd8605a6e017c64ca5a7bb1357d053f2b7654f6494bee112",
+      "configs/rapidocr_onnx_models.json": "264dbcff1582869a042611a9b39779c91ddbbc1a387b6c08f1d7ce312ed5fc03"
+    },
+    "note": "Full business source remains private; only the existing eight standalone algorithms are public."
+  },
+  "measurement_note": "Development reruns of the same fixed inputs. Timing is diagnostic, not a new accuracy sample or performance benchmark. The original failure evidence remains byte-identical.",
+  "cases": {
+    "plos": {
+      "input": "samples/plos-best-practices-page-2.png",
+      "json": "artifacts/local-docx-fix-20261026/plos/output.json",
+      "docx": "artifacts/local-docx-fix-20261026/plos/output.docx",
+      "recognized_text": "artifacts/local-docx-fix-20261026/plos/recognized.txt",
+      "execution": "artifacts/local-docx-fix-20261026/plos/execution.json",
+      "structure_report": "artifacts/local-docx-fix-20261026/plos/docx-structure.json",
+      "render_pdf": "artifacts/local-docx-fix-20261026/plos/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-docx-fix-20261026/plos/render/page-1.png"
+      ],
+      "ocr_executed": true,
+      "docx_generated": true,
+      "renderer_executed": true,
+      "text_line_count": 103,
+      "visual_acceptance": "passed_for_export_targets",
+      "observations": [
+        "One actual LibreOffice page inspected in full at original resolution by two assistants: columns, headings and footer no longer overlap. Both top overlay rows and all six lower overlay rows remain visible after background cleaning and layering.",
+        "All 103 nonempty block OCR lines occur in the DOCX and the rendered PDF with whitespace-only matching. This is not source-document accuracy or proof of correct reading order.",
+        "The source-fit diagnostic passed for 111 source rows. Font sizes and weights still vary, some text is about 5 pt, the original continuous blue background is only partially retained, and one fragmented source row has unnatural spacing.",
+        "OCR text and geometry are unchanged from the first CPU run. Full source fidelity, missing original page numbering, complete editability and Microsoft Word rendering are outside this passed repair scope."
+      ],
+      "runtime_errors": [],
+      "input_kind": [
+        "image"
+      ],
+      "render_pages": 1,
+      "review_scope": "All exported pages inspected by assistants at full-page and detail scale against the same input. This is not independent human or Microsoft Word acceptance.",
+      "acceptance_targets": [
+        "No overlapping OCR text rows",
+        "Source-image overlays remain visibly present",
+        "No cropped or hidden exported text"
+      ],
+      "render_audit": "artifacts/local-docx-fix-20261026/plos/render-audit.json",
+      "source_fit": {
+        "passed": true,
+        "tested_source_rows": 111,
+        "failures": []
+      }
+    },
+    "merged-table": {
+      "input": "samples/merged-table-scan.pdf",
+      "json": "artifacts/local-docx-fix-20261026/merged-table/output.json",
+      "docx": "artifacts/local-docx-fix-20261026/merged-table/output.docx",
+      "recognized_text": "artifacts/local-docx-fix-20261026/merged-table/recognized.txt",
+      "execution": "artifacts/local-docx-fix-20261026/merged-table/execution.json",
+      "structure_report": "artifacts/local-docx-fix-20261026/merged-table/docx-structure.json",
+      "render_pdf": "artifacts/local-docx-fix-20261026/merged-table/render/output.pdf",
+      "render_pngs": [
+        "artifacts/local-docx-fix-20261026/merged-table/render/page-1.png"
+      ],
+      "ocr_executed": true,
+      "docx_generated": true,
+      "renderer_executed": true,
+      "text_line_count": 23,
+      "visual_acceptance": "passed_for_export_targets",
+      "observations": [
+        "One actual LibreOffice page inspected in full at original resolution by two assistants: the native 6-by-5 grid and predicted cell contents are visible, and both footer rows are separated.",
+        "All 23 nonempty OCR block lines and all 19 nonempty predicted cell texts occur in both the DOCX and rendered PDF with whitespace-only matching. The previous PDF contained 4 of 23 block lines and none of the 19 nonempty cell texts.",
+        "OCR text and geometry are unchanged: 30 predicted cells versus 21 reference cells, 13/21 exact cell texts, 16/21 anchor/spans, 24/203 character edits, and all five reference merges missed.",
+        "Missing quantities, engineering-symbol errors, absent merge spans and differing header colors remain. Visible native cells do not establish Microsoft Word editing behavior or full layout fidelity."
+      ],
+      "runtime_errors": [],
+      "input_kind": [
+        "scan_pdf"
+      ],
+      "render_pages": 1,
+      "review_scope": "All exported pages inspected by assistants at full-page and detail scale against the same input. This is not independent human or Microsoft Word acceptance.",
+      "table_score": "artifacts/local-docx-fix-20261026/merged-table/table-score.json",
+      "acceptance_targets": [
+        "The native table and predicted cell contents are visible",
+        "Footer rows do not overlap",
+        "No cropped or hidden exported text"
+      ],
+      "render_audit": "artifacts/local-docx-fix-20261026/merged-table/render-audit.json",
+      "source_fit": {
+        "passed": true,
+        "tested_source_rows": 4,
+        "failures": []
+      }
+    }
+  },
+  "files": {
+    "artifacts/local-20261026/run.json": {
+      "bytes": 11421,
+      "sha256": "752239b1d976175edaa5a83dcd5829bad54361b7ecde80484e18a349a18daa7c"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/docx-structure.json": {
+      "bytes": 133,
+      "sha256": "5e1123a48b51e86c31b2e625a360907c1ccc621d26b63479a31de9f1a2fc10ac"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/execution.json": {
+      "bytes": 18768,
+      "sha256": "6f6828654f2a31c07c849c3bcffd225995e8a88d19d2fe41b4a101e88eec9335"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/output.docx": {
+      "bytes": 39016,
+      "sha256": "649e192e0deda79b6d638fe09becb0e9800e88a498d043aadf56ba39ca4023d8"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/output.json": {
+      "bytes": 135074,
+      "sha256": "2ad599deb7f793986c67174ccbd65e0e87ec45145a8938a5395a32152c3a2e1a"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/recognized.txt": {
+      "bytes": 438,
+      "sha256": "55882ebb3b0779d3aa110f85366e25f796299a866962ea87c4e255d5a8a1107e"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/render/output.pdf": {
+      "bytes": 24855,
+      "sha256": "83697ca705ea848027d1df5a6236254d077ea46c008a6ea4652f8557291d254e"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/render/page-1.png": {
+      "bytes": 69392,
+      "sha256": "bfa10cf66ffa6f85155774d67a63517031f8be35b2d68396aa499b3d7df4ebf4"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/render-audit.json": {
+      "bytes": 4371,
+      "sha256": "bc6168381859a5bf19621ea4eaffafbf732ee473066ab3bb158cd22f402f18d1"
+    },
+    "artifacts/local-docx-fix-20261026/merged-table/table-score.json": {
+      "bytes": 4151,
+      "sha256": "ca99b2d9172d2490ab828a52d664f761d8f09e323147b5c7f390c224f29f0792"
+    },
+    "artifacts/local-docx-fix-20261026/plos/docx-structure.json": {
+      "bytes": 133,
+      "sha256": "6cad6d46a652a082db29b3d24e45f6f60b1b6f4bef90b6863a5bf2dde378d2da"
+    },
+    "artifacts/local-docx-fix-20261026/plos/execution.json": {
+      "bytes": 19910,
+      "sha256": "405c14154ce256d6423f00d83f039c22bc41f3b77dbc21984d7e3ede828d2215"
+    },
+    "artifacts/local-docx-fix-20261026/plos/output.docx": {
+      "bytes": 44642,
+      "sha256": "fc9ea484bf1f06218eb735e4772f7c4de2a3c486e9d4c738cb2f01420dce82ab"
+    },
+    "artifacts/local-docx-fix-20261026/plos/output.json": {
+      "bytes": 575270,
+      "sha256": "935670f279af3e13ee0e981d9ab99c799a6797f432d50526537058e0189dcace"
+    },
+    "artifacts/local-docx-fix-20261026/plos/recognized.txt": {
+      "bytes": 5522,
+      "sha256": "d6aa81a28b64df13c20164997b81f990088cb78b234c3dfc1249ee9af61c69e7"
+    },
+    "artifacts/local-docx-fix-20261026/plos/render/output.pdf": {
+      "bytes": 42108,
+      "sha256": "85c75d4a6459160db85b409145644678616ff1e80a706a3bab8ce02ed17a92bb"
+    },
+    "artifacts/local-docx-fix-20261026/plos/render/page-1.png": {
+      "bytes": 489328,
+      "sha256": "05b2daae25c3714902140d15b01e50ab83962ef9b5bd9ca57b0730c4ce033a79"
+    },
+    "artifacts/local-docx-fix-20261026/plos/render-audit.json": {
+      "bytes": 5089,
+      "sha256": "51c926ad989c3b52ba94bbfa1caecee18d08b570a564ea5997acb48d3a8f7164"
+    },
+    "artifacts/merged-table-ground-truth.json": {
+      "bytes": 6772,
+      "sha256": "c5488d2e03f8c37cec559a606965128aad1005bebcfd5854236b753a8b0986ac"
+    },
+    "samples/merged-table-scan.pdf": {
+      "bytes": 126255,
+      "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "samples/plos-best-practices-page-2-reference.txt": {
+      "bytes": 6114,
+      "sha256": "af6543ec95c9d2e5f376ce7a15876e06b428f7de2fdcf0c0a54f4e49ddc4ae9c"
+    },
+    "samples/plos-best-practices-page-2.png": {
+      "bytes": 883883,
+      "sha256": "6dc994d0e12f051baef0ac01b468b63ff760415dd544910f1c03155c63b08c66"
+    },
+    "samples/plos-best-practices-source.json": {
+      "bytes": 3105,
+      "sha256": "6e93563b5f4663f6b6a70a004b9853e4a644e834f20d0e56ba32d54aa6d2a005"
+    },
+    "samples/plos-best-practices-source.pdf": {
+      "bytes": 183769,
+      "sha256": "8e85cf1b7bc9738f152e16709105b8951cecbe8621b55933d17ecdf63f75ea47"
+    }
+  },
+  "previous_run": "artifacts/local-20261026/run.json"
+}
