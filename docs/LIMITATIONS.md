@@ -2,7 +2,7 @@
 
 ## 当前中文文档的范围
 
-[当前中文文档](../cases/reviewed-translation-20261027.md)由保存的机器译文和后续文档内容修订形成，原始模型结果单独保留。最新表格已补入四处“合格／待复核”状态，实际渲染可见；[逐区域内容记录](../artifacts/status-translation-20261027/semantic-coverage.json)区分需要翻译的文字与保留的标识、数值。DN 标签与数量 `2／1` 仍在背景中，数量对应的原始 OCR 格仍为空。表格页脚另有一处 DOCX 换行编辑。它不是原生 Word 表格，Microsoft Word 交互编辑尚未验证；两个固定单页的检查也不代表模型准确率或通用翻译保证。下文历史误译／失败结论继续对应各自冻结版本。
+[当前中文文档](../cases/reviewed-translation-20261027.md)由保存的机器译文和后续文档内容修订形成，原始模型结果单独保留。最新表格为 1 个真正的 Word 表格，21 个单元格与 5 处合并均已核对，格内文字、数量和边框不再依赖背景图片。原始 OCR 为空的数量 `2／1` 按原图补入文档，不能当作识别模型已正确输出。PLOS 仍为原页背景加定位文字。[原生结构及内容检查](../artifacts/native-table-20261027/semantic-coverage.json)只对应这个固定样本；字体与局部字号仍有差异，Microsoft Word 交互编辑未验收。下文历史误译／失败结论继续对应各自冻结版本。
 
 [首页](../README.md) · [运行指南](GETTING_STARTED.md) · [评测口径](../EVALUATION.md) · [本次验证](VALIDATION.md)
 

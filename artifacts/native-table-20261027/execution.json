@@ -1,0 +1,116 @@
+{
+  "application_code_modified": false,
+  "public_artifacts_modified": false,
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "ground_truth_used_for_build": false,
+  "method": "SemanticLayoutWordBuilder._add_floating_table with current predicted cells; artifact-only manual formatting",
+  "baseline_docx_sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4",
+  "baseline_state_sha256": "4518be53b669a8f3539f929d5775807c64cc7786246bc05afe1a86d9769de625",
+  "source_image_sha256": "8def25b35f81d5b2d779c9c393e1cb8db85137fdbf7b69625df333dc8e789fa7",
+  "output_sha256": "79801a412c457efe8066a20c1ea8a1acad4631dec0ae7752e56b594b2236065c",
+  "helper_hashes": {
+    "render/semantic_layout_word.py": "14cbda9043b768206b570542d33ff7991c17777b3a578f95ccfa2a1f11ca1c66",
+    "render/semantic_word.py": "224c8513254eba2bbfa90f979397b8d2f8ad26a968c43265b345237598bb0eb2",
+    "render/semantic_layout_primitives.py": "40f8c923d8d3927f42f0558b4c5086d0eb7b98a433e451b5f647c362e9e8a284",
+    "render/word.py": "a25c647e268ee8f460ffa37c160f6137721e4574bd4206886f8783f3c1f92e29",
+    "render/docx_layout_utils.py": "550433d79e66e0f622b0db12816d195cb755b5756e487f9fedf14c29863121c3",
+    "render/faithful_parts/font_embedding.py": "3f5983251c882185a622bd874b01f164f9770f3667a4d91ecc1ddbd9370708aa"
+  },
+  "removed_table_frames": [
+    "工程检查记录",
+    "项目",
+    "规格",
+    "数量",
+    "结果",
+    "备注",
+    "阀体",
+    "Ø 50 ± 0.10 mm",
+    "角度 90° ± 0.5°",
+    "泵",
+    "型号 P001 / 1 件",
+    "孔径 Ø 12 mm",
+    "汇总：已检验 4 件",
+    "合格",
+    "待复核",
+    "合格",
+    "3 合格 / 1 待复核"
+  ],
+  "retained_outside_frames": [
+    "含合并单元格的输入表格",
+    "自制输入与真值标注 | 并非 OCR 结果",
+    "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0目标：保留文字、合并单元格及可编辑文档结构。"
+  ],
+  "removed_background_images": 1,
+  "stale_html_ignored_in_artifact_view": true,
+  "historical_html_sha256": "de3aa591793c1f9cfc7b29a8364bad11860dc80814211873c697d4897161aa8c",
+  "source_inventory_unchanged": true,
+  "original_translation_metadata_unchanged": true,
+  "all_original_cell_source_text_unchanged": true,
+  "font_embedding": {
+    "faces": [
+      {
+        "family": "Noto Sans CJK SC",
+        "bold": false,
+        "italic": false,
+        "file": "NotoSansCJKsc-Regular.ttf",
+        "collection_index": 0,
+        "fs_type": 0,
+        "subsetted": true,
+        "bytes": 694960
+      }
+    ]
+  },
+  "font_files": {
+    "NotoSansCJKsc-Bold.ttf": "208dc1942c4d4058be24a8e75bb1e1fb1cc3843efed3aee81056d06d738b9fdb",
+    "NotoSansCJKsc-Regular.ttf": "a9c3ee63969ebbc32b634ec5d07989c1799f8cf8e6702648678b66f738d3859e",
+    "NotoSerifCJKsc-Bold.ttf": "c54a416cfe7ba07ca430ebd030d279f200c5f6909b850781bdd572592d3da74d",
+    "NotoSerifCJKsc-Regular.ttf": "3c71ed24cb9938245b2f6b24ae5ccc701867a0cd6bf8bb38062d4497f67f4743"
+  },
+  "manual_transcriptions": [
+    {
+      "row": 2,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "2",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        711,
+        1261,
+        879
+      ],
+      "not_model_prediction": true
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "1",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        879,
+        1261,
+        1048
+      ],
+      "not_model_prediction": true
+    }
+  ],
+  "first_output_sha256": "1d7986d07f2e3e8a90ba027985d78c2a9e308470a4ae69d033f2a4741fd3620f",
+  "artifact_anchor_correction": {
+    "reason": "First independent LibreOffice PDF placed native grid 5.88 pt left of source geometry.",
+    "field": "w:tblPr/w:tblpPr/@w:tblpX",
+    "before_twips": 956,
+    "after_twips": 1074,
+    "compensation_pt": 5.9,
+    "application_helper_modified": false,
+    "grid_width_and_cell_text_unchanged": true,
+    "first_diagnostic_audit_sha256": "bce04c0e434f8ba7075c29a57ede26f879cc7a3462d0a56141bf56f1b2cbf854",
+    "first_diagnostic_published": false
+  }
+}

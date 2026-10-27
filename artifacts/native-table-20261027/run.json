@@ -1,0 +1,166 @@
+{
+  "schema_version": "artifact-native-table-rebuild-v1",
+  "date": "2026-10-27",
+  "model_or_ocr_executed": false,
+  "ground_truth_used_for_build": false,
+  "source_table": "Existing predicted 21 cells / 5 merges from source-fourth after-render state",
+  "method": "SemanticLayoutWordBuilder._add_floating_table with current predicted cells; artifact-only manual formatting",
+  "application_helpers": {
+    "render/semantic_layout_word.py": "14cbda9043b768206b570542d33ff7991c17777b3a578f95ccfa2a1f11ca1c66",
+    "render/semantic_word.py": "224c8513254eba2bbfa90f979397b8d2f8ad26a968c43265b345237598bb0eb2",
+    "render/semantic_layout_primitives.py": "40f8c923d8d3927f42f0558b4c5086d0eb7b98a433e451b5f647c362e9e8a284",
+    "render/word.py": "a25c647e268ee8f460ffa37c160f6137721e4574bd4206886f8783f3c1f92e29",
+    "render/docx_layout_utils.py": "550433d79e66e0f622b0db12816d195cb755b5756e487f9fedf14c29863121c3",
+    "render/faithful_parts/font_embedding.py": "3f5983251c882185a622bd874b01f164f9770f3667a4d91ecc1ddbd9370708aa"
+  },
+  "baseline_docx_sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4",
+  "baseline_state_sha256": "4518be53b669a8f3539f929d5775807c64cc7786246bc05afe1a86d9769de625",
+  "source_image_sha256": "8def25b35f81d5b2d779c9c393e1cb8db85137fdbf7b69625df333dc8e789fa7",
+  "baseline_files_unchanged": true,
+  "images": {
+    "pp-v5-showcase:translation-zh-final": "sha256:629bc5804ff30b28e89a9c109c2ff3816914edad8b121c8f3fce9494947b3561",
+    "pp-v5-showcase-render:local": "sha256:7c5c0912763ff820808b623bd273156a19ece6d0556202ac0d46ae891800813f"
+  },
+  "execution": [
+    {
+      "stage": "native_build",
+      "environment": "Docker --network none --cpus=4 --memory=10g, /src source-fourth readonly, baseline and fonts readonly, cwd=/work private task directory",
+      "command": "python /work/build_native.py",
+      "exit_code": 0
+    },
+    {
+      "stage": "first_render",
+      "environment": "Docker --network none --cpus=2 --memory=4g; renderer and static fonts readonly",
+      "command": "python /renderer/render_docx.py /work/output.docx --output_dir /work/render --emit_pdf --dpi 144",
+      "exit_code": 0
+    },
+    {
+      "stage": "first_native_audit",
+      "command": "python /work/audit_native.py",
+      "environment": "Docker --network none",
+      "exit_code": 0
+    },
+    {
+      "stage": "anchor_compensation",
+      "command": "bundled Python compensate_anchor.py",
+      "purpose": "Measured 5.88 pt leftward native-grid offset; only tblpX +118 twips",
+      "exit_code": 0
+    },
+    {
+      "stage": "second_render",
+      "environment": "Same isolated render image and flags; /work is second/",
+      "command": "python /renderer/render_docx.py /work/output.docx --output_dir /work/render --emit_pdf --dpi 144",
+      "exit_code": 0
+    },
+    {
+      "stage": "second_native_audit",
+      "command": "python /work/audit_native.py",
+      "environment": "Docker --network none; /work is second/",
+      "exit_code": 0
+    }
+  ],
+  "result": {
+    "native_tables": 1,
+    "logical_rows": 6,
+    "grid_columns": 5,
+    "physical_anchor_cells": 21,
+    "ooxml_tc_elements": 22,
+    "merge_groups": 5,
+    "cell_local_pdf_matches": 21,
+    "pages": 1,
+    "outside_frames": 3,
+    "images": 0,
+    "source_to_rendered_table_bbox_delta_pt": [
+      0.0182,
+      0.5,
+      0.0364,
+      0.5455
+    ]
+  },
+  "scope": "Native Word document artifacts only; application code and all original eight public snippets unchanged.",
+  "final_document": "output.docx",
+  "final_preview": "render/page-1.png",
+  "baseline_document": "../status-translation-20261027/merged-table/output.docx",
+  "source_image": "../../assets/merged-table-input.png",
+  "private_run_record_sha256": "07e3040fd6a1125e13bf5fabf5d3f148af69ac027175f406d79691f04d424a4d",
+  "raw_record_sha256": {
+    "targets.json": "d530f70257ad923adae2bb224327d5810a444fade7c59ae601e336f378d1499d",
+    "execution.json": "5636faaf7c159e3274f1b20cc6080a0f716d1c425f84d66eb259d35bab66d98a",
+    "visual-review.json": "51f550067724ebeb8e8c0917a9f38463afcac9e1a42f9920b6586596d7dbf69c",
+    "native-audit.json": "9db6d04532a430001f225afd2303b431a2cb6444a6ad10bcf3c2bed5340f878e"
+  },
+  "record_adaptation": "Public JSON source paths omit the local showcase/ prefix. The unpublished first diagnostic is identified by hash instead of a private relative path; linked file hashes reflect these public record copies. Measurements and acceptance results are unchanged.",
+  "manual_edits": [
+    {
+      "row": 2,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "2",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        711,
+        1261,
+        879
+      ],
+      "not_model_prediction": true
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "1",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        879,
+        1261,
+        1048
+      ],
+      "not_model_prediction": true
+    }
+  ],
+  "acceptance_scope": "Native structure, cell-local text and one-page LibreOffice rendering. No interactive Microsoft Word edit test.",
+  "files": {
+    "execution.json": {
+      "bytes": 4469,
+      "sha256": "06300d50967fd76952e28fd3d3c0830b0e20a4cd5588525d504d4500ff1ff4f0"
+    },
+    "native-audit.json": {
+      "bytes": 12780,
+      "sha256": "adedef69070fad10bc168799979a1f86adba8dfccdb202e424d016d92fc71a02"
+    },
+    "output.docx": {
+      "bytes": 124394,
+      "sha256": "79801a412c457efe8066a20c1ea8a1acad4631dec0ae7752e56b594b2236065c"
+    },
+    "render/output.pdf": {
+      "bytes": 18442,
+      "sha256": "94a42a4b521c5de6a2c495de12df620939b2bea0a26af4213ef1dbbcf9ce936b"
+    },
+    "render/page-1.png": {
+      "bytes": 87658,
+      "sha256": "325e32e089f2d8205ddae18081437322dfea2250e6ab15a45c0146495feae1b2"
+    },
+    "semantic-coverage.json": {
+      "bytes": 20370,
+      "sha256": "508bd14ae844cd98c40637b6a6e964441922dc1d312948b20284d45278593afb"
+    },
+    "structure-checks.json": {
+      "bytes": 25124,
+      "sha256": "81ddbe07a2a70d6158fac134dca428a7cb7b47c20a013f9de609cdfa27ee720c"
+    },
+    "targets.json": {
+      "bytes": 6978,
+      "sha256": "34ddbf249ace858ced7edb37a12b46219c69614a50a784bc978532ceb6c08980"
+    },
+    "visual-review.json": {
+      "bytes": 1876,
+      "sha256": "51f550067724ebeb8e8c0917a9f38463afcac9e1a42f9920b6586596d7dbf69c"
+    }
+  }
+}

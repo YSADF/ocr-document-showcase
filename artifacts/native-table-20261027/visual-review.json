@@ -1,0 +1,48 @@
+{
+  "review_date": "2026-10-27",
+  "reviewer": "authoring agent",
+  "method": "Opened full resolution canonical LibreOffice-rendered page-1.png at 144 DPI and compared all cells and original source PNG.",
+  "renderer": "Isolated Docker pp-v5-showcase-render:local, no network, canonical render_docx.py",
+  "pages": 1,
+  "png": "render/page-1.png",
+  "png_sha256": "325e32e089f2d8205ddae18081437322dfea2250e6ab15a45c0146495feae1b2",
+  "visible_cell_count": 21,
+  "merge_groups_visible": 5,
+  "all_target_strings_visible": true,
+  "all_21_cell_pdf_checks_passed": true,
+  "numbers_2_and_1_native_and_visible": true,
+  "quantities_origin": "Explicit artifact-only manual transcription from source image; original OCR remains empty.",
+  "engineering_symbols_checked": [
+    "Ø 50 ± 0.10 mm",
+    "角度 90° ± 0.5°",
+    "孔径 Ø 12 mm"
+  ],
+  "statuses_checked": [
+    "合格",
+    "待复核",
+    "合格",
+    "3 合格 / 1 待复核"
+  ],
+  "no_observed_overlap": true,
+  "no_observed_clipping": true,
+  "no_observed_english_status_ghosts": true,
+  "header_fill": "E3E8EE, native cell shading",
+  "borders": "Native Word table borders",
+  "body_font": "Noto Sans CJK SC, 10.5 pt",
+  "table_title_font_pt": 12,
+  "outside_table_frames_retained": 3,
+  "old_table_frames_removed": 17,
+  "embedded_raster_images": 0,
+  "source_to_rendered_table_bbox_delta_pt": [
+    0.0182,
+    0.5,
+    0.0364,
+    0.5455
+  ],
+  "limitations": [
+    "This is manual artifact editing, not another OCR or model translation run.",
+    "Native OOXML structure and LibreOffice rendering were verified; interactive Microsoft Word editing was not exercised.",
+    "The existing faithful strict-pass report is not reused as native-table acceptance.",
+    "Layout after arbitrary user edits or another office application is not guaranteed."
+  ]
+}

@@ -76,6 +76,10 @@ pdftoppm -f 2 -l 2 -singlefile -r 200 -png samples/plos-best-practices-source.pd
 
 DOCX 内嵌 Noto 字体子集；推理与独立渲染使用同一批已准备的静态 TTF，未另创字体嵌入算法。上游为 [notofonts/noto-cjk](https://github.com/notofonts/noto-cjk/tree/985fa52c81c1d6692ccdd82bc3656e8fb932fd89)，固定提交 `985fa52c81c1d6692ccdd82bc3656e8fb932fd89`。保存的[字体来源与 SHA-256](artifacts/local-faithful-20261027/font-provenance.json)记录上游文件、静态实例及权重；[Sans OFL](artifacts/local-faithful-20261027/OFL-NotoSansCJK.txt)与[Serif OFL](artifacts/local-faithful-20261027/OFL-NotoSerifCJK.txt)随产物提供。完整字体文件和模型权重不单独纳入公开包。
 
+## 2026-10-27 原生 Word 表格产物
+
+`artifacts/native-table-20261027/` 继续使用同一自制 CC0 表格与已有中文内容，生成真正的 Word 单元格、边框及合并关系。原图中的数量 `2／1` 补录为文档文字，原始 OCR 记录保持空值；[逐格数据](artifacts/native-table-20261027/targets.json)与[执行记录](artifacts/native-table-20261027/execution.json)说明变化。这是助手对保存文档的格式与内容修订，不是模型新输出。输入沿用 CC0 1.0，嵌入字体沿用上述 Noto OFL；未引入新资料，旧产物不覆盖。
+
 ## 2026-10-27 表格状态补译产物
 
 `artifacts/status-translation-20261027/` 是上述自制 CC0 表格的文档派生版本，补入四处中文状态并重新嵌入同源 Noto 字体、独立渲染。源图与原始模型结果不变，没有新增资料或模型推理。输入继续适用 CC0 1.0，字体继续适用前述 OFL；[逐项内容变化](artifacts/status-translation-20261027/merged-table/corrections.json)与[区域复核](artifacts/status-translation-20261027/semantic-coverage.json)记录助手对保存产物的修改，不作为模型输出。

@@ -1,11 +1,11 @@
 # 中文 Word 案例（2026-10-27）
 
-对照英文原页，查看双栏论文和合并表格的最终中文文档。原始 OCR、模型响应和历史评分单独保存在[模型实测](faithful-translation-20261027.md)中；PLOS 的生成参数与内容版本见[导出记录](../artifacts/reviewed-translation-20261027/run.json)。表格已补入四处检测状态，见[本次记录](../artifacts/status-translation-20261027/run.json)和[逐区域内容检查](../artifacts/status-translation-20261027/semantic-coverage.json)。
+对照英文原页，查看双栏论文和原生 Word 表格。原始 OCR、模型响应和历史评分单独保存在[模型实测](faithful-translation-20261027.md)中；最终文档是保存结果的后续内容与格式修订，不作为模型新输出。
 
 | 输入与场景 | 中文产物 | 核查结果 |
 |---|---|---|
-| [PLOS 第 2 页](../samples/plos-best-practices-page-2.png)：双栏科学计算论文，包含编号摘要框、软件名与引用 | [中文 DOCX](../artifacts/reviewed-translation-20261027/plos/output.docx) · [译文 JSON](../artifacts/reviewed-translation-20261027/plos/reviewed.json) · [预览 PDF](../artifacts/reviewed-translation-20261027/plos/render/output.pdf) | 一页双栏、蓝底及完整页脚；严格审计 0 违规 |
-| [自制表格](../assets/merged-table-input.png)：工程检查记录，包含跨行／跨列合并、数量与公差 | [中文 DOCX](../artifacts/status-translation-20261027/merged-table/output.docx) · [译文 JSON](../artifacts/status-translation-20261027/merged-table/reviewed.json) · [预览 PDF](../artifacts/status-translation-20261027/merged-table/render/output.pdf) | 一页、21 个物理格与 5 处合并边界；合格／待复核与汇总均显示中文；严格审计 0 违规 |
+| [PLOS 第 2 页](../samples/plos-best-practices-page-2.png)：双栏正文、编号摘要框、软件名与引用 | [中文 DOCX](../artifacts/reviewed-translation-20261027/plos/output.docx) · [译文 JSON](../artifacts/reviewed-translation-20261027/plos/reviewed.json) · [预览 PDF](../artifacts/reviewed-translation-20261027/plos/render/output.pdf) | 一页双栏、蓝底与完整页脚；原有严格审计 0 违规，文件未变 |
+| [自制表格](../assets/merged-table-input.png)：跨行／跨列合并、数量、状态与公差 | [原生表格 DOCX](../artifacts/native-table-20261027/output.docx) · [逐格内容](../artifacts/native-table-20261027/targets.json) · [预览 PDF](../artifacts/native-table-20261027/render/output.pdf) | 一页；1 个原生表格、6×5 网格、21 个单元格与 5 处合并；21 格原生文字逐一匹配 |
 
 下载原文：[PLOS 完整论文 PDF](../samples/plos-best-practices-source.pdf) · [表格扫描 PDF](../samples/merged-table-scan.pdf)。
 
@@ -13,31 +13,39 @@
 
 ![PLOS 中文 DOCX 的真实渲染，双栏及蓝底保留](../artifacts/reviewed-translation-20261027/plos/render/page-1.png)
 
-![表格中文 DOCX 的真实渲染，检测状态及汇总已译为中文，底部两条说明分行](../artifacts/status-translation-20261027/merged-table/render/page-1.png)
+![原生 Word 表格的真实渲染，中文状态、数量、工程符号与合并单元格完整](../artifacts/native-table-20261027/render/page-1.png)
 
-## 执行与复核范围
+## 原生表格如何生成
 
-使用已保存的文档数据，复用 `DocumentPipeline.render_result(..., 'docx', absolute_position=True)` 及静态 Noto 字体。最终导出和独立渲染均在禁网容器中执行：导出使用 4 CPU／6 GiB，渲染使用 2 CPU／4 GiB；这一步没有重新运行 OCR／翻译模型或读取本地 `.env`。
+本次复用现有 `SemanticLayoutWordBuilder._add_floating_table()`，消费已保存的 21 个预测格及 5 处合并关系。移除旧表格背景和 17 个表内定位文字区域，建立真正的 Word 单元格、边框与跨格合并；保留标题、说明和页脚这 3 个表外文字区域。结构真值只用于生成后的独立验收，不参与构建。
 
-随后只编辑表格 DOCX，补上先前漏译的两处 `PASS`、一处 `REVIEW` 及 `3 PASS / 1 REVIEW` 汇总。它们之前被技术标识／算式保护规则保留在背景中，不能当作完成翻译。本次复用既有擦字、定位文字和字体嵌入方法，分别写成“合格”“待复核”“合格”“3 合格 / 1 待复核”；文档编辑容器使用 4 CPU／10 GiB，独立渲染仍为 2 CPU／4 GiB，均禁网。只清除四处原字形，字形掩码外像素变化为 0；没有修改应用代码或原始模型结果。[四项变更与坐标](../artifacts/status-translation-20261027/merged-table/corrections.json) · [执行记录](../artifacts/status-translation-20261027/merged-table/execution.json)
+中文内容沿用前一版。`DN 50／DN 80`、状态和汇总现在均为原生格内文字；原始 OCR 为空的数量 `2／1` 根据原图补入文档，来源单独记录，原始 OCR 与模型响应不改写。没有修改应用代码，也没有重新 OCR 或调用翻译模型。[执行与补字记录](../artifacts/native-table-20261027/execution.json) · [运行参数与文件摘要](../artifacts/native-table-20261027/run.json)
 
-独立环境的实际渲染命令为：
+使用同批静态 Noto 字体，文档处理容器为 4 CPU／10 GiB，独立渲染为 2 CPU／4 GiB，均禁网。实际渲染命令为：
 
 ```bash
-python /helper/render_docx.py /input/output.docx --output_dir /work/renders/plos --emit_pdf --dpi 144
-python /helper/render_docx.py /input/output.docx --output_dir /work/renders/merged-table --emit_pdf --dpi 144
+python /renderer/render_docx.py /work/output.docx --output_dir /work/render --emit_pdf --dpi 144
 ```
 
-两条命令在各自容器中挂载对应 DOCX；`/helper` 为本地渲染工具，**不是公开包提供的入口**。完整私有导出器也不随此包发布。读者可以直接下载上述文件查看；公开包仍可按[快速开始](../README.md#快速开始)核验原始实测，另用 `python -S -X utf8 -B tools/check_publication.py` 检查最终文档的显式文件清单与哈希。
+`/renderer` 为隔离环境中的本地工具，不是公开包提供的入口。LibreOffice 7.4.7.2／Poppler 22.12.0 输出一页 PDF 和 PNG；实测后仅对文档浮动表格的水平锚点增加 5.9 pt，并再次渲染验收。最终边框与保存的源表坐标偏差小于 0.55 pt；这不等于字体或整页像素一致。
 
-LibreOffice 7.4.7.2／Poppler 22.12.0 以 144 DPI 渲染，两份均为一页。PLOS 文件不变，仍为 111 条来源记录、51 个定位文字区域。新表格 DOCX 有 20 个原生定位文字区域，四处新增中文在 DOCX 和实际 PDF 中均可匹配；全页目视未见英文状态残影、重叠、裁切或溢出，表格线与合并边界完整。[实际审计](../artifacts/status-translation-20261027/merged-table/audit/delivery-audit.json)通过、0 违规；其 17 条写入／6 条保留仍沿用原始文字保护分类，不代表当前中文覆盖数量。
+## 分项验收
 
-另对 21 个物理格与 3 个页外区域逐一检查：19 个需要翻译的区域均有对应中文，5 个区域保留规格、量值或单位；其中 DN 标签与数量共 4 格仍在背景中。这是固定样本的内容复核，不能换算成模型准确率。[逐区域记录](../artifacts/status-translation-20261027/semantic-coverage.json) · [视觉记录](../artifacts/status-translation-20261027/merged-table/visual-review.json) · [旧表格版本](../artifacts/reviewed-translation-20261027/merged-table/output.docx)
+| 检查 | 实际结果 |
+|---|---|
+| 原生结构 | `w:tbl=1`，6 行／5 列网格，21 个起始单元格；XML 有 22 个 `w:tc`，其中 1 个是跨行合并延续格；5 处合并全部匹配 |
+| 格内内容 | 21 个单元格的原生文字逐格匹配，同次 PDF 的对应单元格区域也 21/21 匹配；数量 2／1、DN 标签和工程字符均在格内 |
+| 对象类型 | 表内没有图片、文字框或定位段落；整份 DOCX 无图片，仅保留 3 个表外定位文字区域 |
+| 独立检查 | 131 项结构检查通过；21 格＋3 个页外区域全文在 PDF 中可匹配；逐页查看未见漏字、叠字、裁切或溢出 |
 
-## 仍然保留的边界
+[结构检查](../artifacts/native-table-20261027/structure-checks.json) · [逐格渲染审计](../artifacts/native-table-20261027/native-audit.json) · [独立视觉与内容记录](../artifacts/native-table-20261027/semantic-coverage.json)
 
-这些页面用于检查文档呈现，不构成模型准确率、独立人工认证或通用版式保证。原始 OCR 分数与模型输出继续保留。公开包只提供原有 8 个精选算法，不包含完整翻译或排版服务。
+PLOS 沿用之前的一页版本，111 条来源记录、51 个定位文字区域，仍采用原页背景与定位文字；[其运行记录](../artifacts/reviewed-translation-20261027/run.json)单独保存。本轮没有用原生表格的专项检查替代或改写历史 `faithful` 审计。
 
-表格仍是原背景网格与原生定位文字，`w:tbl=0`。`DN 50／DN 80` 与数量 `2／1` 为背景文字；数量对应的原始 OCR 格仍为空，不能据此声称已识别或全表可编辑。PLOS 的软件名、代码标识与 URL 保留原文；两例字体、局部字号与原文有差异，Microsoft Word 交互编辑尚未验证。页脚“可编辑文档结构”是原样本目标的翻译，不是本例已实现的承诺。
+## 范围与历史版本
 
-PLOS 内容来源：Wilson G 等（2014），*Best Practices for Scientific Computing*，PLOS Biology 12(1): e1001745，DOI `10.1371/journal.pbio.1001745`，CC BY 4.0。派生文件包含中文译文与文字排版；自制表格仍按 CC0 1.0。完整[来源、许可与字体说明](../CASE_SOURCES.md)继续适用。
+原生单元格、边框和合并结构已通过文件级检查；Microsoft Word 中实际输入、调整列宽和跨客户端保存尚未交互验收。字体、局部字号与源页有差异。结果仅对应这个固定表格，不代表完整服务可以自动将任意扫描件转换为无误的可编辑表格，也不是模型准确率或独立人工认证。
+
+[旧背景加定位文字版](../artifacts/status-translation-20261027/merged-table/output.docx)、[状态补译记录](../artifacts/status-translation-20261027/run.json)及[原始模型实测](faithful-translation-20261027.md)均保留。公开包仍只有原有 8 个精选算法，完整翻译和排版服务不公开。默认[快速开始](../README.md#快速开始)核验冻结证据；`python -S -X utf8 -B tools/check_publication.py` 核对最终文件清单与哈希，不判断翻译质量。
+
+PLOS 来源：Wilson G 等（2014），*Best Practices for Scientific Computing*，PLOS Biology 12(1): e1001745，DOI `10.1371/journal.pbio.1001745`，CC BY 4.0。自制表格沿用 CC0 1.0，内嵌字体沿用 Noto OFL；完整[来源与许可](../CASE_SOURCES.md)继续适用。
