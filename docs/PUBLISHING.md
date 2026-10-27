@@ -60,7 +60,7 @@ git push -u origin codex/showcase-refresh
 - **Topics：** `ocr`, `paddleocr`, `machine-translation`, `document-processing`, `table-extraction`, `engineering-drawings`, `python`, `docx`, `evaluation`
 - **项目短介绍：** 面向处理扫描文档与工程图的开发者，以 8 个独立算法、公开资料英译中和保留原页布局的真实 Word 结果，展示识别、翻译、结构与排版的分项核查。保留误译和历史失败对照；默认核验只需 Python 标准库，完整服务与模型不公开。
 
-以上展示信息可手动复制到 GitHub。2026-10-27 的原文与中文校对版按用户授权，通过独立公开包、发布分支与 PR 更新首页；检查通过后合入 `main`。实际发布状态以 GitHub 提交及 PR 为准。此次不修改仓库设置、不发布 Release，完整业务项目及其 Git 历史不参与发布。
+以上展示信息可手动复制到 GitHub。2026-10-27 的原文与中文 Word 按用户授权，通过独立公开包、发布分支与 PR 更新首页；检查通过后合入 `main`。实际发布状态以 GitHub 提交及 PR 为准。此次不修改仓库设置、不发布 Release，完整业务项目及其 Git 历史不参与发布。
 
 ### 可选 Social Preview
 
