@@ -2,38 +2,38 @@
 
 面向处理扫描文档与工程图的开发者，用 8 个独立算法和真实输入输出，展示 OCR、英译中与中文 Word 排版的工程核查。
 
-[快速开始](#快速开始) · [中文校对版](cases/reviewed-translation-20261027.md) · [精选代码](examples/README.md) · [技术说明](docs/ARCHITECTURE.md)
+[快速开始](#快速开始) · [中文 Word 案例](cases/reviewed-translation-20261027.md) · [精选代码](examples/README.md) · [技术说明](docs/ARCHITECTURE.md)
 
 **公开范围：8 个算法片段、案例产物与核验工具。** 完整 OCR／翻译服务、业务排版代码和模型权重不公开。
 
-## 先看中文 DOCX 校对版
+## 先看原文与中文 Word
 
-**2026-10-27 校对后导出：** 在已保存的真实 OCR／Argos 英译中结果上，由助手对照原文修正误译与漏句，复用既有 `faithful` 导出并独立渲染。两例保持一页；PLOS 双栏与蓝底、表格位置和合并边界保留，严格检查与逐页目视未见叠字、裁切或溢出。**这次只校对文字与文档，不改项目代码；校对版不是原始模型输出。**
+**两例中文 Word，直接对照英文原页。** PLOS 保持一页双栏与蓝底摘要框，合并表格保持原页位置和合并边界。下方图片来自实际 DOCX 的独立渲染；严格检查与逐页目视未见叠字、裁切或溢出。
 
-| 原文档 | 校对后的结果 | 可直接查看 |
+| 原文档 | 中文文档效果 | 可直接查看 |
 |---|---|---|
-| [PLOS 第 2 页](samples/plos-best-practices-page-2.png) | 51 组译文复核；修正编程术语、续句、软件名与引用 | [校对 JSON](artifacts/reviewed-translation-20261027/plos/reviewed.json) → [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) |
-| [合并表格扫描 PDF](samples/merged-table-scan.pdf) | 修正“数量”“阀体”“真值标注”，补回否定说明；21 个物理格、5 处合并边界保留 | [校对 JSON](artifacts/reviewed-translation-20261027/merged-table/reviewed.json) → [中文 DOCX](artifacts/reviewed-translation-20261027/merged-table/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/merged-table/render/output.pdf) |
+| [PLOS 第 2 页](samples/plos-best-practices-page-2.png) | 一页双栏；蓝底摘要框、标题与完整页脚 | [译文 JSON](artifacts/reviewed-translation-20261027/plos/reviewed.json) → [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) |
+| [合并表格扫描 PDF](samples/merged-table-scan.pdf) | 一页工程检查表；21 个物理格、5 处合并边界 | [译文 JSON](artifacts/reviewed-translation-20261027/merged-table/reviewed.json) → [中文 DOCX](artifacts/reviewed-translation-20261027/merged-table/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/merged-table/render/output.pdf) |
 
-### PLOS：英文原页 → 中文校对版
+### PLOS：英文原页 → 中文 Word
 
-| 英文原页（论文第 2 页） | 中文校对版 Word 的实际渲染 |
+| 英文原页（论文第 2 页） | 中文 Word 的实际渲染 |
 |---|---|
-| [![PLOS 英文原页：双栏正文与蓝底最佳实践摘要](samples/plos-best-practices-page-2.png)](samples/plos-best-practices-page-2.png) | [![PLOS 校对后 DOCX 实际渲染：双栏、蓝底、标题和完整页脚](artifacts/reviewed-translation-20261027/plos/render/page-1.png)](artifacts/reviewed-translation-20261027/plos/render/page-1.png) |
+| [![PLOS 英文原页：双栏正文与蓝底最佳实践摘要](samples/plos-best-practices-page-2.png)](samples/plos-best-practices-page-2.png) | [![PLOS 中文 DOCX 实际渲染：双栏、蓝底、标题和完整页脚](artifacts/reviewed-translation-20261027/plos/render/page-1.png)](artifacts/reviewed-translation-20261027/plos/render/page-1.png) |
 
-[完整原始 PDF](samples/plos-best-practices-source.pdf) · [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) · [校对记录](cases/reviewed-translation-20261027.md)
+[完整原始 PDF](samples/plos-best-practices-source.pdf) · [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) · [案例说明](cases/reviewed-translation-20261027.md)
 
-### 合并表格：英文原页 → 中文校对版
+### 合并表格：英文原页 → 中文 Word
 
-| 英文原页（自制扫描表格） | 中文校对版 Word 的实际渲染 |
+| 英文原页（自制扫描表格） | 中文 Word 的实际渲染 |
 |---|---|
-| [![英文原表：21 个物理格与 5 处合并边界](assets/merged-table-input.png)](assets/merged-table-input.png) | [![表格校对后 DOCX 实际渲染：数量、阀体、说明和符号已校对，原背景网格保留](artifacts/reviewed-translation-20261027/merged-table/render/page-1.png)](artifacts/reviewed-translation-20261027/merged-table/render/page-1.png) |
+| [![英文原表：21 个物理格与 5 处合并边界](assets/merged-table-input.png)](assets/merged-table-input.png) | [![表格中文 DOCX 实际渲染：中文表头、说明和工程符号，原背景网格保留](artifacts/reviewed-translation-20261027/merged-table/render/page-1.png)](artifacts/reviewed-translation-20261027/merged-table/render/page-1.png) |
 
-[原始扫描 PDF](samples/merged-table-scan.pdf) · [中文 DOCX](artifacts/reviewed-translation-20261027/merged-table/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/merged-table/render/output.pdf) · [校对记录](cases/reviewed-translation-20261027.md)
+[原始扫描 PDF](samples/merged-table-scan.pdf) · [中文 DOCX](artifacts/reviewed-translation-20261027/merged-table/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/merged-table/render/output.pdf) · [案例说明](cases/reviewed-translation-20261027.md)
 
-校对修改逐项记录了[原文、旧译文与新译文](artifacts/reviewed-translation-20261027/corrections.json)。原始 OCR、`Qty → 齐哥` 等机器误译及旧分数完整保留在[未校对实测](cases/faithful-translation-20261027.md)。**校对不能算模型准确率提升。** 表格仍使用原背景网格与原生定位文字，部分数字、`PASS／REVIEW` 和 `DN` 标签保留在图片中，**不是原生 Word 表格**。字体、局部字号与原文有差异，Microsoft Word 交互编辑未验收。[校对范围与限制](cases/reviewed-translation-20261027.md)
+表格使用原背景网格与原生定位文字，部分数字、`PASS／REVIEW` 和 `DN` 标签保留在图片中，**不是原生 Word 表格**。字体、局部字号与原文有差异，Microsoft Word 交互编辑未验收。[案例范围与限制](cases/reviewed-translation-20261027.md)
 
-基础实测使用 Argos `translate-en_zh` 1.9 / CTranslate2 4.5.0 CPU int8 与 RapidOCR / ONNX Runtime。原始响应、源码与模型哈希保存在[模型运行记录](artifacts/local-faithful-20261027/run.json)；此次[校对导出记录](artifacts/reviewed-translation-20261027/run.json)明确记录未重跑 OCR／模型，只重新导出和渲染，并对表格页脚做一处文档换行编辑。[输入与字体许可](CASE_SOURCES.md)可追溯。
+最终中文文档与[原始模型输出](cases/faithful-translation-20261027.md)分别保存；[生成记录](artifacts/reviewed-translation-20261027/run.json)和[输入与字体许可](CASE_SOURCES.md)可追溯。基础 OCR／翻译实测使用 RapidOCR / ONNX Runtime 和 Argos `translate-en_zh` 1.9 / CTranslate2 4.5.0 CPU int8。
 
 [旧三页单栏版本](cases/english-to-chinese-20261026.md)、[原文导出修复](cases/docx-export-fix-20261026.md)和[首次 CPU 失败](cases/local-cpu-20261026.md)作为历史对照保留。下方最小命令只核验保存结果和运行独立算法，不启动完整私有服务。
 
@@ -56,7 +56,7 @@ python -S -X utf8 -B examples/literal_guard.py
 python -S -X utf8 -B -m unittest discover -s tests -v
 ```
 
-核验结果输出到终端：`ok` 表示原始公开证据一致，`local_run`、`local_docx_fix`、`local_translation`、`local_faithful` 分别检查首次 CPU、原文修复、历史单栏翻译和原页版式机器输出；执行标记为 `false` 表示核验本身不执行新 OCR、翻译或渲染。校对版另纳入显式发布清单，可用 `python -S -X utf8 -B tools/check_publication.py` 核查文件完整性；这不判断译文是否正确。字符保护示例展示已确认的 `Ø`、`±` 片段如何原样恢复；测试检查公开算法及反例。默认命令不生成或覆盖文件。
+核验结果输出到终端：`ok` 表示原始公开证据一致，`local_run`、`local_docx_fix`、`local_translation`、`local_faithful` 分别检查首次 CPU、原文修复、历史单栏翻译和原页版式机器输出；执行标记为 `false` 表示核验本身不执行新 OCR、翻译或渲染。最终中文文档也纳入显式发布清单，可用 `python -S -X utf8 -B tools/check_publication.py` 核查文件完整性；这不判断译文是否正确。字符保护示例展示已确认的 `Ø`、`±` 片段如何原样恢复；测试检查公开算法及反例。默认命令不生成或覆盖文件。
 
 `-S` 禁用第三方包加载，`-X utf8` 保证 Windows 工程字符输出，`-B` 避免生成字节码缓存。如果你在完整项目中阅读此文件，先进入 `showcase/` 再运行三条 Python 命令。
 
@@ -108,7 +108,7 @@ flowchart LR
 ## 限制、文档与参与
 
 - 工程字符仍会误读；不能全局替换 `∅ → Ø`，待复核也不等于正确。
-- 两个校对后单页通过限定版式检查；旧机器误译仍可对照，校对由助手完成，非独立人工认证。字体与局部字号仍有差异；表格为背景加定位文字，部分数字／状态仍是图片，Microsoft Word 编辑体验未验收。
+- 两个中文单页通过限定版式检查，不代表模型准确率或独立人工认证。字体与局部字号仍有差异；表格为背景加定位文字，部分数字／状态仍是图片，Microsoft Word 编辑体验未验收。
 - VLM 片段只展示候选检查策略，不启动模型；部分真实图纸没有再分发许可，不能仅凭本仓库重跑所有历史实验。
 
 [完整限制](docs/LIMITATIONS.md) · [运行与排错](docs/GETTING_STARTED.md) · [验证记录](docs/VALIDATION.md) · [贡献方式](CONTRIBUTING.md) · [独立发布流程](docs/PUBLISHING.md)

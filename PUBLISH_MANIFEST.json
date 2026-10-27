@@ -49,8 +49,8 @@
       "sha256": "67416dc0b7f848942f9c0a9f80e163ab1ec07f578a318bdf84edead65902d782"
     },
     "README.md": {
-      "bytes": 11276,
-      "sha256": "6a3c6d6700758196831f86c752ded3a5c1fc4d13fe5f2446d4a1917275381a64"
+      "bytes": 10560,
+      "sha256": "f90117306d7357e343bddd6f3f17ceaa168d0c64d9446f4d345bcc43f513b5ba"
     },
     "SANITIZATION.md": {
       "bytes": 11398,
@@ -673,8 +673,8 @@
       "sha256": "1ff984d475c549fe052f9f612ca1e79ad0744a09cda69893c38b64652c71214a"
     },
     "cases/reviewed-translation-20261027.md": {
-      "bytes": 5218,
-      "sha256": "024ae2a91071131cb7b6d1f6c8c761862a502d89a6d1c60516e34131197aaf16"
+      "bytes": 4388,
+      "sha256": "339316458f21bf680419422fcc86c27602d564f4f22d9a2f4a2eab8f6159dfbb"
     },
     "docs/ARCHITECTURE.md": {
       "bytes": 10740,
@@ -689,8 +689,8 @@
       "sha256": "015bae12bd984dad086efdeb8fb77039abfc57c2afc7bb6f38c1f5b7542305e6"
     },
     "docs/PUBLISHING.md": {
-      "bytes": 4323,
-      "sha256": "3c21bb7ad3e0361f426e4b54ed264f593b9eeb24872f978a2f73e858e1498e99"
+      "bytes": 4320,
+      "sha256": "ef474d76a7a6af2798d885ccfcc7a597cdb837491e0de014eb1778044833c185"
     },
     "docs/VALIDATION.md": {
       "bytes": 19862,
