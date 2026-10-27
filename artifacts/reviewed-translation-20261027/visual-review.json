@@ -1,0 +1,34 @@
+{
+  "review_date": "2026-10-27",
+  "reviewer": "Primary assistant and additional assistant reviewers; not independent human certification",
+  "method": "Full-resolution canonical render_docx PNGs compared with source pages; every final page inspected.",
+  "cases": {
+    "plos": {
+      "acceptance": "passed_for_reviewed_document_layout",
+      "page_count": 1,
+      "overlap": false,
+      "clipping": false,
+      "overflow": false,
+      "missing_chinese_glyphs": false,
+      "observations": [
+        "One page; two columns, blue panel, headings and complete footer retained.",
+        "51 groups proofread against the source; cross-line and cross-column continuations, citations, code identifiers and URL checked."
+      ],
+      "docx_sha256": "d6e47d904d457be68f6605a53643dc26cb4a1760072518225b0bceb64b6d8de7"
+    },
+    "merged-table": {
+      "acceptance": "passed_for_reviewed_document_layout",
+      "page_count": 1,
+      "overlap": false,
+      "clipping": false,
+      "overflow": false,
+      "missing_chinese_glyphs": false,
+      "observations": [
+        "One page; all 21 physical cell areas and five merged boundaries retained.",
+        "Qty, ground truth, Valve body and omitted disclaimer corrected; visible source symbols/count transcribed separately.",
+        "The two footer statements have an explicit line break in this DOCX artifact; application renderer unchanged."
+      ],
+      "docx_sha256": "acfdc033c526c155e76131f67d49a76e4d382e9ea280d3ca7e2634c7f2802074"
+    }
+  }
+}

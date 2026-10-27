@@ -1,0 +1,55 @@
+{
+  "source_index": "https://raw.githubusercontent.com/argosopentech/argospm-index/main/index.json",
+  "model_url": "https://argos-net.com/v1/translate-en_zh-1_9.argosmodel",
+  "entry": {
+    "package_version": "1.9",
+    "argos_version": "1.9.0",
+    "from_code": "en",
+    "from_name": "English",
+    "to_code": "zh",
+    "to_name": "Chinese",
+    "links": [
+      "https://argos-net.com/v1/translate-en_zh-1_9.argosmodel"
+    ],
+    "code": "translate-en_zh"
+  },
+  "downloaded_at_utc": "2026-10-26T04:04:14.886422+00:00",
+  "package": {
+    "bytes": 70743021,
+    "sha256": "433e7c4f034d87fbe2353161e05f18646d7999452f801a4e1f0378522b9850ab"
+  },
+  "files": {
+    "translate-en_zh-1_9/metadata.json": {
+      "bytes": 135,
+      "sha256": "106086bc1b77d2d5c298aa38be69e8e87263eeb4167b4614b08a030c43d31b6a"
+    },
+    "translate-en_zh-1_9/model/config.json": {
+      "bytes": 216,
+      "sha256": "3a8660f12559a223969532ff191e5e6f50d4ff24164517edbd6a5090dc5144c6"
+    },
+    "translate-en_zh-1_9/model/model.bin": {
+      "bytes": 82713318,
+      "sha256": "1a039114d9456b6528fabb65b455b6f156319634a0f984b1f6018f7737d67598"
+    },
+    "translate-en_zh-1_9/model/shared_vocabulary.json": {
+      "bytes": 1367577,
+      "sha256": "c0b6e24705ec0489d5b810de365959c1013aecd644cfeca161b54ea1df6a7dc0"
+    },
+    "translate-en_zh-1_9/README.md": {
+      "bytes": 401,
+      "sha256": "050e546664f0e70d80b6f83aa1da5f04ee85335f4a1b62d1c89184f76100b5dc"
+    },
+    "translate-en_zh-1_9/sentencepiece.model": {
+      "bytes": 806370,
+      "sha256": "872224b85a11edc9d769a94949fd387b67ea85b50708db9f91f32f5b497a9af3"
+    },
+    "translate-en_zh-1_9/stanza/en/tokenize/ewt.pt": {
+      "bytes": 630886,
+      "sha256": "7bc5a1523f4e60107640ea44d2cb27c787bc339ba0c93be6c7dbf744d5635cd6"
+    },
+    "translate-en_zh-1_9/stanza/resources.json": {
+      "bytes": 121862,
+      "sha256": "39faaee80e6cca9e211dcda8fb3da4f9c024dcff5b4bfc9832a8e0e271db2fda"
+    }
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "scope": "Whitespace-only literal matching and extracted PDF span geometry; not accuracy, reading order or editability proof. Same literal may match one occurrence. Overlap candidates require visual review.",
+  "page_count": 3,
+  "native_tables": [],
+  "east_asia_fonts": [
+    "Noto Sans CJK SC"
+  ],
+  "docx_explicit_font_sizes_pt": [
+    10.5
+  ],
+  "non_table_text": {
+    "expected_entries": 111,
+    "contains_chinese_entries": 110,
+    "docx_literal_matches": 111,
+    "pdf_literal_matches": 111,
+    "missing_docx": [],
+    "missing_pdf": []
+  },
+  "table_cells": {
+    "expected_entries": 0,
+    "contains_chinese_entries": 0,
+    "docx_literal_matches": 0,
+    "pdf_literal_matches": 0,
+    "missing_docx": [],
+    "missing_pdf": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 612.0,
+      "height_pt": 790.8944702148438,
+      "measured_text_boxes": 85,
+      "geometry_source": "PyMuPDF word boxes (dict blocks unavailable)",
+      "font_sizes": [],
+      "outside_page_spans": [],
+      "possible_overlap_pairs": []
+    },
+    {
+      "page": 2,
+      "width_pt": 612.0,
+      "height_pt": 790.8944702148438,
+      "measured_text_boxes": 45,
+      "geometry_source": "PyMuPDF word boxes (dict blocks unavailable)",
+      "font_sizes": [],
+      "outside_page_spans": [],
+      "possible_overlap_pairs": []
+    },
+    {
+      "page": 3,
+      "width_pt": 612.0,
+      "height_pt": 790.8944702148438,
+      "measured_text_boxes": 44,
+      "geometry_source": "PyMuPDF word boxes (dict blocks unavailable)",
+      "font_sizes": [],
+      "outside_page_spans": [],
+      "possible_overlap_pairs": []
+    }
+  ],
+  "docx_contains_chinese": true,
+  "pdf_contains_chinese": true
+}

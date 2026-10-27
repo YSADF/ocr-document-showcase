@@ -1,0 +1,68 @@
+{
+  "prepared_at": "2026-10-26T10:40:22+08:00",
+  "source": {
+    "title": "Best Practices for Scientific Computing",
+    "authors": "Wilson G, Aruliah DA, Brown CT, Chue Hong NP, Davis M, Guy RT, et al.",
+    "publication": "PLOS Biology 12(1): e1001745",
+    "publication_date": "2014-01-07",
+    "doi": "10.1371/journal.pbio.1001745",
+    "article_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745",
+    "pdf_url": "https://journals.plos.org/plosbiology/article/file?id=10.1371/journal.pbio.1001745&type=printable",
+    "downloaded_date": "2026-10-26",
+    "page_count": 7
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidence_url": "https://journals.plos.org/plosbiology/article?id=10.1371/journal.pbio.1001745",
+    "evidence": "The article copyright statement links directly to CC BY 4.0 and allows use, distribution and reproduction with author and source credit. The original PDF page 1 also contains its attribution license statement.",
+    "policy_url": "https://journals.plos.org/plosbiology/s/licenses-and-copyright"
+  },
+  "input_preparation": {
+    "page_number": 2,
+    "page_index": 1,
+    "renderer": "Poppler pdftoppm",
+    "renderer_version": "26.07.0",
+    "dpi": 200,
+    "color_mode": "RGB",
+    "alpha": false,
+    "size_pixels": [
+      1701,
+      2197
+    ],
+    "source_page_size_points": [
+      612.28302,
+      790.866028
+    ],
+    "changes": "Rendered the entire original page at 200 DPI. No cropping, retouching, text substitution, or rearrangement. Original PDF is unmodified.",
+    "command_from_showcase": "pdftoppm -f 2 -l 2 -singlefile -r 200 -png samples/plos-best-practices-source.pdf samples/plos-best-practices-page-2"
+  },
+  "reference_text": {
+    "extractor": "pypdf",
+    "extractor_version": "6.10.0",
+    "page_number": 2,
+    "is_ocr_output": false,
+    "is_human_gold_standard": false,
+    "limitations": "Native PDF text extraction may have non-visual reading order, ligatures, hyphenation and line-break differences."
+  },
+  "verification": {
+    "ocr_executed_during_preparation": false,
+    "visual_review": "Entire rendered page inspected; public research prose and numbered summary are legible. No local application UI or private customer content included.",
+    "pdf_metadata_review": "Publisher title, timestamps and production tools only; no local Windows paths or email addresses in XMP; no embedded attachments; pdfinfo reports no JavaScript or forms.",
+    "png_metadata_review": "RGB with DPI metadata only; no alpha, EXIF, author or file-path metadata."
+  },
+  "files": {
+    "plos-best-practices-source.pdf": {
+      "bytes": 183769,
+      "sha256": "8e85cf1b7bc9738f152e16709105b8951cecbe8621b55933d17ecdf63f75ea47"
+    },
+    "plos-best-practices-page-2.png": {
+      "bytes": 883883,
+      "sha256": "6dc994d0e12f051baef0ac01b468b63ff760415dd544910f1c03155c63b08c66"
+    },
+    "plos-best-practices-page-2-reference.txt": {
+      "bytes": 6114,
+      "sha256": "af6543ec95c9d2e5f376ce7a15876e06b428f7de2fdcf0c0a54f4e49ddc4ae9c"
+    }
+  }
+}

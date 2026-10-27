@@ -11,3 +11,5 @@ DEXPI 工程图及其衍生预览/提取数据保留上游来源与许可，详�
 新增 `examples/`、`tests/` 和实测/评分客户端按 [MIT](CODE_LICENSE.txt) 提供；既有样本准备工具与文档保持原许可。此授权不涵盖完整未公开业务源码。
 
 2026-10-15 新增的公开文件检查、输出路径保护与演示核验工具同样采用 MIT。`tools/prepare_examples.py` 继续采用 CC BY 4.0；配置示例与 CI 配置采用 MIT。
+
+2026-10-27 DOCX 内嵌的 Noto 字体子集保留 SIL Open Font License；[来源与随附许可](CASE_SOURCES.md#2026-10-27-原页版式中文产物与字体)独立于代码与文档许可。PLOS 机器翻译及预览的原作署名、CC BY 4.0 和修改说明同样见来源文件。

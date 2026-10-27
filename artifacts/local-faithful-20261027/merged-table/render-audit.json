@@ -1,0 +1,1093 @@
+{
+  "docx_sha256": "f79843508b4fcf6470cfe3ba2d1d5006397464835a9be6cbf7b86d2eae41d537",
+  "renderer": "LibreOffice",
+  "report": {
+    "status": "success",
+    "passed": true,
+    "violations": [],
+    "page_count": 1,
+    "editable_region_count": 16,
+    "media_count": 1,
+    "source_coverage": {
+      "source_count": 23,
+      "translated_count": 16,
+      "preserved_count": 7,
+      "alternative_observation_count": 0,
+      "ocr_alternatives": []
+    },
+    "render": {
+      "render_preview_status": "completed",
+      "render_preview_engine": "libreoffice",
+      "render_preview_pdf": "/work/audits/merged-table/output_qa/output.preview.pdf",
+      "render_preview_pages": 1,
+      "render_preview_blank_pages": 0,
+      "render_preview_error": "",
+      "page_artifacts": [
+        {
+          "page": 1,
+          "path": "/work/audits/merged-table/output_qa/page-001.png"
+        }
+      ],
+      "text_collision_pages": [
+        {
+          "page": 1,
+          "status": "success",
+          "evidence": "rendered_pdf_texttrace_glyph_boxes",
+          "label_cell_regions": 13,
+          "text_regions": 16,
+          "mapped_glyph_count": 131,
+          "collisions": [],
+          "unmapped_regions": []
+        }
+      ]
+    }
+  },
+  "delivery": null,
+  "layout": {
+    "status": "success",
+    "thresholds": {
+      "font_size_delta_pt": 0.5,
+      "horizontal_scale_min": 0.72,
+      "tracking_min_pt": -0.25
+    },
+    "failed_regions": [],
+    "failed_region_count": 0,
+    "text_region_count": 16,
+    "pages": [
+      {
+        "page": 1,
+        "text_region_count": 16,
+        "copy_fit_failed_count": 0,
+        "max_font_size_delta_pt": 0.0,
+        "minimum_horizontal_scale": 1.0
+      }
+    ],
+    "regions": [
+      {
+        "page": 1,
+        "region": "p0:paragraph:273708e4165a2589",
+        "bbox_pt": [
+          44.827,
+          45.816,
+          256.853,
+          73.959
+        ],
+        "source_font_size_pt": 22.0,
+        "font_size_pt": 22.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 25.3,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#040404",
+        "style_runs": [
+          {
+            "text": "合并单元格表格输入",
+            "color": "#040404",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "p0:paragraph:0126f2b5a7b1da71",
+        "bbox_pt": [
+          44.172,
+          74.614,
+          322.294,
+          88.814
+        ],
+        "source_font_size_pt": 12.0,
+        "font_size_pt": 12.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 13.2,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#6B7686",
+        "style_runs": [
+          {
+            "text": "自我创建的输入和地面真相",
+            "color": "#6B7686",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-0",
+        "bbox_pt": [
+          53.661,
+          164.282,
+          793.791,
+          196.68
+        ],
+        "source_font_size_pt": 17.5,
+        "font_size_pt": 17.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 20.1,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#343C4C",
+        "style_runs": [
+          {
+            "text": "工程检查记录",
+            "color": "#343C4C",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-1",
+        "bbox_pt": [
+          54.315,
+          206.825,
+          173.744,
+          232.678
+        ],
+        "source_font_size_pt": 12.0,
+        "font_size_pt": 12.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 13.8,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#404858",
+        "style_runs": [
+          {
+            "text": "项目",
+            "color": "#404858",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-2",
+        "bbox_pt": [
+          181.27,
+          207.152,
+          352.723,
+          232.678
+        ],
+        "source_font_size_pt": 12.0,
+        "font_size_pt": 12.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 13.8,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#434B5B",
+        "style_runs": [
+          {
+            "text": "规格",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-3",
+        "bbox_pt": [
+          357.304,
+          205.188,
+          412.601,
+          232.678
+        ],
+        "source_font_size_pt": 16.0,
+        "font_size_pt": 16.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 18.4,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#434B5B",
+        "style_runs": [
+          {
+            "text": "齐哥",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-4",
+        "bbox_pt": [
+          419.8,
+          207.152,
+          508.799,
+          232.678
+        ],
+        "source_font_size_pt": 10.5,
+        "font_size_pt": 10.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 12.05,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#434B5B",
+        "style_runs": [
+          {
+            "text": "结果",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-5",
+        "bbox_pt": [
+          515.343,
+          206.17,
+          793.791,
+          232.678
+        ],
+        "source_font_size_pt": 12.0,
+        "font_size_pt": 12.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 13.8,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#3F4757",
+        "style_runs": [
+          {
+            "text": "说明",
+            "color": "#3F4757",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-6",
+        "bbox_pt": [
+          53.661,
+          279.802,
+          173.744,
+          342.963
+        ],
+        "source_font_size_pt": 14.0,
+        "font_size_pt": 14.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 16.1,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#474E5C",
+        "style_runs": [
+          {
+            "text": "阀门",
+            "color": "#474E5C",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-10",
+        "bbox_pt": [
+          515.67,
+          253.295,
+          793.791,
+          287.657
+        ],
+        "source_font_size_pt": 10.5,
+        "font_size_pt": 10.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 12.05,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#454C5A",
+        "style_runs": [
+          {
+            "text": "0 50 0.10 mm",
+            "color": "#454C5A",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-14",
+        "bbox_pt": [
+          514.688,
+          306.637,
+          793.791,
+          342.963
+        ],
+        "source_font_size_pt": 14.0,
+        "font_size_pt": 14.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 16.1,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#4B515F",
+        "style_runs": [
+          {
+            "text": "角度 90 0.5o 坐标",
+            "color": "#4B515F",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-15",
+        "bbox_pt": [
+          53.988,
+          361.943,
+          173.744,
+          397.614
+        ],
+        "source_font_size_pt": 14.0,
+        "font_size_pt": 14.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 16.1,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#424857",
+        "style_runs": [
+          {
+            "text": "泵",
+            "color": "#424857",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-16",
+        "bbox_pt": [
+          180.942,
+          363.252,
+          412.601,
+          397.614
+        ],
+        "source_font_size_pt": 10.5,
+        "font_size_pt": 10.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 12.05,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#464C5B",
+        "style_runs": [
+          {
+            "text": "P001型11个单元",
+            "color": "#464C5B",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-18",
+        "bbox_pt": [
+          515.343,
+          361.616,
+          793.791,
+          397.614
+        ],
+        "source_font_size_pt": 12.0,
+        "font_size_pt": 12.0,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 13.8,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#444A59",
+        "style_runs": [
+          {
+            "text": "0 12毫米口径",
+            "color": "#444A59",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-19",
+        "bbox_pt": [
+          54.315,
+          410.704,
+          412.601,
+          439.83
+        ],
+        "source_font_size_pt": 13.5,
+        "font_size_pt": 13.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 15.5,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 1,
+        "target_line_count": 1,
+        "first_line_indent_pt": 0.0,
+        "text_color": "#484E5C",
+        "style_runs": [
+          {
+            "text": "摘要:4个被检查单位",
+            "color": "#484E5C",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      },
+      {
+        "page": 1,
+        "region": "p0:paragraph:a3a1ebe317e5d484",
+        "bbox_pt": [
+          43.518,
+          494.481,
+          322.294,
+          518.581
+        ],
+        "source_font_size_pt": 10.5,
+        "font_size_pt": 10.5,
+        "font_size_delta_pt": 0.0,
+        "line_height_pt": 11.55,
+        "width_scale": 1.0,
+        "tracking_pt": 0.0,
+        "source_line_count": 2,
+        "target_line_count": 2,
+        "first_line_indent_pt": 1.963,
+        "text_color": "#727D8C",
+        "style_runs": [
+          {
+            "text": "6 个逻辑行 x 5 列行和 crospan CCO 1.0目标:保存文本,合并单元格和可编辑文档结构.",
+            "color": "#727D8C",
+            "bold": false,
+            "italic": false
+          }
+        ],
+        "unresolved_style_count": 0,
+        "fits": true
+      }
+    ],
+    "rendered_texts": [
+      {
+        "page": 1,
+        "region": "p0:paragraph:273708e4165a2589",
+        "source_text": "Merged-cell table input",
+        "text": "合并单元格表格输入",
+        "style_runs": [
+          {
+            "text": "合并单元格表格输入",
+            "color": "#040404",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "p0:paragraph:0126f2b5a7b1da71",
+        "source_text": "Self-created input and ground truth Not an OCR result",
+        "text": "自我创建的输入和地面真相",
+        "style_runs": [
+          {
+            "text": "自我创建的输入和地面真相",
+            "color": "#6B7686",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-0",
+        "source_text": "Engineering inspection record",
+        "text": "工程检查记录",
+        "style_runs": [
+          {
+            "text": "工程检查记录",
+            "color": "#343C4C",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-1",
+        "source_text": "Item",
+        "text": "项目",
+        "style_runs": [
+          {
+            "text": "项目",
+            "color": "#404858",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-2",
+        "source_text": "Specification",
+        "text": "规格",
+        "style_runs": [
+          {
+            "text": "规格",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-3",
+        "source_text": "Qty",
+        "text": "齐哥",
+        "style_runs": [
+          {
+            "text": "齐哥",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-4",
+        "source_text": "Result",
+        "text": "结果",
+        "style_runs": [
+          {
+            "text": "结果",
+            "color": "#434B5B",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-5",
+        "source_text": "Note",
+        "text": "说明",
+        "style_runs": [
+          {
+            "text": "说明",
+            "color": "#3F4757",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-6",
+        "source_text": "Valve body",
+        "text": "阀门",
+        "style_runs": [
+          {
+            "text": "阀门",
+            "color": "#474E5C",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-10",
+        "source_text": "0 50  0.10 mm",
+        "text": "0 50 0.10 mm",
+        "style_runs": [
+          {
+            "text": "0 50 0.10 mm",
+            "color": "#454C5A",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-14",
+        "source_text": "Angle 90 0.5o",
+        "text": "角度 90 0.5o 坐标",
+        "style_runs": [
+          {
+            "text": "角度 90 0.5o 坐标",
+            "color": "#4B515F",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-15",
+        "source_text": "Pump",
+        "text": "泵",
+        "style_runs": [
+          {
+            "text": "泵",
+            "color": "#424857",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-16",
+        "source_text": "Model P001 11 unit",
+        "text": "P001型11个单元",
+        "style_runs": [
+          {
+            "text": "P001型11个单元",
+            "color": "#464C5B",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-18",
+        "source_text": "Bore 0 12 mm",
+        "text": "0 12毫米口径",
+        "style_runs": [
+          {
+            "text": "0 12毫米口径",
+            "color": "#444A59",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "faithful_table_cell:page-1/block-2/cell-19",
+        "source_text": "Summary: 4 inspected units",
+        "text": "摘要:4个被检查单位",
+        "style_runs": [
+          {
+            "text": "摘要:4个被检查单位",
+            "color": "#484E5C",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      },
+      {
+        "page": 1,
+        "region": "p0:paragraph:a3a1ebe317e5d484",
+        "source_text": "6 logical rows x 5 columns rowspan and colspan CCO 1.0\nTarget: preserve text, merged cells and editable document structure.",
+        "text": "6 个逻辑行 x 5 列行和 crospan CCO 1.0目标:保存文本,合并单元格和可编辑文档结构.",
+        "style_runs": [
+          {
+            "text": "6 个逻辑行 x 5 列行和 crospan CCO 1.0目标:保存文本,合并单元格和可编辑文档结构.",
+            "color": "#727D8C",
+            "bold": false,
+            "italic": false
+          }
+        ]
+      }
+    ],
+    "page_plans": [
+      {
+        "page": 1,
+        "width_pt": 841.8897705078125,
+        "height_pt": 595.2755737304688,
+        "background_present": true,
+        "expected_regions": [
+          "p0:paragraph:273708e4165a2589",
+          "p0:paragraph:0126f2b5a7b1da71",
+          "faithful_table_cell:page-1/block-2/cell-0",
+          "faithful_table_cell:page-1/block-2/cell-1",
+          "faithful_table_cell:page-1/block-2/cell-2",
+          "faithful_table_cell:page-1/block-2/cell-3",
+          "faithful_table_cell:page-1/block-2/cell-4",
+          "faithful_table_cell:page-1/block-2/cell-5",
+          "faithful_table_cell:page-1/block-2/cell-6",
+          "faithful_table_cell:page-1/block-2/cell-10",
+          "faithful_table_cell:page-1/block-2/cell-14",
+          "faithful_table_cell:page-1/block-2/cell-15",
+          "faithful_table_cell:page-1/block-2/cell-16",
+          "faithful_table_cell:page-1/block-2/cell-18",
+          "faithful_table_cell:page-1/block-2/cell-19",
+          "p0:paragraph:a3a1ebe317e5d484"
+        ],
+        "source_ids": [
+          "line:21c48e81c8c31503",
+          "line:ff726429cb0e0d74",
+          "line:af2c5d227cff42a2",
+          "line:f5a9f221735e4609",
+          "line:a54634cf976181c5",
+          "line:76ec3d1478dd3246",
+          "line:790a9340e6134ffc",
+          "line:c5afea3b9ae519e7",
+          "line:2254779fa12a3391",
+          "line:e80021035b1db0f2",
+          "line:e6b91fe37f4555a9",
+          "line:0d3b9807ce526971",
+          "line:952237ea41fd0b42",
+          "line:d266e1c5499922b1",
+          "line:1f2e95abbb741e1b",
+          "line:a20e6aa75dc3ab6e",
+          "line:2cfecb3ee282be7d"
+        ],
+        "sources_by_region": {
+          "p0:paragraph:273708e4165a2589": [
+            "line:21c48e81c8c31503"
+          ],
+          "p0:paragraph:0126f2b5a7b1da71": [
+            "line:ff726429cb0e0d74"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-0": [
+            "line:af2c5d227cff42a2",
+            "page-1/block-2/cell-0"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-1": [
+            "line:f5a9f221735e4609",
+            "page-1/block-2/cell-1"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-2": [
+            "line:a54634cf976181c5",
+            "page-1/block-2/cell-2"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-3": [
+            "line:76ec3d1478dd3246",
+            "page-1/block-2/cell-3"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-4": [
+            "line:790a9340e6134ffc",
+            "page-1/block-2/cell-4"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-5": [
+            "line:c5afea3b9ae519e7",
+            "page-1/block-2/cell-5"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-6": [
+            "line:2254779fa12a3391",
+            "page-1/block-2/cell-6"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-10": [
+            "line:e80021035b1db0f2",
+            "page-1/block-2/cell-10"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-14": [
+            "line:e6b91fe37f4555a9",
+            "page-1/block-2/cell-14"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-15": [
+            "line:0d3b9807ce526971",
+            "page-1/block-2/cell-15"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-16": [
+            "line:952237ea41fd0b42",
+            "page-1/block-2/cell-16"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-18": [
+            "line:d266e1c5499922b1",
+            "page-1/block-2/cell-18"
+          ],
+          "faithful_table_cell:page-1/block-2/cell-19": [
+            "line:1f2e95abbb741e1b",
+            "page-1/block-2/cell-19"
+          ],
+          "p0:paragraph:a3a1ebe317e5d484": [
+            "line:a20e6aa75dc3ab6e",
+            "line:2cfecb3ee282be7d"
+          ]
+        },
+        "failed_erase_regions": [],
+        "preserved_regions": [],
+        "erase_results": {
+          "line:21c48e81c8c31503": {
+            "erased": true,
+            "pixels": 128700
+          },
+          "line:ff726429cb0e0d74": {
+            "erased": true,
+            "pixels": 104555
+          },
+          "line:af2c5d227cff42a2": {
+            "erased": true,
+            "pixels": 91273
+          },
+          "line:f5a9f221735e4609": {
+            "erased": true,
+            "pixels": 9280
+          },
+          "line:a54634cf976181c5": {
+            "erased": true,
+            "pixels": 28043
+          },
+          "line:76ec3d1478dd3246": {
+            "erased": true,
+            "pixels": 8583
+          },
+          "line:790a9340e6134ffc": {
+            "erased": true,
+            "pixels": 13956
+          },
+          "line:c5afea3b9ae519e7": {
+            "erased": true,
+            "pixels": 10413
+          },
+          "line:2254779fa12a3391": {
+            "erased": true,
+            "pixels": 22304
+          },
+          "line:e80021035b1db0f2": {
+            "erased": true,
+            "pixels": 29512
+          },
+          "line:e6b91fe37f4555a9": {
+            "erased": true,
+            "pixels": 30629
+          },
+          "line:0d3b9807ce526971": {
+            "erased": true,
+            "pixels": 11847
+          },
+          "line:952237ea41fd0b42": {
+            "erased": true,
+            "pixels": 35621
+          },
+          "line:d266e1c5499922b1": {
+            "erased": true,
+            "pixels": 26673
+          },
+          "line:1f2e95abbb741e1b": {
+            "erased": true,
+            "pixels": 53844
+          },
+          "line:a20e6aa75dc3ab6e": {
+            "erased": true,
+            "pixels": 91401
+          },
+          "line:2cfecb3ee282be7d": {
+            "erased": true,
+            "pixels": 107030
+          }
+        },
+        "preserved_table_cells": [
+          {
+            "source_id": "page-1/block-2/cell-7",
+            "row": 2,
+            "col": 1,
+            "source_text": "DN 50",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "source_literal"
+          },
+          {
+            "source_id": "page-1/block-2/cell-9",
+            "row": 2,
+            "col": 3,
+            "source_text": "PASS",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "source_literal"
+          },
+          {
+            "source_id": "page-1/block-2/cell-11",
+            "row": 3,
+            "col": 1,
+            "source_text": "DN 80",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "source_literal"
+          },
+          {
+            "source_id": "page-1/block-2/cell-13",
+            "row": 3,
+            "col": 3,
+            "source_text": "REVIEW",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "source_literal"
+          },
+          {
+            "source_id": "page-1/block-2/cell-17",
+            "row": 4,
+            "col": 3,
+            "source_text": "PASS",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "source_literal"
+          },
+          {
+            "source_id": "page-1/block-2/cell-20",
+            "row": 5,
+            "col": 3,
+            "source_text": "3 PASS/1 REVIEW",
+            "disposition": "preserved_raster",
+            "editable": false,
+            "reason": "arithmetic_expression"
+          }
+        ],
+        "preserved_figure_regions": [],
+        "visual_inventory": [
+          {
+            "visual_id": "visual:ecc7f74f93db29dd",
+            "kind": "table",
+            "bbox": [
+              143,
+              470,
+              2430,
+              1349
+            ],
+            "coordinate_space": "page"
+          }
+        ],
+        "visual_preservation": {
+          "passed": true,
+          "changed_outside_source_masks": 0,
+          "regions": [
+            {
+              "visual_id": "visual:ecc7f74f93db29dd",
+              "changed_graphic_pixels": 0,
+              "outside_glyph_pixels": 14592984
+            }
+          ],
+          "mask_evidence": "effective_source_pixels",
+          "mask_pixels": 803664,
+          "mask_sha256": "b1e558b0df20b5121c57364ca3dce6f76f3488728fe7f5700970e310fe636334"
+        }
+      }
+    ],
+    "font_embedding": {
+      "status": "success",
+      "families": [
+        "Noto Sans CJK SC"
+      ],
+      "faces": {
+        "faces": [
+          {
+            "family": "Noto Sans CJK SC",
+            "bold": false,
+            "italic": false,
+            "file": "NotoSansCJKsc-Regular.ttf",
+            "collection_index": 0,
+            "fs_type": 0,
+            "subsetted": true,
+            "bytes": 694460
+          }
+        ]
+      }
+    }
+  },
+  "visual_review": {
+    "acceptance": "passed_for_page_layout",
+    "source_pages": 1,
+    "rendered_pages": 1,
+    "overlap_seen": false,
+    "clipping_seen": false,
+    "page_overflow_seen": false,
+    "source_text_ghosts_seen": false,
+    "observations": [
+      "One landscape page; source table location, colored header, borders and five merged-cell boundaries retained.",
+      "12 Chinese table translations visible; 16 native positioned regions (13 table-related, 3 outside table).",
+      "No source-text ghosts seen in subtitle, table or footer after the source-mask repair.",
+      "Six literal/status cells retained as raster; quantities 2 and 1 have empty OCR cells and remain visible only in the source background.",
+      "No native Word table; Qty mistranslation, missing source disclaimer and engineering-symbol OCR errors retained."
+    ],
+    "translation_quality": "needs_review_known_mistranslations_and_omissions",
+    "word_interactive_editing_verified": false,
+    "page_geometry": [
+      {
+        "render_dpi": 220,
+        "page_width_pt": 841.8897705078125,
+        "page_height_pt": 595.2755737304688,
+        "source_dpi": null,
+        "image_resolution_source": null,
+        "page_geometry_source": null
+      }
+    ],
+    "docx_sha256": "f79843508b4fcf6470cfe3ba2d1d5006397464835a9be6cbf7b86d2eae41d537",
+    "rendered_page_size_pt": [
+      841.889763779528,
+      595.303937007874
+    ],
+    "page_size_note": "Measured PDF page 841.8898 x 595.3039 pt; source geometry 841.8898 x 595.2756 pt. This is a layout check, not exact pixel identity."
+  }
+}

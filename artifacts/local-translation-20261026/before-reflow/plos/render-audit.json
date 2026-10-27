@@ -1,0 +1,67 @@
+{
+  "scope": "Whitespace-only literal matching and extracted PDF span geometry; not accuracy, reading order or editability proof. Same literal may match one occurrence. Overlap candidates require visual review.",
+  "page_count": 1,
+  "native_tables": [],
+  "east_asia_fonts": [
+    "Noto Sans CJK SC"
+  ],
+  "docx_explicit_font_sizes_pt": [
+    9.0,
+    9.5,
+    10.0,
+    10.5,
+    11.0,
+    12.0
+  ],
+  "non_table_text": {
+    "expected_entries": 111,
+    "contains_chinese_entries": 110,
+    "docx_literal_matches": 111,
+    "pdf_literal_matches": 111,
+    "missing_docx": [],
+    "missing_pdf": []
+  },
+  "table_cells": {
+    "expected_entries": 0,
+    "contains_chinese_entries": 0,
+    "docx_literal_matches": 0,
+    "pdf_literal_matches": 0,
+    "missing_docx": [],
+    "missing_pdf": []
+  },
+  "pages": [
+    {
+      "page": 1,
+      "width_pt": 612.0,
+      "height_pt": 790.8944702148438,
+      "measured_text_boxes": 177,
+      "geometry_source": "PyMuPDF word boxes (dict blocks unavailable)",
+      "font_sizes": [],
+      "outside_page_spans": [],
+      "possible_overlap_pairs": [
+        {
+          "left": "用于节省时间和减少错误。",
+          "right": "原因",
+          "intersection": [
+            313.6000061035156,
+            522.1004638671875,
+            331.6000061035156,
+            525.1004638671875
+          ]
+        },
+        {
+          "left": "不要重复自己(或其他人)。",
+          "right": "统",
+          "intersection": [
+            80.30000305175781,
+            304.7004699707031,
+            89.30000305175781,
+            310.1004638671875
+          ]
+        }
+      ]
+    }
+  ],
+  "docx_contains_chinese": true,
+  "pdf_contains_chinese": true
+}

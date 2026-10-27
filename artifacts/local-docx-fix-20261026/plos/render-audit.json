@@ -1,0 +1,170 @@
+{
+  "schema_version": "saved-docx-render-audit-v1",
+  "inputs": {
+    "json": {
+      "name": "plos-page-2.json",
+      "bytes": 575270,
+      "sha256": "935670f279af3e13ee0e981d9ab99c799a6797f432d50526537058e0189dcace"
+    },
+    "docx": {
+      "name": "plos-page-2.docx",
+      "bytes": 44642,
+      "sha256": "fc9ea484bf1f06218eb735e4772f7c4de2a3c486e9d4c738cb2f01420dce82ab"
+    },
+    "pdf": {
+      "name": "plos-page-2.pdf",
+      "bytes": 42108,
+      "sha256": "85c75d4a6459160db85b409145644678616ff1e80a706a3bab8ce02ed17a92bb"
+    }
+  },
+  "ocr_executed": false,
+  "renderer_executed": false,
+  "visual_review_performed": false,
+  "normalization": "Remove Unicode whitespace only; preserve case, punctuation and Unicode code points.",
+  "ocr_block_lines": {
+    "nonempty_expected_entries": 103,
+    "expected_characters_without_whitespace": 4539,
+    "repeated_literal_entries": 0,
+    "docx_literal_matches": 103,
+    "pdf_literal_matches": 103,
+    "missing_from_docx": [],
+    "missing_from_pdf": []
+  },
+  "predicted_table_nonempty_cells": {
+    "nonempty_expected_entries": 0,
+    "expected_characters_without_whitespace": 0,
+    "repeated_literal_entries": 0,
+    "docx_literal_matches": 0,
+    "pdf_literal_matches": 0,
+    "missing_from_docx": [],
+    "missing_from_pdf": []
+  },
+  "docx": {
+    "package_and_xml_readable": true,
+    "native_table_count": 0,
+    "tables": [],
+    "native_text_characters_without_whitespace": 4774,
+    "text_box_count": 111,
+    "scope": "Word document.xml only; all XML branches counted, not a Word editing acceptance test."
+  },
+  "rendered_pdf": {
+    "page_count": 1,
+    "pages": [
+      {
+        "page": 1,
+        "bounds_pt": [
+          0.0,
+          0.0,
+          612.0,
+          790.8944702148438
+        ],
+        "text_characters_without_whitespace": 4774,
+        "visible_text_trace_characters_without_whitespace": 4774,
+        "nonempty_text_spans": 111,
+        "text_spans_outside_page_count": 0,
+        "text_spans_outside_page_examples": [],
+        "raster_image_count": 2
+      }
+    ],
+    "fonts": [
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 5.0,
+        "spans": 3
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 5.5,
+        "spans": 1
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 6.0,
+        "spans": 4
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 6.5,
+        "spans": 1
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 7.0,
+        "spans": 1
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 7.5,
+        "spans": 3
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 8.5,
+        "spans": 1
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 5.5,
+        "spans": 8
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 6.0,
+        "spans": 10
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 6.5,
+        "spans": 27
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 7.0,
+        "spans": 17
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 7.5,
+        "spans": 11
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 8.0,
+        "spans": 14
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 8.5,
+        "spans": 8
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 9.5,
+        "spans": 2
+      }
+    ],
+    "bounds_tolerance_pt": 0.5,
+    "scope": "Text extraction plus visible texttrace font sizes/span bounds from independently rendered PDF; no collision claim."
+  },
+  "limitations": [
+    "Substring matches do not consume occurrences: repeated labels may match the same rendered text.",
+    "Literal presence does not prove correct order, position, visibility, absence of overlap, or editability.",
+    "PDF extraction order and font encoding can create false negatives; inspect listed misses visually.",
+    "Expected text is the model output, not source truth; these counts are not OCR accuracy scores.",
+    "Image-only text is excluded; only block text_lines and predicted cell text are checked."
+  ],
+  "baseline_comparison": {
+    "input": {
+      "name": "output.json",
+      "bytes": 575275,
+      "sha256": "7831e905b657291e8d2ef1dd88f25276711736647e5d63025ebe043854cebac7"
+    },
+    "geometry_and_text_equal": true,
+    "baseline_projection_sha256": "b61bc31a592cd97daaf2ea2d96b9860b24411855f9d7c7b4eaf4cc7f83bf6b21",
+    "current_projection_sha256": "b61bc31a592cd97daaf2ea2d96b9860b24411855f9d7c7b4eaf4cc7f83bf6b21",
+    "changed_path_count": 0,
+    "changed_paths": [],
+    "projection": "Page number/size/kind; block type/bbox/formula/table HTML; line and overlay text/bbox/polygon/font; table grid, cell text and spans.",
+    "excluded": "Source path, audit metadata, raw backend data, confidence, timing, and errors; full input hashes remain separately recorded."
+  }
+}

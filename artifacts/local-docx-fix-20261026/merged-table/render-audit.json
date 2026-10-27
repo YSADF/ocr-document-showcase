@@ -1,0 +1,136 @@
+{
+  "schema_version": "saved-docx-render-audit-v1",
+  "inputs": {
+    "json": {
+      "name": "merged-table-scan.json",
+      "bytes": 135074,
+      "sha256": "2ad599deb7f793986c67174ccbd65e0e87ec45145a8938a5395a32152c3a2e1a"
+    },
+    "docx": {
+      "name": "merged-table-scan.docx",
+      "bytes": 39016,
+      "sha256": "649e192e0deda79b6d638fe09becb0e9800e88a498d043aadf56ba39ca4023d8"
+    },
+    "pdf": {
+      "name": "merged-table-scan.pdf",
+      "bytes": 24855,
+      "sha256": "83697ca705ea848027d1df5a6236254d077ea46c008a6ea4652f8557291d254e"
+    }
+  },
+  "ocr_executed": false,
+  "renderer_executed": false,
+  "visual_review_performed": false,
+  "normalization": "Remove Unicode whitespace only; preserve case, punctuation and Unicode code points.",
+  "ocr_block_lines": {
+    "nonempty_expected_entries": 23,
+    "expected_characters_without_whitespace": 342,
+    "repeated_literal_entries": 1,
+    "docx_literal_matches": 23,
+    "pdf_literal_matches": 23,
+    "missing_from_docx": [],
+    "missing_from_pdf": []
+  },
+  "predicted_table_nonempty_cells": {
+    "nonempty_expected_entries": 19,
+    "expected_characters_without_whitespace": 172,
+    "repeated_literal_entries": 1,
+    "docx_literal_matches": 19,
+    "pdf_literal_matches": 19,
+    "missing_from_docx": [],
+    "missing_from_pdf": []
+  },
+  "docx": {
+    "package_and_xml_readable": true,
+    "native_table_count": 1,
+    "tables": [
+      {
+        "index": 0,
+        "rows": 6,
+        "grid_columns": 5,
+        "physical_cells_by_row": [
+          5,
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "grid_span_nodes": 0,
+        "vertical_merge_nodes": 0
+      }
+    ],
+    "native_text_characters_without_whitespace": 342,
+    "text_box_count": 4,
+    "scope": "Word document.xml only; all XML branches counted, not a Word editing acceptance test."
+  },
+  "rendered_pdf": {
+    "page_count": 1,
+    "pages": [
+      {
+        "page": 1,
+        "bounds_pt": [
+          0.0,
+          0.0,
+          841.8897705078125,
+          595.303955078125
+        ],
+        "text_characters_without_whitespace": 342,
+        "visible_text_trace_characters_without_whitespace": 342,
+        "nonempty_text_spans": 24,
+        "text_spans_outside_page_count": 0,
+        "text_spans_outside_page_examples": [],
+        "raster_image_count": 0
+      }
+    ],
+    "fonts": [
+      {
+        "font": "NotoSans-Regular",
+        "size_pt": 9.0,
+        "spans": 20
+      },
+      {
+        "font": "NotoSansCJKjp-Regular-VK",
+        "size_pt": 18.5,
+        "spans": 1
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 8.0,
+        "spans": 1
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 8.5,
+        "spans": 1
+      },
+      {
+        "font": "NotoSerif-Regular",
+        "size_pt": 9.5,
+        "spans": 1
+      }
+    ],
+    "bounds_tolerance_pt": 0.5,
+    "scope": "Text extraction plus visible texttrace font sizes/span bounds from independently rendered PDF; no collision claim."
+  },
+  "limitations": [
+    "Substring matches do not consume occurrences: repeated labels may match the same rendered text.",
+    "Literal presence does not prove correct order, position, visibility, absence of overlap, or editability.",
+    "PDF extraction order and font encoding can create false negatives; inspect listed misses visually.",
+    "Expected text is the model output, not source truth; these counts are not OCR accuracy scores.",
+    "Image-only text is excluded; only block text_lines and predicted cell text are checked."
+  ],
+  "baseline_comparison": {
+    "input": {
+      "name": "output.json",
+      "bytes": 135079,
+      "sha256": "c38264688749fd6115c26b551b34c8d046e141ed233acb7869bda4b84266117f"
+    },
+    "geometry_and_text_equal": true,
+    "baseline_projection_sha256": "7c964f6df960bcd8725ebd9e1b6a3018f538ba08b0c94db4ca617743135d1624",
+    "current_projection_sha256": "7c964f6df960bcd8725ebd9e1b6a3018f538ba08b0c94db4ca617743135d1624",
+    "changed_path_count": 0,
+    "changed_paths": [],
+    "projection": "Page number/size/kind; block type/bbox/formula/table HTML; line and overlay text/bbox/polygon/font; table grid, cell text and spans.",
+    "excluded": "Source path, audit metadata, raw backend data, confidence, timing, and errors; full input hashes remain separately recorded."
+  }
+}

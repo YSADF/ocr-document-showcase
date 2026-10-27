@@ -1,0 +1,564 @@
+{
+  "schema_version": "local-showcase-run-v1",
+  "case": "merged-table",
+  "started_at_utc": "2026-10-26T02:52:34.278898+00:00",
+  "input": {
+    "name": "merged-table-scan.pdf",
+    "bytes": 126255,
+    "sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+  },
+  "source": {
+    "revision": "cd3c11abee1ee3b1daeacfc584fe17cb70b1c0cd",
+    "dirty": true,
+    "description": "Current private project working tree; selected executed-source hashes are recorded below.",
+    "raw_private_record_sha256": "d74cddc28150a73418b192258b38877e62878b4a18e164e1db750a74a9b3ba65"
+  },
+  "executed_source_hashes": {
+    "pipeline/orchestrator.py": "99c63b4c562671cc890664a0a9e9ecfe203730d555ba4ee27707bbf76f66eebb",
+    "pipeline/execution.py": "39482dc8080d4e48cd0b35ac077a096b4ce3b671fd9932f45554c8257ea7e0c0",
+    "pipeline/pdf_processor.py": "430edeff0fa1e8e75a2b514f12470b8012ffaddb823bc0ff781ac668b216fc79",
+    "pipeline/image_processor.py": "37a4906a15c1649ee0307a838ba6c1f20d8a7030d82b3b1b7785c02f651da948",
+    "pipeline/page_processor.py": "38e466c0840ccc0e0692074f3725a922080911b000f5a6d3827cd3a766cc2c67",
+    "pipeline/render_dispatch.py": "6579f7510918d199f44b9d3612d36797592bd63d60ebd59ffdece06ebe37f1be",
+    "ocr_engine/engine.py": "197030cf8bdc555f9300aba5874f52d881c177b35638df8a0aa10caf4dd3a6b3",
+    "ocr_engine/backends/rapidocr_backend.py": "b71777d6fde29ebd635fa436a9af94983314750b7ea6243099e675a00a332315",
+    "render/docx_dispatch.py": "aa4b8ac0029cd345dfc936e6606a3e7caed88d4e0a97f882f8b5858d8d65ef9c",
+    "render/semantic_layout_word.py": "296ac16c60a6e5db64efdbce81bb36a2b4edb9afbb0232a6219460ebfb07926b",
+    "settings.py": "e972a24f996a0943e91541d3d50432411884fc8e6eaebe59976419875d7b1250",
+    "requirements.txt": "3ef14e6678ef1751dd8605a6e017c64ca5a7bb1357d053f2b7654f6494bee112",
+    "configs/rapidocr_onnx_models.json": "264dbcff1582869a042611a9b39779c91ddbbc1a387b6c08f1d7ce312ed5fc03"
+  },
+  "runtime": {
+    "python": "3.11.16 (main, Aug 13 2026, 19:41:13) [GCC 12.2.0]",
+    "platform": "Linux-6.18.54.1-microsoft-standard-WSL2-x86_64-with-glibc2.36",
+    "network": "docker --network none"
+  },
+  "dependencies": {
+    "packaging": "26.3",
+    "wheel": "0.46.3",
+    "pip": "24.0",
+    "setuptools": "79.0.1",
+    "annotated-types": "0.8.0",
+    "markdown-it-py": "4.2.0",
+    "arq": "0.28.0",
+    "h11": "0.16.0",
+    "python-docx": "1.1.2",
+    "pypdfium2": "5.14.0",
+    "tinycss2": "1.5.1",
+    "tqdm": "4.67.1",
+    "fsspec": "2026.9.0",
+    "MarkupSafe": "3.0.4",
+    "idna": "3.20",
+    "anyio": "4.15.1",
+    "pillow": "12.3.0",
+    "orjson": "3.13.0",
+    "uvloop": "0.23.0",
+    "pydantic": "2.12.5",
+    "cycler": "0.12.1",
+    "fonttools": "4.66.1",
+    "flatbuffers": "25.12.19",
+    "httptools": "0.9.0",
+    "et_xmlfile": "2.0.0",
+    "preocr": "1.11.0",
+    "shellingham": "1.5.4",
+    "starlette": "1.10.0",
+    "python-magic": "0.4.27",
+    "weasyprint": "69.0",
+    "hiredis": "3.5.0",
+    "termcolor": "3.3.0",
+    "opencv-python": "4.10.0.84",
+    "requests": "2.34.2",
+    "PyYAML": "6.0.2",
+    "typing_extensions": "4.16.0",
+    "cffi": "2.1.1",
+    "pillow-avif-plugin": "1.5.5",
+    "zopfli": "0.4.3",
+    "python-multipart": "0.0.32",
+    "ezdxf": "1.4.2",
+    "PyJWT": "2.15.1",
+    "fire": "0.7.1",
+    "typer": "0.27.3",
+    "tzdata": "2026.5",
+    "httpcore": "1.0.9",
+    "cryptography": "50.0.2",
+    "urllib3": "2.8.0",
+    "pydantic_core": "2.41.5",
+    "webencodings": "0.6.1",
+    "beautifulsoup4": "4.12.3",
+    "pyclipper": "1.3.0.post6",
+    "scikit-image": "0.26.0",
+    "pydantic-settings": "2.7.1",
+    "pycparser": "3.12",
+    "pdf2docx": "0.5.6",
+    "contourpy": "1.3.3",
+    "httpx": "0.28.1",
+    "groovy": "0.1.2",
+    "tifffile": "2026.3.3",
+    "xlsxwriter": "3.3.0",
+    "rapidocr": "3.0.0",
+    "redis": "5.3.1",
+    "sympy": "1.14.0",
+    "huggingface_hub": "1.33.0",
+    "table-cls": "1.2.0",
+    "click": "8.5.0",
+    "python-dotenv": "1.2.4",
+    "humanfriendly": "10.0",
+    "arabic-reshaper": "3.0.0",
+    "kiwisolver": "1.5.1",
+    "lineless-table-rec": "0.1.0",
+    "loguru": "0.7.3",
+    "pydub": "0.25.1",
+    "gradio": "6.16.0",
+    "coloredlogs": "15.0.1",
+    "gradio_client": "2.5.0",
+    "pydyf": "0.13.0",
+    "tinyhtml5": "2.1.0",
+    "scipy": "1.13.1",
+    "typing-inspection": "0.4.4",
+    "hf-gradio": "0.4.1",
+    "pyparsing": "3.3.3",
+    "omegaconf": "2.4.0",
+    "aiofiles": "24.1.0",
+    "semantic-version": "2.10.0",
+    "colorlog": "6.12.0",
+    "uvicorn": "0.34.0",
+    "PyMuPDF": "1.25.3",
+    "openpyxl": "3.1.5",
+    "lxml": "6.1.1",
+    "rich": "15.0.0",
+    "python-pptx": "1.0.2",
+    "certifi": "2026.10.23",
+    "ImageIO": "2.38.1",
+    "charset-normalizer": "3.5.2",
+    "matplotlib": "3.9.4",
+    "python-dateutil": "3.0.0",
+    "pyphen": "0.18.1",
+    "pytz": "2026.5",
+    "annotated-doc": "0.0.5",
+    "lazy-loader": "0.6",
+    "wired-table-rec": "1.2.0",
+    "mpmath": "1.3.0",
+    "numpy": "1.26.4",
+    "watchfiles": "1.3.0",
+    "pandas": "3.0.6",
+    "soupsieve": "3.0.4",
+    "pdfminer.six": "20260107",
+    "Pygments": "2.21.0",
+    "onnxruntime": "1.19.2",
+    "Jinja2": "3.1.6",
+    "shapely": "2.0.6",
+    "tomlkit": "0.14.0",
+    "hf-xet": "1.7.0",
+    "brotli": "1.2.1",
+    "filelock": "4.2.4",
+    "python-bidi": "0.6.11",
+    "mdurl": "0.1.2",
+    "fastapi": "0.133.0",
+    "safehttpx": "0.1.7",
+    "websockets": "17.3",
+    "pdfplumber": "0.11.10",
+    "networkx": "3.6.1",
+    "cssselect2": "0.10.1",
+    "six": "1.17.0",
+    "protobuf": "7.36.2"
+  },
+  "settings": {
+    "PPOCR_OCR_RUNTIME_PROVIDER": "rapidocr_onnx",
+    "PPOCR_INFER_BACKEND": "onnx",
+    "PPOCR_ACCELERATOR_KIND": "cpu",
+    "PPOCR_OCR_LANG": "en",
+    "PPOCR_LAYOUT_ENGINE": "geometry",
+    "PPOCR_RAPIDTABLE_ENABLED": "false",
+    "PPOCR_PRELOAD_RAPIDTABLE": "false",
+    "PPOCR_OCR_UYGHUR_TESSERACT_FALLBACK": "false",
+    "PPOCR_OCR_REQUIRE_PRELOADED_LANGUAGE_MODELS": "true",
+    "PPOCR_DOCX_RENDERER": "semantic_layout",
+    "PPOCR_LAYOUT_RECOVER_ENABLED": "false",
+    "PPOCR_MODEL_DIR": "/app/model_zoo",
+    "PPOCR_OUTPUT_DIR": "/work/runs/merged-table",
+    "PPOCR_LOG_DIR": "/work/runs/merged-table/runtime/logs",
+    "PPOCR_UPLOAD_DIR": "/work/runs/merged-table/runtime/uploads",
+    "PPOCR_KNOWLEDGE_DIR": "/work/runs/merged-table/runtime/knowledge",
+    "PPOCR_CPU_THREADS": "4",
+    "PPOCR_DET_LIMIT_SIDE_LEN": "1600"
+  },
+  "parameters": {
+    "output_format": "json",
+    "use_layout": true,
+    "absolute_position": true,
+    "ocr_lang": "en",
+    "ocr_mode": "balanced",
+    "ocr_scene": "general",
+    "vlm_fallback": "off"
+  },
+  "models": {
+    "det_multi": {
+      "file": "multi_PP-OCRv3_det_infer.onnx",
+      "bytes": 2421639,
+      "sha256": "5475c6c7f4d84a6c4f32241b487435d59f126a40c023387af99732258844cdc3",
+      "matches_locked_manifest": true
+    },
+    "cls_ch": {
+      "file": "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+      "bytes": 585532,
+      "sha256": "e47acedf663230f8863ff1ab0e64dd2d82b838fceb5957146dab185a89d6215c",
+      "matches_locked_manifest": true
+    },
+    "rec_ch": {
+      "file": "ch_PP-OCRv4_rec_infer.onnx",
+      "bytes": 10857958,
+      "sha256": "48fc40f24f6d2a207a2b1091d3437eb3cc3eb6b676dc3ef9c37384005483683b",
+      "matches_locked_manifest": true
+    },
+    "rec_en": {
+      "file": "en_PP-OCRv4_rec_infer.onnx",
+      "bytes": 7653044,
+      "sha256": "e8770c967605983d1570cdf5352041dfb68fa0c21664f49f47b155abd3e0e318",
+      "matches_locked_manifest": true
+    }
+  },
+  "status": "completed",
+  "ocr_executed": true,
+  "docx_generated": true,
+  "renderer_executed": false,
+  "visual_acceptance": "not_reviewed",
+  "artifacts": {
+    "json": {
+      "name": "merged-table-scan.json",
+      "bytes": 135079,
+      "sha256": "c38264688749fd6115c26b551b34c8d046e141ed233acb7869bda4b84266117f",
+      "published_path": "artifacts/local-20261026/merged-table/output.json"
+    },
+    "docx": {
+      "name": "merged-table-scan.docx",
+      "bytes": 38872,
+      "sha256": "92e60a5ccd1321eb7ef178a8709dc257ca2f284f1c5f8653f1671d8a3b22b9fe",
+      "published_path": "artifacts/local-20261026/merged-table/output.docx"
+    }
+  },
+  "runtime_errors": [],
+  "analysis_elapsed_seconds": 1.8435292039999922,
+  "pipeline_metadata": {
+    "pdf_evidence": {
+      "schema_version": 2,
+      "source_sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7",
+      "page_count": 1,
+      "pages": [
+        {
+          "page_index": 0,
+          "kind": "image_scan",
+          "visible_text_chars": 0,
+          "hidden_text_chars": 0,
+          "total_text_chars": 0,
+          "image_coverage_ratio": 1.0,
+          "largest_image_coverage_ratio": 1.0,
+          "hidden_text_ratio": 0.0,
+          "requires_ocr": true,
+          "direct_safe": false,
+          "image_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ],
+          "scan_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ],
+          "coordinate_space": "unrotated_pdf_points",
+          "reasons": [
+            "page_covering_raster"
+          ],
+          "text_visibility_known": true,
+          "schema_version": 2
+        }
+      ]
+    },
+    "conversion": {
+      "route": "scan_ocr",
+      "runtime_policy": {
+        "geometry_only": true,
+        "allow_native_layout": false,
+        "allow_vl": false,
+        "table_backend": "opencv",
+        "reason": "explicit_geometry"
+      },
+      "pages": [
+        {
+          "page": 1,
+          "route": "scan_ocr",
+          "pdf_kind": "image_scan",
+          "requires_ocr": true,
+          "layout_requested": true,
+          "layout_backend_used": "geometric",
+          "layout_fallback_reason": "explicit_geometry",
+          "render_dpi": 220,
+          "hidden_text_chars": 0,
+          "image_coverage_ratio": 1.0,
+          "coordinate_space": "unrotated_pdf_points",
+          "scan_regions": [
+            [
+              0.0,
+              0.0,
+              841.8897705078125,
+              595.2755737304688
+            ]
+          ]
+        }
+      ],
+      "evidence_schema_version": 2,
+      "source_sha256": "df9a44b94571a7baa3d27818378d0f61db1f7250f0a58b7a12bf96adb7cfaed7"
+    },
+    "ocr_language": {
+      "requested": "en",
+      "resolved": "en",
+      "confidence": 1.0,
+      "source": "manual",
+      "script_profile": "en",
+      "exact_language": "",
+      "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+      "model_ready": true,
+      "route_status": "ready",
+      "fallback_reason": "",
+      "script_counts": {},
+      "sample_text": "",
+      "details": {
+        "model_capability": {
+          "ocr_profile": "en",
+          "rapidocr_profile": "en",
+          "paddle_lang": "en",
+          "backend": "rapidocr_onnx",
+          "ocr_version": "PP-OCRv4",
+          "detection_ocr_version": "PP-OCRv4",
+          "recognition_ocr_version": "PP-OCRv4",
+          "tier": "mobile",
+          "detection_model": "multi_PP-OCRv3_det_infer.onnx",
+          "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+          "required_models": [
+            "multi_PP-OCRv3_det_infer.onnx",
+            "ch_ppocr_mobile_v2.0_cls_infer.onnx",
+            "en_PP-OCRv4_rec_infer.onnx"
+          ],
+          "missing_models": [],
+          "model_ready": true,
+          "rapidocr_rec_lang": "en",
+          "supplemental_runtime": null
+        }
+      },
+      "post_ocr": {
+        "language": "en",
+        "confidence": 1.0,
+        "script_counts": {
+          "han": 0,
+          "latin": 303,
+          "other_letters": 0
+        },
+        "method": "unicode_script_ratio",
+        "scope": "zh_en",
+        "script_profile": "en",
+        "exact_language": "",
+        "translation_language": "auto",
+        "translation_language_confidence": 0.0,
+        "translation_profile": "en",
+        "translation_profile_confidence": 0.99,
+        "profile_script_counts": {
+          "han": 0,
+          "kana": 0,
+          "hangul": 0,
+          "arabic": 0,
+          "devanagari": 0,
+          "cyrillic": 0,
+          "thai": 0,
+          "burmese": 0,
+          "khmer": 0,
+          "lao": 0,
+          "greek": 0,
+          "tamil": 0,
+          "telugu": 0,
+          "uyghur": 0,
+          "latin": 303,
+          "latin_ext": 0,
+          "other": 0
+        }
+      }
+    },
+    "ocr_mode": {
+      "requested": "balanced",
+      "resolved": "balanced",
+      "description": "Default mode: conservative speedups with normal layout analysis."
+    },
+    "ocr_mode_policy": {
+      "mode": "balanced",
+      "base_mode": "balanced",
+      "pdf_render_dpi": 220,
+      "empty_page_retry": true,
+      "empty_page_retry_dpi": 240,
+      "text_pdf_layout_probe": true,
+      "scan_layout": true,
+      "structure_detection": true,
+      "analysis_max_pixels": 4000000,
+      "det_limit_side_len": 2048,
+      "adaptive_retry": false,
+      "adaptive_retry_mode": "",
+      "adaptive_min_lines": 2,
+      "adaptive_min_chars": 8,
+      "adaptive_min_confidence": 0.5,
+      "adaptive_layout_retry": false,
+      "adaptive_layout_min_lines": 40,
+      "adaptive_layout_min_chars": 800,
+      "adaptive_layout_low_confidence_retry": false,
+      "adaptive_layout_low_confidence_max": 0.9,
+      "adaptive_layout_low_confidence_min_lines": 8,
+      "adaptive_layout_low_confidence_min_chars": 120,
+      "adaptive_direct_layout": false,
+      "adaptive_direct_layout_min_components": 850,
+      "adaptive_direct_layout_min_dark_ratio": 0.03,
+      "adaptive_direct_layout_max_dark_ratio": 0.35,
+      "adaptive_direct_layout_sparse_min_components": 150,
+      "adaptive_direct_layout_sparse_min_dark_ratio": 0.08,
+      "adaptive_direct_layout_sparse_max_dark_ratio": 0.22,
+      "adaptive_accept_min_line_gain": 1,
+      "adaptive_accept_min_char_gain": 8,
+      "adaptive_accept_min_confidence_gain": 0.05,
+      "adaptive_accept_min_overlay_gain": 1,
+      "adaptive_accept_min_table_gain": 1
+    },
+    "layout_engine": {
+      "layout_backend_requested": "geometry",
+      "layout_backend_used": "geometric",
+      "layout_fallback_reason": "explicit_geometry",
+      "page_count_with_meta": 1,
+      "fallback_reason_counts": {
+        "explicit_geometry": 1
+      },
+      "backend_used_counts": {
+        "geometric": 1
+      }
+    },
+    "ocr_model": {
+      "configured_parameters": {
+        "DET_LIMIT_SIDE_LEN": 2048,
+        "DET_LIMIT_TYPE": "max",
+        "DET_DB_THRESH": 0.2,
+        "DET_DB_BOX_THRESH": 0.3,
+        "DET_DB_UNCLIP_RATIO": 1.8,
+        "REC_BATCH_NUM": 6,
+        "TEXT_REC_SCORE_THRESH": 0.0,
+        "IMAGE_ANALYSIS_MAX_PIXELS": 4000000,
+        "OCR_ACTIVE_MODE": "balanced",
+        "OCR_ACTIVE_PROFILE": "en"
+      },
+      "accepted_constructor": null,
+      "structure_constructor": null,
+      "model_files": [
+        {
+          "model": "PP-OCRv5_server_det",
+          "status": "not_found",
+          "files": []
+        },
+        {
+          "model": "en_PP-OCRv5_mobile_rec",
+          "status": "not_found",
+          "files": []
+        }
+      ],
+      "profile": "en",
+      "model_backend": "rapidocr_onnx",
+      "model_tier": "mobile",
+      "ocr_version": "PP-OCRv4",
+      "detection_model": "multi_PP-OCRv3_det_infer.onnx",
+      "recognition_model": "en_PP-OCRv4_rec_infer.onnx",
+      "inference_backend": "onnx",
+      "cpu_threads": 4,
+      "layout_engine": "geometry",
+      "doc_orientation_classify": false,
+      "doc_unwarping": false
+    },
+    "text_language": {
+      "language": "en",
+      "confidence": 1.0,
+      "script_counts": {
+        "han": 0,
+        "latin": 303,
+        "other_letters": 0
+      },
+      "method": "unicode_script_ratio",
+      "scope": "zh_en",
+      "script_profile": "en",
+      "exact_language": "",
+      "translation_language": "auto",
+      "translation_language_confidence": 0.0,
+      "translation_profile": "en",
+      "translation_profile_confidence": 0.99,
+      "profile_script_counts": {
+        "han": 0,
+        "kana": 0,
+        "hangul": 0,
+        "arabic": 0,
+        "devanagari": 0,
+        "cyrillic": 0,
+        "thai": 0,
+        "burmese": 0,
+        "khmer": 0,
+        "lao": 0,
+        "greek": 0,
+        "tamil": 0,
+        "telugu": 0,
+        "uyghur": 0,
+        "latin": 303,
+        "latin_ext": 0,
+        "other": 0
+      }
+    },
+    "ocr_scene": "general",
+    "vlm_fallback": "off",
+    "timing": {
+      "total_seconds": 1.4657,
+      "stages": {
+        "language_detection": 0.0095,
+        "preocr": 0.3831,
+        "input_processing": 1.0626,
+        "post_ocr_language": 0.0014,
+        "render": 0.0086
+      }
+    },
+    "quality": {
+      "page_count": 1,
+      "line_count": 23,
+      "text_line_count": 23,
+      "overlay_text_line_count": 0,
+      "char_count": 392,
+      "table_html_count": 1,
+      "avg_confidence": 0.9908,
+      "block_counts": {
+        "table": 1,
+        "text": 2,
+        "title": 1
+      },
+      "input_kind_counts": {
+        "scan_pdf": 1
+      },
+      "empty_pages": [],
+      "needs_review": false,
+      "engineering_review_pages": [],
+      "arabic_digit_review_pages": [],
+      "orientation_review_pages": [],
+      "empty_page_rate": 0.0
+    }
+  },
+  "page_count": 1,
+  "page_input_kinds": [
+    "scan_pdf"
+  ],
+  "text_line_count": 23,
+  "docx_elapsed_seconds": 0.17731363899997632,
+  "elapsed_seconds": 2.0383297820000053,
+  "finished_at_utc": "2026-10-26T02:52:36.370544+00:00",
+  "publication_note": "Artifact bytes are unchanged. This execution record omits the private worktree status listing; private host paths, runtime logs and full source are not published. The inference-stage record ends before the separate rendering run; run.json records that later render and visual review."
+}

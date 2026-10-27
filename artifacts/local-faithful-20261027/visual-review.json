@@ -1,0 +1,78 @@
+{
+  "review_date": "2026-10-27",
+  "method": "Two assistants independently inspected each original-size canonical PNG against the source; not independent human validation.",
+  "rendering": "LibreOffice 7.4.7.2 / Poppler 22.12.0 / 144 DPI, canonical render_docx.py; DOCX unchanged after export.",
+  "cases": {
+    "plos": {
+      "acceptance": "passed_for_page_layout",
+      "source_pages": 1,
+      "rendered_pages": 1,
+      "overlap_seen": false,
+      "clipping_seen": false,
+      "page_overflow_seen": false,
+      "source_text_ghosts_seen": false,
+      "observations": [
+        "One-page two-column layout and full blue panel retained; two body headings remain separate.",
+        "Same-baseline fragments now read in the correct paragraph; abnormally small body paragraph corrected.",
+        "Footer date and article identifier e1001745 visible in full; no source English ghosts seen.",
+        "51 native positioned text regions; 111/111 source records covered by translated output.",
+        "Font/weight/spacing and line wrapping differ from original; machine terminology errors and omissions retained."
+      ],
+      "translation_quality": "needs_review_known_mistranslations_and_omissions",
+      "word_interactive_editing_verified": false,
+      "page_geometry": [
+        {
+          "render_dpi": 199.9996,
+          "page_width_pt": 612.3612247224495,
+          "page_height_pt": 790.9215818431637,
+          "source_dpi": [
+            199.9996,
+            199.9996
+          ],
+          "image_resolution_source": "embedded",
+          "page_geometry_source": "embedded_dpi"
+        }
+      ],
+      "docx_sha256": "1ac441c7d0112782d5fa039f2a4b0509882e70238a25df4e3323fba399448fb7",
+      "rendered_page_size_pt": [
+        612.0,
+        790.894488188976
+      ],
+      "page_size_note": "Measured PDF page 612.0000 x 790.8945 pt; source geometry 612.3612 x 790.9216 pt. This is a layout check, not exact pixel identity."
+    },
+    "merged-table": {
+      "acceptance": "passed_for_page_layout",
+      "source_pages": 1,
+      "rendered_pages": 1,
+      "overlap_seen": false,
+      "clipping_seen": false,
+      "page_overflow_seen": false,
+      "source_text_ghosts_seen": false,
+      "observations": [
+        "One landscape page; source table location, colored header, borders and five merged-cell boundaries retained.",
+        "12 Chinese table translations visible; 16 native positioned regions (13 table-related, 3 outside table).",
+        "No source-text ghosts seen in subtitle, table or footer after the source-mask repair.",
+        "Six literal/status cells retained as raster; quantities 2 and 1 have empty OCR cells and remain visible only in the source background.",
+        "No native Word table; Qty mistranslation, missing source disclaimer and engineering-symbol OCR errors retained."
+      ],
+      "translation_quality": "needs_review_known_mistranslations_and_omissions",
+      "word_interactive_editing_verified": false,
+      "page_geometry": [
+        {
+          "render_dpi": 220,
+          "page_width_pt": 841.8897705078125,
+          "page_height_pt": 595.2755737304688,
+          "source_dpi": null,
+          "image_resolution_source": null,
+          "page_geometry_source": null
+        }
+      ],
+      "docx_sha256": "f79843508b4fcf6470cfe3ba2d1d5006397464835a9be6cbf7b86d2eae41d537",
+      "rendered_page_size_pt": [
+        841.889763779528,
+        595.303937007874
+      ],
+      "page_size_note": "Measured PDF page 841.8898 x 595.3039 pt; source geometry 841.8898 x 595.2756 pt. This is a layout check, not exact pixel identity."
+    }
+  }
+}

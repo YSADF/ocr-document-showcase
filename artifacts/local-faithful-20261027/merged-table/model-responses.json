@@ -1,0 +1,308 @@
+{
+  "model": "Argos translate-en_zh",
+  "revision": "1.9",
+  "target_prefix": ">>cmn_Hans<< (added by model/config.json)",
+  "generation": {
+    "beam_size": 4,
+    "num_hypotheses": 1,
+    "length_penalty": 0.2,
+    "replace_unknowns": true,
+    "max_input_length": 512,
+    "max_decoding_length": 512
+  },
+  "requests": [
+    {
+      "request": {
+        "q": [
+          "Merged-cell table input",
+          "Self-created input and ground truth Not an OCR result",
+          "Engineering inspection record",
+          "Item",
+          "Specification",
+          "Qty",
+          "Result",
+          "Note"
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "合并单元格表格输入",
+          "自我创建的输入和地面真相",
+          "工程检查记录",
+          "项目",
+          "规格",
+          "齐哥",
+          "结果",
+          "说明"
+        ]
+      },
+      "input_token_lengths": [
+        6,
+        13,
+        3,
+        1,
+        2,
+        3,
+        1,
+        1
+      ],
+      "output_token_lengths": [
+        5,
+        8,
+        4,
+        1,
+        2,
+        3,
+        1,
+        2
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "合并",
+          "单元格",
+          "表格",
+          "输入"
+        ],
+        [
+          "▁",
+          "自我",
+          "创建",
+          "的",
+          "输入",
+          "和",
+          "地面",
+          "真相"
+        ],
+        [
+          "▁",
+          "工程",
+          "检查",
+          "记录"
+        ],
+        [
+          "▁项目"
+        ],
+        [
+          "▁",
+          "规格"
+        ],
+        [
+          "▁",
+          "齐",
+          "哥"
+        ],
+        [
+          "▁结果"
+        ],
+        [
+          "▁",
+          "说明"
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.05487395399995876
+    },
+    {
+      "request": {
+        "q": [
+          "Valve body",
+          "Angle 90 0.5o",
+          "Pump",
+          "Model P001 11 unit",
+          "Bore 0 12 mm",
+          "Summary: 4 inspected units",
+          "6 logical rows x 5 columns rowspan and colspan CCO 1.0 Target: preserve text, merged cells and editable document structure."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "阀门",
+          "角度 90 0.5o 坐标",
+          "泵",
+          "P001型11个单元",
+          "0 12毫米口径",
+          "摘要:4个被检查单位",
+          "6逻辑行 x 5 列行和 colspan CCO 1.0 目标:保存文本,合并单元格和可编辑文档结构."
+        ]
+      },
+      "input_token_lengths": [
+        3,
+        5,
+        2,
+        5,
+        5,
+        5,
+        30
+      ],
+      "output_token_lengths": [
+        3,
+        10,
+        2,
+        7,
+        5,
+        7,
+        33
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "阀",
+          "门"
+        ],
+        [
+          "▁",
+          "角度",
+          "▁",
+          "90",
+          "▁",
+          "0.",
+          "5",
+          "o",
+          "▁",
+          "坐标"
+        ],
+        [
+          "▁",
+          "泵"
+        ],
+        [
+          "▁P",
+          "00",
+          "1",
+          "型",
+          "11",
+          "个",
+          "单元"
+        ],
+        [
+          "▁0",
+          "▁",
+          "12",
+          "毫米",
+          "口径"
+        ],
+        [
+          "▁摘要",
+          ":",
+          "4",
+          "个",
+          "被",
+          "检查",
+          "单位"
+        ],
+        [
+          "▁",
+          "6",
+          "逻辑",
+          "行",
+          "▁x",
+          "▁",
+          "5",
+          "▁",
+          "列",
+          "行",
+          "和",
+          "▁c",
+          "ol",
+          "sp",
+          "an",
+          "▁C",
+          "CO",
+          "▁",
+          "1.0",
+          "▁",
+          "目标",
+          ":",
+          "保存",
+          "文本",
+          ",",
+          "合并",
+          "单元格",
+          "和",
+          "可",
+          "编辑",
+          "文档",
+          "结构",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.08355529699997533
+    },
+    {
+      "request": {
+        "q": [
+          "6 logical rows x 5 columns rowspan and colspan CCO 1.0",
+          "Target: preserve text, merged cells and editable document structure."
+        ],
+        "source": "en",
+        "target": "zh",
+        "format": "text"
+      },
+      "response": {
+        "translatedText": [
+          "6 个逻辑行 x 5 列行和 crospan CCO 1.0",
+          "目标:保存文本,合并单元格和可编辑文档结构."
+        ]
+      },
+      "input_token_lengths": [
+        17,
+        13
+      ],
+      "output_token_lengths": [
+        21,
+        14
+      ],
+      "raw_output_token_pieces": [
+        [
+          "▁",
+          "6",
+          "▁",
+          "个",
+          "逻辑",
+          "行",
+          "▁x",
+          "▁",
+          "5",
+          "▁",
+          "列",
+          "行",
+          "和",
+          "▁c",
+          "ros",
+          "p",
+          "an",
+          "▁C",
+          "CO",
+          "▁",
+          "1.0"
+        ],
+        [
+          "▁",
+          "目标",
+          ":",
+          "保存",
+          "文本",
+          ",",
+          "合并",
+          "单元格",
+          "和",
+          "可",
+          "编辑",
+          "文档",
+          "结构",
+          "."
+        ]
+      ],
+      "decoding_limit_reached": false,
+      "elapsed_seconds": 0.04964833200006069
+    }
+  ]
+}
