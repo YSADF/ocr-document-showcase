@@ -76,6 +76,10 @@ pdftoppm -f 2 -l 2 -singlefile -r 200 -png samples/plos-best-practices-source.pd
 
 DOCX 内嵌 Noto 字体子集；推理与独立渲染使用同一批已准备的静态 TTF，未另创字体嵌入算法。上游为 [notofonts/noto-cjk](https://github.com/notofonts/noto-cjk/tree/985fa52c81c1d6692ccdd82bc3656e8fb932fd89)，固定提交 `985fa52c81c1d6692ccdd82bc3656e8fb932fd89`。保存的[字体来源与 SHA-256](artifacts/local-faithful-20261027/font-provenance.json)记录上游文件、静态实例及权重；[Sans OFL](artifacts/local-faithful-20261027/OFL-NotoSansCJK.txt)与[Serif OFL](artifacts/local-faithful-20261027/OFL-NotoSerifCJK.txt)随产物提供。完整字体文件和模型权重不单独纳入公开包。
 
+## 2026-10-27 表格展示页
+
+`artifacts/table-display-20261027/` 从原始英文 PDF 和已验证的中文原生表格派生，只移除两侧顶部标题与说明，表格和底部说明保留；原始输入及历史产物不覆盖。英文 PDF 副本与中文 DOCX 均重新渲染，不修改预览像素来模拟效果。沿用自制样本 CC0 1.0 和已嵌入字体的 Noto OFL。[变化记录](artifacts/table-display-20261027/run.json)
+
 ## 2026-10-27 原生 Word 表格产物
 
 `artifacts/native-table-20261027/` 继续使用同一自制 CC0 表格与已有中文内容，生成真正的 Word 单元格、边框及合并关系。原图中的数量 `2／1` 补录为文档文字，原始 OCR 记录保持空值；[逐格数据](artifacts/native-table-20261027/targets.json)与[执行记录](artifacts/native-table-20261027/execution.json)说明变化。这是助手对保存文档的格式与内容修订，不是模型新输出。输入沿用 CC0 1.0，嵌入字体沿用上述 Noto OFL；未引入新资料，旧产物不覆盖。

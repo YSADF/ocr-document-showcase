@@ -1,0 +1,40 @@
+{
+  "operation": "remove_two_heading_text_operators_from_display_pdf_copy",
+  "date": "2026-10-27",
+  "source": "samples/merged-table-source.pdf",
+  "source_sha256": "96c980c08ce0abb501d44b6ef6e3c64222d6dd86df2b04e0051a7fd059fb85aa",
+  "output_sha256": "926f41a58ee7b75890260100cbf99a96b40f17f1419e9c29fcd58b7e458bcd0d",
+  "removed_visible_text": [
+    "Merged-cell table input",
+    "Self-created input and ground truth | Not an OCR result"
+  ],
+  "table_and_footer_text_unchanged": true,
+  "page_count": 1,
+  "page_size_pt": [
+    841.8898,
+    595.2756
+  ],
+  "source_modified": false,
+  "ocr_executed": false,
+  "translation_executed": false,
+  "renderer": "Poppler pdftoppm 26.07.0",
+  "render_dpi": 144,
+  "render_size_px": [
+    1684,
+    1191
+  ],
+  "changed_pixel_bbox": [
+    96,
+    101,
+    585,
+    175
+  ],
+  "changed_pixels_below_y250": 0,
+  "table_and_footer_pixels_unchanged": true,
+  "visual_review": {
+    "performed": true,
+    "issues": [],
+    "scope": "Full-page rendered PDF: requested heading and description absent; table and footer retained."
+  },
+  "preview_sha256": "de458e804b5cba401ee1998ff3db1e2a0581ade7d32cfc025a856bc6d4ed78e6"
+}

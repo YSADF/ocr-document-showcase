@@ -13,7 +13,7 @@
 | 原文档 | 中文文档效果 | 可直接查看 |
 |---|---|---|
 | [PLOS 第 2 页](samples/plos-best-practices-page-2.png) | 一页双栏；蓝底摘要框、标题与完整页脚 | [译文 JSON](artifacts/reviewed-translation-20261027/plos/reviewed.json) → [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) |
-| [合并表格扫描 PDF](samples/merged-table-scan.pdf) | 一页原生 Word 表格；21 个单元格、5 处合并；格内文字与数字均为原生内容 | [逐格内容](artifacts/native-table-20261027/targets.json) → [中文 DOCX](artifacts/native-table-20261027/output.docx) · [预览 PDF](artifacts/native-table-20261027/render/output.pdf) |
+| [合并表格扫描 PDF](samples/merged-table-scan.pdf) | 一页原生 Word 表格；21 个单元格、5 处合并；格内文字与数字均为原生内容 | [逐格内容](artifacts/native-table-20261027/targets.json) → [中文 DOCX](artifacts/table-display-20261027/output.docx) · [预览 PDF](artifacts/table-display-20261027/render/output.pdf) |
 
 ### PLOS：英文原页 → 中文 Word
 
@@ -23,17 +23,17 @@
 
 [完整原始 PDF](samples/plos-best-practices-source.pdf) · [中文 DOCX](artifacts/reviewed-translation-20261027/plos/output.docx) · [预览 PDF](artifacts/reviewed-translation-20261027/plos/render/output.pdf) · [案例说明](cases/reviewed-translation-20261027.md)
 
-### 合并表格：英文原页 → 中文 Word
+### 合并表格：英文表格 → 中文 Word
 
-| 英文原页（自制扫描表格） | 中文 Word 的实际渲染 |
+| 英文表格（自制样本） | 中文 Word 的实际渲染 |
 |---|---|
-| [![英文原表：21 个物理格与 5 处合并边界](assets/merged-table-input.png)](assets/merged-table-input.png) | [![原生 Word 表格实际渲染：中文、数量、工程符号与合并单元格](artifacts/native-table-20261027/render/page-1.png)](artifacts/native-table-20261027/render/page-1.png) |
+| [![英文表格展示页：21 个物理格与 5 处合并边界](artifacts/table-display-20261027/english/page-1.png)](artifacts/table-display-20261027/english/page-1.png) | [![原生 Word 表格实际渲染：中文、数量、工程符号与合并单元格](artifacts/table-display-20261027/render/page-1.png)](artifacts/table-display-20261027/render/page-1.png) |
 
-[原始扫描 PDF](samples/merged-table-scan.pdf) · [中文 DOCX](artifacts/native-table-20261027/output.docx) · [预览 PDF](artifacts/native-table-20261027/render/output.pdf) · [案例说明](cases/reviewed-translation-20261027.md)
+[原始扫描 PDF](samples/merged-table-scan.pdf) · [中文 DOCX](artifacts/table-display-20261027/output.docx) · [预览 PDF](artifacts/table-display-20261027/render/output.pdf) · [案例说明](cases/reviewed-translation-20261027.md)
 
 表格已改为 **原生 Word 表格**：格内文字、数量、边框与合并关系均为 Word 对象；没有表格背景图或表内文字框。`DN 50／DN 80`、数量 `2／1` 和“合格／待复核”均在真实单元格中。字体、局部字号与原文有差异，Microsoft Word 交互编辑未验收。[结构与内容检查](cases/reviewed-translation-20261027.md)
 
-最终中文文档与[原始模型输出](cases/faithful-translation-20261027.md)分别保存；[PLOS 生成记录](artifacts/reviewed-translation-20261027/run.json)、[表格更新记录](artifacts/native-table-20261027/run.json)和[输入与字体许可](CASE_SOURCES.md)可追溯。基础 OCR／翻译实测使用 RapidOCR / ONNX Runtime 和 Argos `translate-en_zh` 1.9 / CTranslate2 4.5.0 CPU int8。
+最终中文文档与[原始模型输出](cases/faithful-translation-20261027.md)分别保存；[PLOS 生成记录](artifacts/reviewed-translation-20261027/run.json)、[表格更新记录](artifacts/table-display-20261027/run.json)和[输入与字体许可](CASE_SOURCES.md)可追溯。基础 OCR／翻译实测使用 RapidOCR / ONNX Runtime 和 Argos `translate-en_zh` 1.9 / CTranslate2 4.5.0 CPU int8。
 
 [旧三页单栏版本](cases/english-to-chinese-20261026.md)、[原文导出修复](cases/docx-export-fix-20261026.md)和[首次 CPU 失败](cases/local-cpu-20261026.md)作为历史对照保留。下方最小命令只核验保存结果和运行独立算法，不启动完整私有服务。
 

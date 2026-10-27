@@ -1,0 +1,54 @@
+{
+  "operation": "Remove only the two top heading/description blocks requested in the comparison",
+  "date": "2026-10-27",
+  "source_input_unchanged": true,
+  "previous_artifacts_unchanged": true,
+  "business_code_changed": false,
+  "ocr_or_translation_executed": false,
+  "english_source": "../../samples/merged-table-source.pdf",
+  "chinese_baseline": "../native-table-20261027/output.docx",
+  "raw_chinese_execution_sha256": "be45530fc1e4bb6a369c2612dd480612b6680c5d8ff594703b95874d3dfd47c9",
+  "source_paths_in_public_records_relative_to_repository_root": true,
+  "verification": {
+    "table_xml_bytes_identical": true,
+    "native_table_count": 1,
+    "physical_cells": 21,
+    "merge_groups": 5,
+    "remaining_outside_frames": 1,
+    "chinese_pages": 1,
+    "english_pages": 1,
+    "english_table_and_footer_pixels_unchanged": true,
+    "chinese_table_and_footer_pixels_unchanged": true,
+    "visual_review_passed": true
+  },
+  "files": {
+    "english/execution.json": {
+      "bytes": 1204,
+      "sha256": "d5b3f4d45d3fd66a91de1d995d5cfc8bc8cbb3a715a78643b41fad2c47efd134"
+    },
+    "english/input.pdf": {
+      "bytes": 45982,
+      "sha256": "926f41a58ee7b75890260100cbf99a96b40f17f1419e9c29fcd58b7e458bcd0d"
+    },
+    "english/page-1.png": {
+      "bytes": 67934,
+      "sha256": "de458e804b5cba401ee1998ff3db1e2a0581ade7d32cfc025a856bc6d4ed78e6"
+    },
+    "execution.json": {
+      "bytes": 6614,
+      "sha256": "9773450ebc88a47f5ee421ea2cb145903919a84a24605c0777024e98c39fe13f"
+    },
+    "output.docx": {
+      "bytes": 124253,
+      "sha256": "c9360a23ff365e9e1e98909e5a4abef1c58cadf1c2091ed208c56263963827fd"
+    },
+    "render/output.pdf": {
+      "bytes": 16590,
+      "sha256": "c0ec91e405b86292098bbbca5300499e8c10dac60d8056380724e38bfc6a5e40"
+    },
+    "render/page-1.png": {
+      "bytes": 67746,
+      "sha256": "105b0fa31ef967a59bc441f1f90a958f3117ae690f1b9a695ac85cead300b150"
+    }
+  }
+}

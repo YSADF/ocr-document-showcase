@@ -49,7 +49,7 @@ python -S -X utf8 -B tools/verify_demo.py --output generated/demo-verification.j
 
 ## 2. 对照输入、JSON 与文档
 
-**当前中文文档：** [下载与预览](../cases/reviewed-translation-20261027.md)包含 PLOS 双栏页和真正的原生 Word 表格；[逐区域内容与结构检查](../artifacts/native-table-20261027/semantic-coverage.json)核对 21 个格内文字、5 处合并和 3 个页外区域。最终文档经过内容与格式修订，与下述原始模型输出分开保存。公开清单核验检查文件完整性，不判断翻译正确性。
+**当前中文文档：** [下载与预览](../cases/reviewed-translation-20261027.md)包含 PLOS 双栏页和真正的原生 Word 表格；[逐区域内容与结构检查](../artifacts/native-table-20261027/semantic-coverage.json)记录原生初版的 21 个格内文字与 5 处合并；当前展示页去除顶部标题和说明，仅保留页脚，[展示调整记录](../artifacts/table-display-20261027/run.json)确认表格与页脚不变。最终文档经过内容与格式修订，与下述原始模型输出分开保存。公开清单核验检查文件完整性，不判断翻译正确性。
 
 **2026-10-27 原页版式英译中模型实测：**
 
