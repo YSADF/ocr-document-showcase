@@ -49,7 +49,9 @@ python -S -X utf8 -B tools/verify_demo.py --output generated/demo-verification.j
 
 ## 2. 对照输入、JSON 与文档
 
-**2026-10-27 原页版式英译中：**
+**当前中文文档：** [下载与预览](../cases/reviewed-translation-20261027.md)包含 PLOS 双栏页和已补入中文检测状态的表格；[逐区域内容检查](../artifacts/status-translation-20261027/semantic-coverage.json)单独说明需要翻译的文字与保留的标识、数值。最终文档经过内容修订，与下述原始模型输出分开保存。公开清单核验检查文件完整性，不判断翻译正确性。
+
+**2026-10-27 原页版式英译中模型实测：**
 
 从[案例入口](../cases/faithful-translation-20261027.md)按“原输入 → OCR JSON → 模型响应与译后 JSON → DOCX → 实际渲染”对照两例。此次复用完整项目现有 `faithful`，翻译阶段与导出阶段均显式选定该模式及 `strict` 质量策略；源码、模型和适配器不在精选公开包中，以上核验命令不能代替完整推理。
 

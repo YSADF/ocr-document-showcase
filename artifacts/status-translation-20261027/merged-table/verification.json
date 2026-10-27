@@ -1,0 +1,167 @@
+{
+  "source_inventory_unchanged": true,
+  "original_translation_metadata_unchanged": true,
+  "all_source_cell_strings_unchanged": true,
+  "baseline_docx_and_pickle_unchanged": true,
+  "native_frames": 20,
+  "native_tables": 0,
+  "embedded_font_files": [
+    "word/fonts/faithfulFont1.odttf",
+    "word/fonts/faithfulFont2.odttf"
+  ],
+  "native_frame_text_multiset_matches_records": true,
+  "manual_status_mappings": [
+    {
+      "source_id": "page-1/block-2/cell-9",
+      "source_line_id": "line:7380d82d18c175d2",
+      "region": "manual_status:page-1/block-2/cell-9",
+      "row": 2,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        774,
+        1383,
+        814
+      ],
+      "cell_bbox_page": [
+        1261,
+        711,
+        1555,
+        879
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-13",
+      "source_line_id": "line:09c6347cf3c1143b",
+      "region": "manual_status:page-1/block-2/cell-13",
+      "row": 3,
+      "col": 3,
+      "source": "REVIEW",
+      "target": "待复核",
+      "source_bbox_page": [
+        1286,
+        945,
+        1419,
+        981
+      ],
+      "cell_bbox_page": [
+        1261,
+        879,
+        1555,
+        1048
+      ],
+      "source_font_size_pt": 9,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-17",
+      "source_line_id": "line:206750a1547f9f11",
+      "region": "manual_status:page-1/block-2/cell-17",
+      "row": 4,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        1110,
+        1382,
+        1150
+      ],
+      "cell_bbox_page": [
+        1261,
+        1048,
+        1555,
+        1215
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-20",
+      "source_line_id": "line:66c01f26555030bd",
+      "region": "manual_status:page-1/block-2/cell-20",
+      "row": 5,
+      "col": 3,
+      "source": "3 PASS/1 REVIEW",
+      "target": "3 合格 / 1 待复核",
+      "source_bbox_page": [
+        1281,
+        1259,
+        1577,
+        1301
+      ],
+      "cell_bbox_page": [
+        1261,
+        1215,
+        2426,
+        1344
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    }
+  ],
+  "manual_targets_found_in_native_docx_and_rendered_pdf": true,
+  "english_status_tokens_absent_from_native_docx_and_rendered_pdf": true,
+  "raster_status_removal_requires_visual_review": true,
+  "pages": 1,
+  "rendered_page_size_pt": [
+    841.8897705078125,
+    595.303955078125
+  ],
+  "existing_strict_audit_passed": true,
+  "existing_audit_violations": [],
+  "existing_source_coverage": {
+    "source_count": 23,
+    "translated_count": 17,
+    "preserved_count": 6,
+    "alternative_observation_count": 0,
+    "ocr_alternatives": []
+  },
+  "source_coverage_scope": "Existing literal policy classification, not manual translation coverage; manual mappings and 20 native frames are the direct evidence.",
+  "font_files": {
+    "NotoSansCJKsc-Bold.ttf": "208dc1942c4d4058be24a8e75bb1e1fb1cc3843efed3aee81056d06d738b9fdb",
+    "NotoSansCJKsc-Regular.ttf": "a9c3ee63969ebbc32b634ec5d07989c1799f8cf8e6702648678b66f738d3859e",
+    "NotoSerifCJKsc-Bold.ttf": "c54a416cfe7ba07ca430ebd030d279f200c5f6909b850781bdd572592d3da74d",
+    "NotoSerifCJKsc-Regular.ttf": "3c71ed24cb9938245b2f6b24ae5ccc701867a0cd6bf8bb38062d4497f67f4743"
+  },
+  "application_helpers": {
+    "render/faithful_word.py": "24f63d9b9b7c01a29599482f6c37bb1f54134d1b86f08c885a7be7afbe75bda7",
+    "render/faithful_parts/font_embedding.py": "3f5983251c882185a622bd874b01f164f9770f3667a4d91ecc1ddbd9370708aa",
+    "render/faithful_parts/source_masks.py": "882c6dddc58180ec35d837da1d8e7bd03d8443ef908533cf9dd73f0be3727ce3",
+    "quality/docx_faithful.py": "f4c101aef02410d4d8012c95cebac670ce5a144389db38d48143267b55680fda"
+  },
+  "files": {
+    "output.docx": {
+      "sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4",
+      "bytes": 306521
+    },
+    "render/output.pdf": {
+      "sha256": "e7cee2b9cb812c327d1407887d103e60d6a2d35d1c182a875a2ade67d982b8ac",
+      "bytes": 147097
+    },
+    "render/page-1.png": {
+      "sha256": "0a627ac9a4b54870f5c2095bb08f8c484e706294c2e5eaf20a4dbaf88e0c6613",
+      "bytes": 125166
+    },
+    "reviewed.json": {
+      "sha256": "5f702931bd051537d05623e281dd76f3dd4605f8f664caf4b594f040a9926db2",
+      "bytes": 214088
+    },
+    "corrections.json": {
+      "sha256": "03777be3bce0ae2a5f61deaa3766601e558d57a7dd75d76216a4f780ebb2941a",
+      "bytes": 2157
+    },
+    "execution.json": {
+      "sha256": "d6aea4c393f97bbfe9c2fec58aac5ecd719e868081e3559f251a4d0f64aeb13c",
+      "bytes": 7621
+    },
+    "audit/delivery-audit.json": {
+      "sha256": "c2c0241d1681777e92cf936d218b99bb22e83480d30ac07149dc344f2e7ebe17",
+      "bytes": 36641
+    }
+  }
+}

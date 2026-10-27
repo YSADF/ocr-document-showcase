@@ -1,0 +1,53 @@
+{
+  "review_date": "2026-10-27",
+  "reviewer": "assistant independent table subagent",
+  "method": "Full original-size canonical PNG inspected against original table and prior reviewed rendering; no desktop LibreOffice used.",
+  "acceptance": "passed_for_four_manual_status_translations",
+  "rendered_pages": 1,
+  "regions": [
+    {
+      "source": "PASS",
+      "target": "合格",
+      "row": 2,
+      "col": 3,
+      "visible": true
+    },
+    {
+      "source": "REVIEW",
+      "target": "待复核",
+      "row": 3,
+      "col": 3,
+      "visible": true
+    },
+    {
+      "source": "PASS",
+      "target": "合格",
+      "row": 4,
+      "col": 3,
+      "visible": true
+    },
+    {
+      "source": "3 PASS/1 REVIEW",
+      "target": "3 合格 / 1 待复核",
+      "row": 5,
+      "col": 3,
+      "visible": true
+    }
+  ],
+  "source_english_status_ghosts_seen": false,
+  "overlap_seen": false,
+  "clipping_seen": false,
+  "page_overflow_seen": false,
+  "table_rules_and_merges_intact": true,
+  "quantity_2_and_1_remain_visible_as_source_raster": true,
+  "other_engineering_symbols_and_numbers_unchanged": true,
+  "footer_two_lines_preserved": true,
+  "limitations": [
+    "This is manual document post-editing, not a new OCR or model result.",
+    "Table grid and some numeric/model labels remain raster; no native Word table.",
+    "Microsoft Word interactive editing not verified.",
+    "Existing varied source-calibrated font sizes remain, including smaller REVIEW-derived label."
+  ],
+  "docx_sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4",
+  "canonical_png_sha256": "0a627ac9a4b54870f5c2095bb08f8c484e706294c2e5eaf20a4dbaf88e0c6613"
+}

@@ -1,0 +1,324 @@
+{
+  "application_code_modified": false,
+  "model_inference_executed": false,
+  "ocr_executed": false,
+  "baseline_docx_sha256": "acfdc033c526c155e76131f67d49a76e4d382e9ea280d3ca7e2634c7f2802074",
+  "baseline_state_sha256": "0aa530ecc11196c06c1b444a5e1bf648ff91ded5c042d20079854e462d845698",
+  "output_docx_sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4",
+  "source_inventory_unchanged": true,
+  "method": "Existing _erase_raster_text + FaithfulWordBuilder._add_text_line + embed_faithful_fonts; artifact-only manual edits",
+  "background_size": [
+    7016,
+    4961
+  ],
+  "erased_pixels": 85498,
+  "changed_outside_source_masks": 0,
+  "erase_report": {
+    "line:7380d82d18c175d2": {
+      "erased": true,
+      "pixels": 13374
+    },
+    "line:09c6347cf3c1143b": {
+      "erased": true,
+      "pixels": 19477
+    },
+    "line:206750a1547f9f11": {
+      "erased": true,
+      "pixels": 13375
+    },
+    "line:66c01f26555030bd": {
+      "erased": true,
+      "pixels": 39272
+    }
+  },
+  "font_embedding": {
+    "faces": [
+      {
+        "family": "Noto Sans CJK SC",
+        "bold": false,
+        "italic": false,
+        "file": "NotoSansCJKsc-Regular.ttf",
+        "collection_index": 0,
+        "fs_type": 0,
+        "subsetted": true,
+        "bytes": 693600
+      }
+    ]
+  },
+  "new_native_regions": [
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-9",
+      "source_text": "PASS",
+      "text": "合格",
+      "style_runs": [
+        {
+          "text": "合格",
+          "color": "#3E4453",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-13",
+      "source_text": "REVIEW",
+      "text": "待复核",
+      "style_runs": [
+        {
+          "text": "待复核",
+          "color": "#424857",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-17",
+      "source_text": "PASS",
+      "text": "合格",
+      "style_runs": [
+        {
+          "text": "合格",
+          "color": "#3E4554",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-20",
+      "source_text": "3 PASS/1 REVIEW",
+      "text": "3 合格 / 1 待复核",
+      "style_runs": [
+        {
+          "text": "3 合格 / 1 待复核",
+          "color": "#414857",
+          "bold": false,
+          "italic": false
+        }
+      ]
+    }
+  ],
+  "copy_fit": [
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-9",
+      "bbox_pt": [
+        419.8,
+        253.295,
+        454.52,
+        266.87
+      ],
+      "source_font_size_pt": 10.5,
+      "font_size_pt": 10.5,
+      "font_size_delta_pt": 0.0,
+      "line_height_pt": 12.05,
+      "width_scale": 1.0,
+      "tracking_pt": 0.0,
+      "source_line_count": 1,
+      "target_line_count": 1,
+      "first_line_indent_pt": 0.0,
+      "text_color": "#3E4453",
+      "style_runs": [
+        {
+          "text": "合格",
+          "color": "#3E4453",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "unresolved_style_count": 0,
+      "fits": true
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-13",
+      "bbox_pt": [
+        420.781,
+        309.255,
+        464.299,
+        321.105
+      ],
+      "source_font_size_pt": 9.0,
+      "font_size_pt": 9.0,
+      "font_size_delta_pt": 0.0,
+      "line_height_pt": 10.35,
+      "width_scale": 1.0,
+      "tracking_pt": 0.0,
+      "source_line_count": 1,
+      "target_line_count": 1,
+      "first_line_indent_pt": 0.0,
+      "text_color": "#424857",
+      "style_runs": [
+        {
+          "text": "待复核",
+          "color": "#424857",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "unresolved_style_count": 0,
+      "fits": true
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-17",
+      "bbox_pt": [
+        419.8,
+        363.252,
+        454.193,
+        376.827
+      ],
+      "source_font_size_pt": 10.5,
+      "font_size_pt": 10.5,
+      "font_size_delta_pt": 0.0,
+      "line_height_pt": 12.05,
+      "width_scale": 1.0,
+      "tracking_pt": 0.0,
+      "source_line_count": 1,
+      "target_line_count": 1,
+      "first_line_indent_pt": 0.0,
+      "text_color": "#3E4554",
+      "style_runs": [
+        {
+          "text": "合格",
+          "color": "#3E4554",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "unresolved_style_count": 0,
+      "fits": true
+    },
+    {
+      "page": 1,
+      "region": "manual_status:page-1/block-2/cell-20",
+      "bbox_pt": [
+        419.145,
+        412.013,
+        515.997,
+        425.758
+      ],
+      "source_font_size_pt": 10.5,
+      "font_size_pt": 10.5,
+      "font_size_delta_pt": 0.0,
+      "line_height_pt": 12.05,
+      "width_scale": 1.0,
+      "tracking_pt": 0.0,
+      "source_line_count": 1,
+      "target_line_count": 1,
+      "first_line_indent_pt": 0.0,
+      "text_color": "#414857",
+      "style_runs": [
+        {
+          "text": "3 合格 / 1 待复核",
+          "color": "#414857",
+          "bold": false,
+          "italic": false
+        }
+      ],
+      "unresolved_style_count": 0,
+      "fits": true
+    }
+  ],
+  "layout_violations": [],
+  "records": [
+    {
+      "source_id": "page-1/block-2/cell-9",
+      "source_line_id": "line:7380d82d18c175d2",
+      "region": "manual_status:page-1/block-2/cell-9",
+      "row": 2,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        774,
+        1383,
+        814
+      ],
+      "cell_bbox_page": [
+        1261,
+        711,
+        1555,
+        879
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-13",
+      "source_line_id": "line:09c6347cf3c1143b",
+      "region": "manual_status:page-1/block-2/cell-13",
+      "row": 3,
+      "col": 3,
+      "source": "REVIEW",
+      "target": "待复核",
+      "source_bbox_page": [
+        1286,
+        945,
+        1419,
+        981
+      ],
+      "cell_bbox_page": [
+        1261,
+        879,
+        1555,
+        1048
+      ],
+      "source_font_size_pt": 9,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-17",
+      "source_line_id": "line:206750a1547f9f11",
+      "region": "manual_status:page-1/block-2/cell-17",
+      "row": 4,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        1110,
+        1382,
+        1150
+      ],
+      "cell_bbox_page": [
+        1261,
+        1048,
+        1555,
+        1215
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-20",
+      "source_line_id": "line:66c01f26555030bd",
+      "region": "manual_status:page-1/block-2/cell-20",
+      "row": 5,
+      "col": 3,
+      "source": "3 PASS/1 REVIEW",
+      "target": "3 合格 / 1 待复核",
+      "source_bbox_page": [
+        1281,
+        1259,
+        1577,
+        1301
+      ],
+      "cell_bbox_page": [
+        1261,
+        1215,
+        2426,
+        1344
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    }
+  ],
+  "coverage_note": "Existing audit may count literal source owners as preserved despite manually translated native output; four manual mappings recorded separately."
+}
