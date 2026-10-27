@@ -1,0 +1,402 @@
+{
+  "table_cells": [
+    {
+      "row": 0,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 5,
+      "source_text": "Engineering inspection record",
+      "target": "工程检查记录",
+      "bbox": [
+        146,
+        473,
+        2426,
+        601
+      ]
+    },
+    {
+      "row": 1,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Item",
+      "target": "项目",
+      "bbox": [
+        146,
+        601,
+        531,
+        711
+      ]
+    },
+    {
+      "row": 1,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Specification",
+      "target": "规格",
+      "bbox": [
+        531,
+        601,
+        1078,
+        711
+      ]
+    },
+    {
+      "row": 1,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Qty",
+      "target": "数量",
+      "bbox": [
+        1078,
+        601,
+        1261,
+        711
+      ]
+    },
+    {
+      "row": 1,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Result",
+      "target": "结果",
+      "bbox": [
+        1261,
+        601,
+        1555,
+        711
+      ]
+    },
+    {
+      "row": 1,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Note",
+      "target": "备注",
+      "bbox": [
+        1555,
+        601,
+        2426,
+        711
+      ]
+    },
+    {
+      "row": 2,
+      "col": 0,
+      "rowspan": 2,
+      "colspan": 1,
+      "source_text": "Valve body",
+      "target": "阀体",
+      "bbox": [
+        146,
+        711,
+        531,
+        1048
+      ]
+    },
+    {
+      "row": 2,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "DN 50",
+      "target": "DN 50",
+      "bbox": [
+        531,
+        711,
+        1078,
+        879
+      ]
+    },
+    {
+      "row": 2,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "",
+      "target": "2",
+      "bbox": [
+        1078,
+        711,
+        1261,
+        879
+      ]
+    },
+    {
+      "row": 2,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "PASS",
+      "target": "合格",
+      "bbox": [
+        1261,
+        711,
+        1555,
+        879
+      ]
+    },
+    {
+      "row": 2,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "0 50  0.10 mm",
+      "target": "Ø 50 ± 0.10 mm",
+      "bbox": [
+        1555,
+        711,
+        2426,
+        879
+      ]
+    },
+    {
+      "row": 3,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "DN 80",
+      "target": "DN 80",
+      "bbox": [
+        531,
+        879,
+        1078,
+        1048
+      ]
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "",
+      "target": "1",
+      "bbox": [
+        1078,
+        879,
+        1261,
+        1048
+      ]
+    },
+    {
+      "row": 3,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "REVIEW",
+      "target": "待复核",
+      "bbox": [
+        1261,
+        879,
+        1555,
+        1048
+      ]
+    },
+    {
+      "row": 3,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Angle 90 0.5o",
+      "target": "角度 90° ± 0.5°",
+      "bbox": [
+        1555,
+        879,
+        2426,
+        1048
+      ]
+    },
+    {
+      "row": 4,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Pump",
+      "target": "泵",
+      "bbox": [
+        146,
+        1048,
+        531,
+        1215
+      ]
+    },
+    {
+      "row": 4,
+      "col": 1,
+      "rowspan": 1,
+      "colspan": 2,
+      "source_text": "Model P001 11 unit",
+      "target": "型号 P001 / 1 件",
+      "bbox": [
+        531,
+        1048,
+        1261,
+        1215
+      ]
+    },
+    {
+      "row": 4,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "PASS",
+      "target": "合格",
+      "bbox": [
+        1261,
+        1048,
+        1555,
+        1215
+      ]
+    },
+    {
+      "row": 4,
+      "col": 4,
+      "rowspan": 1,
+      "colspan": 1,
+      "source_text": "Bore 0 12 mm",
+      "target": "孔径 Ø 12 mm",
+      "bbox": [
+        1555,
+        1048,
+        2426,
+        1215
+      ]
+    },
+    {
+      "row": 5,
+      "col": 0,
+      "rowspan": 1,
+      "colspan": 3,
+      "source_text": "Summary: 4 inspected units",
+      "target": "汇总：已检验 4 件",
+      "bbox": [
+        146,
+        1215,
+        1261,
+        1344
+      ]
+    },
+    {
+      "row": 5,
+      "col": 3,
+      "rowspan": 1,
+      "colspan": 2,
+      "source_text": "3 PASS/1 REVIEW",
+      "target": "3 合格 / 1 待复核",
+      "bbox": [
+        1261,
+        1215,
+        2426,
+        1344
+      ]
+    }
+  ],
+  "outside_table_texts": [
+    "含合并单元格的输入表格",
+    "自制输入与真值标注 | 并非 OCR 结果",
+    "6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0目标：保留文字、合并单元格及可编辑文档结构。"
+  ],
+  "manual_transcriptions": [
+    {
+      "row": 2,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "2",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        711,
+        1261,
+        879
+      ],
+      "not_model_prediction": true
+    },
+    {
+      "row": 3,
+      "col": 2,
+      "source_ocr_text": "",
+      "source_text_unchanged": "",
+      "target": "1",
+      "origin": "manual_transcription_from_original_input_image",
+      "evidence": "assets/merged-table-input.png",
+      "source_bbox_page": [
+        1078,
+        879,
+        1261,
+        1048
+      ],
+      "not_model_prediction": true
+    }
+  ],
+  "spans": [
+    [
+      0,
+      0,
+      1,
+      5
+    ],
+    [
+      2,
+      0,
+      2,
+      1
+    ],
+    [
+      4,
+      1,
+      1,
+      2
+    ],
+    [
+      5,
+      0,
+      1,
+      3
+    ],
+    [
+      5,
+      3,
+      1,
+      2
+    ]
+  ],
+  "x_edges": [
+    146.0,
+    531.0,
+    1078.0,
+    1261.0,
+    1555.0,
+    2426.0
+  ],
+  "y_edges": [
+    473.0,
+    601.0,
+    711.0,
+    879.0,
+    1048.0,
+    1215.0,
+    1344.0
+  ],
+  "render_dpi": 220.0,
+  "source_page_size_px": [
+    2573,
+    1819
+  ],
+  "source_page_size_pt": [
+    841.8897705078125,
+    595.2755737304688
+  ],
+  "table_bbox": [
+    146.0,
+    473.0,
+    2426.0,
+    1344.0
+  ],
+  "topology_origin": "Existing source-fourth local-boundary OCR prediction; no truth file read."
+}

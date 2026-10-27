@@ -1,0 +1,1160 @@
+{
+  "schema_version": "independent-native-word-table-inspection-v1",
+  "inspection_date": "2026-10-27",
+  "document": {
+    "filename": "output.docx",
+    "bytes": 124394,
+    "sha256": "79801a412c457efe8066a20c1ea8a1acad4631dec0ae7752e56b594b2236065c"
+  },
+  "acceptance_inputs": {
+    "artifacts/merged-table-ground-truth.json": {
+      "bytes": 6772,
+      "sha256": "c5488d2e03f8c37cec559a606965128aad1005bebcfd5854236b753a8b0986ac"
+    },
+    "artifacts/status-translation-20261027/semantic-coverage.json": {
+      "bytes": 16417,
+      "sha256": "e479ec715bdd4dd95559db999804d2da12f62c50c45eb9c87ecf06131693536f"
+    }
+  },
+  "scope": "Saved document structure and text only; source truth is used for acceptance, not generation.",
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "document_modified": false,
+  "visual_review_performed": false,
+  "checks": [
+    {
+      "name": "zip_crc_valid",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_embedded_image_files",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_image_relationships",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "no_document_drawing_picture_or_textbox",
+      "passed": true,
+      "detail": {
+        "drawing": 0,
+        "pict": 0,
+        "txbxContent": 0
+      }
+    },
+    {
+      "name": "exactly_one_native_table",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "no_table_cell_text_frames",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_table_cell_textboxes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_table_cell_legacy_shapes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_table_cell_drawings",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "no_hidden_table_text",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "five_native_grid_columns",
+      "passed": true,
+      "detail": [
+        2520,
+        3580,
+        1198,
+        1924,
+        5701
+      ]
+    },
+    {
+      "name": "six_native_rows",
+      "passed": true,
+      "detail": 6
+    },
+    {
+      "name": "valid_span_r0_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r0_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r0_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r1_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r1_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r1_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r1_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r1_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r1_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r1_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r1_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r1_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r1_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r1_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r1_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r1_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r1_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r1_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r2_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r2_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r2_c0",
+      "passed": true,
+      "detail": "restart"
+    },
+    {
+      "name": "valid_span_r2_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r2_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r2_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r2_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r2_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r2_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r2_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r2_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r2_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r2_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r2_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r2_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r3_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r3_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_vMerge_continue_r3_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "empty_vMerge_continuation_r3_c0",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "aligned_vMerge_span_r3_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r3_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r3_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r3_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r3_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r3_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r3_c2",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r3_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r3_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r3_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r3_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r3_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r3_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r4_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r4_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r4_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r4_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r4_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r4_c1",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r4_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r4_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r4_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r4_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r4_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r4_c4",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r5_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r5_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r5_c0",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "valid_span_r5_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "gridSpan_not_legacy_hMerge_r5_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "known_vMerge_kind_r5_c3",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "every_row_covers_five_columns",
+      "passed": true,
+      "detail": [
+        5,
+        5,
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "name": "exactly_21_physical_origin_cells",
+      "passed": true,
+      "detail": 21
+    },
+    {
+      "name": "one_vertical_continuation_cell",
+      "passed": true,
+      "detail": 1
+    },
+    {
+      "name": "22_xml_cells_including_vertical_continuation",
+      "passed": true,
+      "detail": 22
+    },
+    {
+      "name": "cell_r0_c0_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r0_c0_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c0_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c0_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c1_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c1_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c2_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c2_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c3_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c3_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c4_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r1_c4_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c0_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c0_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c1_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c1_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c2_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c2_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c3_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c3_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c4_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r2_c4_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c1_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c1_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c2_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c2_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c3_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c3_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c4_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r3_c4_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c0_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c0_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c1_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c1_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c3_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c3_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c4_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r4_c4_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r5_c0_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r5_c0_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r5_c3_position_and_span",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "cell_r5_c3_native_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "exactly_five_merged_physical_cells",
+      "passed": true,
+      "detail": [
+        {
+          "row": 0,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 5,
+          "text": "工程检查记录"
+        },
+        {
+          "row": 2,
+          "col": 0,
+          "rowspan": 2,
+          "colspan": 1,
+          "text": "阀体"
+        },
+        {
+          "row": 4,
+          "col": 1,
+          "rowspan": 1,
+          "colspan": 2,
+          "text": "型号 P001 / 1 件"
+        },
+        {
+          "row": 5,
+          "col": 0,
+          "rowspan": 1,
+          "colspan": 3,
+          "text": "汇总：已检验 4 件"
+        },
+        {
+          "row": 5,
+          "col": 3,
+          "rowspan": 1,
+          "colspan": 2,
+          "text": "3 合格 / 1 待复核"
+        }
+      ]
+    },
+    {
+      "name": "complete_6_by_5_ownership_grid_matches",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quantity_2_is_native_cell_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "quantity_1_is_native_cell_text",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "outside_three_regions_complete_without_table_text_overlays",
+      "passed": true,
+      "detail": {
+        "expected": [
+          "含合并单元格的输入表格",
+          "自制输入与真值标注 | 并非 OCR 结果",
+          "6 个逻辑行 × 5 列 | 跨行与跨列合并 |\nCC0 1.0\n目标：保留文字、合并单元格及可编辑文档结构。"
+        ],
+        "actual": "含合并单元格的输入表格自制输入与真值标注 | 并非 OCR 结果6 个逻辑行 × 5 列 | 跨行与跨列合并 | CC0 1.0目标：保留文字、合并单元格及可编辑文档结构。"
+      }
+    }
+  ],
+  "cells": [
+    {
+      "expected": {
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 5,
+        "source": "Engineering inspection record",
+        "text": "工程检查记录"
+      },
+      "observed": {
+        "row": 0,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 5,
+        "text": "工程检查记录"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Item",
+        "text": "项目"
+      },
+      "observed": {
+        "row": 1,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "项目"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Specification",
+        "text": "规格"
+      },
+      "observed": {
+        "row": 1,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "规格"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Qty",
+        "text": "数量"
+      },
+      "observed": {
+        "row": 1,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "数量"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Result",
+        "text": "结果"
+      },
+      "observed": {
+        "row": 1,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "结果"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 1,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Note",
+        "text": "备注"
+      },
+      "observed": {
+        "row": 1,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "备注"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 2,
+        "col": 0,
+        "rowspan": 2,
+        "colspan": 1,
+        "source": "Valve body",
+        "text": "阀体"
+      },
+      "observed": {
+        "row": 2,
+        "col": 0,
+        "rowspan": 2,
+        "colspan": 1,
+        "text": "阀体"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 2,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "DN 50",
+        "text": "DN 50"
+      },
+      "observed": {
+        "row": 2,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "DN 50"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 2,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "2",
+        "text": "2"
+      },
+      "observed": {
+        "row": 2,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "2"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 2,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "PASS",
+        "text": "合格"
+      },
+      "observed": {
+        "row": 2,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "合格"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 2,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Ø 50 ± 0.10 mm",
+        "text": "Ø 50 ± 0.10 mm"
+      },
+      "observed": {
+        "row": 2,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "Ø 50 ± 0.10 mm"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "DN 80",
+        "text": "DN 80"
+      },
+      "observed": {
+        "row": 3,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "DN 80"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "1",
+        "text": "1"
+      },
+      "observed": {
+        "row": 3,
+        "col": 2,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "1"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "REVIEW",
+        "text": "待复核"
+      },
+      "observed": {
+        "row": 3,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "待复核"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 3,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Angle 90° ± 0.5°",
+        "text": "角度 90° ± 0.5°"
+      },
+      "observed": {
+        "row": 3,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "角度 90° ± 0.5°"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Pump",
+        "text": "泵"
+      },
+      "observed": {
+        "row": 4,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "泵"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 2,
+        "source": "Model P001 / 1 unit",
+        "text": "型号 P001 / 1 件"
+      },
+      "observed": {
+        "row": 4,
+        "col": 1,
+        "rowspan": 1,
+        "colspan": 2,
+        "text": "型号 P001 / 1 件"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "PASS",
+        "text": "合格"
+      },
+      "observed": {
+        "row": 4,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "合格"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 4,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "source": "Bore Ø 12 mm",
+        "text": "孔径 Ø 12 mm"
+      },
+      "observed": {
+        "row": 4,
+        "col": 4,
+        "rowspan": 1,
+        "colspan": 1,
+        "text": "孔径 Ø 12 mm"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 5,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 3,
+        "source": "Summary: 4 inspected units",
+        "text": "汇总：已检验 4 件"
+      },
+      "observed": {
+        "row": 5,
+        "col": 0,
+        "rowspan": 1,
+        "colspan": 3,
+        "text": "汇总：已检验 4 件"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    },
+    {
+      "expected": {
+        "row": 5,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 2,
+        "source": "3 PASS / 1 REVIEW",
+        "text": "3 合格 / 1 待复核"
+      },
+      "observed": {
+        "row": 5,
+        "col": 3,
+        "rowspan": 1,
+        "colspan": 2,
+        "text": "3 合格 / 1 待复核"
+      },
+      "span_matches": true,
+      "native_text_matches": true
+    }
+  ],
+  "errors": [],
+  "limitations": [
+    "XML checks cannot establish visual layout; independently inspect the rendered page PNG.",
+    "Native table/cell structure does not verify Microsoft Word interactive editing behavior.",
+    "The expected Chinese text includes assistant edits; it is not a new model prediction."
+  ],
+  "native_table_count": 1,
+  "native_positioned_paragraph_count": 3,
+  "structure": {
+    "grid_columns": 5,
+    "rows": 6,
+    "physical_origin_cells": 21,
+    "xml_tc_count": 22,
+    "vertical_continuations": 1,
+    "merged_origin_cells": 5,
+    "image_files": 0
+  },
+  "passed": true
+}
