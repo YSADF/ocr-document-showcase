@@ -76,6 +76,10 @@ pdftoppm -f 2 -l 2 -singlefile -r 200 -png samples/plos-best-practices-source.pd
 
 DOCX 内嵌 Noto 字体子集；推理与独立渲染使用同一批已准备的静态 TTF，未另创字体嵌入算法。上游为 [notofonts/noto-cjk](https://github.com/notofonts/noto-cjk/tree/985fa52c81c1d6692ccdd82bc3656e8fb932fd89)，固定提交 `985fa52c81c1d6692ccdd82bc3656e8fb932fd89`。保存的[字体来源与 SHA-256](artifacts/local-faithful-20261027/font-provenance.json)记录上游文件、静态实例及权重；[Sans OFL](artifacts/local-faithful-20261027/OFL-NotoSansCJK.txt)与[Serif OFL](artifacts/local-faithful-20261027/OFL-NotoSerifCJK.txt)随产物提供。完整字体文件和模型权重不单独纳入公开包。
 
+## 2026-10-27 表格状态补译产物
+
+`artifacts/status-translation-20261027/` 是上述自制 CC0 表格的文档派生版本，补入四处中文状态并重新嵌入同源 Noto 字体、独立渲染。源图与原始模型结果不变，没有新增资料或模型推理。输入继续适用 CC0 1.0，字体继续适用前述 OFL；[逐项内容变化](artifacts/status-translation-20261027/merged-table/corrections.json)与[区域复核](artifacts/status-translation-20261027/semantic-coverage.json)记录助手对保存产物的修改，不作为模型输出。
+
 ## 2026-10-27 中文校对版
 
 `artifacts/reviewed-translation-20261027/` 是上述机器输出的助手校对派生版本，不是重新推理的结果。修改包括中文术语、漏句、软件名／引用、从原图核对的符号与数量，以及表格 DOCX 页脚一处换行。PLOS 作者、文章与 CC BY 4.0 署名继续适用；自制表格沿用 CC0 1.0，内嵌字体沿用上述来源与 OFL。原始输入、OCR、模型响应、DOCX 及评分不覆盖。[逐项修改及验收范围](cases/reviewed-translation-20261027.md)

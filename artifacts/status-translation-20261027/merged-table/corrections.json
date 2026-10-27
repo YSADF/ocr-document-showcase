@@ -1,0 +1,105 @@
+{
+  "kind": "artifact_manual_status_translation",
+  "source_page_size": [
+    2573,
+    1819
+  ],
+  "background_size": [
+    7016,
+    4961
+  ],
+  "records": [
+    {
+      "source_id": "page-1/block-2/cell-9",
+      "source_line_id": "line:7380d82d18c175d2",
+      "region": "manual_status:page-1/block-2/cell-9",
+      "row": 2,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        774,
+        1383,
+        814
+      ],
+      "cell_bbox_page": [
+        1261,
+        711,
+        1555,
+        879
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-13",
+      "source_line_id": "line:09c6347cf3c1143b",
+      "region": "manual_status:page-1/block-2/cell-13",
+      "row": 3,
+      "col": 3,
+      "source": "REVIEW",
+      "target": "待复核",
+      "source_bbox_page": [
+        1286,
+        945,
+        1419,
+        981
+      ],
+      "cell_bbox_page": [
+        1261,
+        879,
+        1555,
+        1048
+      ],
+      "source_font_size_pt": 9,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-17",
+      "source_line_id": "line:206750a1547f9f11",
+      "region": "manual_status:page-1/block-2/cell-17",
+      "row": 4,
+      "col": 3,
+      "source": "PASS",
+      "target": "合格",
+      "source_bbox_page": [
+        1283,
+        1110,
+        1382,
+        1150
+      ],
+      "cell_bbox_page": [
+        1261,
+        1048,
+        1555,
+        1215
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    },
+    {
+      "source_id": "page-1/block-2/cell-20",
+      "source_line_id": "line:66c01f26555030bd",
+      "region": "manual_status:page-1/block-2/cell-20",
+      "row": 5,
+      "col": 3,
+      "source": "3 PASS/1 REVIEW",
+      "target": "3 合格 / 1 待复核",
+      "source_bbox_page": [
+        1281,
+        1259,
+        1577,
+        1301
+      ],
+      "cell_bbox_page": [
+        1261,
+        1215,
+        2426,
+        1344
+      ],
+      "source_font_size_pt": 10.5,
+      "source_unchanged": true
+    }
+  ]
+}

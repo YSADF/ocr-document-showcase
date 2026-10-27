@@ -1,0 +1,77 @@
+{
+  "kind": "manual_status_document_post_edit",
+  "date": "2026-10-27",
+  "application_code_modified": false,
+  "ocr_executed": false,
+  "model_inference_executed": false,
+  "export_container": "--network none --cpus=4 --memory=10g",
+  "render_container": "--network none --cpus=2 --memory=4g",
+  "images": {
+    "pp-v5-showcase:translation-zh-final": "sha256:629bc5804ff30b28e89a9c109c2ff3816914edad8b121c8f3fce9494947b3561",
+    "pp-v5-showcase-render:local": "sha256:7c5c0912763ff820808b623bd273156a19ece6d0556202ac0d46ae891800813f"
+  },
+  "renderer": "Existing isolated LibreOffice 7.4.7.2 / Poppler 22.12.0; canonical render_docx.py --emit_pdf --dpi 144",
+  "public_scope": "Document artifacts and evidence only; original eight selected algorithms unchanged.",
+  "baseline_docx": "../reviewed-translation-20261027/merged-table/output.docx",
+  "baseline_docx_sha256": "acfdc033c526c155e76131f67d49a76e4d382e9ea280d3ca7e2634c7f2802074",
+  "original_inputs_and_model_outputs_unchanged": true,
+  "private_run_record_sha256": "308fde26598e72d119601a4625184286204091c327ab1e6237898826779d8101",
+  "files": {
+    "merged-table/output.docx": {
+      "bytes": 306521,
+      "sha256": "2bc2e3c536d9f498a1a819baf96c05a727c2d54238d5e07ad2ea655a6e0823b4"
+    },
+    "merged-table/reviewed.json": {
+      "bytes": 214088,
+      "sha256": "5f702931bd051537d05623e281dd76f3dd4605f8f664caf4b594f040a9926db2"
+    },
+    "merged-table/corrections.json": {
+      "bytes": 2157,
+      "sha256": "03777be3bce0ae2a5f61deaa3766601e558d57a7dd75d76216a4f780ebb2941a"
+    },
+    "merged-table/execution.json": {
+      "bytes": 7621,
+      "sha256": "d6aea4c393f97bbfe9c2fec58aac5ecd719e868081e3559f251a4d0f64aeb13c"
+    },
+    "merged-table/verification.json": {
+      "bytes": 4989,
+      "sha256": "c8090aed2424e23b963dd23704a934eb8fc3f7859f36b555ad0a118b9583d269"
+    },
+    "merged-table/visual-review.json": {
+      "bytes": 1730,
+      "sha256": "9c60ab262ec3588f6127239c0b4034631773e6f06ab498d53ffc3e6ae8020da9"
+    },
+    "merged-table/render/output.pdf": {
+      "bytes": 147097,
+      "sha256": "e7cee2b9cb812c327d1407887d103e60d6a2d35d1c182a875a2ade67d982b8ac"
+    },
+    "merged-table/render/page-1.png": {
+      "bytes": 125166,
+      "sha256": "0a627ac9a4b54870f5c2095bb08f8c484e706294c2e5eaf20a4dbaf88e0c6613"
+    },
+    "merged-table/audit/delivery-audit.json": {
+      "bytes": 36641,
+      "sha256": "c2c0241d1681777e92cf936d218b99bb22e83480d30ac07149dc344f2e7ebe17"
+    },
+    "semantic-coverage.json": {
+      "bytes": 16417,
+      "sha256": "e479ec715bdd4dd95559db999804d2da12f62c50c45eb9c87ecf06131693536f"
+    }
+  },
+  "acceptance": {
+    "strict_audit_passed": true,
+    "native_text_regions": 20,
+    "pages": 1,
+    "semantic_regions_checked": 24,
+    "regions_requiring_translation": 19,
+    "regions_translated": 19,
+    "whole_regions_requiring_preservation": 5,
+    "remaining_raster_cells": 4
+  },
+  "coverage_note": "Existing strict audit retains original literal policy counts (17 translated, 6 preserved). Actual semantic coverage is recorded separately; neither count is a model accuracy score.",
+  "limits": [
+    "No application-code fix or model rerun.",
+    "Grid and DN/quantity cells remain raster; no native Word table.",
+    "Microsoft Word interactive editing is not verified."
+  ]
+}

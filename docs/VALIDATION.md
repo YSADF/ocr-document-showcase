@@ -1,5 +1,20 @@
 # 验证记录
 
+## 2026-10-27：表格检测状态补译
+
+本轮只修改保存的文档产物，补齐两处 `PASS`、一处 `REVIEW` 及汇总状态；没有更改应用代码、重跑 OCR 或翻译模型。旧结果继续冻结，[当前案例](../cases/reviewed-translation-20261027.md)使用新表格文件，PLOS 文件未变。
+
+| 实际检查 | 结果与范围 |
+|---|---|
+| 文档与字体 | 复用既有擦字、定位文字与字体嵌入方法；4 个新增中文框，20 个原生定位区域，`w:tbl=0`；源字形掩码外像素变化为 0 |
+| 独立渲染 | 禁网 LibreOffice 7.4.7.2／Poppler 22.12.0，`render_docx.py --emit_pdf --dpi 144`；1 页，841.89 × 595.30 pt；严格审计通过、0 违规 |
+| 内容与全页视觉 | 四项中文在 DOCX XML 和实际 PDF 完整匹配；逐区查看原图与最终 PNG，未见旧状态残影、重叠、裁切或越界，网格与 5 处合并关系保留 |
+| 语义覆盖 | 21 个物理格＋3 个页外区域：19 个需译区域完整，5 个区域保留标识／量值；其中 DN 与数量共 4 格仍为背景；不按审计中的旧保护分类推算翻译覆盖 |
+| 标准库测试 | Windows 执行 `python -S -X utf8 -B -m unittest discover -s tests -v`：78 通过、1 项符号链接权限跳过 |
+| 原始证据 | `python -S -X utf8 -B tools/verify_demo.py` 通过；原始模型结果与历史分数不变；所有 27 个公开 Python 文件、原有 8 个算法不变 |
+
+执行、文件哈希和覆盖计数见[运行记录](../artifacts/status-translation-20261027/run.json)、[逐区域内容检查](../artifacts/status-translation-20261027/semantic-coverage.json)与[视觉记录](../artifacts/status-translation-20261027/merged-table/visual-review.json)。这是助手对固定页面的复核，不是独立人工认证或模型准确率；Microsoft Word 交互编辑未验收。公开清单仅增加 11 个产物与证据文件，共 224 项；默认核验工具继续检查冻结模型证据，新增文档的文件完整性由显式清单核对。
+
 ## 2026-10-27：只校对译文与文档
 
 按用户要求，校对保存的机器译文，不修改项目代码。PLOS 的 51 组及表格的 3 组页外文字／13 个格内译文已对照原文复核；另记录直接目视确认的符号、数量修正。没有重跑 OCR 或翻译模型，原始结果、历史分数全部冻结。详见[校对案例](../cases/reviewed-translation-20261027.md)及[逐项修改](../artifacts/reviewed-translation-20261027/corrections.json)。
